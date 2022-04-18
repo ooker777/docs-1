@@ -1,0 +1,17 @@
+Mara-Li/obsidian-mkdocs-publisher-plugin:
+  - source: docs/documentation/start_here.md
+    dest: README.md
+Mara-Li/obsidian-mkdocs-publisher-python:
+  - source: docs/documentation/start_here.md
+    dest: README.md
+Mara-Li/obsidian_mkdocs_publisher:
+  - source: docs/documentation/Obsidian mkdocs publisher.md
+    dest: README.md
+Mara-li/Seed_publish:
+  - .github/workflows/ci.yml
+  - .github/workflows/mkdocs_build.yml
+Mara-Li/obsidian-mkdocs-publisher-template:
+  - .github/workflows/ci.yml
+  - .github/workflows/mkdocs_build.yml
+  - source: docs/documentation/start_here.md
+    dest: README.md
