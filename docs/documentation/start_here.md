@@ -8,7 +8,7 @@ title: Start here
 	<a href="https://obsidian.md/"><img src="https://img.shields.io/badge/Auxiliary%20Tool-Obsidian-blueviolet"></img></a>
 	<a href="https://github.com/Mara-Li/mkdocs_obsidian_template/wiki/Q&A/"><img src="https://img.shields.io/badge/-Q%26A-blue?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMkM2LjQ4NiAyIDIgNi40ODYgMiAxMnM0LjQ4NiAxMCAxMCAxMCAxMC00LjQ4NiAxMC0xMFMxNy41MTQgMiAxMiAyem0wIDE4Yy00LjQxMSAwLTgtMy41ODktOC04czMuNTg5LTggOC04IDggMy41ODkgOCA4LTMuNTg5IDgtOCA4eiIvPjxwYXRoIGQ9Ik0xMSAxMWgydjZoLTJ6bTAtNGgydjJoLTJ6Ii8+PC9zdmc+"></img></a>
 </p>
-<p align="center"><a href="https://mara-li.github.io/mkdocs_obsidian_template/">Documentation</a></p>
+<p align="center"><a href="https://mara-li.github.io/obsidian_mkdocs_publisher_docs/">Documentation</a></p>
 <p align="center"><a href="https://www.mara-li.fr">Owlly Seed (My Blog ; In French)</a></p>
 
 The plugins can be accessed with a github actions and a Obsidian's plugin or using a pip install and usage.
@@ -18,14 +18,13 @@ The plugins can be accessed with a github actions and a Obsidian's plugin or usi
 - [Obsidian Plugin](https://github.com/Mara-Li/obsidian-mkdocs-publisher-plugin/)
 - [Python package](https://github.com/Mara-Li/obsidian-mkdocs-publisher-python)
 - [Template](https://github.com/Mara-Li/obsidian-mkdocs-publisher-template)
-- [Documentation](https://mara-li.github.io/mkdocs_obsidian_template/)
+- [Documentation](https://mara-li.github.io/obsidian_mkdocs_publisher_docs/)
 
 # Terminal
 
 ![[script_demo.gif]]
 
 Mkdocs Obsidian is an association between a python script and a Material mkdocs template to get a personal wiki site based on your Obsidian Vault.
-
 
 ## TLDR
 1. Install / update with `pip install obs2mk --upgrade`
@@ -43,7 +42,6 @@ You need :
 
 
 # Github actions & Obsidian's plugin
-
 ## TLDR
 1. Install the plugins through Obsidian Community or [BRAT](https://github.com/TfTHacker/obsidian42-brat)
 2. [Template](https://github.com/Mara-Li/mkdocs_obsidian_template) the blog and configure it 
