@@ -11,5 +11,5 @@ jobs:
       - name: Sync files
         uses: Redocly/repo-file-sync-action@master
         with:
-          GH_PATH: ${{ secrets.GH_PAT }}
+          GH_PAT: ${{ secrets.GH_PAT }}
           
