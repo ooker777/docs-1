@@ -13,5 +13,8 @@ Mara-li/Seed_publish:
 Mara-Li/obsidian-mkdocs-publisher-template:
   - .github/workflows/ci.yml
   - .github/workflows/mkdocs_build.yml
+  - docs/assets/css/custom_attributes
+  - docs/assets/img-grid-floats.css
+  - docs/assets/utils.css
   - source: docs/documentation/start_here.md
     dest: README.md
