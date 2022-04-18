@@ -1,10 +1,10 @@
-Mara-Li/obsidian-mkdocs-publisher-plugin:
+Mara-Li/obsidian-mkdocs-publisher:
   - source: docs/documentation/start_here.md
     dest: README.md
 Mara-Li/obsidian-mkdocs-publisher-python:
   - source: docs/documentation/start_here.md
     dest: README.md
-Mara-Li/obsidian_mkdocs_publisher:
+Mara-Li/obsidian-mkdocs-publisher-plugin:
   - source: docs/documentation/Obsidian mkdocs publisher.md
     dest: README.md
 Mara-li/Seed_publish:
