@@ -1,4 +1,4 @@
-Mara-Li/obsidian-mkdocs-publisher:
+Mara-Li/obsidian_mkdocs_publisher:
   - source: docs/documentation/start_here.md
     dest: README.md
 Mara-Li/obsidian-mkdocs-publisher-python:

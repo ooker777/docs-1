@@ -37,8 +37,8 @@ jobs:
       - name: Push new files
         run: |
           git pull
-          git config --global user.name 'mara-li'
-          git config --global user.email 'mara-li@users.noreply.github.com'
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@users.noreply.github.com'
           git add . 
           git commit -am "Updated blog 🎉"
           git push
@@ -48,6 +48,7 @@ jobs:
           path: requirements.txt
       - name: Build mkdocs
         run: mkdocs gh-deploy --force --clean
+
 ```
 
 You can update the building mkdocs page as follow :
@@ -55,29 +56,16 @@ You can update the building mkdocs page as follow :
 name: mkdocs build
 
 on:
-  push
-
+  push:
+    paths:
+      - 'README.md'
+      - 'overrides/**'
+      - 'docs/**'
+      - 'mkdocs.yml'
+      - 'requirements.txt'
 jobs:
-  path-filter:
-    runs-on: ubuntu-latest
-    outputs:
-      filtering: ${{ steps.filter.outputs.changes }}
-    steps:
-      - uses: actions/checkout@v2
-      - uses: dorny/paths-filter@v2
-        id: filter
-        with:
-          filters: |
-            changes:
-              - 'README.md'
-              - 'overrides/**'
-              - 'docs/**'
-              - 'mkdocs.yml'
-              - 'requirements.txt'
   mkdocs:
     runs-on: ubuntu-latest
-    needs: path-filter
-    if: needs.path-filter.outputs.filtering == 'true'
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v3

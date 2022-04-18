@@ -1,6 +1,6 @@
 site_name: Obsidian Mkdocs Publisher
 site_description: The documentation for Obsidian Mkdocs Publisher
-site_url: https://mara-li.github.io/obsidian-mkdocs-publisher-template
+site_url: https://mara-li.github.io/obsidian_mkdocs_publisher_docs/
 
 theme:
     name: 'material'
