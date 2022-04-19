@@ -2,7 +2,7 @@ Mara-Li/obsidian_mkdocs_publisher:
   - source: docs/documentation/start_here.md
     dest: README.md
 Mara-Li/obsidian-mkdocs-publisher-python:
-  - source: docs/documentation/start_here.md
+  - source: docs/documentation/obs2mk/usage.md
     dest: README.md
 Mara-Li/obsidian-mkdocs-publisher-plugin:
   - source: docs/documentation/Obsidian mkdocs publisher.md
@@ -17,5 +17,5 @@ Mara-Li/obsidian-mkdocs-publisher-template:
   - docs/assets/css/img-grid-floats.css
   - docs/assets/css/utils.css
   - docs/assets/js/utils.js
-  - source: docs/documentation/start_here.md
+  - source: docs/documentation/create the blog.md
     dest: README.md
