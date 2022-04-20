@@ -1,7 +1,3 @@
----
-title: Start here
----
-
 Mkdocs Obsidian is an association between a python script and a Material mkdocs template to get a personal wiki site based on your Obsidian Vault.
 
 <p align="center">
