@@ -1,5 +1,5 @@
 Mara-Li/obsidian_mkdocs_publisher:
-  - source: docs/documentation/Startinf.md
+  - source: docs/index.md
     dest: README.md
 Mara-Li/obsidian-mkdocs-publisher-python:
   - source: docs/documentation/obs2mk/usage.md

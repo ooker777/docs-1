@@ -31,7 +31,6 @@ The blog will be published through [GitHub Page](https://pages.github.com/) usin
 
 ---
 
-# Useful links
 - [Main Repo](https://github.com/Mara-Li/obsidian_mkdocs_publisher)
 - [Obsidian Plugin](https://github.com/Mara-Li/obsidian-mkdocs-publisher-plugin/)
 - [Python package](https://github.com/Mara-Li/obsidian-mkdocs-publisher-python)

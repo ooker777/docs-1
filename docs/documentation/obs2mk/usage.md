@@ -76,5 +76,14 @@ You can use and create multiple configuration files. This allows to have multipl
 1. To create a new configuration file : `obs2mk config --new configuration_name`
 2. To use a configuration use : `--use configuration_name` 
     For example : `obs2mk --use configuration_name` 
+ 
+----
 
+- [Main Repo](https://github.com/Mara-Li/obsidian_mkdocs_publisher)
+- [Obsidian Plugin](https://github.com/Mara-Li/obsidian-mkdocs-publisher-plugin/)
+- [Python package](https://github.com/Mara-Li/obsidian-mkdocs-publisher-python)
+- [Template](https://github.com/Mara-Li/obsidian-mkdocs-publisher-template)
+- [Documentation](https://mara-li.github.io/obsidian_mkdocs_publisher_docs/)
+ 
+ 
 [^1]: For `file` you need to add the filepath of the file you want to share : `obs2mk (global_option) file "filepath" (specific_options)`
