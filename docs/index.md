@@ -17,7 +17,7 @@ The plugins can be accessed with a github actions and a Obsidian's plugin or usi
 - [Obsidian Plugin](https://github.com/Mara-Li/obsidian-mkdocs-publisher-plugin/)
 - [Python package](https://github.com/Mara-Li/obsidian-mkdocs-publisher-python)
 - [Template](https://github.com/Mara-Li/obsidian-mkdocs-publisher-template)
-- [Documentation](https://mara-li.github.io/obsidian_mkdocs_publisher_docs/)
+
 
 ### Support 
 

@@ -1,10 +1,10 @@
 The script can be use :
-- Directly in Obsidian, using [Obsidian Shell Commands](https://github.com/Taitava/obsidian-shellcommands) (see [[obsidian shell|Obsidian shell configuration]])
+- Directly in Obsidian, using [Obsidian Shell Commands](https://github.com/Taitava/obsidian-shellcommands) (see [Obsidian shell configuration](https://mara-li.github.io/obsidian_mkdocs_publisher_docs/documentation/obs2mk/obsidian%20shell/) )
 - In a [terminal](#commands).
 
 The supported system are :
 - macOS, Linux and Windows
-- [[ios|IOS]] (with [Pyto](https://pyto.app) and/or [a-shell](https://holzschu.github.io/a-Shell_iOS/) with [Working Copy](https://workingcopyapp.com/))
+- [IOS](https://mara-li.github.io/obsidian_mkdocs_publisher_docs/documentation/obs2mk/ios/) (with [Pyto](https://pyto.app) and/or [a-shell](https://holzschu.github.io/a-Shell_iOS/) with [Working Copy](https://workingcopyapp.com/))
 
 ## Script's Configuration
 At the first run, you will be asked to configure some key and specific path.
@@ -50,6 +50,7 @@ options:
   --use configuration_name, --config configuration_name
                         Use a different config from default
 ```
+
 The commands order is :
 `obs2mk (global_options) [all|config|file FILEPATH] (specific_options)`
 Where :
