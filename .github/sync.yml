@@ -5,7 +5,7 @@ Mara-Li/obsidian-mkdocs-publisher-python:
   - source: docs/documentation/obs2mk/usage.md
     dest: README.md
 Mara-Li/obsidian-mkdocs-publisher-plugin:
-  - source: docs/documentation/Obsidian mkdocs publisher.md
+  - source: docs/documentation/Obsidian Github Publisher.md
     dest: README.md
 Mara-li/Seed_publish:
   - .github/workflows/ci.yml
