@@ -83,6 +83,7 @@ plugins:
   - awesome-pages
   - tooltipster-links
   - embed_file
+  - callouts
 extra_javascript:
   - assets/js/mathjax.js
   - assets/js/utils.js
