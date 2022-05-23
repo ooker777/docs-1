@@ -4,6 +4,11 @@ The plugins can be used as a github action using `--GA` option : `obs2mk —GA -
     - The `--GA` option remove the `git pull` and `git push`.
     - The `--GA` use a specific configuration file that will be in [`source/.github-actions`](https://github.com/Mara-Li/mkdocs_obsidian_template/blob/main/source/.github-actions)
 
+The `.github-actions` use the same settings as the [[usage#Script's Configuration|script configuration]] but only for :
+- The `index_key`
+- The `default_blog` folder
+- The `category` key
+
 Here is an example of worflow using `--GA` : 
 
 ```yml
