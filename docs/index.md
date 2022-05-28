@@ -59,7 +59,7 @@ You need :
 5. Customize (or not) the `category` key in Obsidian's note frontmatter. 
 6. Run the commands throught the file menu or commands palette.
 
-Read more about the [Github Actions](docs/documentation/obs2mk/github actions.md) and the configuration of the [plugin](docs/documentation/Obsidian mkdocs publisher.md).
+[See here for more information about the needed configuration](documentation/Obsidian%20Github%20Publisher#Workflow-example).
 
 # Quick blog installation tutorial
 1. Click on [use this template](https://github.com/Mara-Li/mkdocs_obsidian_template/generate)[^1]

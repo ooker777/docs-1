@@ -1,7 +1,6 @@
 arrange:
     - frontmatter.md
     - usage.md
-    - github actions.md
     - obsidian shell.md
     - ios.md
     - customization.md
