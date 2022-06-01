@@ -1,4 +1,4 @@
 .vscode/settings.json
 site/*
 desktop.ini
-.obsidian/*
+*/.obsidian/*
