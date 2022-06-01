@@ -1,4 +1,4 @@
-The script relies on the front matter** of the notes you want to publish. 
+The script relies on the front matter of the notes you want to publish. 
 1. `share: true` allow publishing the file[^1]
 2. `category`[^1] to choose where the file will be after conversion ; allowing categorization for the blog.[^2]
     - `category: false` will **hide** the file from navigation.
