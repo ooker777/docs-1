@@ -11,7 +11,8 @@ title: Illustration
 cssclass: "img-grid"
 ---
 → [[(Fiche) Mnémosyne (Lagendia)]]
-**Lagendia**{: #Lagendia .hash}  
+**Lagendia**{: **Lagendia**{: #Lagendia .hash}  
+ .hash}  
  
 
 !!! GRID

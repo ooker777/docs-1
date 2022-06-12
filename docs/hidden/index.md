@@ -16,12 +16,14 @@ WHERE type="Fiche"
 ```
 
 
+
 ---
 ```dataview
 LIST 
 FROM "20. Compendium/22. Personnages/Mnémosyne"
 WHERE type != "OC" and type != "Fiche"
 ```
+
 
 ---
 ??? info "Informations principales."
