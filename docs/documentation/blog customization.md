@@ -93,4 +93,6 @@ If you want to hide a file from this list, you can use `hidden` key in the front
 > The displayed date rely on a new plugin named [`mkdocs-git-revision-date-localized-plugin`](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin). Don't forget to customize it!
 
 >[!warning] Image
-This list also display an image if you set it with `image:` or `banner:`. This image must be the image name (+ extension) and placed in `assets/img`
+>1. Internal Image : `image:`
+>	This image must be the image name (+ extension) and placed in `assets/img`
+>2. External image: `banner:`
