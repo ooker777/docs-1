@@ -74,3 +74,7 @@ For example, for AGtable :
           class: agtable
           format: !!python/name:mkdocs_custom_fences.md_render.md_sub_render
 ```
+
+# [Mkdocs Callouts](https://pypi.org/project/mkdocs-callouts/)
+
+The script supports the conversion directly to mkdocs admonition, but if you don't use it, you could use this plugin.

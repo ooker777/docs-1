@@ -65,3 +65,32 @@ It will give you :
 
 The `dictionnary` will be recognized, and converted !
 
+## Article list
+![](../assets/img/Article_list.png)
+A new cool way to display your article/post is to use a special template.
+
+To organize that you must use :
+- Pagination indexes
+- A `index.md` file in a folder ("a category" folder).
+
+This `index` is on this form :
+
+```md
+---
+template: blog.html
+title: Folder Index
+category: FolderName
+hidden: True
+---
+A cool description
+```
+
+The `blog.html` use a file in `overrides/partials`.
+
+If you want to hide a file from this list, you can use `hidden` key in the frontmatter. 
+
+>[!Warning] Plugin
+> The displayed date rely on a new plugin named [`mkdocs-git-revision-date-localized-plugin`](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin). Don't forget to customize it!
+
+>[!warning] Image
+This list also display an image if you set it with `image:` or `banner:`. This image must be the image name (+ extension) and placed in `assets/img`

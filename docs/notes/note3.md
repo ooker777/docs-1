@@ -4,7 +4,7 @@ Link to [[index]]
 ![[metacopy2.png]]
 
 ## subtitle
-cc^id
+cc ^id
 
 # heading 2
 hello
