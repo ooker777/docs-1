@@ -1,3 +1,7 @@
+---
+share: true
+---
+
 ![[private]]
 
 ![[private#^citation]]

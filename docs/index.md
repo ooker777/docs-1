@@ -9,17 +9,14 @@ Mkdocs Obsidian is an association between a python script and a Material mkdocs 
 </p>
 <p align="center"><a href="https://obsidianmkdocs.github.io/obsidian_mkdocs_publisher_docs/">Documentation</a></p>
 <p align="center"><a href="https://www.mara-li.fr">Owlly Seed (My Blog ; In French)</a></p>
-
 The plugins can be accessed with a github actions and a Obsidian's plugin or using a pip install and usage.
 
-# Main links
+## Main links
 - [Obsidian Plugin](https://github.com/obsidianMkdocs/obsidian-github-publisher)
 - [Python package](https://github.com/obsidianMkdocs/obsidian-mkdocs-publisher-python)
 - [Template](https://github.com/obsidianMkdocs/obsidian-mkdocs-publisher-template)
 
-
 ### Support 
-
 - [x] Wikilinks (`[[Links]]`)
 - [x] File transclusion/embed, both wikilinks and markdown links
 - [x] Obsidian callout and custom callout
@@ -28,25 +25,9 @@ The plugins can be accessed with a github actions and a Obsidian's plugin or usi
 - [x] Sharing state and custom folder hierarchy.
 - [x] Mobile and desktop
 - [x] File mini preview on Hover
- 
- 
-# Terminal
-## Prerequisites
-You need : 
-- [Git](https://git-scm.com/) and a [Github Account](https://github.com/)
-- [Python](https://www.python.org/)
-- Optional *(Windows)*: [Windows Terminal](https://docs.microsoft.com/fr-fr/windows/terminal/)
-
-## TLDR
-1. Install / update with `pip install obs2mk --upgrade`
-2. Template the blog, clone it and configure the blog. 
-3. Configure the script (first run)
-4. Add `share: true` in Obsidian's note frontmatter
-5. Customize the `category` key in Obsidian's note frontmatter
-6. Run the script `obs2mk`
-
-# Github actions & Obsidian's plugin
-## TLDR
+ ---
+## Github actions & Obsidian's plugin
+### TLDR
 1. Install the plugins through Obsidian Community or [BRAT](https://github.com/TfTHacker/obsidian42-brat)
 2. [Template](https://github.com/obsidianMkdocs/mkdocs_obsidian_template) the blog and configure it 
 3. Configure the plugin's options : 
@@ -60,14 +41,32 @@ You need :
 
 [See here for more information about the needed configuration](documentation/Obsidian%20Github%20Publisher#Workflow-example).
 
-# Quick blog installation tutorial
+---
+## Using terminal commands
+### Prerequisites
+You need : 
+- [Git](https://git-scm.com/) and a [Github Account](https://github.com/)
+- [Python](https://www.python.org/)
+- Optional *(Windows)*: [Windows Terminal](https://docs.microsoft.com/fr-fr/windows/terminal/)
+
+### TLDR
+1. Install / update with `pip install obs2mk --upgrade`
+2. Template the blog, clone it and configure the blog. 
+3. Configure the script (first run)
+4. Add `share: true` in Obsidian's note frontmatter
+5. Customize the `category` key in Obsidian's note frontmatter
+6. Run the script `obs2mk`
+
+---
+
+## Quick blog installation tutorial
 1. Click on [use this template](https://github.com/obsidianMkdocs/obsidian-mkdocs-publisher-template/generate)[^1]
 2. Use the name of your choice.
 3. Click on [code](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories) → SSH ; Copy the link
 4. Run (in terminal):
 ```bash
 git clone [[PASTE THE LINK HERE]] publish_blog
-pip install obs2mk --upgrade
+pip install -r requirements.txt
 ```
 
 Also, don't forget to configure GitHub to allow push! [Check here for information about setting-up Git!](https://docs.github.com/en/get-started/quickstart/set-up-git)
