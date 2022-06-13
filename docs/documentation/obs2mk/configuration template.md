@@ -1,3 +1,5 @@
+---
+---
 ```yml
 default: #change the name if you need a new configuration setting  
   configuration:  
@@ -12,9 +14,10 @@ default: #change the name if you need a new configuration setting
   weblink: #links to your website
 ```
 
+
 If you need a new configuration, just copy/paste after the other configuration, without forgetting to change the `default` to your `configuration_name`
 
->[!info] Update for minimal configuration
+!!! info "Update for minimal configuration"
 As of the update to v4.0.2, the script doesn't need minimal configuration for running with GitHub actions.  You can safely deleting it.
 
 Some explanation here. It's a [YAML](https://en.wikipedia.org/wiki/YAML) file. If you use the script in terminal you **need** to configure it. No worry! Normally, the script ask you some information.
@@ -27,4 +30,4 @@ Thus :
 		- `default value` : The default folder for new notes that don't have this key in the front matter.
 		- `key` : If you want to change the category key for other things. For example, `folder`.
 	- `index` : for [folder note](../blog%20customization.md#Folder%20note) : citation will be broken, but this key prevents problem!
-	- `share` : if you wish to use another key to authorize the file to be shared. 
+	- `share` : if you wish to use another key to authorize the file to be shared.
