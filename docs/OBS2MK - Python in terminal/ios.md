@@ -3,8 +3,8 @@ The script support IOS using :
 - [Pyto](https://pyto.app) ($3 lite version / $10 complete version) [^1]
 - [Working Copy](https://workingcopyapp.com/) (Free for student / $19)
 
-!!! warning  
-	The option `mobile` will **never** push. You need to use Working Copy to push the converted file.
+>[!warning] 
+>	The option `mobile` will **never** push. You need to use Working Copy to push the converted file.
 
 You can :
 1. Share the entire vault : `obs2mk --mobile all --vault`

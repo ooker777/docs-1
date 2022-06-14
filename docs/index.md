@@ -39,7 +39,7 @@ The plugins can be accessed with a github actions and a Obsidian's plugin or usi
 5. Customize (or not) the `category` key in Obsidian's note frontmatter. 
 6. Run the commands throught the file menu or commands palette.
 
-[See here for more information about the needed configuration](documentation/Obsidian%20Github%20Publisher#Workflow-example).
+> [!INFO] [[Obsidian Github Publisher/Configuration example|See here for advanced configuration within obsidian]]
 
 ---
 ## Using terminal commands

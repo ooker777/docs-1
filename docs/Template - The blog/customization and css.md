@@ -1,4 +1,10 @@
-## Custom attribute
+## Tags
+
+The script will convert all `#tags` to `**tags**{: #tags .hash}` to add custom CSS to it. 
+> [!example] `2022/01/01` will become `**2022/01/01**{: #2022/01 .hash}`
+
+### Custom attribute
+
 You can create [Inline Markdown Attribute](https://python-markdown.github.io/extensions/attr_list/) using hashtags in Obsidian. For example, to align some text to right :
 1. Add 
 ```css
@@ -22,16 +28,7 @@ It will appear as:
 You can create a folder note if you use a `category` front matter key that have the last folder with the same name as the file. For example : 
 `category: folder1/folder2/filename`. The file `filename` will be renamed `index` and the folder will be named `filename`.
 
-To support the citation and link to these page, you need to use an index key (cf [[usage#script-s-configuration]]).
-
-Some examples of citation and their transformation : 
-
-| In Obsidian               | In Publish            |
-| ------------------------- | --------------------- |
-| `[[Real File\|(i) Alias]]` | `[[index\|Alias]]`     |
-| `[[Real File\|(i)]]`       | `[[index\|Real File]]` |
-| `[(i) Alias](Real file) ` | `[Alias](index)`      |
-| `[(i)](real file)`        | `[real file](index)`  | 
+>[!info] If you use folder note in obs2mk without Obsidian Plugin, you need to configure an index key. [See here for more information](../OBS2MK%20-%20Python%20in%20terminal/customization.md#Folder%20note)
 
 ## Callout & Admonition
 
@@ -89,10 +86,10 @@ The `blog.html` use a file in `overrides/partials`.
 
 If you want to hide a file from this list, you can use `hidden` key in the frontmatter. 
 
->[!Warning] Plugin
+> [!Warning] Plugin
 > The displayed date rely on a new plugin named [`mkdocs-git-revision-date-localized-plugin`](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin). Don't forget to customize it!
 
->[!warning] Image
->1. Internal Image : `image:`
->	This image must be the image name (+ extension) and placed in `assets/img`
->2. External image: `banner:`
+> [!warning] Image
+> 1. Internal Image : `image:`
+> 		This image must be the image name (+ extension) and placed in `assets/img`
+> 1. External image: `banner:`

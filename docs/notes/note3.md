@@ -1,5 +1,5 @@
 # heading 1
-Link to [[documentation/obs2mk/index]]
+Link to [[../OBS2MK - Python in terminal/index]]
 Link to [[index]]
 
 
@@ -10,3 +10,7 @@ cc ^id
 hello
 
 [[start_here]]
+
+```py
+print("hello")
+```

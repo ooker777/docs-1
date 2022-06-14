@@ -20,7 +20,7 @@ To create a link, you need to configure :
  2. Add your `set_url` in `base link`  
  3. Add `category` in `key link`  
   
-Also, you can remove the metacopy from your file menu using a key, so you can activate metacopy only for `share: true`. Metacopy also support the [[blog customization#folder-note|folder note]].
+Also, you can remove the metacopy from your file menu using a key, so you can activate metacopy only for `share: true`. Metacopy also support the [[index#folder-note|folder note]].
 
 The final configuration of metacopy for mkdocs_obsidian will be :  
 ![](assets/img/metacopy3.png)  

@@ -1,8 +1,8 @@
 obsidianMkdocs/obsidian-mkdocs-publisher-python:
-  - source: docs/documentation/obs2mk/usage.md
+  - source: docs/OBS2MK - Python in terminal/usage.md
     dest: README.md
 obsidianMkdocs/obsidian-github-publisher:
-  - source: docs/documentation/Obsidian Github Publisher.md
+  - source: docs/Obsidian Github Publisher/index.md
     dest: README.md
 Mara-li/Seed_publish:
   - .github/workflows/ci.yml
@@ -14,5 +14,5 @@ obsidianMkdocs/obsidian-mkdocs-publisher-template:
   - docs/assets/css/img-grid-floats.css
   - docs/assets/css/utils.css
   - docs/assets/js/utils.js
-  - source: docs/documentation/create the blog.md
+  - source: docs/Template - The blog/index.md
     dest: README.md

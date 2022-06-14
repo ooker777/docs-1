@@ -4,6 +4,10 @@ site_url: https://obsidianmkdocs.github.io/obsidian_mkdocs_publisher_docs/
 
 theme:
     name: 'material'
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - rust
     logo: assets/logo/favicons.png
     favicon: assets/logo/favicons.png
     custom_dir: overrides
