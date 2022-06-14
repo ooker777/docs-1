@@ -36,11 +36,11 @@ Thus :
 	- `category` : 
 		- `default value` : The default folder for new notes that don't have this key in the front matter.
 		- `key` : If you want to change the category key for other things. For example, `folder`.
-	- `index` : for [folder note](../Template%20-%20The%20blog/customization%20and%20css.md#Folder%20note) : citation will be broken, but this key prevents problem! Note, set this to null or empty will disallow the index link conversion. 
+	- `index` : for [[OBS2MK - Python in terminal/customization#Folder note|folder note]], citation will be broken, but this key prevents problem! Note, set this to null or empty will disallow the index link conversion. 
 	- `share` : if you wish to use another key to authorize the file to be shared.
 - `convert` : Allow the script to convert some QoL, as hashtags and admonition
 	- `admonition`: `True` for allow the convertion of callout
-	- `hashtags` : `True` for [[Template - The blog/customization and css#Tags|tags conversion]]
+	- `hashtags` : `True` for [[Template - The blog/customization and css#Tags|tags]]
 
 
 > [!info] Update for minimal configuration
