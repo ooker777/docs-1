@@ -4,9 +4,6 @@ obsidianMkdocs/obsidian-mkdocs-publisher-python:
 obsidianMkdocs/obsidian-github-publisher:
   - source: docs/Obsidian Github Publisher/index.md
     dest: README.md
-Mara-li/Seed_publish:
-  - .github/workflows/ci.yml
-  - .github/workflows/mkdocs_build.yml
 obsidianMkdocs/obsidian-mkdocs-publisher-template:
   - .github/workflows/ci.yml
   - .github/workflows/mkdocs_build.yml
