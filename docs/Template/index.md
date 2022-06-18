@@ -34,6 +34,12 @@ The blog will be published through [GitHub Page](https://pages.github.com/) usin
  > > [!Warning] In case of worfklow problem
 >> In the [issue #4](https://github.com/obsidianMkdocs/obsidian-github-publisher/issues/4), we discover that sometimes, Github Actions refuse to run without reason. If this happend to you, please, contact the Github Support!
 
+> [!info] About workflow run
+> If you use the workflows (every workflow) on a **private** repository, you needs to know that you have *only* 2000 minutes (3000 with pro account) of workflow run. 
+> - Mkdocs Build takes around ~1min
+
+
+
 ---
 
 ## Local testing (*optional*)
