@@ -77,15 +77,15 @@ For example, for AGtable :
 
 ## Mkdocs plugins
 
->[!note] Note
->Don't forget to add the plugin in your `requirements.txt`
+> [!note] Note
+> Don't forget to add the plugin in your `requirements.txt`
 
 # [Mkdocs Callouts](https://pypi.org/project/mkdocs-callouts/)
 
->[!info] Plugin's info
+> [!info] Plugin's info
 > A simple plugin that converts Obsidian style callouts and turns them into mkdocs supported Admonitions.
->- Plugin link : https://pypi.org/project/mkdocs-callouts/
->- Installation : `pip install mkdocs-callouts`
+> - Plugin link : https://pypi.org/project/mkdocs-callouts/
+> - Installation : `pip install mkdocs-callouts`
 
 Use this plugin if you don't want to use the script (in github actions or in general)
 
@@ -123,7 +123,7 @@ First, configure the display of this plugin for mkdocs with adding this in your 
 
 Configure the `mkdocs.yml` to add the plugin, as follows the README.
 
->[!example] Example
+> [!example] Example
 > This configuration allow to remember password and use per page password. 
 > ```yml
 > plugins:
@@ -148,6 +148,6 @@ Configure the `mkdocs.yml` to add the plugin, as follows the README.
 
 To add a unique page encrypted, just add `password: your_secret_password` in your markdown file.
 
->[!warning] Security
+> [!warning] Security
 > Obviously, if you use this in a public repo, it's totally useless to add this security (the file can be viewed enterely in GitHub). Don't use this plugin to share sensible information!
 
