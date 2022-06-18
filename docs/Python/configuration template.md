@@ -40,7 +40,7 @@ Thus :
 	- `share` : if you wish to use another key to authorize the file to be shared.
 - `convert` : Allow the script to convert some QoL, as hashtags and admonition
 	- `admonition`: `True` for allow the convertion of callout
-	- `hashtags` : `True` for [[Template/customization and css#Tags|tags]]
+	- `hashtags` : `True` for [[Template/customization#Tags|tags]]
 
 
 > [!info] Update for minimal configuration
