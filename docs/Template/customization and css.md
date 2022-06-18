@@ -28,11 +28,11 @@ It will appear as:
 You can create a folder note if you use a `category` front matter key that have the last folder with the same name as the file. For example : 
 `category: folder1/folder2/filename`. The file `filename` will be renamed `index` and the folder will be named `filename`.
 
->[!info] If you use folder note in obs2mk without Obsidian Plugin, you need to configure an index key. [See here for more information](Python/customization.md#Folder%20note)
+> [!info] If you use folder note in obs2mk without Obsidian Plugin, you need to configure an index key. [See here for more information](Python/customization.md#Folder%20note)
 
 ## Callout & Admonition
 
-he script support custom admonition. For that, you first need to edit [custom_attributes](https://github.com/Mara-Li/mkdocs_obsidian_template/blob/main/docs/assets/css/custom_attributes.css) with adding the support, as follow in [Admonition's docs](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#customization).
+The script support custom admonition. For that, you first need to edit [custom_attributes](https://github.com/Mara-Li/mkdocs_obsidian_template/blob/main/docs/assets/css/custom_attributes.css) with adding the support, as follow in [Admonition's docs](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#customization).
 For example, to add a `dictionnary` admonition:
 ```css
 :root {
