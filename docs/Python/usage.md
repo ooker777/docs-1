@@ -11,7 +11,7 @@ At the first run, you will be asked to configure some key and specific path.
 1. <u>Vault</u> : Use the file dialog to choose your vault folder.
 2. <u>Publish repository folder : </u> As vault path, use the file dialog.
 3. <u>share</u> : You can change the `share` key. By default, it's `share`
-4. <u>Index key:</u> Support for citation of [[../Template - The blog/customization and css#folder-note|pagination index pages]]. By default, it uses `(i)`
+4. <u>Index key:</u> Support for citation of [[Template/customization and css#folder-note|pagination index pages]]. By default, it uses `(i)`
 5. <u>Default blog folder:</u> By default, the notes will be in `docs/notes` but you can change that, or use `/` for root. 
 
 ## Commands
@@ -79,7 +79,7 @@ You can use and create multiple configuration files. This allows to have multipl
 2. To use a configuration use : `--use configuration_name` 
     For example : `obs2mk --use configuration_name` 
 
-See [[configuration template]] for more information about the configuration file.
+See [[Python/configuration template]] for more information about the configuration file.
 
 ----
 # Navigation

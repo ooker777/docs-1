@@ -1,5 +1,5 @@
 # heading 1
-Link to [[../OBS2MK - Python in terminal/index]]
+Link to [[Python/index]]
 Link to [[index]]
 
 

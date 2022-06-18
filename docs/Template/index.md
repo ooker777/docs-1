@@ -1,3 +1,7 @@
+---
+title: Configuration
+---
+
 In your new `publish_blog` folder, you will spot a `mkdocs.yml`. This file allows you to customize your blog! The most important to edit :
 1. `site_name` 
 2. `site_description`
@@ -31,14 +35,19 @@ conda activate Publisher
 ```
 Just before the `pip install`!
 
-The blog will be published through [GitHub Page](https://pages.github.com/) using the `gh-page` branch. In case your blog is not published through mkdocs :
-- Check the `gh-pages` branch and activate it if necessary in `Settings` → `Pages` : ![image](https://user-images.githubusercontent.com/30244939/166161220-973cee87-75eb-4b9f-b521-1c67d273def7.png)
-- Check if workflow run normally :
-  - Check the run and error in `Actions` 
-  - Check if the actions have the good write and read access in `settings → Actions → General → workflow permission` ![image](https://user-images.githubusercontent.com/30244939/166161294-0f4f70c2-fda5-4465-89b0-d6b1b5e6995d.png)
+## Oh no, a bug!
 
-> [!Warning] In case of worfklow problem
-> In the [issue #4](https://github.com/obsidianMkdocs/obsidian-github-publisher/issues/4), we discover that sometimes, Github Actions refuse to run without reason. If this happend to you, please, contact the Github Support!
+The blog will be published through [GitHub Page](https://pages.github.com/) using the `gh-page` branch. 
+
+> [!bug] I have the readme in place of my files!
+> Check the `gh-pages` branch and activate it if necessary in `Settings` → `Pages`
+> ![image](https://user-images.githubusercontent.com/30244939/166161220-973cee87-75eb-4b9f-b521-1c67d273def7.png)
+
+> [!bug] The workflow doesn't run!
+>  - Check the run and error in `Actions` 
+ > - Check if the actions have the good write and read access in `settings → Actions → General → workflow permission` ![image](https://user-images.githubusercontent.com/30244939/166161294-0f4f70c2-fda5-4465-89b0-d6b1b5e6995d.png)
+ > > [!Warning] In case of worfklow problem
+>> In the [issue #4](https://github.com/obsidianMkdocs/obsidian-github-publisher/issues/4), we discover that sometimes, Github Actions refuse to run without reason. If this happend to you, please, contact the Github Support!
 
 ---
 

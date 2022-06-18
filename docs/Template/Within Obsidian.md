@@ -1,7 +1,7 @@
 When you send a file using the Obsidian Plugin, the template will handle the conversion to mkdocs. This don't need any configuration, because a lot of things are handled directly by Obsidian.
 
 These things include :
-- [[Template - The blog/customization and css#Folder note|folder note]]
+- [[Template/customization and css#Folder note|folder note]]
 - Categorization and custom tree creation 
 - Obviously, the sharing of file (that's the goal of the plugin...)
 
