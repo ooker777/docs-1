@@ -1,8 +1,8 @@
 title: The blog template
 arrange:
-	- customization.md
-	- Within Obsidian.md
-	- useful plugins.md
-	- snippets and tools.md
-	- limitations.md
-	- Q&A.md
+  - customization.md
+  - Within Obsidian.md
+  - useful plugins.md
+  - snippets and tools.md
+  - limitations.md
+  - Q&A.md
