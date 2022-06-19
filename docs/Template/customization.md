@@ -63,7 +63,6 @@ It will give you :
 The `dictionnary` will be recognized, and converted !
 
 ## Article list
-
 ![](../assets/img/Article_list.png)
 A new cool way to display your article/post is to use a special template.
 

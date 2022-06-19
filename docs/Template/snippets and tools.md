@@ -90,6 +90,9 @@ For example, for AGtable :
 Use this plugin if you don't want to use the script (in github actions or in general)
 
 # Page encrypted 
+
+> [!note] The basic configuration for Material & this template are already included in the `mkdocs.yml` and in `utils.css`
+
 > [!info] Plugin's info
 > This plugin allows you to have password protected articles and pages in MKdocs.
 > - Plugin link : https://pypi.org/project/mkdocs-encryptcontent-plugin/

@@ -3,6 +3,7 @@ title: Configuration
 ---
 
 # Configuration
+## Mkdocs configuration
 
 In your new `publish_blog` folder, you will spot a `mkdocs.yml`. This file allows you to customize your blog! The most important to edit :
 1. `site_name` 
@@ -21,6 +22,24 @@ You can customize :
 [Check the documentation to get more information](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
 
 You don't need to touch anything in `features` ; `markdown_extensions…`
+
+### Plugins
+
+The `mkdocs.yml` also contains the configuration for [Mkdocs Plugin](https://www.mkdocs.org/dev-guide/plugins/). If you add plugin, you **need** to add it to your `requirements.txt` because the build use it to construct the blog.
+
+I included :
+- [Ezlinks (from mkdocs-ezlinked-plugin)](https://pypi.org/project/mkdocs-ezlinked-plugin/) : to support directly wikilinks
+- [Mermaid2](https://github.com/fralau/mkdocs-mermaid2-plugin)
+- [Awesome pages](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin)
+- [Tooltipster-links (from mkdocs-preview-links-plugin)](https://github.com/Mara-Li/mkdocs-preview-links-plugin)
+- [Embed File](https://github.com/Mara-Li/mkdocs_embed_file_plugins), to support embedding file as in Obsidian
+- [Git revision date localized](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin), to add a date listing 
+- [Mkdocs Simple Hooks](https://pypi.org/project/mkdocs-simple-hooks/), to allow creating simple python script for mkdocs (including jinja template editing!). I already added an jinja env that allow to parse string date to datetime. 
+- [Mkdocs Encrypt Contents](https://github.com/CoinK0in/mkdocs-encryptcontent-plugin) will allow you to "hide" file in the site. [[Template/snippets and tools#Page encrypted|See here]] for more information. I included in the file the basic configuration, and the `css` is included in the template. 
+
+> [!info] Superfences & dataview
+> You will spot that I added a [`custom fences`](https://facelessuser.github.io/pymdown-extensions/extensions/superfences/) for dataview. Sorry, dataview is not supported by mkdocs nor Obsidian Publisher. This custom fences will hide every dataview and dataviewjs block. 
+> It will, so, prevent display stange block in your markdown file. If you need to display it as code, change the language (like `js` for example).
 
 ## Oh no, a bug!
 
@@ -44,8 +63,6 @@ The blog will be published through [GitHub Page](https://pages.github.com/) usin
 > Note that Mkdocs actions will don't run if you use the publisher actions. Also, the actions will only run on the `main` or `master` branch. 
 >
 > Finally, you can run ~2000 blog's build by month (3000 for pro), so it's around 65 build by day.
-
-
 
 ---
 
