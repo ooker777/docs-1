@@ -19,7 +19,7 @@ jobs:
         uses: tj-actions/changed-files@v23
         id: changed-files
         with:
-          separator: "\n"
+          separator: ";;;"
           quotepath: "false"
           since_last_remote_commit: "true"
       - name: set lg outputs
@@ -27,7 +27,7 @@ jobs:
         run: |
           changed="${{ steps.changed-files.outputs.all_changed_files }}"
           lg_steps=${#changed}
-          LINK=$(head -n 1 .github/.env)
+          LINK=$(head -n 1 .github/env.txt)
           echo "$changed"
           echo "$lg_steps"
           echo "::set-output name=lg_files::$lg_steps"
@@ -38,9 +38,11 @@ jobs:
     if:  needs.build.outputs.length-files > 0 
     steps:
       - uses: actions/checkout@v3
-      - uses: actions/setup-python@v2
         with:
-          python-version: '3.10.4'
+          fetch-depth: 0
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
           cache: 'pip'
       - name: Requirements
         run: |
@@ -50,12 +52,12 @@ jobs:
           echo "File processed:  " >> $GITHUB_STEP_SUMMARY
       - name: obs2mk source files
         run: |
-          IFS=$'\n'
+          IFS=$';;;'
           changed="${{ needs.build.outputs.changed-files }}"
           for file in $changed; do
             if [[ "$file" == *md ]] 
               then
-                echo "- $file " >> $GITHUB_STEP_SUMMARY
+                echo "- $file" >> $GITHUB_STEP_SUMMARY
                 obs2mk --minimal file "$file"
               fi
             done
