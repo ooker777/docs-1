@@ -88,6 +88,8 @@ plugins:
   - tooltipster-links
   - embed_file
   - callouts
+  - custom-attributes:
+        file: 'assets/css/custom_attributes.css' 
 extra_javascript:
   - assets/js/mathjax.js
   - assets/js/utils.js
