@@ -6,7 +6,8 @@ share: true
 
 As I authorize this repo to be a template, it allows you to create a private repository!
 
-_Note : Fork doesn't allow you to create a private repo, that's why you must use the template._
+> [!Note]
+> Fork doesn't allow you to create a private repo, that's why you must use the template._
 
 ## 2. Update the template
 
@@ -31,10 +32,3 @@ git checkout template path/file/youwant
 ```
 Don't forget to commit and push!
 
-## 3. Update the script
-
-The simplest way to update the script is using pip : `pip install obs2mk --upgrade`
-
-## 4. The script crash with YAML error.
-
-The YAML error is not on my side, but on yours. You need to fix the front matter of the error's file. To accomplish that, you can use a YAML validator/linter, as : https://jsonformatter.org/yaml-validator

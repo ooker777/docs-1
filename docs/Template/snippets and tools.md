@@ -57,6 +57,7 @@ Don't forget to edit the `image_link` with the real links ! Personnaly, I use a 
 > Don't forget to add the plugin in your `requirements.txt`
 
 ### Custom fences
+> [!info] Bundled with the template
 
 Some Obsidian's plugin use codeblocks to do some things, as [Agtable](https://github.com/windily-cloud/obsidian-AGtable) or [Table extended](https://github.com/aidenlx/table-extended)
 
@@ -84,6 +85,8 @@ For example, for AGtable :
 
 
 ### [Mkdocs Callouts](https://pypi.org/project/mkdocs-callouts/)
+
+> [!info] Bundled with the template
 
 > [!info] Plugin's info
 > A simple plugin that converts Obsidian style callouts and turns them into mkdocs supported Admonitions.
@@ -158,15 +161,10 @@ To add a unique page encrypted, just add `password: your_secret_password` in you
 > Obviously, if you use this in a public repo, it's totally useless to add this security (the file can be viewed enterely in GitHub). Don't use this plugin to share sensible information!
 
 ## Custom tags attributes
-
-If you don't want to use 
-### [Custom tags attributes](https://pypi.org/project/mkdocs-custom-tags-attributes/)
-
-It will do exactly the same as [[Template/customization#Custom attribute|my obs2mk script]], but without transform the file sended on github. The transformation occures during the page build. 
+> [!info] Bundled with the template
 
 > [!info] Custom tags attribute
 > Adding [attribute list](https://python-markdown.github.io/extensions/attr_list/) using only hashtags in your text.
 > *Links:* [Custom tags attributes](https://pypi.org/project/mkdocs-custom-tags-attributes/)
 > *Installation:* `pip install mkdocs-custom-tags-attributes`
 
-The combo between mkdocs callouts + custom tags attributes will mimic at 100% obs2mk and accelerate the build process if you use [[../Obsidian Github Publisher/index|Obsidian Github Publisher]]. 

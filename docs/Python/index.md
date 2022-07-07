@@ -1,6 +1,14 @@
 ---
 share: true
 ---
+
+> [!Warning] Depreciation notice
+> As the releasing of :
+> - [Mkdocs Callout](https://pypi.org/project/mkdocs-callouts/)
+> - [Custom tags attributes](https://pypi.org/project/mkdocs-custom-tags-attributes/)
+> - [Obsidian Github Publisher](../Obsidian%20Github%20Publisher/index.md)
+> The python package is now deprecated. Please, [read the template README](../Template/index.md) to get more information about the plugins. 
+
 The script's goal is to move an authorized file (or multiple authorized file) from your Obsidian's vault to your blog's repository. It will :
 - Move linked image in `docs/assets/img`
 - Convert the **code block** [Admonition](https://github.com/valentine195/obsidian-admonition) to [material Admonition](https://squidfunk.github.io/mkdocs-material/reference/admonitions/)[^1]

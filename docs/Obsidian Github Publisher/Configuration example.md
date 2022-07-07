@@ -21,7 +21,7 @@ share: true
 2. Workflow
     - Leave blank the GitHub actions
     - Auto-clean up : `TRUE`
-    - Excluded folder : `docs/assets/logo, docs/assets/js, docs/assets/css`[^3]
+    - Excluded folder : `docs/assets/logo, docs/assets/js, docs/assets/css, docs/tags.md`[^3]
 2. Images settings : 
     - Turn on transfer image
     - Choose `docs/assets/img`
@@ -52,11 +52,8 @@ The files (and the image) will be sent on your GitHub repository template, in th
 - [x] File mini preview on Hover
 
 #### Limitations
-- No plugins (dataview...)
-- No graph view
-- You need to have a clean tree structure with unique name file. No worry about the display in blog ; the `title` key in frontmatter will change it, so you can have a `ezarezozre` name and use a good title like `reading book`. 
--  I prefer to encourage you to use the `shortlinks` option in obsidian’s link option. 
-- Obs2mk will don’t move the file if you change the `category` value : you need to manually delete it to prevent duplicate. 
+
+![[../template/limitations.md]]
 
 ---
 ## [Digital Garden](https://github.com/TuanManhCao/digital-garden)
