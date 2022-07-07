@@ -2,7 +2,7 @@
 share: true
 ---
 
-Mkdocs Obsidian is an association between a python script and a Material mkdocs template to get a personal wiki site based on your Obsidian Vault.
+Mkdocs Obsidian is an association between an Obsidian plugin and a Material mkdocs template to get a personal wiki site based on your Obsidian Vault.
 
 <p align="center">
 	<a href="https://github.com/Mara-Li/mkdocs_obsidian_publish"><img src="https://img.shields.io/github/license/Mara-Li/YAFPA-python"></img></a>
