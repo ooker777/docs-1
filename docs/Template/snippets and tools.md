@@ -1,5 +1,6 @@
 ---
 share: true
+title: Snippets and tools
 ---
 
 I, as working on my blog, created some cool snippets or useful tools.
