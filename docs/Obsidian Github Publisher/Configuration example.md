@@ -10,9 +10,6 @@ share: true
 
 ### Plugin configuration
 
-![](https://obsidianmkdocs.github.io/obsidian_mkdocs_publisher_docs/assets/upload/obs2mk-1.png)
-![](https://obsidianmkdocs.github.io/obsidian_mkdocs_publisher_docs/assets/upload/obs2mk-2.png)
-
 1. Folder reception settings : 
     - Reception settings : `YAML frontmatter`
     - Default folder : `docs/notes`
@@ -20,12 +17,13 @@ share: true
     - Root folder : `docs`
 2. Workflow
     - Leave blank the GitHub actions
-    - Auto-clean up : `TRUE`
+    - [x] Auto-clean up 
     - Excluded folder : `docs/assets/logo, docs/assets/js, docs/assets/css, docs/tags.md`[^3]
-2. Images settings : 
-    - Turn on transfer image
+3. Embed settings : 
+    - [x] Image
+    - [x] Embed notes
     - Choose `docs/assets/img`
-3. Folder note : `True`
+4. ✅ Folder notes
 
 The files (and the image) will be sent on your GitHub repository template, in the specified folder. The conversion will be done by the [github actions](https://github.com/Mara-Li/obsidian-mkdocs-publisher-template/blob/main/.github/workflows/ci.yml) when the branch were merged. 
 
@@ -58,9 +56,6 @@ The files (and the image) will be sent on your GitHub repository template, in th
 ---
 ## [Digital Garden](https://github.com/TuanManhCao/digital-garden)
 
-![](https://obsidianmkdocs.github.io/obsidian_mkdocs_publisher_docs/assets/upload/digital-garden-1.png)
-![](https://obsidianmkdocs.github.io/obsidian_mkdocs_publisher_docs/assets/upload/digital-garden-2.png)
-
 1. Folder reception settings : 
     - Reception settings : `Obsidian Path`
     - Default folder : `posts`
@@ -68,5 +63,6 @@ The files (and the image) will be sent on your GitHub repository template, in th
     - Leave blank
     - Turn on autoclean
 3. Images settings :
-    - Transfer image on true
+    - Transfer embed image on true
+    - Transfer embedded notes on false
     - Default folder : `posts/Attachments`
