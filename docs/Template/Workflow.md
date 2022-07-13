@@ -21,6 +21,21 @@ I will explain everything, don't panik. As you can see, here, the github actions
 > [!info] Each day : `update_requirements.yml` 
 > I created it because the Github Cache needs a fixed version on requirements, but it happens regulary that I update some plugins or update in Material Mkdocs. So, this workflow will **only** change the `requirements.txt` if it founds an update.
 
+> [!info] Activated : `create_index.yml`
+> Allow you to quickly create a new "category" / blog listing in your repository, creating a new specified folder with the name of the category.
+> To create a new category, follow the steps below:
+> 1. Go to the "Actions tab"
+> 2. Click on "Index Creation"
+> 3. Click on "Run Workflow"
+> 4. Fill the form :
+>   - **Folder name** : The name of the folder you want to create, it will be the "new category". 
+>   - **Parent folder** : The *optional* path of the folder you want to create the new category in. For example, `main_category/draft` will create the `docs/main_category/draft/folder_name` folder.
+>   - **Description** : An *optional* category description.
+>   - You can also :
+>       - **Hide the toc** in the index file.
+>       - **Hide the navigation panel** in the index file.
+>       - Perform a **dry-run** : It will only show the result of the operation, but will not create the folder and the index file.
+
 You can also create workflow conditional run with the `if` keyword. For example, each merging event will be prepended by `[PUBLISHER]`. You could aussi create a workflow based on pullrequest.
 
 > [!info] Using the if keyword 
