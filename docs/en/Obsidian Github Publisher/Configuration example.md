@@ -13,24 +13,31 @@ share: true
 1. Folder reception settings : 
     - Reception settings : `YAML frontmatter`
     - Default folder : `docs/notes`
-    - Choose your frontmatter key, same as in `configuration.yml`, by default: `category`
+    - Choose your frontmatter key: `category` (you can change it!)
     - Root folder : `docs`
-2. Workflow
+2. Links conversion
+   - [x] Folder note
+   - [x] Internal links
+   - [ ] Wikilinks (the template support them by default!) 
+3. Embed
+   - [x] Image
+   - [x] Embedded notes
+   - Default folder : `docs/assets/images`
+4. Github Workflow
     - Leave blank the GitHub actions
     - [x] Auto-clean up 
     - Excluded folder : `docs/assets/logo, docs/assets/js, docs/assets/css, docs/tags.md`[^3]
-3. Embed settings : 
+5. Embed settings : 
     - [x] Image
     - [x] Embed notes
     - Choose `docs/assets/img`
-4. ✅ Folder notes
+6. ✅ Folder notes
 
-The files (and the image) will be sent on your GitHub repository template, in the specified folder. The conversion will be done by the [github actions](https://github.com/Mara-Li/obsidian-mkdocs-publisher-template/blob/main/.github/workflows/ci.yml) when the branch were merged. 
+The files (and the images) will be sent on your GitHub repository template, in the specified folder. 
 
 ### Useful informations
 #### Links
 - [Obsidian Plugin](https://github.com/obsidianMkdocs/obsidian-github-publisher)
-- [Python package](https://github.com/obsidianMkdocs/obsidian-mkdocs-publisher-python)
 - [Template](https://github.com/obsidianMkdocs/obsidian-mkdocs-publisher-template)
 
 #### How to...
@@ -66,3 +73,7 @@ The files (and the image) will be sent on your GitHub repository template, in th
     - Transfer embed image on true
     - Transfer embedded notes on false
     - Default folder : `posts/Attachments`
+
+[^1]: You must be connected to copy the template ! You can test locally through clone > https : `git clone https://github.com/Mara-Li/mkdocs_obsidian_template.git` or [with downloading the ZIP](https://github.com/Mara-Li/mkdocs_obsidian_template/archive/refs/heads/main.zip)
+[^2]: You need to be connected to generate it.
+[^3]: Normally, only file supported by obsidian are deleted, but some image exists only on the blog (for logo, for example). To prevent bad surprise, exclude these folder here.

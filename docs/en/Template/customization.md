@@ -42,7 +42,7 @@ You can create a folder note if you use a `category` front matter key that have 
 
 ## Callout & Admonition
 
-The script support custom admonition. For that, you first need to edit [custom_attributes](https://github.com/Mara-Li/mkdocs_obsidian_template/blob/main/docs/assets/css/custom_attributes.css) with adding the support, as follow in [Admonition's docs](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#customization).
+The script support custom admonition. For that, you first need to edit or create a new css file, with adding the support of the new custom callout, as follow in [Admonition's docs](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#customization).
 For example, to add a `dictionnary` admonition:
 ```css
 :root {
@@ -100,7 +100,10 @@ If you want to hide a file from this list, you can use `hidden` key in the front
 > [!Warning] Plugin
 > The displayed date rely on a new plugin named [`mkdocs-git-revision-date-localized-plugin`](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin). Don't forget to customize it!
 
-> [!warning] Image
+> [!warning] To add a illustrative image, you need to add a frontmatter in the file. 
 > 1. Internal Image : `image:`
 > 		This image must be the image name (+ extension) and placed in `assets/img`
-> 1. External image: `banner:`
+> 2. External image: `banner:`
+
+> [!note] You can also use the github action `create_index` to create a new index for a new folder.
+> For more information see [Workflow](Workflow.md)

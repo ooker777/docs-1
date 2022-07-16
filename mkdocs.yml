@@ -84,6 +84,14 @@ markdown_extensions:
           format: !!python/name:mermaid2.fence_mermaid
 plugins:
   - search
+  - i18n:
+      default_language: en
+      docs_structure: folder
+      languages:
+        en:
+          name: English
+        fr:
+          name: Français
   - ezlinks:
         wikilinks: true
   - mermaid2
@@ -111,3 +119,4 @@ extra_css:
     - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
 extra:
   generator: false
+

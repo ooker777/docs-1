@@ -11,7 +11,7 @@ Mkdocs Obsidian is an association between an Obsidian plugin and a Material mkdo
 </p>
 <p align="center"><a href="https://obsidianmkdocs.github.io/obsidian_mkdocs_publisher_docs/">Documentation</a></p>
 <p align="center"><a href="https://www.mara-li.fr">Owlly Seed (My Blog ; In French)</a></p>
-The plugins can be accessed with a github actions and a Obsidian's plugin or using a pip install and usage.
+The plugins can be accessed with a github actions and a Obsidian's plugin.
 
 ## Main links
 - [Obsidian Plugin](https://github.com/obsidianMkdocs/obsidian-github-publisher)
@@ -36,8 +36,8 @@ The plugins can be accessed with a github actions and a Obsidian's plugin or usi
 	- Your github username
 	- The github token ([from here](https://github.com/settings/tokens/new?scopes=repo))
 	- The share key
-4. Add `share: true` in Obsidian's note frontmatter 
-5. Customize (or not) the `category` key in Obsidian's note frontmatter. 
+4. Add the sharing key in `true` in Obsidian's note frontmatter 
+5. Customize (or not) the folder options 
 6. Run the commands throught the file menu or commands palette.
 
 > [!INFO] [[Obsidian Github Publisher/Configuration example|See here for advanced configuration within obsidian]]
@@ -76,3 +76,4 @@ pip install -r requirements.txt
 Also, don't forget to configure GitHub to allow push! [Check here for information about setting-up Git!](https://docs.github.com/en/get-started/quickstart/set-up-git)
 
 [^1]: You must be connected to copy the template ! You can test locally through clone > https : `git clone https://github.com/Mara-Li/mkdocs_obsidian_template.git` or [with downloading the ZIP](https://github.com/Mara-Li/mkdocs_obsidian_template/archive/refs/heads/main.zip)
+
