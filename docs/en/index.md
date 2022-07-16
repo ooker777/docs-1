@@ -1,6 +1,9 @@
 ---
 share: true
+title: Index
 ---
+
+[FR](https://github.com/obsidianMkdocs/obsidian-github-publisher/blob/master/docs/README_FR.md)
 
 Mkdocs Obsidian is an association between an Obsidian plugin and a Material mkdocs template to get a personal wiki site based on your Obsidian Vault.
 

@@ -1,52 +1,54 @@
 ---
 share: true
+title: Github Actions
 ---
 
-There is a lot of Github Actions here ! First, if you need information on what is a github action :
-> [!cite] Definition
->  GitHub Actions makes it easy to automate all your software workflows, now with world-class CI/CD. Build, test, and deploy your code right from GitHub. Make code reviews, branch management, and issue triaging work the way you want.[^1]
+Il y a beaucoup d'actions Github ici ! Tout d'abord, si vous avez besoin d'informations sur ce qu'est une action Github :
+> [!cite] Définition
+> Les GitHub Actions permettent d'automatiser facilement tous vos flux de travail logiciels, désormais avec un CI/CD de classe mondiale. Construisez, testez et déployez votre code directement depuis GitHub. Faites fonctionner les revues de code, la gestion des branches et le triage des problèmes comme vous le souhaitez[^1].
 
-I will explain everything, don't panik. As you can see, here, the github actions (~ the workflow) are used to build Obsidian To Mkdocs (Or Mkdocs Obsidian Publisher) using file in your repo.
+Je vais tout expliquer, ne paniquez pas ! Comme vous pouvez le voir, ici, les actions github (~ le workflow) sont utilisées pour construire Obsidian To Mkdocs (Ou Mkdocs Obsidian Publisher) en utilisant les fichiers de votre dépôt.
 
-> [!info] On push : `mkdocs_build.yml`
-> The `.github/workflows/mkdocs_build.yml` file is used to build the mkdocs site.
-> It simply run the installations of the requirements and the commands for building github page.
-> This workflow will run only for the main or master branch, and if the push includes files from:
+> [!info] Sur les push : `mkdocs_build.yml`
+> Le fichier `.github/workflows/mkdocs_build.yml` est utilisé pour construire le site mkdocs.
+> Il exécute simplement les installations des exigences et les commandes pour construire la page github.
+> Ce workflow ne sera exécuté que pour la branche principale ou master, et si le push inclut des fichiers provenant de :
 > - docs
 > - requirements.txt
 > - README.md
 > - overrides
 > - mkdocs.yml
 
-> [!info] Each day : `update_requirements.yml` 
-> I created it because the Github Cache needs a fixed version on requirements, but it happens regulary that I update some plugins or update in Material Mkdocs. So, this workflow will **only** change the `requirements.txt` if it founds an update.
+> [!info] Chaque jour : `update_requirements.yml` 
+> Je l'ai créé parce que le Cache Github a besoin d'une version fixe sur les requirements, mais il arrive régulièrement que je mette à jour certains plugins ou qu'il y ait une nouvelle version de Material Mkdocs. Ainsi, ce workflow ne modifiera le fichier `requirements.txt` uniquement s'il trouve une mise à jour.
 
-> [!info] Activated : `create_index.yml`
-> Allow you to quickly create a new "category" / blog listing in your repository, creating a new specified folder with the name of the category.
-> To create a new category, follow the steps below:
-> 1. Go to the "Actions tab"
-> 2. Click on "Index Creation"
-> 3. Click on "Run Workflow"
-> 4. Fill the form :
->   - **Folder name** : The name of the folder you want to create, it will be the "new category". 
->   - **Parent folder** : The *optional* path of the folder you want to create the new category in. For example, `main_category/draft` will create the `docs/main_category/draft/folder_name` folder.
->   - **Description** : An *optional* category description.
->   - You can also :
->       - **Hide the toc** in the index file.
->       - **Hide the navigation panel** in the index file.
->       - Perform a **dry-run** : It will only show the result of the operation, but will not create the folder and the index file.
+> [!info] Activé : `create_index.yml`
+> Vous permet de créer rapidement une nouvelle "catégorie" / liste de blogs dans votre dépôt, en créant un nouveau dossier spécifié avec le nom de la catégorie.
+> Pour créer une nouvelle catégorie, suivez les étapes ci-dessous :
+> 1. Allez dans l'onglet "Actions".
+> 2. Cliquez sur "Index creation"
+> 3. cliquez sur "Run workflow".
+> 4. Remplir le formulaire :
+> - **Nom du dossier (*New folder name*)** : Le nom du dossier que vous souhaitez créer, ce sera la "nouvelle catégorie". 
+> - **Dossier parent (*The path of the new folder*)** : Le chemin *optionnel* du dossier dans lequel vous voulez créer la nouvelle catégorie. Par exemple, `main_category/draft` créera le dossier `docs/main_category/draft/folder_name`.
+> - **Description** : Une description *optionnelle* de la catégorie.
+> - Vous pouvez également :
+> - **Cacher le TOC (*Hide the toc[^2]*)** dans le fichier d'index
+> - **Cacher le panneau de navigation** dans le fichier d'index.
+> - Effectuer un **dry-run**: Il ne montrera que le résultat de l'opération, mais ne créera pas le dossier et le fichier d'index.
 
-You can also create workflow conditional run with the `if` keyword. For example, each merging event will be prepended by `[PUBLISHER]`. You could aussi create a workflow based on pullrequest.
+Vous pouvez également créer une exécution conditionnelle du workflow avec le mot-clé `if`. Par exemple, chaque événement de fusion sera précédé de `[PUBLISHER]`. Vous pouvez aussi créer un flux de travail basé sur une "pull request".
 
-> [!info] Using the if keyword 
-> Target the merging event name with : `if: startsWith(github.event.head_commit.message, '[PUBLISHER]')`
-> You can use the keyword `if` for steps or entire jobs. 
+> [!info] En utilisant le mot-clé if 
+> Ciblez le nom de l'événement de fusion avec : `if : startsWith(github.event.head_commit.message, '[PUBLISHER]')`.
+> Vous pouvez utiliser le mot-clé `if` pour des étapes ou des jobs entiers. 
 
-> [!info] About workflow run
-> If you use the workflows (every workflow) on a **private** repository, you needs to know that you have *only* 2000 minutes (3000 with pro account) of workflow run. 
-> - Mkdocs Build takes around ~2minutes (more for big repository)
-> - Updating requirements (each 24 hours) take ~30s
-> Finally, you can run ~1000 blog's build by month (1500 for pro), so it's around 32 build by day.
-> Note : The pip cache will normally accelerate the process, so Publisher action must take more than 1min-1min30 than two for little building.
+> [!info] À propos de l'exécution du workflow
+> Si vous utilisez les workflows (*tous* les workflows) sur un dépôt **privé**, vous devez savoir que vous avez *seulement* 2000 minutes (3000 avec un compte pro) d'exécution du workflow. 
+> La construction de Mkdocs prend environ 2 minutes (plus pour les gros dépôts) voire plus (!).
+> - La mise à jour des requirements (chaque 24 heures) prend ~30s
+> Enfin, vous pouvez exécuter ~1000 build de blog par mois (1500 pour les pro), soit environ 32 build par jour.
+> Note : Le cache de pip va normalement accélérer le processus, donc l'action de l'éditeur doit prendre plus de 1min-1min30 que deux pour une petite build.
 
-[^1]: Thanks to [official website](https://github.com/features/actions)
+[^1]: Merci au [site officiel](https://github.com/features/actions)
+[^2]: TOC signifie "Table of content", c'est à dire le sommaire. 

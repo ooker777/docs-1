@@ -1,46 +1,47 @@
 ---
 share: true
+title: Dans Obsidian
 ---
 
 >[!note] 
-> The github actions will only convert hashtags and convertion to Admonition mkdocs callouts. Now, two mkdocs plugin handle this, so you don't need (normally) to use obs2mk in minimal configuration anymore. 
+> Les actions github ne convertissent plus les hashtags et la conversion vers les callouts Admonition mkdocs. Maintenant, deux plugins mkdocs gèrent cela, donc vous n'avez plus besoin (normalement) d'utiliser obs2mk.
 >
->The plugins are :
->- [Mkdocs Callouts](https://github.com/sondregronas/mkdocs-callouts)
->- [Custom Tags Attributes](https://github.com/Mara-Li/mkdocs-custom-tags-attributes)
+> Les plugins sont :
+> - [Mkdocs Callouts](https://github.com/sondregronas/mkdocs-callouts)
+> - [Custom Tags Attributes](https://github.com/Mara-Li/mkdocs-custom-tags-attributes)
 >
-> These two plugin will never change the file send in Github, because the edition happend during the page build. 
+> Ces deux plugins ne changeront jamais le fichier envoyé dans Github, car l'édition a lieu pendant la construction de la page. 
 
-The plugin directly edit :
+
+Le plugin modifie directement :
 - [[Template/customization#Folder note|Folder note]]
-- Categorization and custom tree creation
+- Catégorisation et création des chemins de fichiers personnalisés
 
->[!warning] If you use your vault directly in a repo, the send will break your files! The script is not for theses strategies.
+>[!warning] Si vous utilisez votre coffre-fort directement dans un dépôt, l'envoi cassera vos fichiers ! Le module n'est pas pour ces stratégies.
 
-You can delete/disable safely the workflow named `ci.yml`, `manual_run.yml` and edit the `mkdocs_build.yml` to remove the `if:` line ([at the l18 lines](https://github.com/obsidianMkdocs/obsidian-mkdocs-publisher-template/blob/bff6d23ddf27064c39a2696159ad25e4a9554d3d/.github/workflows/mkdocs_build.yml#L18)).
+## Stratégie : Python
 
-## Python workflow
+Si vous souhaitez continuer à utiliser le workflow python, lisez ce qui suit. 
 
-If you want to continue to rely on the python workflow, read bellow. 
-
-> [!warning] About same repo & vault
-> If you use your vault directly in a repo, the conversion by Obs2mk will break your files. The script is **not** for these strategies. 
-> Example break:
-> - Hashtags : `**2022/01**{: #2022/01 .hash}`
-> - Callout converted to Admonition Mkdocs Callout
-> - Your frontmatter
-> - Links and internal path
+> [!warning] A propos du même repo et du même coffre-fort
+> Si vous utilisez votre coffre-fort directement dans un repo, la conversion par Obs2mk cassera vos fichiers. Le script n'est **pas** pour ces stratégies. 
+> Exemple de textes cassés :
+> - Hashtags : `**2022/01**{ : #2022/01 .hash}`
+> - Callout converti en Admonition Mkdocs Callout
+> - Votre message d'accueil
+> - Liens et chemins internes
 
 > [!info] Configuration 
-> The python script use the `minimal` configuration, and this configuration can be customized using a file named `configuration.yml` added in the root repo. 
-> Here, you can disable the callout conversion and the hashtags conversion with:
+> Le script python utilise la configuration `minimal`, et cette configuration peut être personnalisée en utilisant un fichier nommé `configuration.yml` ajouté dans la racine du dépôt. 
+> Ici, vous pouvez désactiver la conversion des callouts et la conversion des hashtags avec :
 > ```yaml
-> minimal:
-> 	convert:
-> 		admonition: false
-> 		hashtags: false
+> minimal :
+>   convert :
+>       admonition : false
+>       hashtags : false
 > ```
-> Obviously, you can set one `true` and another `false`.
+> Évidemment, vous pouvez en définir un `true` et un autre `false`.
 >> [!note]
->>If you disable the two, you don't need the obs2mk conversion (you will gain a LOT OF TIME for sharing). Just create a workflow on push for building mkdocs page.
->>To do that, just remove the `if` in the `.github/workflow/mkdocs_build.yml` file. 
+>> Si vous désactivez les deux, vous n'avez pas besoin de la conversion obs2mk (vous gagnerez BEAUCOUP de temps pour le partage). Il suffit de créer un workflow sur push pour construire la page mkdocs.
+>> Pour ce faire, il suffit de supprimer le `if` dans le fichier `.github/workflow/mkdocs_build.yml`. 
+

@@ -1,5 +1,6 @@
-title: The blog template
+title: Le modèle du blog
 arrange:
+  - index.md
   - customization.md
   - Within Obsidian.md
   - useful plugins.md

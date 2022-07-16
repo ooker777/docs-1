@@ -12,7 +12,7 @@ Automatically convert the [grid callout layout (from ITS)](https://github.com/Sl
 
 ![[../assets/img/example_grid_layout.png]]
 
-Add this to [`custom_attribute.css`](https://github.com/Mara-Li/obsidian-mkdocs-publisher-template/blob/main/docs/assets/css/custom_attributes.css)
+Add this to any css from your documentation: 
 
 ```css
 :root {

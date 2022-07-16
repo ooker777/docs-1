@@ -1,34 +1,36 @@
 ---
 share: true
+title: FAQ
 ---
 
-## 1. Private repository
+## 1. Dépôt privé
 
-As I authorize this repo to be a template, it allows you to create a private repository!
+Comme j'autorise ce repo à être un modèle, il vous permet de créer un dépôt privé !
 
 > [!Note]
-> Fork doesn't allow you to create a private repo, that's why you must use the template._
+> Fork ne vous permet pas de créer un dépôt privé, c'est pourquoi vous devez utiliser le modèle.
 
-## 2. Update the template
+## 2. Mettre à jour le modèle
 
-Using a template (in place of fork) prevent to get the update I do sometimes. So, to keep an eye on it, you need to create a **branch** based on the template. 
+L'utilisation d'un template (à la place de fork) empêche d'obtenir la mise à jour que je fais parfois. Donc, pour garder un œil dessus, vous devez créer une **branche** basée sur la template. 
 
-In the cloned folder, (in your blog) do : 
-```git
+Dans le dossier cloné, (dans votre blog) faites : 
+``git
 git remote add Template git@github.com:Mara-Li/obsidian-mkdocs-publisher-template.git
 git fetch Template
 git checkout -b template Template/main
 ```
-After, to get the update : 
-```git
+Ensuite, pour récupérer la mise à jour : 
+``git
 git checkout template
 git pull
 ```
 
-You can merge the branch, or just get the updated file with the checkout command : 
+Vous pouvez fusionner la branche, ou juste récupérer le fichier mis à jour avec la commande checkout : 
 ```git
 git checkout main
-git checkout template path/file/youwant 
+git checkout template chemin/vers/le/fichier/quevousvoulez 
 ```
-Don't forget to commit and push!
+
+N'oubliez pas de commit et de push !
 

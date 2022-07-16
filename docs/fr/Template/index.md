@@ -3,32 +3,32 @@ title: Configuration
 share: true
 ---
 
-# Configuration
-## Mkdocs configuration
+## Configuration
+## Configuration de Mkdocs
 
-In your new `publish_blog` folder, you will spot a `mkdocs.yml`. This file allows you to customize your blog! The most important to edit :
+Dans votre nouveau dossier `publish_blog`, vous trouverez un `mkdocs.yml`. Ce fichier vous permet de personnaliser votre blog ! Les plus importants à éditer :
 1. `site_name` 
 2. `site_description`
-3. `site_url` (critical) : By default, it's `https://github_username.io/repo_name`[^1]
+3. `site_url` (critique) : Par défaut, c'est `https://github_username.io/repo_name` [^1]
 
-To edit the logo and the favicon, first put the chosen file in `assets/logo`, and change `logo` and `favicon` :
-1. `logo: assets/logo/logo_name.png`
-2. `favicon: assets/logo/favicon.png`
+Pour modifier le logo et le favicon, mettez d'abord le fichier choisi dans `assets/logo`, et changez `logo` et `favicon` :
+1. `logo : assets/meta/logo_name.png`
+2. `favicon : assets/meta/favicon.png`.
 
-You can customize :
-- Font
-- Color scheme, palette, icons 
-- Language  
+Vous pouvez personnaliser :
+- Police
+- Schéma de couleurs, palette, icônes 
+- Langue  
 
-[Check the documentation to get more information](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
+[Consultez la documentation pour obtenir plus d'informations](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
 
-You don't need to touch anything in `features` ; `markdown_extensions…`
+Vous n'avez pas besoin de toucher à quoi que ce soit dans `features` ; `markdown_extensions...`
 
 ### Plugins
 
-The `mkdocs.yml` also contains the configuration for [Mkdocs Plugin](https://www.mkdocs.org/dev-guide/plugins/). If you add plugin, you **need** to add it to your `requirements.txt` because the build use it to construct the blog.
+Le fichier `mkdocs.yml` contient également la configuration de [Mkdocs Plugin] (https://www.mkdocs.org/dev-guide/plugins/). Si vous ajoutez le plugin, vous **devez** l'ajouter à votre `requirements.txt` car la build l'utilise pour construire le blog.
 
-I included :
+J'ai inclus :
 - [Ezlinks (from mkdocs-ezlinked-plugin)](https://pypi.org/project/mkdocs-ezlinked-plugin/) : to support directly wikilinks
 - [Mermaid2](https://github.com/fralau/mkdocs-mermaid2-plugin)
 - [Awesome pages](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin)
@@ -41,40 +41,41 @@ I included :
 - [Custom tags attributes](https://pypi.org/project/mkdocs-custom-tags-attributes/)
 
 > [!info] Superfences & dataview
-> You will spot that I added a [`custom fences`](https://facelessuser.github.io/pymdown-extensions/extensions/superfences/) for dataview. Sorry, dataview is not supported by mkdocs nor Obsidian Publisher. This custom fences will hide every dataview and dataviewjs block. 
-> It will, so, prevent display stange block in your markdown file. If you need to display it as code, change the language (like `js` for example).
+> Vous remarquerez que j'ai ajouté une [`custom fences`](https://facelessuser.github.io/pymdown-extensions/extensions/superfences/) pour dataview. Désolé, dataview n'est pas supporté par mkdocs ni Obsidian Publisher. Ce "custom fence" cachera tous les blocs dataview et dataviewjs. 
+> Elle empêchera donc l'affichage de blocs étranges dans votre fichier markdown. Si vous avez besoin de l'afficher comme du code, changez le langage (comme `js` par exemple).
 
-## Oh no, a bug!
 
-The blog will be published through [GitHub Page](https://pages.github.com/) using the `gh-page` branch. 
+## Oh non, un bug !
 
-> [!bug] I have the readme in place of my files!
-> Check the `gh-pages` branch and activate it if necessary in `Settings` → `Pages`
+Le blog sera publié via [GitHub Page](https://pages.github.com/) en utilisant la branche `gh-page`. 
+
+> [!bug] J'ai le README à la place de mes fichiers !
+> Vérifier la branche `gh-pages` et l'activer si nécessaire dans `Settings` → `Pages`
 > ![image](https://user-images.githubusercontent.com/30244939/166161220-973cee87-75eb-4b9f-b521-1c67d273def7.png)
 
-> [!bug] The workflow doesn't run!
->  - Check the run and error in `Actions` 
->  - Check if the actions have the good write and read access in `settings → Actions → General → workflow permission` ![image](https://user-images.githubusercontent.com/30244939/166161294-0f4f70c2-fda5-4465-89b0-d6b1b5e6995d.png)
->> [!Warning] In case of worfklow problem
->> In the [issue #4](https://github.com/obsidianMkdocs/obsidian-github-publisher/issues/4), we discover that sometimes, Github Actions refuse to run without reason. If this happend to you, please, contact the Github Support!
+> [!bug] Le workflow ne s'exécute pas !
+> - Vérifiez l'exécution et l'erreur dans `Actions`. 
+> - Vérifiez si les actions ont les bons accès en écriture et en lecture dans `Settings → Actions → General → workflow permission` ![image](https://user-images.githubusercontent.com/30244939/166161294-0f4f70c2-fda5-4465-89b0-d6b1b5e6995d.png)
+>> [!Avertissement] En cas de problème de worfklow
+>> Dans le [problème #4](https://github.com/obsidianMkdocs/obsidian-github-publisher/issues/4), nous avons découvert que parfois, les actions Github refusent de s'exécuter sans raison. Si cela vous arrive, veuillez contacter le support Github !
 
 ---
 
-## Local testing (*optional*)
+## Test local (*optionnel*)
 
-To run locally the blog, you need to install the requirements and run `mkdocs serve`.
+Pour faire fonctionner le blog en local, vous devez installer les pré-requis et lancer `mkdocs serve`.
+
 ```
 cd publish_blog
 pip install -r requirements.txt
 mkdocs serve
 ```
-A little advice here : You could use a [conda](https://docs.conda.io/en/latest/) environment here (or a venv, but I don't like venv.). Just use this:
-```bash
+Un petit conseil : Vous pouvez utiliser un environnement [conda](https://docs.conda.io/en/latest/) ici (ou un venv, mais je n'aime pas venv). Utilisez simplement ceci :
+``bash
 conda create -n Publisher python=3.10.4
 conda activate Publisher
 ```
-Just before the `pip install`!
-
+Juste avant l'installation du `pip` !
 
 ---
 
@@ -84,4 +85,4 @@ Just before the `pip install`!
 - [Template](https://github.com/Mara-Li/obsidian-mkdocs-publisher-template)
 - [Documentation](https://mara-li.github.io/obsidian_mkdocs_publisher_docs/)
 
-[^1]: You can found the link in Repository settings > Pages. 
+[^1]: Vous pouvez trouver le lien dans `Settings > Pages`

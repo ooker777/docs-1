@@ -1,18 +1,18 @@
 ---
 share: true
-title: Snippets and tools
+title: Snippets et outils
 ---
 
-I, as working on my blog, created some cool snippets or useful tools.
+En travaillant sur mon blog, j'ai créé quelques snippets sympas ou outils utiles.
 
-## CSS snippets
-### Grid CSS snippets
+## Snippets CSS
+### Extraits CSS de la grille
 
-Automatically convert the [grid callout layout (from ITS)](https://github.com/SlRvb/Obsidian--ITS-Theme/blob/main/S%20-%20Callouts.css) to mkdocs
+Convertir automatiquement le [grid callout layout (de ITS)](https://github.com/SlRvb/Obsidian--ITS-Theme/blob/main/S%20-%20Callouts.css) en mkdocs
 
-![[../assets/img/example_grid_layout.png]]
+![[.../assets/img/example_grid_layout.png]]
 
-Add this to [`custom_attribute.css`](https://github.com/Mara-Li/obsidian-mkdocs-publisher-template/blob/main/docs/assets/css/custom_attributes.css)
+Ajoutez ceci à n'importe quel fichier css :
 
 ```css
 :root {
@@ -39,72 +39,72 @@ Add this to [`custom_attribute.css`](https://github.com/Mara-Li/obsidian-mkdocs-
 }
 ```
 
-### Add a image banner to mkdocs
+### Ajouter une bannière sur votre blog
 
 ![image](https://user-images.githubusercontent.com/30244939/163732766-d08b102f-508b-496e-a99f-68f865b2080b.png)
 
-You can add a cool image banner with editing [`utils.css`](https://github.com/Mara-Li/obsidian-mkdocs-publisher-template/blob/main/docs/assets/css/utils.css) and adding :
+Vous pouvez ajouter une bannière d'image cool avec l'édition du fichier `assets/css/customization.css`.
+
 ```css
-.md-header {
+.md-header,
+.md-nav--primary .md-nav__title[for="__drawer"] {
     background: var(--md-primary-fg-color) url(image_links) left center/cover no-repeat;
 }
 ```
-Don't forget to edit the `image_link` with the real links ! Personnaly, I use a unsplash image.
+N'oubliez pas d'éditer le `image_link` avec les vrais liens ! Personnellement, j'utilise une image unsplash.
 
 ## Plugins
 
-> [!note] Note
-> Don't forget to add the plugin in your `requirements.txt`
+> [!note] Requirements
+> N'oubliez pas d'ajouter le plugin dans votre `requirements.txt`.
 
 ### Custom fences
-> [!info] Bundled with the template
+> [!info] Fourni avec le modèle
 
-Some Obsidian's plugin use codeblocks to do some things, as [Agtable](https://github.com/windily-cloud/obsidian-AGtable) or [Table extended](https://github.com/aidenlx/table-extended)
+Certains plugins d'Obsidian utilisent des codeblocks pour faire certaines choses, comme [Agtable] (https://github.com/windily-cloud/obsidian-AGtable) ou [Table extended] (https://github.com/aidenlx/table-extended).
 
-To automatically convert these block to markdown, I use a mini plugin I wrote : [Mkdocs Custom Fence](https://github.com/Mara-Li/mkdocs_custom_fences)
-To use it :
-- Add `mkdocs_custom_fences` in your [requirements](https://github.com/Mara-Li/obsidian-mkdocs-publisher-template/blob/main/requirements.txt)
-- Edit the [mkdocs.yml](https://github.com/Mara-Li/obsidian-mkdocs-publisher-template/blob/d7b7d43ff237c09e0cbf160889dcdac4b9459dfd/mkdocs.yml#L70) as follow : 
+Pour convertir automatiquement ces blocs en markdown, j'utilise un mini plugin que j'ai écrit : [Mkdocs Custom Fence](https://github.com/Mara-Li/mkdocs_custom_fences)
+Pour l'utiliser :
+- Ajouter `mkdocs_custom_fences` dans votre [requirements.txt](https://github.com/Mara-Li/obsidian-mkdocs-publisher-template/blob/main/requirements.txt)
+- Modifiez le fichier [mkdocs.yml](https://github.com/Mara-Li/obsidian-mkdocs-publisher-template/blob/d7b7d43ff237c09e0cbf160889dcdac4b9459dfd/mkdocs.yml#L70) comme suit : 
   ```yml
-  markdow_extensions:
-  pymdownx.superfences:
-      custom_fences:
-        - name: md-render
-          class: md-render
-          format: !!python/name:mkdocs_custom_fences.md_render.md_sub_render
+  markdow_extensions :
+  pymdownx.superfences :
+      custom_fences :
+        - nom : md-render
+          classe : md-render
+          format : !!python/name:mkdocs_custom_fences.md_render.md_sub_render
   ```
 
-For example, for AGtable : 
+Par exemple, pour AGtable : 
 ```yml
-  - pymdownx.superfences:
-      custom_fences:
-        - name: agtable
-          class: agtable
-          format: !!python/name:mkdocs_custom_fences.md_render.md_sub_render
+  - pymdownx.superfences :
+      custom_fences :
+        - nom : agtable
+          classe : agtable
+          format : !!python/name:mkdocs_custom_fences.md_render.md_sub_render
 ```
-
 
 ### [Mkdocs Callouts](https://pypi.org/project/mkdocs-callouts/)
 
-> [!info] Bundled with the template
+> [!info] Fourni avec le modèle
 
-> [!info] Plugin's info
-> A simple plugin that converts Obsidian style callouts and turns them into mkdocs supported Admonitions.
-> - Plugin link : https://pypi.org/project/mkdocs-callouts/
-> - Installation : `pip install mkdocs-callouts`
+> [!info] Informations sur le plugin
+> Un plugin simple qui convertit les callouts de style Obsidian et les transforme en Admonitions supportées par mkdocs.
+> - *Lien* : https://pypi.org/project/mkdocs-callouts/
+> - *Installation* : `pip install mkdocs-callouts`
 
-Use this plugin if you don't want to use the script (in github actions or in general). It supports "callouts in callout", custom callouts... 
 
-### Page encrypted 
+### Page chiffrée
 
-> [!note] The basic configuration for Material & this template are already included in the `mkdocs.yml` and in `utils.css`
+> [!note] La configuration de base pour Material et de ce modèle est déjà incluse dans le fichier `mkdocs.yml` et dans `utils.css`.
 
-> [!info] Plugin's info
-> This plugin allows you to have password protected articles and pages in MKdocs.
-> - Plugin link : https://pypi.org/project/mkdocs-encryptcontent-plugin/
-> - Installation : `pip install mkdocs-encryptcontent-plugin`
+> [!info] Informations sur le plugin
+> Ce plugin vous permet d'avoir des articles et des pages protégés par un mot de passe dans MKdocs.
+> - *Lien* : https://pypi.org/project/mkdocs-encryptcontent-plugin/
+> - *Installation* : `pip install mkdocs-encryptcontent-plugin`
 
-First, configure the display of this plugin for mkdocs with adding this in your css :
+Tout d'abord, configurez l'affichage de ce plugin pour mkdocs en ajoutant ceci dans votre css :
 
 ```css
 [data-md-color-scheme="slate"] #mkdocs-content-password {
@@ -130,10 +130,10 @@ First, configure the display of this plugin for mkdocs with adding this in your 
 }
 ```
 
-Configure the `mkdocs.yml` to add the plugin, as follows the README.
+Configurez le `mkdocs.yml` pour ajouter le plugin, comme dit dans le README.
 
-> [!example] Example
-> This configuration allow to remember password and use per page password. 
+> [!example] Exemple
+> Cette configuration permet de mémoriser le mot de passe et d'utiliser un mot de passe par page. 
 > ```yml
 > plugins:
 > 	- encryptcontent:
@@ -145,26 +145,28 @@ Configure the `mkdocs.yml` to add the plugin, as follows the README.
 > 	     remember_password: True
 > 	     search_index: 'encrypted' #Material doesn't support dynamicaly encryption search
 > 	     password_button: True
-> 	     password_button_text: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32h-64c-17.67 0-32 14.33-32 32s14.33 32 32 32h64c17.67 0 32 14.33 32 32v256c0 17.67-14.33 32-32 32h-64c-17.67 0-32 14.33-32 32s14.33 32 32 32h64c53.02 0 96-42.98 96-96V128C512 74.98 469 32 416 32zM342.6 233.4l-128-128c-12.51-12.51-32.76-12.49-45.25 0c-12.5 12.5-12.5 32.75 0 45.25L242.8 224H32C14.31 224 0 238.3 0 256s14.31 32 32 32h210.8l-73.38 73.38c-12.5 12.5-12.5 32.75 0 45.25s32.75 12.5 45.25 0l128-128C355.1 266.1 355.1 245.9 342.6 233.4z"/></svg>'
+> 	     password_button_text: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" height="1em" width="1em"><path d="M416 32h-64c-17.67 0-32 14.33-32 32s14.33 32 32 32h64c17.67 0 32 14.33 32 32v256c0 17.67-14.33 32-32 32h-64c-17.67 0-32 14.33-32 32s14.33 32 32 32h64c53.02 0 96-42.98 96-96V128C512 74.98 469 32 416 32zM342.6 233.4l-128-128c-12.51-12.51-32.76-12.49-45.25 0c-12.5 12.5-12.5 32.75 0 45.25L242.8 224H32C14.31 224 0 238.3 0 256s14.31 32 32 32h210.8l-73.38 73.38c-12.5 12.5-12.5 32.75 0 45.25s32.75 12.5 45.25 0l128-128C355.1 266.1 355.1 245.9 342.6 233.4z"/></svg>'
 > ```
-> But you could also support a full encrypted documentation : 
+> Mais vous pourriez aussi soutenir une documentation entièrement cryptée
 > ```yml
 > plugins:
 >    - encryptcontent:
->        global_password: 'your_password'
+>        global_password: 'votre_mot_de_passe'
 > 
 >```
 
-To add a unique page encrypted, just add `password: your_secret_password` in your markdown file.
+Pour ajouter une page unique chiffrée, il suffit d'ajouter `password : your_secret_password` dans votre fichier markdown.
 
-> [!warning] Security
-> Obviously, if you use this in a public repo, it's totally useless to add this security (the file can be viewed enterely in GitHub). Don't use this plugin to share sensible information!
+
+> [!warning] Sécurité
+> Évidemment, si vous l'utilisez dans un dépôt public, il est totalement inutile d'ajouter cette sécurité (le fichier peut être consulté uniquement sur GitHub). N'utilisez pas ce plugin pour partager des informations sensibles !
+
 
 ## Custom tags attributes
-> [!info] Bundled with the template
+> [!info] Fourni avec le modèle
 
 > [!info] Custom tags attribute
-> Adding [attribute list](https://python-markdown.github.io/extensions/attr_list/) using only hashtags in your text.
-> *Links:* [Custom tags attributes](https://pypi.org/project/mkdocs-custom-tags-attributes/)
+> Ajouter [attribute list](https://python-markdown.github.io/extensions/attr_list/) en utilisant simplement des tags dans vos textes.
+> *Lien:* [Custom tags attributes](https://pypi.org/project/mkdocs-custom-tags-attributes/)
 > *Installation:* `pip install mkdocs-custom-tags-attributes`
 

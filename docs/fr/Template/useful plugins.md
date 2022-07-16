@@ -1,13 +1,11 @@
 ---
-title: Obsidian's useful plugins
+title: Plugins utiles pour Obsidian
 share: true
 ---
 
 **Some useful plugin to support the script** : 
 - [Metacopy](https://github.com/Mara-Li/obsidian-metacopy)
-- [Obsidian Shell](https://github.com/Taitava/obsidian-shellcommands) (cf [Obsidian Shell](#obsidian-shell-configuration))
-- [Customizable Sidebar](https://github.com/phibr0/obsidian-customizable-sidebar)    
-- [Obsidian Customizable Menu](https://github.com/kzhovn/obsidian-customizable-menu)
+- [Commander](https://github.com/phibr0/obsidian-commander)    
 - [Alx Folder Note](https://github.com/aidenlx/alx-folder-note)
 - Custom Attribute :
 	- [CM6 Live Preview](https://github.com/nothingislost/obsidian-cm6-attributes) ; 
@@ -15,19 +13,20 @@ share: true
 	- [Contextual Typography](https://github.com/mgmeyers/obsidian-contextual-typography) 
 
 ## Metacopy
-Using [metacopy](https://github.com/Mara-Li/obsidian-metacopy) you can quickly copy a link to a shared page, without using this option (so, yes, the script does not edit your source file !).   
-To create a link, you need to configure :  
- 1. `category` in `key`  
- 2. Add your `set_url` in `base link`  
- 3. Add `category` in `key link`  
+En utilisant [metacopy](https://github.com/Mara-Li/obsidian-metacopy) vous pouvez rapidement copier un lien vers une page partagée
+Pour créer un lien, vous devez configurer :  
+ 1. `category` dans `key`  
+ 2. Ajoutez votre `set_url` dans `base link`.  
+ 3. Ajoutez `category` dans le lien `key`.  
   
-Also, you can remove the metacopy from your file menu using a key, so you can activate metacopy only for `share: true`. Metacopy also support the [[index#folder-note|folder note]].
+En outre, vous pouvez supprimer la métacopie de votre menu fichier en utilisant une clé de métadonnée, de sorte que vous pouvez activer la métacopie seulement pour `share : true`. Metacopy supporte également le [[index#folder-note|folder note]].
 
-The final configuration of metacopy for mkdocs_obsidian will be :  
-![](../assets/img/metacopy3.png)  
-![](../assets/img/metacopy2.png)  
-  
-So, in the end, a menu will appear on file with `share: true` and a `category` configured. This menu is on the left click and the file-menu. You can quickly copy a link from there, like a Google or notion sharing link!  
+La configuration finale de metacopy pour mkdocs_obsidian sera :  
+
+![1](https://i.imgur.com/mZvzl6Z.png)  
+![picture 2](https://i.imgur.com/CMt9fQj.png)  
+
+Ainsi, au final, un menu apparaîtra sur le fichier avec `share : true` et une `category` configurée. Ce menu se trouve sur le clic gauche et le menu fichier. Vous pouvez rapidement copier un lien à partir de là, comme un lien de partage Google ou notion !  
 
 ## Front matter template
 
