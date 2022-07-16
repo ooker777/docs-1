@@ -19,7 +19,7 @@ Les plugins sont accessibles avec une action github et un module d'Obsidian.
 - [Modèle](https://github.com/obsidianMkdocs/obsidian-mkdocs-publisher-template)
 
 ### Support 
-- [x] Wikilinks (`[[Links]]`)
+- [x] Wikilinks (`[[Liens]]`)
 - [x] Transclusion/embed de fichiers, tant pour les liens wikilinks que pour les liens markdowns
 - [x] Callout d'obsidian & les callouts personnalisés
 - [x] Folder notes et leur "citation"
