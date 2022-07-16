@@ -14,9 +14,9 @@ Mkdocs Obsidian est une association entre un plugin Obsidian et un modèle Mater
 <p align="center"><a href="https://www.mara-li.fr">Owlly Seed (Mon blog ; en françaiks)</a></p>
 Les plugins sont accessibles avec une action github et un module d'Obsidian.
 
-## Main links
-- [Obsidian Plugin](https://github.com/obsidianMkdocs/obsidian-github-publisher)
-- [Template](https://github.com/obsidianMkdocs/obsidian-mkdocs-publisher-template)
+## Liens principaux
+- [Module Obsidian](https://github.com/obsidianMkdocs/obsidian-github-publisher)
+- [Modèle](https://github.com/obsidianMkdocs/obsidian-mkdocs-publisher-template)
 
 ### Support 
 - [x] Wikilinks (`[[Links]]`)
