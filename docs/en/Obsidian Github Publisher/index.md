@@ -23,6 +23,9 @@ But the plugin can do a lot more !
 - Clean your repo with removing deleted and unshared files
 - Rename folder note with same name strategies with `index.md` (+ respecting the folder settings)
 - Send a link's note in your clipboard after sharing.
+- Convert simple dataview query in markdown !
+
+
 ---
 
 # Configuration

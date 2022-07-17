@@ -25,6 +25,7 @@ Mais le plugin peut faire beaucoup plus !
 - Renommer le dossier note avec les mêmes stratégies de nom avec `index.md` (+ respecter les paramètres du dossier)
 - Partager les fichiers transcluent automatiquement (uniquement s'ils ont la clé de partage)
 - Copier un lien vers votre presse-papier !
+- Convertir les block `dataview` !
 
 ---
 

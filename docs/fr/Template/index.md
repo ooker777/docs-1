@@ -40,8 +40,8 @@ J'ai inclus :
 - [Mkdocs Callout](https://pypi.org/project/mkdocs-callouts/)
 - [Custom tags attributes](https://pypi.org/project/mkdocs-custom-tags-attributes/)
 
-> [!info] Superfences & dataview
-> Vous remarquerez que j'ai ajouté une [`custom fences`](https://facelessuser.github.io/pymdown-extensions/extensions/superfences/) pour dataview. Désolé, dataview n'est pas supporté par mkdocs ni Obsidian Publisher. Ce "custom fence" cachera tous les blocs dataview et dataviewjs. 
+> [!info] Superfences & dataviewjs
+> Vous remarquerez que j'ai ajouté une [`custom fences`](https://facelessuser.github.io/pymdown-extensions/extensions/superfences/) pour dataviewjs. Désolé, dataviewjs n'est pas encore supporté par mkdocs ni Obsidian Publisher. Ce "custom fence" cachera tous les blocs dataviewjs. 
 > Elle empêchera donc l'affichage de blocs étranges dans votre fichier markdown. Si vous avez besoin de l'afficher comme du code, changez le langage (comme `js` par exemple).
 
 

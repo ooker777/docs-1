@@ -40,8 +40,8 @@ I included :
 - [Mkdocs Callout](https://pypi.org/project/mkdocs-callouts/)
 - [Custom tags attributes](https://pypi.org/project/mkdocs-custom-tags-attributes/)
 
-> [!info] Superfences & dataview
-> You will spot that I added a [`custom fences`](https://facelessuser.github.io/pymdown-extensions/extensions/superfences/) for dataview. Sorry, dataview is not supported by mkdocs nor Obsidian Publisher. This custom fences will hide every dataview and dataviewjs block. 
+> [!info] Superfences & dataviewjs
+> You will spot that I added a [`custom fences`](https://facelessuser.github.io/pymdown-extensions/extensions/superfences/) for dataviewjs. Sorry, dataviewjs is not currently supported by mkdocs nor Obsidian Publisher. This custom fences will hide every dataviewjs block. 
 > It will, so, prevent display stange block in your markdown file. If you need to display it as code, change the language (like `js` for example).
 
 ## Oh no, a bug!

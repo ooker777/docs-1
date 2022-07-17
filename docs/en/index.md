@@ -27,6 +27,7 @@ The plugins can be accessed with a github actions and a Obsidian's plugin.
 - [x] Sharing state and custom folder hierarchy.
 - [x] Mobile and desktop
 - [x] File mini preview on Hover
+ 
  ---
 ## Github actions & Obsidian's plugin
 ### TLDR

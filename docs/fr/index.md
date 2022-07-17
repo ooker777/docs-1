@@ -26,7 +26,7 @@ Les plugins sont accessibles avec une action github et un module d'Obsidian.
 - [x] Attributs customisés
 - [x] État de partage et hiérarchie de dossiers personnalisée.
 - [x] Mobile et PC
-- [x] Mini aperçu du fichier au survol
+- [x] Mini aperçu du fichier au survol 
 
 ---
 ## Github actions & Obsidian's plugin
