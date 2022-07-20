@@ -58,7 +58,12 @@ Mais le plugin peut faire beaucoup plus !
 
 Pour utiliser le plugin, vous devez remplir les informations correctes afin de pouvoir envoyer des fichiers dans un dépôt GitHub.
 
-## ➡️ [Example de configuration](https://obsidianpublisher.github.io/obsidian-mkdocs-publisher-docs/fr/Obsidian%20Github%20Publisher/configuration%20example/)
+## ➡️ Example de configuration
+
+Vous trouverez [ici](https://obsidianpublisher.github.io/obsidian-mkdocs-publisher-docs/fr/Obsidian%20Github%20Publisher/configuration%20example/) quelque exemple de configuration possible pour le plugin, comme par exemple Mkdocs Publisher ou [@TuanManhCao Digital Garden](https://github.com/TuanManhCao/digital-garden).
+
+> [!Note] Ajouter des exemples
+> Il est tout à fait possible de m'envoyer ou de pull-request de nouvelles configurations pour d'autres alternatives **gratuites** à Obsidian Publish. 
 
 ## GitHub 
 - Nom du dépôt : Le dépôt dans lequel les fichiers seront envoyés
