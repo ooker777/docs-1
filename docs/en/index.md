@@ -10,13 +10,13 @@ Mkdocs Obsidian is an association between an Obsidian plugin and a Material mkdo
 	<a href="https://obsidian.md/"><img src="https://img.shields.io/badge/Auxiliary%20Tool-Obsidian-blueviolet"></img></a>
 	<a href="https://github.com/Mara-Li/mkdocs_obsidian_template/wiki/Q&A/"><img src="https://img.shields.io/badge/-Q%26A-blue?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMkM2LjQ4NiAyIDIgNi40ODYgMiAxMnM0LjQ4NiAxMCAxMCAxMCAxMC00LjQ4NiAxMC0xMFMxNy41MTQgMiAxMiAyem0wIDE4Yy00LjQxMSAwLTgtMy41ODktOC04czMuNTg5LTggOC04IDggMy41ODkgOCA4LTMuNTg5IDgtOCA4eiIvPjxwYXRoIGQ9Ik0xMSAxMWgydjZoLTJ6bTAtNGgydjJoLTJ6Ii8+PC9zdmc+"></img></a>
 </p>
-<p align="center"><a href="https://obsidianmkdocs.github.io/obsidian_mkdocs_publisher_docs/">Documentation</a></p>
+<p align="center"><a href="https://obsidianpublisher.github.io/obsidian-mkdocs-publisher-docs/">Documentation</a></p>
 <p align="center"><a href="https://www.mara-li.fr">Owlly Seed (My Blog ; In French)</a></p>
 The plugins can be accessed with a github actions and a Obsidian's plugin.
 
 ## Main links
-- [Obsidian Plugin](https://github.com/obsidianMkdocs/obsidian-github-publisher)
-- [Template](https://github.com/obsidianMkdocs/obsidian-mkdocs-publisher-template)
+- [Obsidian Plugin](https://github.com/obsidianPublisher/obsidian-github-publisher)
+- [Template](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-template)
 
 ### Support 
 - [x] Wikilinks (`[[Links]]`)
@@ -32,7 +32,7 @@ The plugins can be accessed with a github actions and a Obsidian's plugin.
 ## Github actions & Obsidian's plugin
 ### TLDR
 1. Install the plugins through Obsidian Community or [BRAT](https://github.com/TfTHacker/obsidian42-brat)
-2. [Template](https://github.com/obsidianMkdocs/mkdocs_obsidian_template) the blog and configure it 
+2. [Template](https://github.com/obsidianPublisher/mkdocs_obsidian_template) the blog and configure it 
 3. Configure the plugin's options : 
 	- Repo name
 	- Your github username
@@ -66,7 +66,7 @@ You need :
 ---
 
 ## Quick blog installation tutorial
-1. Click on [use this template](https://github.com/obsidianMkdocs/obsidian-mkdocs-publisher-template/generate)[^1]
+1. Click on [use this template](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-template/generate)[^1]
 2. Use the name of your choice.
 3. Click on [code](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories) → SSH ; Copy the link
 4. Run (in terminal):

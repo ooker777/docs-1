@@ -57,7 +57,7 @@ Le blog sera publié via [GitHub Page](https://pages.github.com/) en utilisant l
 > - Vérifiez l'exécution et l'erreur dans `Actions`. 
 > - Vérifiez si les actions ont les bons accès en écriture et en lecture dans `Settings → Actions → General → workflow permission` ![image](https://user-images.githubusercontent.com/30244939/166161294-0f4f70c2-fda5-4465-89b0-d6b1b5e6995d.png)
 >> [!Avertissement] En cas de problème de worfklow
->> Dans le [problème #4](https://github.com/obsidianMkdocs/obsidian-github-publisher/issues/4), nous avons découvert que parfois, les actions Github refusent de s'exécuter sans raison. Si cela vous arrive, veuillez contacter le support Github !
+>> Dans le [problème #4](https://github.com/obsidianPublisher/obsidian-github-publisher/issues/4), nous avons découvert que parfois, les actions Github refusent de s'exécuter sans raison. Si cela vous arrive, veuillez contacter le support Github !
 
 ---
 
@@ -79,10 +79,8 @@ Juste avant l'installation du `pip` !
 
 ---
 
-- [Main Repo](https://github.com/Mara-Li/obsidian_mkdocs_publisher)
-- [Obsidian Plugin](https://github.com/Mara-Li/obsidian-mkdocs-publisher-plugin/)
-- [Python package](https://github.com/Mara-Li/obsidian-mkdocs-publisher-python)
-- [Template](https://github.com/Mara-Li/obsidian-mkdocs-publisher-template)
-- [Documentation](https://mara-li.github.io/obsidian_mkdocs_publisher_docs/)
+- [Obsidian Plugin](https://github.com/ObsidianPublisher/obsidian-github-publisher)
+- [Template](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template)
+- [Documentation](https://obsidianpublisher.github.io/obsidian-mkdocs-publisher-docs/)
 
 [^1]: Vous pouvez trouver le lien dans `Settings > Pages`

@@ -2,7 +2,7 @@
 share: true
 ---
 The script can be use :
-- Directly in Obsidian, using [Obsidian Shell Commands](https://github.com/Taitava/obsidian-shellcommands) (see [Obsidian shell configuration](https://obsidianmkdocs.github.io/obsidian_mkdocs_publisher_docs/documentation/obs2mk/obsidian%20shell/) )
+- Directly in Obsidian, using [Obsidian Shell Commands](https://github.com/Taitava/obsidian-shellcommands) (see [Obsidian shell configuration](https://obsidianpublisher.github.io/obsidian-mkdocs-publisher-docs/documentation/obs2mk/obsidian%20shell/) )
 - In a [terminal](#commands).
 
 The supported system are :
@@ -87,9 +87,9 @@ See [[configuration template]] for more information about the configuration file
 ----
 # Navigation
 
-- [Obsidian Plugin](https://github.com/obsidianMkdocs/obsidian-github-publisher)
-- [Python package](https://github.com/obsidianMkdocs/obsidian-mkdocs-publisher-python)
-- [Template](https://github.com/obsidianMkdocs/obsidian-mkdocs-publisher-template)
+- [Obsidian Plugin](https://github.com/obsidianPublisher/obsidian-github-publisher)
+- [Python package](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-python)
+- [Template](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-template)
  
  
 [^1]: For `file` you need to add the filepath of the file you want to share : `obs2mk (global_option) file "filepath" (specific_options)`
