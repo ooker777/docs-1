@@ -3,6 +3,31 @@ share: true
 ---
 
 [FR 🇫🇷](https://github.com/obsidianPublisher/obsidian-github-publisher/blob/master/docs/README_FR.md)
+<!-- TOC -->
+
+- [What the plugin do](#what-the-plugin-do)
+- [Configuration](#configuration)
+    - [➡️ Configuration example](#-configuration-example)
+    - [GitHub](#github)
+    - [Download configuration](#download-configuration)
+        - [Folder reception settings.](#folder-reception-settings)
+            - [Metadata frontmatter](#metadata-frontmatter)
+            - [Fixed folder](#fixed-folder)
+            - [Obsidian Path](#obsidian-path)
+        - [Workflow](#workflow)
+            - [Auto clean-up](#auto-clean-up)
+        - [Links' conversion](#links-conversion)
+            - [Index & folder note](#index--folder-note)
+            - [Internal links](#internal-links)
+            - [Wikilinks to markdown link](#wikilinks-to-markdown-link)
+        - [Embed](#embed)
+    - [Plugin settings](#plugin-settings)
+- [🤖 Developping](#-developping)
+    - [General](#general)
+    - [Translation](#translation)
+
+<!-- /TOC -->
+
 
 GitHub Publisher is a plugin that help you to send file in a configured GitHub Repository, based on a front matter entry state. 
 
@@ -32,14 +57,17 @@ But the plugin can do a lot more !
 
 To use the plugin, you need to fill the correct information to allow the workflow. 
 
-## 1. GitHub 
+## ➡️ [Configuration example](https://obsidianpublisher.github.io/obsidian-mkdocs-publisher-docs/Obsidian%20Github%20Publisher/Configuration%20example/)
+
+## GitHub 
 
 - Repo name: The repository where the files will be sent.
 - GitHub username: Your username.
 - GitHub Token: Get your [GitHub Token here](https://github.com/settings/tokens/new?scopes=repo)[^2]. The correct settings should already be applied. If you want to avoid generating this every few months, select the “No expiration” option. Click the “Generate token” button, and copy the token you are presented with on the next page.
 
 
-## 2. Download configuration
+## Download configuration
+
 ### Folder reception settings.
 
 You have two options : 
@@ -156,7 +184,7 @@ You can choose to send embeded files :
 - images : The image will be copied in the repository in an optionnaly settled folder.
 - notes : Only shared files will be copied in the repository, in their respected folder (following your settings).
 
-## 3. Plugin settings
+## Plugin settings
 
 You can configure :
 - The share key used by the plugin. By default, it is `share`
@@ -168,6 +196,7 @@ You can configure :
 ---
 
 # 🤖 Developping
+
 ## General
 
 You can help me to develop the plugin using `npm` !
