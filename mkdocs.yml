@@ -1,6 +1,6 @@
 site_name: Obsidian Mkdocs Publisher
 site_description: The documentation for Obsidian Mkdocs Publisher
-site_url: https://obsidianmkdocs.github.io/obsidian_mkdocs_publisher_docs/
+site_url: https://obsidianpublisher.github.io/obsidian-mkdocs-publisher-docs/
 
 theme:
     name: 'material'
@@ -12,7 +12,7 @@ theme:
     favicon: assets/logo/favicons.png
     custom_dir: overrides
     font:
-        text: Karla
+        text: Ubuntu
         code: Ubuntu Mono
     language: en
     palette:
