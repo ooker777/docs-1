@@ -1,6 +1,6 @@
 ---
 share: true
-title: FAQ
+title: Foire aux questions
 ---
 
 ## 1. Dépôt privé
@@ -15,13 +15,13 @@ Comme j'autorise ce repo à être un modèle, il vous permet de créer un dépô
 L'utilisation d'un template (à la place de fork) empêche d'obtenir la mise à jour que je fais parfois. Donc, pour garder un œil dessus, vous devez créer une **branche** basée sur la template. 
 
 Dans le dossier cloné, (dans votre blog) faites : 
-``git
+```
 git remote add Template git@github.com:Mara-Li/obsidian-mkdocs-publisher-template.git
 git fetch Template
 git checkout -b template Template/main
 ```
 Ensuite, pour récupérer la mise à jour : 
-``git
+```
 git checkout template
 git pull
 ```
@@ -30,6 +30,12 @@ Vous pouvez fusionner la branche, ou juste récupérer le fichier mis à jour av
 ```git
 git checkout main
 git checkout template chemin/vers/le/fichier/quevousvoulez 
+```
+
+Il est aussi possible de merge (fusionner) les branches avec : 
+```
+git checkout main
+git merge Template/main
 ```
 
 N'oubliez pas de commit et de push !
