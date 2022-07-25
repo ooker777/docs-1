@@ -81,6 +81,6 @@ Juste avant l'installation du `pip` !
 
 - [Obsidian Plugin](https://github.com/ObsidianPublisher/obsidian-github-publisher)
 - [Template](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template)
-- [Documentation](https://obsidianpublisher.github.io/obsidian-mkdocs-publisher-docs/)
+- [Documentation](https://obsidian-publisher.netlify.app)
 
 [^1]: Vous pouvez trouver le lien dans `Settings > Pages`

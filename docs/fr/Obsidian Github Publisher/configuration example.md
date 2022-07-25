@@ -3,7 +3,7 @@ share: true
 title: Exemple de configuration
 ---
 
-## [Mkdocs Publisher](https://obsidianpublisher.github.io/obsidian-mkdocs-publisher-docs/)
+## [Mkdocs Publisher](https://obsidian-publisher.netlify.app)
 ### Tutoriel pour une installation rapide !
 1. Cliquer sur ["use this template"](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-template/generate)[^1]
 2. Utiliser le nom de votre choix
@@ -40,10 +40,10 @@ Les fichiers (et les images) seront envoyés sur votre modèle de dépôt GitHub
 - [Template](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-template)
 
 #### Comment...
-- [Configurer le blog](https://obsidianpublisher.github.io/obsidian-mkdocs-publisher-docs/documentation/create%20the%20blog/)
-- [Customiser le blog](https://obsidianpublisher.github.io/obsidian-mkdocs-publisher-docs/documentation/blog%20customization/)
-- [Copier les liens](https://obsidianpublisher.github.io/obsidian-mkdocs-publisher-docs/documentation/useful%20plugins/#metacopy)
-- [Mettre à jour la template](https://obsidianpublisher.github.io/obsidian-mkdocs-publisher-docs/documentation/Q%26A/#2-update-the-template)
+- [Configurer le blog](https://obsidian-publisher.netlify.appdocumentation/create%20the%20blog/)
+- [Customiser le blog](https://obsidian-publisher.netlify.appdocumentation/blog%20customization/)
+- [Copier les liens](https://obsidian-publisher.netlify.appdocumentation/useful%20plugins/#metacopy)
+- [Mettre à jour la template](https://obsidian-publisher.netlify.appdocumentation/Q%26A/#2-update-the-template)
 
 #### Support
 - [x] Wikilinks (`[[Links]]`)

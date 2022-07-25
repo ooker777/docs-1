@@ -60,7 +60,7 @@ Pour utiliser le plugin, vous devez remplir les informations correctes afin de p
 
 ## ➡️ Example de configuration
 
-Vous trouverez [ici](https://obsidianpublisher.github.io/obsidian-mkdocs-publisher-docs/fr/Obsidian%20Github%20Publisher/configuration%20example/) quelque exemple de configuration possible pour le plugin, comme par exemple Mkdocs Publisher ou [@TuanManhCao Digital Garden](https://github.com/TuanManhCao/digital-garden).
+Vous trouverez [ici](https://obsidian-publisher.netlify.appfr/Obsidian%20Github%20Publisher/configuration%20example/) quelque exemple de configuration possible pour le plugin, comme par exemple Mkdocs Publisher ou [@TuanManhCao Digital Garden](https://github.com/TuanManhCao/digital-garden).
 
 > [!Note] Ajouter des exemples
 > Il est tout à fait possible de m'envoyer ou de pull-request de nouvelles configurations pour d'autres alternatives **gratuites** à Obsidian Publish. 

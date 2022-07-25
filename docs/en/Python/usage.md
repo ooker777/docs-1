@@ -2,7 +2,7 @@
 share: true
 ---
 The script can be use :
-- Directly in Obsidian, using [Obsidian Shell Commands](https://github.com/Taitava/obsidian-shellcommands) (see [Obsidian shell configuration](https://obsidianpublisher.github.io/obsidian-mkdocs-publisher-docs/documentation/obs2mk/obsidian%20shell/) )
+- Directly in Obsidian, using [Obsidian Shell Commands](https://github.com/Taitava/obsidian-shellcommands) (see [Obsidian shell configuration](https://obsidian-publisher.netlify.appdocumentation/obs2mk/obsidian%20shell/) )
 - In a [terminal](#commands).
 
 The supported system are :
