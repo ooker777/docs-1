@@ -1,6 +1,6 @@
 site_name: Obsidian Mkdocs Publisher
 site_description: The documentation for Obsidian Mkdocs Publisher
-site_url: https://obsidianpublisher.github.io/obsidian-mkdocs-publisher-docs/
+site_url: https://obsidian-publisher.netlify.app
 
 theme:
     name: 'material'
