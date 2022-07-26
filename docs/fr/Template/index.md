@@ -91,6 +91,11 @@ Alternativement :
     - <u>Publish directory</u> : `site`
 - Prendre le fichier `runtime.txt` et le rajouter à la racine de votre dépôt, ou créer une nouvelle variable d'environnement nommée `PYTHON_VERSION` fixée à `3.8`.
 
+Afin de gagner du temps sur la build et économiser votre bande passante/temps de déploiement, vous devez désactiver la prévisualisation du blog à chaque push. 
+Pour cela, rendez-vous dans le menu `settings` -> `build & deploy` -> `deploy-previews`
+![picture 1](https://i.imgur.com/DNS0DdX.png)  
+
+
 > [!note]
 > Il peut être possible que vous ayez besoin de supprimer la branch `gh-pages` pour supprimer l'ancienne page GitHub Pages.
 

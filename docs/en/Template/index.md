@@ -95,8 +95,16 @@ Alternatively :
 ![config_netlify](https://i.imgur.com/ESc9vLu.png)  
 - Grab the `runtime.txt` or create a new environment variable with `PYTHON_VERSION` fixed at `3.8`.
 
+To gain deploy time and bandswith, you need to desactivate the deploy preview. To do so, go in `settings` -> `build & deploy` -> `deploy preview` and uncheck the box.
+![picture 1](https://i.imgur.com/DNS0DdX.png)  
+
+
 > [!note]
 > It can be possible that you need to remove your `gh-pages` in GitHub to remove GitHub Pages.
+
+Afin de gagner du temps sur la build et économiser votre bande passante/temps de déploiement, vous devez désactiver la prévisualisation du blog à chaque push. 
+Pour cela, rendez-vous dans le menu `settings` -> `build & deploy` -> `deploy-previews`
+![picture 1](https://i.imgur.com/DNS0DdX.png)  
 
 > [!info] Pros/cons
 >> [!info] Pros
@@ -110,6 +118,8 @@ Alternatively :
 >> - You need to have a Netlify account
 >> - Limited by Bandswith for all site (100 GB)
 >> - Limited to 300 minutes/builds per month. 
+
+
 
 ---
 - [Main Repo](https://github.com/Mara-Li/obsidian_mkdocs_publisher)
