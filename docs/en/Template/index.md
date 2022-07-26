@@ -13,8 +13,8 @@ In your new `publish_blog` folder, you will spot a `mkdocs.yml`. This file allow
 3. `site_url` (critical) : By default, it's `https://github_username.io/repo_name`[^1]
 
 To edit the logo and the favicon, first put the chosen file in `assets/logo`, and change `logo` and `favicon` :
-1. `logo: assets/logo/logo_name.png`
-2. `favicon: assets/logo/favicon.png`
+1. `logo: assets/meta/logo_name.png`
+2. `favicon: assets/meta/favicon.png`
 
 You can customize :
 - Font

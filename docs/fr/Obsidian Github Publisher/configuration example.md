@@ -23,11 +23,11 @@ title: Exemple de configuration
 3. Transclusion
    - [x] Transférer les images
    - [x] Transférer les notes transclues 
-   - Dossier d'images par défauts : `docs/assets/images`
+   - Dossier d'images par défaut : `docs/assets/images`
 4. Github Workflow
     - Laissez en blanc les actions GitHub
     - [x] Auto-nettoyage 
-    - Dossier exclus : `docs/assets/logo, docs/assets/js, docs/assets/css, docs/tags.md`[^3]
+    - Dossier exclus : `docs/assets/meta, docs/assets/js, docs/assets/css, docs/tags.md`[^3]
 5. Paramètre du plugin :
    Seuls les paramètres de suppression d'une partie du lien doivent être éditer pour fonctionner avec la template : `docs/, .md`
 

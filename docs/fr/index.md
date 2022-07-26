@@ -46,19 +46,19 @@ Les plugins sont accessibles avec une action github et un module d'Obsidian.
 5. Personnalisez (ou non) les options de dossiers
 6. Exécutez les commandes par le biais du menu fichier ou de la palette de commandes.
 
-> [!INFO] [[Obsidian Github Publisher/Configuration example|Regardez ici pour plus d'explication]]
+> [!example] [Regardez ici pour plus d'explication](https://obsidian-publisher.netlify.app/fr/obsidian%20github%20publisher/configuration%20example/)
 
 ---
 
 ## Tutoriel d'installation rapide d'un blog
 1. Cliquez sur [use this template](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-template/generate)[^1]
 2. Utilisez le nom de votre choix
-3. Cliquez sur [code](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories) → SSH ; Copiez le lien
+3. Cliquez sur [code](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories) → SSH → Copiez le lien
 4. Lancer (dans un terminal):
-```bash
-git clone [[PASTE THE LINK HERE]] publish_blog
-pip install -r requirements.txt
-```
+	```bash
+	git clone [[PASTE THE LINK HERE]] publish_blog
+	pip install -r requirements.txt
+	```
 
 N'oubliez pas non plus de configurer GitHub pour autoriser le push ! (Voir ici pour des informations sur la configuration de Git) (https://docs.github.com/en/get-started/quickstart/set-up-git)
 

@@ -26,7 +26,7 @@ share: true
 4. Github Workflow
     - Leave blank the GitHub actions
     - [x] Auto-clean up 
-    - Excluded folder : `docs/assets/logo, docs/assets/js, docs/assets/css, docs/tags.md`[^3]
+    - Excluded folder : `docs/assets/meta, docs/assets/js, docs/assets/css, docs/tags.md`[^3]
 5. Embed settings : 
     - [x] Image
     - [x] Embed notes

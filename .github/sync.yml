@@ -11,5 +11,7 @@ ObsidianPublisher/obsidian-mkdocs-publisher-template:
   - docs/assets/css/img-grid-floats.css
   - docs/assets/css/utils.css
   - docs/assets/js/utils.js
-  - source: docs/Template - The blog/index.md
+  - source: docs/en/Template/index.md
     dest: README.md
+  - source: docs/fr/Template/index.md
+    dest: README-FR.md
