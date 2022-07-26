@@ -45,25 +45,6 @@ Les plugins sont accessibles avec une action github et un module d'Obsidian.
 > [!INFO] [[Obsidian Github Publisher/Configuration example|Regardez ici pour plus d'explication]]
 
 ---
-## Using terminal commands
-
-> [!warning] Déprécié
-
-### Prerequisites
-Vous avez besoin de : 
-- [Git](https://git-scm.com/) et un compte [Github](https://github.com/)
-- [Python](https://www.python.org/)
-- Optionnel *(Windows)*: [Windows Terminal](https://docs.microsoft.com/fr-fr/windows/terminal/)
-
-### TLDR
-1. Installer / mettre à jour avec `pip install obs2mk --upgrade`.
-2. Template le blog, clonez-le et configurez le blog. 
-3. Configurer le script (première exécution)
-4. Ajouter la clé de partage dans le fichier Obsidian
-5. Personnalisation de la touche `category` dans le frontmatter des notes d'Obsidian
-6. Exécutez le script `obs2mk`.
-
----
 
 ## Tutoriel d'installation rapide d'un blog
 1. Cliquez sur [use this template](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-template/generate)[^1]
@@ -76,5 +57,8 @@ pip install -r requirements.txt
 ```
 
 N'oubliez pas non plus de configurer GitHub pour autoriser le push ! (Voir ici pour des informations sur la configuration de Git) (https://docs.github.com/en/get-started/quickstart/set-up-git)
+
+De manière alternative, vous pouvez utiliser Netlify pour créer et déployer le blog. Pour cela, vous devez juste cliquer ici : [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template)
+N'oubliez pas de configurer le fichier `mkdocs.yml` !
 
 [^1]: Vous devez être connecté pour copier le template ! Vous pouvez tester localement par clone > https : `git clone https://github.com/Mara-Li/mkdocs_obsidian_template.git` ou [en téléchargeant le ZIP](https://github.com/Mara-Li/mkdocs_obsidian_template/archive/refs/heads/main.zip)

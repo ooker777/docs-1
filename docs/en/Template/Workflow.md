@@ -1,5 +1,6 @@
 ---
 share: true
+title: Github Actions
 ---
 
 There is a lot of Github Actions here ! First, if you need information on what is a github action :

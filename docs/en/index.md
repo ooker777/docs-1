@@ -12,6 +12,7 @@ Mkdocs Obsidian is an association between an Obsidian plugin and a Material mkdo
 </p>
 <p align="center"><a href="https://obsidian-publisher.netlify.app">Documentation</a></p>
 <p align="center"><a href="https://www.mara-li.fr">Owlly Seed (My Blog ; In French)</a></p>
+<p align="center"><a href="https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template"><img src="https://www.netlify.com/img/deploy/button.svg"></a><p>
 The plugins can be accessed with a github actions and a Obsidian's plugin.
 
 ## Main links
@@ -45,25 +46,6 @@ The plugins can be accessed with a github actions and a Obsidian's plugin.
 > [!INFO] [[Obsidian Github Publisher/Configuration example|See here for advanced configuration within obsidian]]
 
 ---
-## Using terminal commands
-
-> [!warning] Deprecated
-
-### Prerequisites
-You need : 
-- [Git](https://git-scm.com/) and a [Github Account](https://github.com/)
-- [Python](https://www.python.org/)
-- Optional *(Windows)*: [Windows Terminal](https://docs.microsoft.com/fr-fr/windows/terminal/)
-
-### TLDR
-1. Install / update with `pip install obs2mk --upgrade`
-2. Template the blog, clone it and configure the blog. 
-3. Configure the script (first run)
-4. Add `share: true` in Obsidian's note frontmatter
-5. Customize the `category` key in Obsidian's note frontmatter
-6. Run the script `obs2mk`
-
----
 
 ## Quick blog installation tutorial
 1. Click on [use this template](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-template/generate)[^1]
@@ -76,6 +58,9 @@ pip install -r requirements.txt
 ```
 
 Also, don't forget to configure GitHub to allow push! [Check here for information about setting-up Git!](https://docs.github.com/en/get-started/quickstart/set-up-git)
+
+Alternatively, you can use the Netlify app to deploy your blog ! Just click here : [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template). Don't forget to update the `mkdocs.yml` !
+
 
 [^1]: You must be connected to copy the template ! You can test locally through clone > https : `git clone https://github.com/Mara-Li/mkdocs_obsidian_template.git` or [with downloading the ZIP](https://github.com/Mara-Li/mkdocs_obsidian_template/archive/refs/heads/main.zip)
 

@@ -44,8 +44,25 @@ J'ai inclus :
 > Vous remarquerez que j'ai ajouté une [`custom fences`](https://facelessuser.github.io/pymdown-extensions/extensions/superfences/) pour dataviewjs. Désolé, dataviewjs n'est pas encore supporté par mkdocs ni Obsidian Publisher. Ce "custom fence" cachera tous les blocs dataviewjs. 
 > Elle empêchera donc l'affichage de blocs étranges dans votre fichier markdown. Si vous avez besoin de l'afficher comme du code, changez le langage (comme `js` par exemple).
 
+## Test local (*optionnel*)
 
-## Oh non, un bug !
+Pour faire fonctionner le blog en local, vous devez installer les pré-requis et lancer `mkdocs serve`.
+```
+cd publish_blog
+pip install -r requirements.txt
+mkdocs serve
+```
+Un petit conseil : Vous pouvez utiliser un environnement [conda](https://docs.conda.io/en/latest/) ici (ou un venv, mais je n'aime pas venv). Utilisez simplement ceci :
+``bash
+conda create -n Publisher python=3.10.4
+conda activate Publisher
+```
+Juste avant l'installation du `pip` !
+
+---
+
+# Deploiement
+## Par GitHub Pages
 
 Le blog sera publié via [GitHub Page](https://pages.github.com/) en utilisant la branche `gh-page`. 
 
@@ -59,23 +76,35 @@ Le blog sera publié via [GitHub Page](https://pages.github.com/) en utilisant l
 >> [!Avertissement] En cas de problème de worfklow
 >> Dans le [problème #4](https://github.com/obsidianPublisher/obsidian-github-publisher/issues/4), nous avons découvert que parfois, les actions Github refusent de s'exécuter sans raison. Si cela vous arrive, veuillez contacter le support Github !
 
----
+## Par Netlify
 
-## Test local (*optionnel*)
+Netlify est un service qui permet de publier votre blog gratuitement sur un site web, et la construction du blog (*build*) sera beaucoup plus rapide que via GitHub.
 
-Pour faire fonctionner le blog en local, vous devez installer les pré-requis et lancer `mkdocs serve`.
+Pour déployer votre blog, vous pouvez cliquer ici : [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template)
 
-```
-cd publish_blog
-pip install -r requirements.txt
-mkdocs serve
-```
-Un petit conseil : Vous pouvez utiliser un environnement [conda](https://docs.conda.io/en/latest/) ici (ou un venv, mais je n'aime pas venv). Utilisez simplement ceci :
-``bash
-conda create -n Publisher python=3.10.4
-conda activate Publisher
-```
-Juste avant l'installation du `pip` !
+Alternativement : 
+- Créer un compte sur Netlify.app
+- Ajouter un nouveau site en utilisant un dépôt déjà existant. 
+    Pour la configuration, vous pouvez utiliser :
+    - Laisser blanc pour le `base directory`
+    - <u>Build command</u> : `mkdocs build`
+    - <u>Publish directory</u> : `site`
+- Prendre le fichier `runtime.txt` et le rajouter à la racine de votre dépôt, ou créer une nouvelle variable d'environnement nommée `PYTHON_VERSION` fixée à `3.8`.
+
+> [!note]
+> Il peut être possible que vous ayez besoin de supprimer la branch `gh-pages` pour supprimer l'ancienne page GitHub Pages.
+
+> [!info] Avantages/inconvénients
+>> [!info] Avantages
+>> - Plus rapide que GitHub Pages (1min VS 3min)
+>> - Gratuit
+>> - Pas besoin de s'inquiéter du temps des workflow dans les dépôt privés.
+>> - Meilleur liens et customisation de ses derniers.
+>
+>> [!info] Inconvénients
+>> - Vous avez besoin d'un compte Netlify pour déployer votre blog.
+>> - Limité par la bande passante à 100GB pour tous les sites
+>> - Limités à 300minutes/build par mois.
 
 ---
 
