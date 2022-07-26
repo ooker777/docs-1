@@ -12,6 +12,8 @@ Mkdocs Obsidian est une association entre un plugin Obsidian et un modèle Mater
 </p>
 <p align="center"><a href="https://obsidian-publisher.netlify.app">Documentation</a></p>
 <p align="center"><a href="https://www.mara-li.fr">Owlly Seed (Mon blog ; en françaiks)</a></p>
+<p align="center"><a href="https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template"><img src="https://www.netlify.com/img/deploy/button.svg"></a><p>
+
 Les plugins sont accessibles avec une action github et un module d'Obsidian.
 
 ## Liens principaux
@@ -58,7 +60,9 @@ pip install -r requirements.txt
 
 N'oubliez pas non plus de configurer GitHub pour autoriser le push ! (Voir ici pour des informations sur la configuration de Git) (https://docs.github.com/en/get-started/quickstart/set-up-git)
 
-De manière alternative, vous pouvez utiliser Netlify pour créer et déployer le blog. Pour cela, vous devez juste cliquer ici : [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template)
+De manière alternative, vous pouvez utiliser Netlify pour créer et déployer le blog. Pour cela, vous devez juste cliquer ici : 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template)
+
 N'oubliez pas de configurer le fichier `mkdocs.yml` !
 
 [^1]: Vous devez être connecté pour copier le template ! Vous pouvez tester localement par clone > https : `git clone https://github.com/Mara-Li/mkdocs_obsidian_template.git` ou [en téléchargeant le ZIP](https://github.com/Mara-Li/mkdocs_obsidian_template/archive/refs/heads/main.zip)
