@@ -3,3 +3,4 @@ site/*
 desktop.ini
 */.obsidian/*
 .obsidian/*
+__pycache__
