@@ -67,4 +67,8 @@ De manière alternative, vous pouvez utiliser Netlify pour créer et déployer l
 
 N'oubliez pas de configurer le fichier `mkdocs.yml` !
 
+<p align="center">
+	<a href="https://www.netlify.com"> <img src="https://www.netlify.com/v3/img/components/netlify-color-bg.svg" alt="Deploys by Netlify" /> </a>
+</p>
+
 [^1]: Vous devez être connecté pour copier le template ! Vous pouvez tester localement par clone > https : `git clone https://github.com/Mara-Li/mkdocs_obsidian_template.git` ou [en téléchargeant le ZIP](https://github.com/Mara-Li/mkdocs_obsidian_template/archive/refs/heads/main.zip)
