@@ -1,6 +1,6 @@
 ---
 share: true
-title: Index
+title: Home
 ---
 
 Mkdocs Obsidian is an association between an Obsidian plugin and a Material mkdocs template to get a personal wiki site based on your Obsidian Vault.
