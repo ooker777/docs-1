@@ -1,6 +1,15 @@
 ---
 share: true
 ---
+
+> [!Warning] Depreciation notice
+> As the releasing of :
+> - [Mkdocs Callout](https://pypi.org/project/mkdocs-callouts/)
+> - [Custom tags attributes](https://pypi.org/project/mkdocs-custom-tags-attributes/)
+> - [Obsidian Github Publisher](../Obsidian%20Github%20Publisher/index.md)
+> The python package is now deprecated. Please, [read the template README](../Template/index.md) to get more information about the plugins. 
+
+
 The script can be use :
 - Directly in Obsidian, using [Obsidian Shell Commands](https://github.com/Taitava/obsidian-shellcommands) (see [Obsidian shell configuration](https://obsidian-publisher.netlify.appdocumentation/obs2mk/obsidian%20shell/) )
 - In a [terminal](#commands).
