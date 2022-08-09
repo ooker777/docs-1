@@ -1,4 +1,12 @@
 
+> [!Warning] Depreciation notice
+> As the releasing of :
+> - [Mkdocs Callout](https://pypi.org/project/mkdocs-callouts/)
+> - [Custom tags attributes](https://pypi.org/project/mkdocs-custom-tags-attributes/)
+> - [Obsidian Github Publisher](../Obsidian%20Github%20Publisher/index.md)
+> The python package is now deprecated. Please, [read the template README](../Template/index.md) to get more information about the plugins. 
+
+
 ## On push
 The main workflow is in `ci.yml` . **It needs a push event where the commit name starts with `[PUBLISHER]`**. After that, it will scan the repository and try to find modified file (since the last commit). After find these file, it will convert it using obs2mk, and build the mkdocs site. 
 
