@@ -13,4 +13,4 @@ mkdocs-simple-hooks==0.1.5
 mkdocs-callouts==1.6.0
 mkdocs-custom-tags-attributes==0.2.1
 mkdocs-static-i18n==0.46
-git+=https://github.com/Mara-Li/mkdocs-meta-descriptions-plugin
+git+https://github.com/Mara-Li/mkdocs-meta-descriptions-plugin.git
