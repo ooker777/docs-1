@@ -1,17 +1,14 @@
-ObsidianPublisher/obsidian-mkdocs-publisher-python:
-  - source: docs/en/OBS2MK - Python in terminal/usage.md
-    dest: README.md
 ObsidianPublisher/obsidian-github-publisher:
-  - source: docs/en/Obsidian Github Publisher/index.md
+  - source: docs/en/Obsidian/index.md
     dest: README.md
-  - source: docs/fr/Obsidian Github Publisher/index.md
+  - source: docs/fr/Obsidian/index.md
     dest: docs/README_FR.md
 ObsidianPublisher/obsidian-mkdocs-publisher-template:
   - docs/assets/css/custom_attributes
   - docs/assets/css/img-grid-floats.css
   - docs/assets/css/utils.css
   - docs/assets/js/utils.js
-  - source: docs/en/Template/index.md
+  - source: docs/en/Getting Started/creation.md
     dest: README.md
-  - source: docs/fr/Template/index.md
+  - source: docs/fr/Getting Started/creation.md
     dest: README-FR.md
