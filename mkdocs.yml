@@ -37,6 +37,7 @@ theme:
     features:
         - navigation.indexes
         - navigation.top
+        - navigation.sections
         - navigation.tabs
         - navigation.tabs.sticky
         - navigation.expand
@@ -94,7 +95,8 @@ plugins:
   - ezlinks:
         wikilinks: true
   - mermaid2
-  - awesome-pages
+  - awesome-pages:
+      collapse_single_pages: true
   - tooltipster-links:
       callouts: true
       custom-attributes: 'assets/css/custom_attributes.css'
