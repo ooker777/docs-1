@@ -9,7 +9,7 @@ theme:
         - yaml
         - rust
     logo: assets/meta/SEO.png
-    favicon: assets/meta/favicons.png
+    favicon: assets/meta/SEO.png
     custom_dir: overrides
     font:
         text: Ubuntu
