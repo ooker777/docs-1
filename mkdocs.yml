@@ -8,7 +8,7 @@ theme:
     hljs_languages:
         - yaml
         - rust
-    logo: assets/meta/favicons.png
+    logo: assets/meta/SEO.png
     favicon: assets/meta/favicons.png
     custom_dir: overrides
     font:
@@ -112,6 +112,7 @@ plugins:
       hooks:
         on_env: "overrides.hooks.on_env:on_env"
         on_page_markdown: "overrides.hooks.on_page_markdown:on_page_markdown"
+  - meta-descriptions
 extra_javascript:
   - assets/js/mathjax.js
   - assets/js/utils.js
@@ -128,5 +129,5 @@ extra_css:
     - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
 extra:
   generator: false
-  SEO: 'assets/meta/LOGO_SEO.png'
+  SEO: 'assets/meta/SEO.png'
 
