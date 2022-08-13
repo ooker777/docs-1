@@ -16,23 +16,30 @@ title: Exemple de configuration
     - Dossier par défaut : `docs/notes`
     - Clé de métadonnée: `category` (vous pouvez la changer !)
     - Dossier racine : `docs`
-2. Conversion des liens
+    - [ ] Utiliser la clé frontmatter "title" pour générer le nom du fichier (configuration libre, personnellement je l'utilise!)
+2. Convertion du texte:
+   1. Texts
+   - [ ] Saut de ligne strict
+   - [ ] Dataview[^4]
+   2. Liens
    - [x] Note de dossier ("folder note")
    - [x] Liens internes
    - [ ] Wikilinks (la template les supporte par défaut!)   
 3. Transclusion
    - [x] Transférer les images
    - [x] Transférer les notes transclues 
-   - Dossier d'images par défaut : `docs/assets/images`
+   - Dossier d'images par défaut : `docs/assets/img`
 4. Github Workflow
-    - Laissez en blanc les actions GitHub
+    - **Laissez en blanc les actions GitHub**
     - [x] Auto-nettoyage 
-    - Dossier exclus : `docs/assets/meta, docs/assets/js, docs/assets/css, docs/tags.md`[^3]
+    - Dossier exclus : `docs/assets/js, docs/assets/meta, docs/assets/css, tags.md`[^3]
 5. Paramètre du plugin :
-   Seuls les paramètres de suppression d'une partie du lien doivent être éditer pour fonctionner avec la template : `docs/, .md`
+   - Lien du blog : Si vous utilisez autre chose que github pages.
+   - Retirer une partie du lien : `docs/, .md`
+   - [ ] Notifier toutes les erreurs (utile pour le débogage sur mobile)
 
 
-Les fichiers (et les images) seront envoyés sur votre modèle de dépôt GitHub, dans le dossier spécifié.
+Les fichiers (et les images) seront envoyés sur votre dépôt GitHub, dans le dossier spécifié.
 
 ### Informations utiles
 #### Liens
@@ -40,10 +47,10 @@ Les fichiers (et les images) seront envoyés sur votre modèle de dépôt GitHub
 - [Template](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-template)
 
 #### Comment...
-- [Configurer le blog](https://obsidian-publisher.netlify.appdocumentation/create%20the%20blog/)
-- [Customiser le blog](https://obsidian-publisher.netlify.appdocumentation/blog%20customization/)
-- [Copier les liens](https://obsidian-publisher.netlify.appdocumentation/useful%20plugins/#metacopy)
-- [Mettre à jour la template](https://obsidian-publisher.netlify.appdocumentation/Q%26A/#2-update-the-template)
+- [[fr/Getting Started/configuration|Configurer le blog]]
+- [[fr/setup/customization|Customiser le blog]]
+- [[fr/Obsidian/useful plugins.md#Metacopy|Copier les liens]]
+- [[fr/Getting Started/upgrading|Mettre à jour le modèle]]
 
 #### Support
 - [x] Wikilinks (`[[Links]]`)
@@ -76,3 +83,4 @@ Les fichiers (et les images) seront envoyés sur votre modèle de dépôt GitHub
 [^1]: You must be connected to copy the template ! You can test locally through clone > https : `git clone https://github.com/Mara-Li/mkdocs_obsidian_template.git` or [with downloading the ZIP](https://github.com/Mara-Li/mkdocs_obsidian_template/archive/refs/heads/main.zip)
 [^2]: You need to be connected to generate it.
 [^3]: Normally, only file supported by obsidian are deleted, but some image exists only on the blog (for logo, for example). To prevent bad surprise, exclude these folder here.
+[^4]: Vous êtes libre ou non de convertir les blocs dataview **simple** en markdown. Si cette option est désactivé, les blocs seront totalement supprimés du fichier converti. 
