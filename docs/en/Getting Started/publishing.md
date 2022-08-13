@@ -1,44 +1,6 @@
 ---
-title: Creating & publishing your own blog
+title: Publishing
 ---
-
-## Mkdocs configuration
-
-You need to configure the plugin to work properly, and in parallels, the `mkdocs` configuration.
-
-You can see more information about the site creation using [The Material Mkdocs Documentation](https://squidfunk.github.io/mkdocs-material/creating-your-site/#advanced-configuration).
-
-In your new cloned blog, you will spot a `mkdocs.yml`. This file allows you to customize your blog! The most important to edit :
-1. `site_name` 
-2. `site_description`
-3. `site_url` (critical) : By default, it's `https://github_username.io/repo_name`[^1]
-
-To edit the logo and the favicon, first put the chosen file in `assets/logo`, and change `logo` and `favicon` :
-1. `logo: assets/meta/logo_name.png`
-2. `favicon: assets/meta/favicon.png`
-3. In order to properly work with SEO, also edit the `extra` with `SEO: 'assets/meta/LOGO_SEO.png'`
-You can customize :
-- Font
-- Color scheme, palette, icons 
-- Language  
-
-[Check the documentation to get more information](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
-
-You don't need to touch anything in `features` ; `markdown_extensions…`
-
-### Local testing
-To run locally the blog, you need to install the requirements and run `mkdocs serve`.
-```
-cd publish_blog
-pip install -r requirements.txt
-mkdocs serve
-```
-A little advice here : You could use a [conda](https://docs.conda.io/en/latest/) environment here (or a venv, but I don't like venv.). Just use this:
-```bash
-conda create -n Publisher python=3.10.4
-conda activate Publisher
-```
-Just before the `pip install`!
 
 ## Publishing 
 
@@ -94,12 +56,5 @@ To gain deploy time and bandswith, you need to desactivate the deploy preview. T
 >> - You need to have a Netlify account
 >> - Limited by Bandswith for all site (100 GB)
 >> - Limited to 300 minutes/builds per month. 
-
----
-- [Main Repo](https://github.com/Mara-Li/obsidian_mkdocs_publisher)
-- [Obsidian Plugin](https://github.com/Mara-Li/obsidian-mkdocs-publisher-plugin/)
-- [Python package](https://github.com/Mara-Li/obsidian-mkdocs-publisher-python)
-- [Template](https://github.com/Mara-Li/obsidian-mkdocs-publisher-template)
-- [Documentation](https://mara-li.github.io/obsidian_mkdocs_publisher_docs/)
 
 [^1]: You can found the link in Repository settings > Pages. 

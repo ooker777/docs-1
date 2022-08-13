@@ -1,49 +1,6 @@
 ---
-title: Créer & publier votre propre blog
+title: Publication
 ---
-
-## Configuration de Mkdocs
-
-Vous avez besoin de configurer à la fois le module Obsidian et mkdocs afin que tout fonctionne proprement.
-
-Vous pouvez obtenir plus d'information au sujet de la création de site via Material Mkdocs [ici](https://squidfunk.github.io/mkdocs-material/creating-your-site/#advanced-configuration).
-
-Au sein de votre template nouvellement clonée, vous trouverez un `mkdocs.yml`. Ce fichier vous permet de personnaliser votre blog ! 
-
-Les plus importants à éditer :
-1. `site_name` 
-2. `site_description`
-3. `site_url` (critique) : Par défaut, c'est `https://github_username.io/repo_name` [^1]
-
-Pour modifier le logo et le favicon, mettez d'abord le fichier choisi dans `assets/logo`, et changez `logo` et `favicon` :
-1. `logo : assets/meta/logo_name.png`
-2. `favicon : assets/meta/favicon.png`.
-3. `extra` : `SEO : 'assets/meta/LOGO_SEO.png'` afin de faire fonctionner proprement les SEO.
-
-Vous pouvez personnaliser :
-- Police
-- Schéma de couleurs, palette, icônes 
-- Langue  
-
-[Consultez la documentation pour obtenir plus d'informations](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/)
-
-Vous n'avez pas besoin de toucher à quoi que ce soit dans `features` ; `markdown_extensions...`
-
-
-### Test local (*optionnel*)
-
-Pour faire fonctionner le blog en local, vous devez installer les pré-requis et lancer `mkdocs serve`.
-```
-cd publish_blog
-pip install -r requirements.txt
-mkdocs serve
-```
-Un petit conseil : Vous pouvez utiliser un environnement [conda](https://docs.conda.io/en/latest/) ici (ou un venv, mais je n'aime pas venv). Utilisez simplement ceci :
-``bash
-conda create -n Publisher python=3.10.4
-conda activate Publisher
-```
-Juste avant l'installation du `pip` !
 
 ## Déploiement & publication
 
@@ -100,10 +57,5 @@ Pour cela, rendez-vous dans le menu `settings` -> `build & deploy` -> `deploy-pr
 >> - Limité par la bande passante à 100GB pour tous les sites
 >> - Limités à 300minutes/build par mois.
 
----
-
-- [Obsidian Plugin](https://github.com/ObsidianPublisher/obsidian-github-publisher)
-- [Template](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template)
-- [Documentation](https://obsidian-publisher.netlify.app)
 
 [^1]: Vous pouvez trouver le lien dans `Settings > Pages`

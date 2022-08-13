@@ -8,7 +8,7 @@ ObsidianPublisher/obsidian-mkdocs-publisher-template:
   - docs/assets/css/img-grid-floats.css
   - docs/assets/css/utils.css
   - docs/assets/js/utils.js
-  - source: docs/en/Getting Started/creation.md
+  - source: docs/en/Getting Started/configuration.md
     dest: README.md
-  - source: docs/fr/Getting Started/creation.md
+  - source: docs/fr/Getting Started/configuration.md
     dest: README-FR.md
