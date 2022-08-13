@@ -64,7 +64,7 @@ Les fichiers (et les images) seront envoyés sur votre dépôt GitHub, dans le d
 
 #### Limitations
 
-![[../template/limitations.md]]
+![[../setup/limitations]]
 
 ---
 ## [Digital Garden](https://github.com/TuanManhCao/digital-garden)

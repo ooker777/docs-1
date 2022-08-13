@@ -16,25 +16,29 @@ title: Configuration example
     - Default folder : `docs/notes`
     - Choose your frontmatter key: `category` (you can change it!)
     - Root folder : `docs`
-2. Links conversion
-   - [x] Folder note
-   - [x] Internal links
-   - [ ] Wikilinks (the template support them by default!) 
+    - [ ] Use the frontmatter "title" to generate the file name (free, personally I use it!)
+2. Text conversion
+   1. Texts
+       - [ ] Strict line breaks
+       - [ ] Dataview[^4]
+    2. Links 
+      - [x] Folder note
+      - [x] Internal links
+      - [ ] Wikilinks (the template support them by default!) 
 3. Embed
    - [x] Image
    - [x] Embedded notes
-   - Default folder : `docs/assets/images`
+   - Default folder : `docs/assets/img`
 4. Github Workflow
-    - Leave blank the GitHub actions
+    - **Leave blank the GitHub actions**
     - [x] Auto-clean up 
-    - Excluded folder : `docs/assets/meta, docs/assets/js, docs/assets/css, docs/tags.md`[^3]
-5. Embed settings : 
-    - [x] Image
-    - [x] Embed notes
-    - Choose `docs/assets/img`
-6. ✅ Folder notes
+    - Excluded folder : `docs/assets/js, docs/assets/meta, docs/assets/css, tags.md`[^3]
+5. Plugin parameters :
+    - Blog link : If you use something else than github pages.
+    - Remove a part of the link : `docs/, .md`
+    - [ ] Notify all errors (useful for debugging on mobile)
 
-The files (and the images) will be sent on your GitHub repository template, in the specified folder. 
+The files (and the images) will be sent on your GitHub repository, in the specified folder. 
 
 ### Useful informations
 #### Links
@@ -42,10 +46,10 @@ The files (and the images) will be sent on your GitHub repository template, in t
 - [Template](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-template)
 
 #### How to...
-- [Configure the blog](https://obsidian-publisher.netlify.appdocumentation/create%20the%20blog/)
-- [Customize the blog](https://obsidian-publisher.netlify.appdocumentation/blog%20customization/)
-- [Copy the link ?](https://obsidian-publisher.netlify.appdocumentation/useful%20plugins/#metacopy)
-- [Update the template](https://obsidian-publisher.netlify.appdocumentation/Q%26A/#2-update-the-template)
+- [[en/Getting Started/configuration|Configure the blog]]
+- [[en/setup/customization|Customize the blog]]
+- [[en/Obsidian/useful plugins.md#Metacopy|Copy links]]
+- [[en/Getting Started/upgrading|Update the template]]
 
 #### Support
 - [x] Wikilinks (`[[Links]]`)
@@ -59,7 +63,7 @@ The files (and the images) will be sent on your GitHub repository template, in t
 
 #### Limitations
 
-![[../template/limitations.md]]
+![[../setup/limitations]]
 
 ---
 ## [Digital Garden](https://github.com/TuanManhCao/digital-garden)
@@ -78,3 +82,4 @@ The files (and the images) will be sent on your GitHub repository template, in t
 [^1]: You must be connected to copy the template ! You can test locally through clone > https : `git clone https://github.com/Mara-Li/mkdocs_obsidian_template.git` or [with downloading the ZIP](https://github.com/Mara-Li/mkdocs_obsidian_template/archive/refs/heads/main.zip)
 [^2]: You need to be connected to generate it.
 [^3]: Normally, only file supported by obsidian are deleted, but some image exists only on the blog (for logo, for example). To prevent bad surprise, exclude these folder here.
+[^4]: You are free to convert or not the **simple** dataview bloc in Markdown. If this option is disabled, the bloc will be deleted complety in the converted file. 
