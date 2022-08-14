@@ -8,6 +8,7 @@ title: Obsidian Github Publisher
 <!-- TOC -->
 
 - [Ce que fait le plugin](#ce-que-fait-le-plugin)
+  - [Ce que ne fait pas le plugin](#ce-que-ne-fait-pas-le-plugin)
 - [Configuration](#configuration)
   - [Example de configuration](#example-de-configuration)
   - [GitHub](#github)
@@ -30,9 +31,9 @@ title: Obsidian Github Publisher
 
 <!-- /TOC -->
 
-GitHub Publisher est un plugin qui vous aide à envoyer des fichiers dans un dépôt GitHub configuré, en fonction de l'état d'une clé de partage situé dans votre bloc de métadonnée (frontmatter).
+GitHub Publisher est un module qui vous aide à envoyer des fichiers dans un dépôt GitHub en fonction de l'état d'une clé de métadonnée situé dans votre frontmatter.
 
-Vous pouvez l'utiliser pour envoyer n'importe quel fichier markdown sur GitHub, permettant la compatibilité avec de nombreuses alternatives d'Obsidian Publish. 
+Vous pouvez l'utiliser pour envoyer n'importe quel fichier markdown sur GitHub, permettant la compatibilité avec de nombreuses alternatives d'Obsidian Publish (tel que Jekyll, Mkdocs, Hugo ou toute solution s'appuyant sur des fichiers Markdown). 
 
 Lorsqu'un fichier partagé est trouvé, il sera envoyé dans une nouvelle branche nommée par `votre_nom_du_coffre-mois-jour-année`. Une pull request suivie d'une fusion sera faite, et si tout est correct, la branche sera supprimée après la fusion. 
 Ainsi, vous pouvez facilement revenir sur un commit, et créer un workflow basé sur un PR, un PR fusionné, un push spécifique... 
@@ -51,6 +52,13 @@ Mais le plugin peut faire beaucoup plus !
 - Partager les fichiers transcluent automatiquement (uniquement s'ils ont la clé de partage)
 - Copier un lien vers votre presse-papier !
 - Convertir les block `dataview` !
+
+## Ce que ne fait pas le plugin
+
+- [ ] Utiliser un dossier local à la place d'un dépôt distant hébergé sur GitHub (voir [dossiers locaux](https://obsidian-publisher.netlify.app/fr/obsidian/local%20folder/))
+- [ ] Synchroniser un dépôt git avec votre coffre (Voir [Obsidian Git](https://github.com/denolehov/obsidian-git) pour cela)
+- [ ] Faire un café 🍵
+- [ ] Ramener l'être aimé (le mort)
 
 ---
 

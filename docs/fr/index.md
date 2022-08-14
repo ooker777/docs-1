@@ -6,7 +6,7 @@ hide:
   - toc
 ---
 
-Mkdocs Obsidian est une association entre un plugin Obsidian et un modèle Material mkdocs pour obtenir un site wiki personnel basé sur votre coffre Obsidian.
+Mkdocs Obsidian est une association entre un module Obsidian et un modèle Material mkdocs pour obtenir un wiki personnel basé sur votre coffre Obsidian.
 
 <p align="center">
 	<a href="https://github.com/Mara-Li/mkdocs_obsidian_publish"><img src="https://img.shields.io/github/license/Mara-Li/YAFPA-python"></img></a>

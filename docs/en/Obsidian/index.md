@@ -7,6 +7,7 @@ title: Obsidian Github Publisher
 <!-- TOC -->
 
 - [What the plugin do](#what-the-plugin-do)
+  - [What the plugin doesn't do](#what-the-plugin-doesnt-do)
 - [Configuration](#configuration)
   - [Configuration example](#configuration-example)
   - [GitHub](#github)
@@ -30,9 +31,9 @@ title: Obsidian Github Publisher
 <!-- /TOC -->
 
 
-GitHub Publisher is a plugin that help you to send file in a configured GitHub Repository, based on a front matter entry state. 
+GitHub Publisher is a plugin that help you to send file in a configured GitHub Repository, based on a frontmatter sharing key. 
 
-You can use it to send any markdown file, allowing compatibility thought a lot of Obsidian Publish alternative. 
+You can use it to send any markdown file, allowing compatibility thought a lot of Obsidian Publish alternative (like Mkdocs, Jekyll, Hugo or any solution that use Markdown files). 
 
 When a shared file is found, it will be sent in a new branch named by `your_vault_name-month-day-year`. A pull request followed by a merge will be done, and if everything is okay, the branch will be deleted after the merge. 
 Thus, you can easily revert commit, and create workflow based on PR, merged PR, specific push... 
@@ -51,6 +52,11 @@ But the plugin can do a lot more !
 - Send a link's note in your clipboard after sharing.
 - Convert simple dataview query in markdown !
 
+## What the plugin doesn't do 
+- [ ] Using a local folder instead of a Github Repository (see [local folder](https://obsidian-publisher.netlify.app/obsidian/local%20folder/))
+- [ ] Synchronize a GitHub repository with your vault (See [Obsidian Git](https://github.com/denolehov/obsidian-git) to do that)
+- [ ] Do a coffee 🍵
+- [ ] Bring back the loved one (the dead one)
 
 ---
 
