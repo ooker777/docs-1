@@ -13,17 +13,19 @@ title: Obsidian Github Publisher
   - [Example de configuration](#example-de-configuration)
   - [GitHub](#github)
   - [Configuration de l'upload](#configuration-de-lupload)
-    - [Dossiers de réceptions](#dossiers-de-réceptions)
+    - [Paramètre de chemin d'accès](#paramètre-de-chemin-daccès)
       - [Bloc de métadonnées](#bloc-de-métadonnées)
       - [Dossier fixé](#dossier-fixé)
       - [Chemin Obsidian](#chemin-obsidian)
-    - [Workflow](#workflow)
-      - [Auto-nettoyage](#auto-nettoyage)
-    - [Conversion des liens](#conversion-des-liens)
-      - [Index & folder note](#index--folder-note)
+    - [Conversion du contenu](#conversion-du-contenu)
+      - [Textes](#textes)
+      - [Liens](#liens)
+        - [Index & folder note](#index--folder-note)
       - [Lien internes](#lien-internes)
       - [Lien Wikilinks vers lien markdown](#lien-wikilinks-vers-lien-markdown)
     - [Transclusion (embed)](#transclusion-embed)
+    - [Workflow](#workflow)
+      - [Auto-nettoyage](#auto-nettoyage)
   - [Paramètres du plugin](#paramètres-du-plugin)
 - [Développement](#développement)
   - [Général](#général)
@@ -52,11 +54,12 @@ Mais le plugin peut faire beaucoup plus !
 - Partager les fichiers transcluent automatiquement (uniquement s'ils ont la clé de partage)
 - Copier un lien vers votre presse-papier !
 - Convertir les block `dataview` !
+- ✨ Remplacer du texte en utilisant une expression régulière (ou un simple texte) !
 
 ## Ce que ne fait pas le plugin
 
 - [ ] Utiliser un dossier local à la place d'un dépôt distant hébergé sur GitHub (voir [dossiers locaux](https://obsidian-publisher.netlify.app/fr/obsidian/local%20folder/))
-- [ ] Synchroniser un dépôt git avec votre coffre (Voir [Obsidian Git](https://github.com/denolehov/obsidian-git) pour cela)
+- [ ] Synchroniser un dépôt git avec votre coffre (Voir [Obsidian Git](https://github.com/denolehov/obsidian-git) / [Obsidian Git Mobile](https://github.com/Vinzent03/obsidian-git-mobile) pour cela)
 - [ ] Faire un café 🍵
 - [ ] Ramener l'être aimé (le mort)
 
@@ -80,7 +83,7 @@ Vous trouverez [ici](https://obsidian-publisher.netlify.appfr/Obsidian%20Github%
 
 ## Configuration de l'upload
 
-### Dossiers de réceptions
+### Paramètre de chemin d'accès
 Vous avez trois possibilités : 
 - Utiliser un dossier "fixe" : Chaque fichier sera envoyé dans ce dossier. 
 - Utiliser un dossier créé à partir d'une clé `category`.
@@ -126,38 +129,21 @@ La `suppression de chemin` vous permet de supprimer une partie du chemin créé,
 > Vous pourrez utiliser `vault/sub` comme le chemin retiré. L'envoie passera par `vault/sub` comme racine dans le dépôt. 
 > Un fichier dans `vault/sub/dossierA` sera envoyé dans `repo/dossierA`.
 
-### Workflow 
-
-Si votre workflow doit activer une action GitHub, définissez le nom ici. 
-
-Laissez-le vide pour désactiver l'activation des actions GitHub.
-
-#### Auto-nettoyage
-
-Vous pouvez également configurer une "suppression automatique" lorsque vous utilisez les commandes pour supprimer des fichiers :
-- Supprimés de votre coffre-fort
-- Que vous avez cessé de partager
-
-Cette option ajoutera également une nouvelle commande pour nettoyer les fichiers uniquement.
-
-> [!warning] Attention
-> Vous ne pouvez pas utiliser la commande delete si vous n'avez pas défini un dossier par défaut (et un dossier racine si vous utilisez la configuration YAML).
-> De plus, vous pouvez perdre certains fichiers en utilisant cette commande, alors faites attention ! N'oubliez pas que vous pouvez revenir en arrière au cas où le plugin supprimerait un fichier que vous ne souhaitez pas supprimer.
-
-Il est aussi possible d'empêcher la suppression en utilisant, dans le frontmatter :
- - `share: false` sur un fichier **dans** le dépôt (uniquement) ou sans clé de partage.
- - `autoclean: false` dans le fichier de configuration
- - `index: true` 
-
-Vous pouvez définir le chemin d'accès des dossiers et fichier dont vous voulez éviter la suppression. Séparez les dossiers/fichiers par une virgule.[^1]
-> [!note] Les regex ne sont pas supportées ici!
-
-
-### Conversion des liens
+### Conversion du contenu
 
 > [!note] Ces paramètres ne modifieront pas le contenu de votre fichier dans votre coffre-fort.
 
-#### Index & folder note
+#### Textes
+
+Pour certaines raisons, vous pouvez avoir besoin de convertir du texte dans vos fichiers. Ici, vous pouvez configurer :
+- Utiliser les sauts de lignes strictes, qui ajout un retour à la ligne "markdown" (double espace) avant chaque saut de ligne.
+- La convertion des blocs Dataview simple en markdown. Si cette option est désactivé, le bloc entier sera supprimé du fichier.
+- Remplacement de texte : vous pouvez remplacer du texte par un autre en utilisant une simple chaine de caractère/mot ou une expression régulière (Regex).
+  - Le texte à remplacer est insensible à la casse.
+  - Le remplacement peut être vide pour supprimer la chaine complète.
+
+#### Liens
+##### Index & folder note
 
 Certaines solutions de publication prennent en charge les notes de dossier, mais ces notes doivent être nommées `index`. Si vous utilisez [Folder Note](https://github.com/aidenlx/alx-folder-note) avec [les stratégies `same name`](https://github.com/aidenlx/alx-folder-note/wiki/folder-note-pref), vous aurez un problème, non ? Par chance, j'ai une solution pour vous, les gars !
 
@@ -194,6 +180,35 @@ Si vous utilisez des wikilinks quotidiennement mais que votre alternative à Obs
 Vous pouvez choisir d'envoyer des fichiers transcluent :
 - Des images : L'image sera copiée dans le dépôt dans un dossier défini en option ou dans le dossier par défaut.
 - Notes : Seuls les fichiers partagés seront copiés dans le dépôt, dans leur dossier respectifs (suivant vos paramètres).
+
+### Workflow 
+
+Si votre workflow doit activer une action GitHub, définissez le nom ici. 
+
+Laissez-le vide pour désactiver l'activation des actions GitHub. 
+
+> [!note] L'action à activer doit être activé sur un évènement `workflow_dispatche`
+
+#### Auto-nettoyage
+
+Vous pouvez également configurer une "suppression automatique" lorsque vous utilisez les commandes pour supprimer des fichiers :
+- Supprimés de votre coffre-fort
+- Que vous avez cessé de partager
+
+Cette option ajoutera également une nouvelle commande pour nettoyer les fichiers uniquement.
+
+> [!warning] Attention
+> Vous ne pouvez pas utiliser la commande delete si vous n'avez pas défini un dossier par défaut (et un dossier racine si vous utilisez la configuration YAML).
+> De plus, vous pouvez perdre certains fichiers en utilisant cette commande, alors faites attention ! N'oubliez pas que vous pouvez revenir en arrière au cas où le plugin supprimerait un fichier que vous ne souhaitez pas supprimer.
+
+Il est aussi possible d'empêcher la suppression en utilisant, dans le frontmatter :
+ - `share: false` sur un fichier **dans** le dépôt (uniquement) ou sans clé de partage.
+ - `autoclean: false` dans le fichier de configuration
+ - `index: true` 
+
+Vous pouvez définir le chemin d'accès des dossiers et fichier dont vous voulez éviter la suppression. Séparez les dossiers/fichiers par une virgule.[^1]
+> [!note] Les regex ne sont pas supportées ici!
+
 
 ## Paramètres du plugin
 
@@ -240,4 +255,4 @@ Si vous trouvez ce module et ce workflow utile, vous pouvez m'envoyer de quoi m'
 <a href='https://ko-fi.com/X8X54ZYAV' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 [^1]: Seuls les fichiers supportés par Obsidian seront supprimés. 
-[^2]: De manière évidente, vous devez être connectés pour pouvoir créer le token. De fait, vous êtes obligés d'avoir un compte github!
+[^2]: De manière évidente, vous devez être connectés pour pouvoir créer le token. De fait, vous êtes obligés d'avoir un compte GitHub!
