@@ -55,6 +55,7 @@ Mais le plugin peut faire beaucoup plus !
 - Copier un lien vers votre presse-papier !
 - Convertir les block `dataview` !
 - ✨ Remplacer du texte en utilisant une expression régulière (ou un simple texte) !
+- ✨ Envoyer vos inlines tags dans votre bloc de métadonnée (sous la clé `tags`)
 
 ## Ce que ne fait pas le plugin
 
@@ -141,6 +142,8 @@ Pour certaines raisons, vous pouvez avoir besoin de convertir du texte dans vos 
 - Remplacement de texte : vous pouvez remplacer du texte par un autre en utilisant une simple chaine de caractère/mot ou une expression régulière (Regex).
   - Le texte à remplacer est insensible à la casse.
   - Le remplacement peut être vide pour supprimer la chaine complète.
+- Ajouter vos tags inlines dans votre bloc de métadonnée et converti les tags imbriqués en remplaçant le `/` en `_` (par exemple, `#tag/subtag` sera converti en `#tag_subtag`). En bonus, le frontmatter sera converti en YAML standard. 
+
 
 #### Liens
 ##### Index & folder note

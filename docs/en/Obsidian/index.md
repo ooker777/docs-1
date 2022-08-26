@@ -55,6 +55,7 @@ But the plugin can do a lot more !
 - Send a link's note in your clipboard after sharing.
 - Convert simple dataview query in markdown !
 - ✨ Replace text using regex expression (or a simple string...)!
+- ✨ Send your inlines tags to your frontmatter (in the `tags` key)
 
 ## What the plugin doesn't do 
 - [ ] Using a local folder instead of a Github Repository (see [local folder](https://obsidian-publisher.netlify.app/obsidian/local%20folder/))
@@ -150,6 +151,8 @@ For some reason, you can need to convert text in your file. Here you can configu
 - Text replacement : you can replace text by another one in the converted file, using a simple string or regex. 
   - The given text is insensitive to case.
   - The replacement can be empty to remove the whole string.
+- Add your inlines tags into your frontmatter and convert nested tags with replacing the `/` to `_` (for example, `#tag/subtag` will be converted to `tag_subtag`), also, consequently, fix your frontmatter as YAML standard. 
+
 
 #### Links
 ##### Index & folder note
