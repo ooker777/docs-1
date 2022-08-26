@@ -1,9 +1,5 @@
 name: Sync Files
-on: 
-  push:
-    paths:
-      - overrides/**
-      - .github/**
+on: push
 
 jobs:
   sync:
