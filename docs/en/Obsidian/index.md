@@ -263,6 +263,13 @@ To add a new language :
 - Create a PR to add your translation!
 
 ---
+# Useful links
+- [The documentation](https://obsidian-publisher.netlify.app/)
+- [The repository](https://github.com/ObsidianPublisher/obsidian-github-publisher)
+- [Mkdocs Template](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template)
+- [The discord server](https://discord.gg/8FqxxjxGYx)
+
+---
 If you find this plugin and workflow useful, you can give me some coffee money.
 <a href='https://ko-fi.com/X8X54ZYAV' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 

@@ -30,6 +30,7 @@ title: Obsidian Github Publisher
 - [Développement](#développement)
   - [Général](#général)
   - [Traduction](#traduction)
+- [Liens utiles](#liens-utiles)
 
 <!-- /TOC -->
 
@@ -251,6 +252,14 @@ Pour ajouter un nouveau langage :
   - ajoutez la nouvelle langue dans l'objet json `localeMap` : `{ "language" : language }`
 - De plus, vous pouvez tester si votre traduction est correcte.
 - Créez un PR pour ajouter votre traduction !
+
+---
+# Liens utiles
+
+- [La documentation](https://obsidian-publisher.netlify.app/)
+- [Le dépôt GitHub](https://github.com/ObsidianPublisher/obsidian-github-publisher)
+- [La template Material Mkdocs](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template)
+- [Le serveur discord](https://discord.gg/8FqxxjxGYx)
 
 ---
 

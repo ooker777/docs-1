@@ -9,21 +9,13 @@ hide:
 Mkdocs Obsidian est une association entre un module Obsidian et un modèle Material mkdocs pour obtenir un wiki personnel basé sur votre coffre Obsidian.
 
 <p align="center">
-	<a href="https://github.com/Mara-Li/mkdocs_obsidian_publish"><img src="https://img.shields.io/github/license/Mara-Li/YAFPA-python"></img></a>
-	<a href="https://obsidian.md/"><img src="https://img.shields.io/badge/Auxiliary%20Tool-Obsidian-blueviolet"></img></a>
-	<a href="https://github.com/Mara-Li/mkdocs_obsidian_template/wiki/Q&A/"><img src="https://img.shields.io/badge/-Q%26A-blue?logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIgMkM2LjQ4NiAyIDIgNi40ODYgMiAxMnM0LjQ4NiAxMCAxMCAxMCAxMC00LjQ4NiAxMC0xMFMxNy41MTQgMiAxMiAyem0wIDE4Yy00LjQxMSAwLTgtMy41ODktOC04czMuNTg5LTggOC04IDggMy41ODkgOCA4LTMuNTg5IDgtOCA4eiIvPjxwYXRoIGQ9Ik0xMSAxMWgydjZoLTJ6bTAtNGgydjJoLTJ6Ii8+PC9zdmc+"></img></a>
-</p>
-<p align="center">
-	<a href="https://obsidian-publisher.netlify.app">Documentation</a><br/>
-	<a href="https://www.mara-li.fr">Owlly Seed (Mon blog ; en français)</a><br/>
-	<a href="https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template"><img src="https://www.netlify.com/img/deploy/button.svg"></a>
+	<a href="https://obsidian.md/"><img src="https://img.shields.io/badge/Auxiliary%20Tool-Obsidian-blueviolet"></img></a><br/>
+	<a href='https://ko-fi.com/X8X54ZYAV' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a><br/>
+	<a href="https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template"><img src="https://www.netlify.com/img/deploy/button.svg"></a><br/>
 </p>
 
-Les plugins sont accessibles avec une action github et un module d'Obsidian.
-
-## Liens principaux
-- [Module Obsidian](https://github.com/obsidianPublisher/obsidian-github-publisher)
-- [Modèle](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-template)
+- [Module Obsidian](https://github.com/ObsidianPublisher/obsidian-github-publisher)
+- [Serveur discord](https://discord.gg/8FqxxjxGYx)
 
 ### Support 
 - [x] Wikilinks (`[[Liens]]`)
@@ -43,7 +35,7 @@ Les plugins sont accessibles avec une action github et un module d'Obsidian.
 3. Configurer les options du plugins : 
 	- Nom du dépôt
 	- Votre pseudonyme GitHub
-	- Le Token GitHub ([from here](https://github.com/settings/tokens/new?scopes=repo))
+	- Le Token GitHub ([d'ici](https://github.com/settings/tokens/new?scopes=repo))
 	- La clé de partage
 4. Ajouter la clé à l'état `true` dans vos fichiers Obsidian
 5. Personnalisez (ou non) les options de dossiers
@@ -54,7 +46,7 @@ Les plugins sont accessibles avec une action github et un module d'Obsidian.
 ---
 
 ## Tutoriel d'installation rapide d'un blog
-1. Cliquez sur [use this template](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-template/generate)[^1]
+1. Cliquez sur ['use this template'](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-template/generate)[^1]
 2. Utilisez le nom de votre choix
 3. Cliquez sur [code](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories) → SSH → Copiez le lien
 4. Lancer (dans un terminal):
