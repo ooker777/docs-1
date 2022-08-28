@@ -41,6 +41,8 @@ title: Exemple de configuration
 
 Les fichiers (et les images) seront envoyés sur votre dépôt GitHub, dans le dossier spécifié.
 
+[Vous pouvez aussi télécharger ce fichier pour récupérer rapidement les paramètres. Ce fichier est à placer dans `.obsidian/obsidian-mkdocs-publisher` et vous devez reload le plugin/obsidian pour charger les paramètres]()
+
 ### Informations utiles
 #### Liens
 - [Obsidian Plugin](https://github.com/obsidianPublisher/obsidian-github-publisher)
