@@ -40,10 +40,13 @@ title: Configuration example
 
 The files (and the images) will be sent on your GitHub repository, in the specified folder. 
 
+[You can also download this file to get quickly the parameters. This file must be in `.obsidian/obsidian-mkdocs-publisher` and you must reload the plugin (or obsidian) to charge the parameters](https://raw.githubusercontent.com/ObsidianPublisher/obsidian-mkdocs-publisher-docs/main/download/data.json)
+
 ### Useful informations
 #### Links
 - [Obsidian Plugin](https://github.com/obsidianPublisher/obsidian-github-publisher)
 - [Template](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-template)
+- [Discord guild](https://discord.gg/8FqxxjxGYx)
 
 #### How to...
 - [[en/Getting Started/configuration|Configure the blog]]

@@ -9,10 +9,9 @@ hide:
 Mkdocs Obsidian est une association entre un module Obsidian et un modèle Material mkdocs pour obtenir un wiki personnel basé sur votre coffre Obsidian.
 
 <p align="center">
-	<a href="https://obsidian.md/"><img src="https://img.shields.io/badge/Auxiliary%20Tool-Obsidian-blueviolet"></img></a><br/>
-	<a href='https://ko-fi.com/X8X54ZYAV' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a><br/>
-	<a href="https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template"><img src="https://www.netlify.com/img/deploy/button.svg"></a><br/>
-</p>
+	<a href="https://obsidian.md/"><img src="https://img.shields.io/badge/Auxiliary%20Tool-Obsidian-blueviolet"></img></a><br>
+	<a href='https://ko-fi.com/X8X54ZYAV' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a><br>
+	<a href="https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template"><img src="https://www.netlify.com/img/deploy/button.svg"></a><br></p>
 
 - [Module Obsidian](https://github.com/ObsidianPublisher/obsidian-github-publisher)
 - [Serveur discord](https://discord.gg/8FqxxjxGYx)

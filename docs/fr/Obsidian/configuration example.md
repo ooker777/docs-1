@@ -41,12 +41,13 @@ title: Exemple de configuration
 
 Les fichiers (et les images) seront envoyés sur votre dépôt GitHub, dans le dossier spécifié.
 
-[Vous pouvez aussi télécharger ce fichier pour récupérer rapidement les paramètres. Ce fichier est à placer dans `.obsidian/obsidian-mkdocs-publisher` et vous devez reload le plugin/obsidian pour charger les paramètres]()
+[Vous pouvez aussi télécharger ce fichier pour récupérer rapidement les paramètres. Ce fichier est à placer dans `.obsidian/obsidian-mkdocs-publisher` et vous devez reload le plugin/obsidian pour charger les paramètres](https://raw.githubusercontent.com/ObsidianPublisher/obsidian-mkdocs-publisher-docs/main/download/data.json)
 
 ### Informations utiles
 #### Liens
 - [Obsidian Plugin](https://github.com/obsidianPublisher/obsidian-github-publisher)
 - [Template](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-template)
+- [Serveur discord](https://discord.gg/8FqxxjxGYx)
 
 #### Comment...
 - [[fr/Getting Started/configuration|Configurer le blog]]
@@ -82,7 +83,7 @@ Les fichiers (et les images) seront envoyés sur votre dépôt GitHub, dans le d
     - Transférer les notes transclues sur false
     - Dossier par défaut : `posts/Attachments`.
 
-[^1]: You must be connected to copy the template ! You can test locally through clone > https : `git clone https://github.com/Mara-Li/mkdocs_obsidian_template.git` or [with downloading the ZIP](https://github.com/Mara-Li/mkdocs_obsidian_template/archive/refs/heads/main.zip)
-[^2]: You need to be connected to generate it.
-[^3]: Normally, only file supported by obsidian are deleted, but some image exists only on the blog (for logo, for example). To prevent bad surprise, exclude these folder here.
+[^1]: Vous devez être connecté pour tester la template, mais vous pouvez tester localement à travers un clone : `git clone https://github.com/Mara-Li/mkdocs_obsidian_template.git` ou en téléchargeant [le ZIP](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/archive/refs/heads/main.zip)
+[^2]: Vous devez être connecté pour le générer
+[^3]: Normalement, uniquement les fichiers supportés par Obsidian seront supprimé, mais certaines images existent uniquement dans le blog (logo...). Pour éviter les mauvaises surprises, n'oubliez pas d'exclure les dossiers ici.
 [^4]: Vous êtes libre ou non de convertir les blocs dataview **simple** en markdown. Si cette option est désactivé, les blocs seront totalement supprimés du fichier converti. 
