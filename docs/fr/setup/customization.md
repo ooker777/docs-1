@@ -77,7 +77,7 @@ Le `dictionnaire` sera reconnu, et converti !
 
 ## Liste d'article
 
-![](../assets/img/Article_list.png)
+![[Article_list.png]]
 Une nouvelle façon d'afficher votre article/poste est d'utiliser un modèle spécial.
 
 Pour organiser cela, vous devez utiliser :
@@ -117,4 +117,84 @@ extra:
 
 
 > [!note] Vous pouvez aussi utiliser la github action `create_index` pour créer un nouvel index pour un nouveau dossier.
-> Pour plus d'information voir [Workflow](../Getting Started/Workflow.md)
+> Pour plus d'information voir [Workflow](../Getting%20Started/Workflow.md)
+
+## Commentaires
+
+Dans `ovverides/partials`, vous noterez la présence du fichier nommé `comments.html`. Ce fichier permet de configurer des **commentaires** sur votre blog ! Cela use [Giscus](https://giscus.app/fr) pour le configurer.
+
+D'abord, suivez le tutoriel (en anglais) sur la documentation de [Material Mkdocs](https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/). Après cela, copié le script de Giscus, tel que : 
+```html
+```html
+<script
+  src="https://giscus.app/client.js"
+  data-repo="<username>/<repository>"
+  data-repo-id="..."
+  data-category="..."
+  data-category-id="..."
+  data-mapping="pathname"
+  data-reactions-enabled="1"
+  data-emit-metadata="1"
+  data-theme="dark-dimmed"
+  data-lang="fr"
+  crossorigin="anonymous"
+  async
+>
+</script>
+```
+
+> [!note] Pour le thème, vous pouvez utiliser `dark-dimmed`.
+
+Vous devez collé ce texte dans le fichier `comments.html` (que vous avez vu plus tôt), tout de suite après la partie `<h2>`
+
+Le fichier final ressemblera à ça : 
+
+```html
+<!-- Giscus -->
+<h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
+
+<script
+  src="https://giscus.app/client.js"
+  data-repo="<username>/<repository>"
+  data-repo-id="..."
+  data-category="..."
+  data-category-id="..."
+  data-mapping="pathname"
+  data-reactions-enabled="1"
+  data-emit-metadata="1"
+  data-theme="dark-dimmed"
+  data-lang="fr"
+  crossorigin="anonymous"
+  async
+>
+</script>
+
+<script>
+    var giscus = document.querySelector("script[src*=giscus]")
+
+    /* Set palette on initial load */
+    var palette = __md_get("__palette")
+    if (palette && typeof palette.color === "object") {
+        var theme = palette.color.scheme === "slate" ? "dark_dimmed" : "light"
+        giscus.setAttribute("data-theme", theme)
+    }
+
+    /* Register event handlers after documented loaded */
+    document.addEventListener("DOMContentLoaded", function () {
+        var ref = document.querySelector("[data-md-component=palette]")
+        ref.addEventListener("change", function () {
+            var palette = __md_get("__palette")
+            if (palette && typeof palette.color === "object") {
+                var theme = palette.color.scheme === "slate" ? "dark_dimmed" : "light"
+
+                /* Instruct Giscus to change theme */
+                var frame = document.querySelector(".giscus-frame")
+                frame.contentWindow.postMessage(
+                    { giscus: { setConfig: { theme } } },
+                    "https://giscus.app"
+                )
+            }
+        })
+    })
+</script>
+```
