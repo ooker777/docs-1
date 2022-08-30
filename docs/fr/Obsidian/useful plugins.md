@@ -4,7 +4,7 @@ share: true
 ---
 
 **Some useful plugin to support the script** : 
-- [Metacopy](https://github.com/Mara-Li/obsidian-metacopy)
+- [Metacopy](https://github.com/lisandra-dev/obsidian-metacopy)
 - [Commander](https://github.com/phibr0/obsidian-commander)    
 - [Alx Folder Note](https://github.com/aidenlx/alx-folder-note)
 - Custom Attribute :
@@ -13,7 +13,7 @@ share: true
 	- [Contextual Typography](https://github.com/mgmeyers/obsidian-contextual-typography) 
 
 ## Metacopy
-En utilisant [metacopy](https://github.com/Mara-Li/obsidian-metacopy) vous pouvez rapidement copier un lien vers une page partagée
+En utilisant [metacopy](https://github.com/lisandra-dev/obsidian-metacopy) vous pouvez rapidement copier un lien vers une page partagée
 Pour créer un lien, vous devez configurer :  
  1. `category` dans `key`  
  2. Ajoutez votre `set_url` dans `base link`.  

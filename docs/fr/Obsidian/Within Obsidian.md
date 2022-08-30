@@ -8,7 +8,7 @@ title: Avertissement
 >
 > Les plugins sont :
 > - [Mkdocs Callouts](https://github.com/sondregronas/mkdocs-callouts)
-> - [Custom Tags Attributes](https://github.com/Mara-Li/mkdocs-custom-tags-attributes)
+> - [Custom Tags Attributes](https://github.com/lisandra-dev/mkdocs-custom-tags-attributes)
 >
 > Ces deux plugins ne changeront jamais le fichier envoyé dans Github, car l'édition a lieu pendant la construction de la page. 
 

@@ -43,7 +43,7 @@ Add this to any css from your documentation:
 
 ![image](https://user-images.githubusercontent.com/30244939/163732766-d08b102f-508b-496e-a99f-68f865b2080b.png)
 
-You can add a cool image banner with editing [`utils.css`](https://github.com/Mara-Li/obsidian-mkdocs-publisher-template/blob/main/docs/assets/css/utils.css) and adding :
+You can add a cool image banner with editing [`utils.css`](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/main/docs/assets/css/utils.css) and adding :
 ```css
 .md-header {
     background: var(--md-primary-fg-color) url(image_links) left center/cover no-repeat;
@@ -61,10 +61,10 @@ Don't forget to edit the `image_link` with the real links ! Personnaly, I use a 
 
 Some Obsidian's plugin use codeblocks to do some things, as [Agtable](https://github.com/windily-cloud/obsidian-AGtable) or [Table extended](https://github.com/aidenlx/table-extended)
 
-To automatically convert these block to markdown, I use a mini plugin I wrote : [Mkdocs Custom Fence](https://github.com/Mara-Li/mkdocs_custom_fences)
+To automatically convert these block to markdown, I use a mini plugin I wrote : [Mkdocs Custom Fence](https://github.com/lisandra-dev/mkdocs_custom_fences)
 To use it :
-- Add `mkdocs_custom_fences` in your [requirements](https://github.com/Mara-Li/obsidian-mkdocs-publisher-template/blob/main/requirements.txt)
-- Edit the [mkdocs.yml](https://github.com/Mara-Li/obsidian-mkdocs-publisher-template/blob/d7b7d43ff237c09e0cbf160889dcdac4b9459dfd/mkdocs.yml#L70) as follow : 
+- Add `mkdocs_custom_fences` in your [requirements](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/main/requirements.txt)
+- Edit the [mkdocs.yml](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/d7b7d43ff237c09e0cbf160889dcdac4b9459dfd/mkdocs.yml#L70) as follow : 
   ```yml
   markdow_extensions:
   pymdownx.superfences:

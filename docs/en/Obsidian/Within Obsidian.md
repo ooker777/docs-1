@@ -8,7 +8,7 @@ title: Warning
 >
 >The plugins are :
 >- [Mkdocs Callouts](https://github.com/sondregronas/mkdocs-callouts)
->- [Custom Tags Attributes](https://github.com/Mara-Li/mkdocs-custom-tags-attributes)
+>- [Custom Tags Attributes](https://github.com/lisandra-dev/mkdocs-custom-tags-attributes)
 >
 > These two plugin will never change the file send in Github, because the edition happend during the page build. 
 

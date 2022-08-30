@@ -64,5 +64,5 @@ Don't forget to update the `mkdocs.yml` !
 	<a href="https://www.netlify.com"> <img src="https://www.netlify.com/v3/img/components/netlify-color-bg.svg" alt="Deploys by Netlify" /> </a>
 </p>
 
-[^1]: You must be connected to copy the template ! You can test locally through clone > https : `git clone https://github.com/Mara-Li/mkdocs_obsidian_template.git` or [with downloading the ZIP](https://github.com/Mara-Li/mkdocs_obsidian_template/archive/refs/heads/main.zip)
+[^1]: You must be connected to copy the template ! You can test locally through clone > https : `git clone https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template` or [with downloading the ZIP](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/archive/refs/heads/main.zip)
 

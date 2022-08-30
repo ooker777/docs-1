@@ -6,7 +6,7 @@ Using a template (in place of fork) prevent to get the update I do sometimes. So
 
 In the cloned folder, (in your blog) do : 
 ```git
-git remote add Template git@github.com:Mara-Li/obsidian-mkdocs-publisher-template.git
+git remote add Template git@github.com:ObsidianPublisher/obsidian-mkdocs-publisher-template.git
 git fetch Template
 git checkout -b template Template/main
 ```

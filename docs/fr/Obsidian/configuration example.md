@@ -83,7 +83,7 @@ Les fichiers (et les images) seront envoyés sur votre dépôt GitHub, dans le d
     - Transférer les notes transclues sur false
     - Dossier par défaut : `posts/Attachments`.
 
-[^1]: Vous devez être connecté pour tester la template, mais vous pouvez tester localement à travers un clone : `git clone https://github.com/Mara-Li/mkdocs_obsidian_template.git` ou en téléchargeant [le ZIP](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/archive/refs/heads/main.zip)
+[^1]: Vous devez être connecté pour tester la template, mais vous pouvez tester localement à travers un clone : `git clone https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template` ou en téléchargeant [le ZIP](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/archive/refs/heads/main.zip)
 [^2]: Vous devez être connecté pour le générer
 [^3]: Normalement, uniquement les fichiers supportés par Obsidian seront supprimé, mais certaines images existent uniquement dans le blog (logo...). Pour éviter les mauvaises surprises, n'oubliez pas d'exclure les dossiers ici.
 [^4]: Vous êtes libre ou non de convertir les blocs dataview **simple** en markdown. Si cette option est désactivé, les blocs seront totalement supprimés du fichier converti. 

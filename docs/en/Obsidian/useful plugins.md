@@ -4,7 +4,7 @@ share: true
 ---
 
 **Some useful plugin to support the script** : 
-- [Metacopy](https://github.com/Mara-Li/obsidian-metacopy)
+- [Metacopy](https://github.com/lisandra-dev/obsidian-metacopy)
 - [Commander](https://github.com/phibr0/obsidian-commander)    
 - [Obsidian Customizable Menu](https://github.com/kzhovn/obsidian-customizable-menu)
 - [Alx Folder Note](https://github.com/aidenlx/alx-folder-note)
@@ -14,7 +14,7 @@ share: true
 	- [Contextual Typography](https://github.com/mgmeyers/obsidian-contextual-typography) 
 
 ## Metacopy
-Using [metacopy](https://github.com/Mara-Li/obsidian-metacopy) you can quickly copy a link to a shared page, without using this option (so, yes, the script does not edit your source file !).   
+Using [metacopy](https://github.com/Lisandra-dev/obsidian-metacopy) you can quickly copy a link to a shared page, without using this option (so, yes, the script does not edit your source file !).   
 To create a link, you need to configure :  
  1. `category` in `key`  
  2. Add your `set_url` in `base link`  
