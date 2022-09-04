@@ -5,34 +5,34 @@ title: Obsidian Github Publisher
 
 [FR 🇫🇷](https://github.com/obsidianPublisher/obsidian-github-publisher/blob/master/docs/README_FR.md)
 
-<!-- TOC -->
-- [What the plugin do](#what-the-plugin-do)
-  - [What the plugin doesn't do](#what-the-plugin-doesnt-do)
-- [Configuration](#configuration)
-  - [Configuration example](#configuration-example)
-  - [GitHub](#github)
-  - [Upload configuration](#upload-configuration)
-    - [Folder reception settings.](#folder-reception-settings)
-      - [Metadata frontmatter](#metadata-frontmatter)
-      - [Fixed folder](#fixed-folder)
-      - [Obsidian Path](#obsidian-path)
-    - [Frontmatter title](#frontmatter-title)
-    - [Content's conversion](#contents-conversion)
-      - [Text](#text)
-      - [Links](#links)
-        - [Index & folder note](#index--folder-note)
-        - [Internal links](#internal-links)
-        - [Wikilinks to markdown link](#wikilinks-to-markdown-link)
-    - [Embed](#embed)
-    - [Github Workflow](#github-workflow)
-      - [Auto clean-up](#auto-clean-up)
-  - [Plugin settings](#plugin-settings)
+- [What the plugin ...](#what-the-plugin-)
+	- [Do ?](#do-)
+	- [Doesn't do ?](#doesnt-do-)
+- [Global configuration](#global-configuration)
+	- [Configuration example](#configuration-example)
+	- [GitHub](#github)
+	- [Upload configuration](#upload-configuration)
+		- [Folder reception settings.](#folder-reception-settings)
+			- [Metadata frontmatter](#metadata-frontmatter)
+			- [Fixed folder](#fixed-folder)
+			- [Obsidian Path](#obsidian-path)
+		- [Frontmatter title](#frontmatter-title)
+		- [Content's conversion](#contents-conversion)
+			- [Text](#text)
+			- [Tags](#tags)
+			- [Links](#links)
+				- [Index & folder note](#index--folder-note)
+				- [Internal links](#internal-links)
+				- [Wikilinks to markdown link](#wikilinks-to-markdown-link)
+		- [Embed](#embed)
+		- [Github Workflow](#github-workflow)
+			- [Auto clean-up](#auto-clean-up)
+	- [Plugin settings](#plugin-settings)
+- [Per files configuration](#per-files-configuration)
 - [Developping](#developping)
-  - [General](#general)
-  - [Translation](#translation)
+	- [General](#general)
+	- [Translation](#translation)
 - [Useful links](#useful-links)
-<!-- /TOC -->
-
 
 GitHub Publisher is a plugin that help you to send file in a configured GitHub Repository, based on a frontmatter sharing key. 
 
@@ -66,7 +66,7 @@ But the plugin can do a lot more !
 
 ---
 
-# Configuration
+# Global configuration
 
 To use the plugin, you need to fill the correct information to allow the workflow. 
 
@@ -239,6 +239,21 @@ You can configure :
 
 ---
 
+# Per files configuration
+
+Some settings can be overridden based on your frontmatter key (of the file send):
+- `embed` :  override the embed **notes** parameters
+- `image` :  override the `image` parameters. 
+	- `imageLink` : override the folder settings but **beware that the autoclean function doesn't work to erase them!**
+	- if set to `false`, the mention of the image will be also removed.
+- `dataview` :  override the dataview conversion options 
+- `hardbreak:true` will force hardbreak.  
+- Some parameters are linked to the links conversion:
+	- `links:false` will prevent the conversion of them and keep only the alt text (or filename/title)
+	- `mdlinks` : convert to markdownlinks. Note that if coupled with `links:false`, only the image links will be converted. 
+
+
+---
 # Developping
 
 ## General

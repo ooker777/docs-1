@@ -227,6 +227,21 @@ Vous pouvez configurer :
 
 ---
 
+# Paramètres par fichier
+
+Certains paramètres peuvent être remplacés en fonction de clé écrit dans le frontmatter (du fichier envoyé) :
+- `embed` : remplace les paramètres des **notes** transcluent.
+- `image` : remplace les paramètres d'image %% fold %% 
+	- `imageLink` : remplace le dossier de réception des images, mais attention : **la fonction d'auto nettoyage ne pourra pas les effacer par la suite**.
+	- Si le paramètre est fixé à `false`, les mentions des images sera aussi supprimé.
+- `dataview` : remplace les paramètres de conversion des queries dataview.
+- `hardbreak: true` forcera les hard break markdown
+- Certains paramètres sont liés à la conversion des liens : 
+	- `links: false` empêchera les conversion et ne gardera que le texte "alt" (ou le nom du fichier/titre)
+	- `mdlinks` : converti ce fichier en liens markdown. S'il est couplé avec `links:false`, seulement le lien des images sera converti.
+
+---
+
 # Développement
 
 ## Général
@@ -265,7 +280,7 @@ Pour ajouter un nouveau langage :
 
 ---
 
-Si vous trouvez ce module et ce workflow utile, vous pouvez m'envoyer de quoi m'acheter du café en grande quantité :<br/>
+Si vous trouvez ce module et ce workflow utile, vous pouvez m'envoyer de quoi m'acheter du café en grande quantité :<br>
 <a href='https://ko-fi.com/X8X54ZYAV' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 [^1]: Seuls les fichiers supportés par Obsidian seront supprimés. 
