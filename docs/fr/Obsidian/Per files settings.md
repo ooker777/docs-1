@@ -45,4 +45,5 @@ attachment:
   folder: settings.default_folder_image || settings.default_folder || filepath
 dataview: settings.dataview
 hardbreak: settings.hardbreak
+```
 
