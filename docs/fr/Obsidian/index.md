@@ -42,7 +42,7 @@ Ainsi, vous pouvez facilement revenir sur un commit, et créer un workflow basé
 # Ce que fait le plugin
 
 - Lire le frontmatter pour vérifier la valeur d'une clé `share` configurée.
-- Envoyer le fichier (et son image intégrée ou ses notes s'il y en a) vers un dépôt GitHub.
+- Envoyer le fichier (et ses pièces-jointes ou ses notes s'il y en a) vers un dépôt GitHub.
 
 Mais le plugin peut faire beaucoup plus !
 - Convertir des wikilinks en liens markdown (sans modifier votre fichier)
@@ -171,7 +171,7 @@ Maintenant, le plugin va convertir ces fichiers en `index` si vous activez les p
 
 #### Lien internes
 
-Cette option convertira les liens internes (y compris les liens d'image !) du fichier partagé pour correspondre au fichier relatif dans votre dépôt. Seuls les chemins de fichier **existant** et **partagé** seront convertis.
+Cette option convertira les liens internes (y compris les liens des pièces-jointes !) du fichier partagé pour correspondre au fichier relatif dans votre dépôt. Seuls les chemins de fichier **existant** et **partagé** seront convertis.
 > [!exemple] 
 > Fichier cité : `docs/XX/YY/mon_fichier.md`.
 > Fichier à convertir : `docs/XX/ZZ/new_file.md`.
@@ -184,7 +184,7 @@ Si vous utilisez des wikilinks quotidiennement mais que votre alternative à Obs
 ### Transclusion (embed)
 
 Vous pouvez choisir d'envoyer des fichiers transcluent :
-- Des images : L'image sera copiée dans le dépôt dans un dossier défini en option ou dans le dossier par défaut.
+- Des pièces-jointes : Le fichier sera copiée dans le dépôt dans un dossier défini en option ou dans le dossier par défaut.
 - Notes : Seuls les fichiers partagés seront copiés dans le dépôt, dans leur dossier respectifs (suivant vos paramètres).
 
 ### Workflow 
@@ -230,15 +230,22 @@ Vous pouvez configurer :
 # Paramètres par fichier
 
 Certains paramètres peuvent être remplacés en fonction de clé écrit dans le frontmatter (du fichier envoyé) :
-- `embed` : remplace les paramètres des **notes** transcluent.
-- `image` : remplace les paramètres d'image %% fold %% 
-	- `imageLink` : remplace le dossier de réception des images, mais attention : **la fonction d'auto nettoyage ne pourra pas les effacer par la suite**.
-	- Si le paramètre est fixé à `false`, les mentions des images sera aussi supprimé.
-- `dataview` : remplace les paramètres de conversion des queries dataview.
-- `hardbreak: true` forcera les hard break markdown
-- Certains paramètres sont liés à la conversion des liens : 
-	- `links: false` empêchera les conversion et ne gardera que le texte "alt" (ou le nom du fichier/titre)
-	- `mdlinks` : converti ce fichier en liens markdown. S'il est couplé avec `links:false`, seulement le lien des images sera converti.
+1. Pour les conversion des liens, en utilisant la clé `links`, vous pouvez créé un objet Yaml avec :
+	- `mdlinks` : pour forcer la conversion en lien markdown.
+	- `convert` : Pour retirer les liens et en ne gardant que le nom du fichier ou son text alt.
+	Noter que vous pouvez utiliser `links: false` et `mdlinks: true` en dehors de l'objet si vous voulez n'utiliser qu'une seule option.
+2. Les paramètres des notes transcluent, en utilisant la clé `embed` :
+	- `send: false` empêche l'envoie de ses notes (mais pas des pièces-jointes)
+	- `remove: true` pour supprimer toute mention de ses notes.
+	Comme précédemment, il est possible d'utiliser une seule clé, avec `embed` (pour l'envoie) et `removeEmbed` (pour la suppression des citations)
+3. `attachment` pour gérer les pièces-jointes (image, pdf, son, video... Toutes les pièces-jointes supportés par Obsidian)
+	- `send: false` empêche l'envoie des pièces-jointes
+	- `folder` permet de changer le dossier par défaut. Attention, car ce paramètre peut avoir des effets indésirables si appliqués avec l'autocleaner.
+	De nouveau, il est possible d'utiliser un seul paramètre avec `attachmentLinks` pour le dossier et `attachment: false` pour empêcher l'envoie.
+4. `dataview` permet de forcer ou empêcher la conversion des queries dataview.
+5. `hardbreak` pour le paramètre des sauts de lignes en markdown.
+
+Voyez [ici pour une référence rapide](../../fr/Obsidian/Per%20files%20settings.md)
 
 ---
 
