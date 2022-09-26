@@ -35,7 +35,6 @@ function UrlExists(url, type_url) {
             newItem.innerHTML = title;
             newItem.classList.add('not_found');
             url.parentNode.replaceChild(newItem, url);
-            console.log(url)
         }
         else {
             return true;
