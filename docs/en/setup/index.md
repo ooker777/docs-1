@@ -11,7 +11,6 @@ I included :
 - [Ezlinks (from mkdocs-ezlinked-plugin)](https://pypi.org/project/mkdocs-ezlinked-plugin/) : to support directly wikilinks
 - [Mermaid2](https://github.com/fralau/mkdocs-mermaid2-plugin)
 - [Awesome pages](https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin)
-- [Tooltipster-links (from mkdocs-preview-links-plugin)](https://github.com/lisandra-dev/mkdocs-preview-links-plugin)
 - [Embed File](https://github.com/lisandra-dev/mkdocs_embed_file_plugins), to support embedding file as in Obsidian (with the `![](file)` or `![[file]]` syntax)
 - [Git revision date localized](https://github.com/timvink/mkdocs-git-revision-date-localized-plugin), to add a date listing 
 - [Mkdocs Simple Hooks](https://pypi.org/project/mkdocs-simple-hooks/), to allow creating simple python script for mkdocs (including jinja template editing!). 
