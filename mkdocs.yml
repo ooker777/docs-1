@@ -100,6 +100,7 @@ plugins:
   - embed_file:
       callouts: true
       custom-attributes: 'assets/css/custom_attributes.css'
+      language_message: 'ERROR 404 : NOT FOUND'
   - callouts
   - custom-attributes:
         file: 'assets/css/custom_attributes.css' 

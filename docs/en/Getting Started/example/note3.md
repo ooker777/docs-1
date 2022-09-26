@@ -8,13 +8,14 @@ Link to [[en/index]]
 
 
 ## subtitle
-cc ^id
+cc^id
 
 # heading 2
 hello
 
 [[start_here]]
 
-```py
+```
 print("hello")
+console.log("hello")
 ```

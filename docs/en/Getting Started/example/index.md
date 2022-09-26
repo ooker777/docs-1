@@ -6,8 +6,20 @@ A link to [[note3]]
 
 ![](note3.md#^id)
 
-![heading 1](note3.md#heading%201)
+![heading 1](note3.md#heading-1)
 
 ![[note3#subtitle]]
 
-![heading 2](note3.md#heading%202)
+![[note3#heading 2]]
+
+![[note-exist]]
+
+# A jheading
+
+lorem ipsum dolor sit amet
+
+# A second heading
+
+lorem ipsum dolor sit amet
+
+![[#A jheading]]
