@@ -5,9 +5,9 @@ title: Obsidian Github Publisher
 
 [FR 🇫🇷](https://github.com/obsidianPublisher/obsidian-github-publisher/blob/master/docs/README_FR.md)
 
-- [What the plugin ...](#what-the-plugin-)
-	- [Do ?](#do-)
-	- [Doesn't do ?](#doesnt-do-)
+- [Github Publisher](#github-publisher)
+	- [What the plugin can do:](#what-the-plugin-can-do)
+	- [What the plugin CANNOT do:](#what-the-plugin-cannot-do)
 - [Global configuration](#global-configuration)
 	- [Configuration example](#configuration-example)
 	- [GitHub](#github)
@@ -34,6 +34,8 @@ title: Obsidian Github Publisher
 	- [Translation](#translation)
 - [Useful links](#useful-links)
 
+# Github Publisher
+
 GitHub Publisher is a plugin that help you to send file in a configured GitHub Repository, based on a frontmatter sharing key. 
 
 You can use it to send any markdown file, allowing compatibility thought a lot of Obsidian Publish alternative (like Mkdocs, Jekyll, Hugo or any solution that use Markdown files). 
@@ -41,8 +43,7 @@ You can use it to send any markdown file, allowing compatibility thought a lot o
 When a shared file is found, it will be sent in a new branch named by `your_vault_name-month-day-year`. A pull request followed by a merge will be done, and if everything is okay, the branch will be deleted after the merge. 
 Thus, you can easily revert commit, and create workflow based on PR, merged PR, specific push... 
 
-# What the plugin ...
-## Do ?
+## What the plugin can do:
 
 - Read the frontmatter to check the value of a configured `share` key.
 - Send the file (and their embedded attachments or notes if any) to a GitHub repository
@@ -58,11 +59,11 @@ But the plugin can do a lot more !
 - ✨ Replace text using regex expression (or a simple string...)!
 - ✨ Send your inlines tags to your frontmatter (in the `tags` key) **and** convert some field value to tags
 
-## Doesn't do ?
-- [ ] Using a local folder instead of a Github Repository (see [local folder](https://obsidian-publisher.netlify.app/obsidian/local%20folder/))
-- [ ] Synchronize a GitHub repository with your vault (See [Obsidian Git](https://github.com/denolehov/obsidian-git) / [Obsidian Git Mobile](https://github.com/Vinzent03/obsidian-git-mobile))
-- [ ] Do a coffee 🍵
-- [ ] Bring back the loved one (the dead one)
+## What the plugin CANNOT do:
+
+- [ ] Support use of a local folder instead of a GitHub Repository (see [local folder](https://obsidian-publisher.netlify.app/obsidian/local%20folder/))
+- [ ] Synchronize a GitHub repository with your vault (see [Obsidian Git](https://github.com/denolehov/obsidian-git) / [Obsidian Git Mobile](https://github.com/Vinzent03/obsidian-git-mobile))
+- [ ] Revive the dead (see [Cardiopulmonary_resuscitation](https://en.wikipedia.org/wiki/Cardiopulmonary_resuscitation))
 
 ---
 

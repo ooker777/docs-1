@@ -2,19 +2,6 @@
 share: true
 ---
 
-# heading 1
-Link to [[../Python/index]]
-Link to [[en/index]]
+# Image
 
-
-## subtitle
-cc ^id
-
-# heading 2
-hello
-
-[[start_here]]
-
-```py
-print("hello")
-```
+![Engelbart](https://history-computer.com/ModernComputer/Basis/images/Engelbart.jpg)

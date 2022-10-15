@@ -14,7 +14,7 @@ A link to [[note3]]
 
 ![[note-exist]]
 
-# A jheading
+# A heading
 
 lorem ipsum dolor sit amet
 
@@ -22,4 +22,6 @@ lorem ipsum dolor sit amet
 
 lorem ipsum dolor sit amet
 
-![[#A jheading]]
+![[#A heading]]
+
+![[note3#image]]
