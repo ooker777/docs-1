@@ -4,3 +4,9 @@ desktop.ini
 */.obsidian/*
 .obsidian/*
 __pycache__
+/.idea/encodings.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/obsidian_mkdocs_publisher_docs.iml
+/.idea/inspectionProfiles/Project_Default.xml
+/.idea/workspace.xml
