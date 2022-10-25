@@ -16,6 +16,12 @@ attachment:
   folder: string #change le dossier par défaut
 dataview: boolean #permet d'empêcher ou autorise la conversion des dataviews queries
 hardbreak: boolean #écrase le paramètres pour les hard space en markdown.
+repo: 
+  branch: string #change la branche
+  repo: string #change le dépôt
+  owner: string #change le propriétaire (c'est votre nom d'utilisateur Github)
+auto: boolean #désactive le nettoyage automatique
+
 ```
 
 ## En utilisant les noms simples
@@ -29,6 +35,8 @@ attachmentLinks: string #change le dossier des pièces-jointes par défaut
 attachment: boolean #empêche l'envoie des pièces-jointes
 dataview: boolean #permet d'empêcher ou autorise la conversion des dataviews queries
 hardbreak: boolean #écrase le paramètres pour les hard space en markdown.
+repo: string #owner/repo/branch or owner/repo or repo
+autoclean: boolean #disable auto cleaning
 ```
 
 Les valeurs par défauts sont dérivés de vos paramètres (`settings.clé` se réfère à eux)
@@ -45,5 +53,10 @@ attachment:
   folder: settings.default_folder_image || settings.default_folder || filepath
 dataview: settings.dataview
 hardbreak: settings.hardbreak
+repo:
+  branch: settings.branch
+  repo: settings.repo
+  owner: settings.owner
+autoclean: settings.auto_clean
 ```
 

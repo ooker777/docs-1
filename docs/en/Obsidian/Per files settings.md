@@ -15,6 +15,11 @@ attachment:
   folder: string #change default folder for attachment
 dataview: boolean #force/prevent dataview queries conversion
 hardbreak: boolean #same but for hardbreak
+repo: 
+  branch: string #change default branch 
+  repo: string #change default repository
+  owner: string #change default owner (it's your github Username)
+auto: boolean #disable auto cleaning
 ```
 
 ## Using simple name
@@ -27,6 +32,8 @@ attachmentLinks: string #ovverride default folder for attachments
 attachment: boolean #prevent sending attachment
 dataview: boolean
 hardbreak: boolean
+repo: string #owner/repo/branch or owner/repo or repo
+autoclean: boolean #disable auto cleaning
 ```
 
 Default value is derivated from your settings :  (`settings.keys` refer to your settings)
@@ -42,4 +49,9 @@ attachment:
   folder: settings.default_folder_image || settings.default_folder || filepath
 dataview: settings.dataview
 hardbreak: settings.hardbreak
+repo:
+  branch: settings.branch
+  repo: settings.repo
+  owner: settings.owner
+autoclean: settings.auto_clean
 ```
