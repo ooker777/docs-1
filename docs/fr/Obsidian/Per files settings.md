@@ -21,9 +21,34 @@ repo:
   repo: string #change le dépôt
   owner: string #change le propriétaire (c'est votre nom d'utilisateur Github)
 auto: boolean #désactive le nettoyage automatique
-
 ```
 
+Pour plusieurs dépôts :
+
+```yaml
+links:
+  mdlinks: boolean #converti en lien markdown
+  convert: boolean #transforme les liens en simple string et ne conserve que leur texte alt ou le titre/file name (cela retire le [[]]/[]())
+embed:
+  send: boolean #empêche l'envoie des notes transcluent
+  remove: boolean #supprime les citations de note totalement en supprimant entièrement le ![[]] ou ![]() 
+attachment: 
+  send: boolean #empêche l'envoie des pièces-jointes
+  folder: string #change le dossier par défaut
+dataview: boolean #permet d'empêcher ou autorise la conversion des dataviews queries
+hardbreak: boolean #écrase le paramètres pour les hard space en markdown.
+multipleRepo: 
+  - repo:
+      branch: string #change la branche
+      repo: string #change le dépôt
+      owner: string #change le propriétaire (c'est votre nom d'utilisateur Github)
+      autoclean: boolean #active le nettoyage automatique
+  - repo:
+      branch: string #change la branche
+      repo: string #change le dépôt
+      owner: string #change le propriétaire (c'est votre nom d'utilisateur Github)
+      autoclean: boolean #active le nettoyage automatique
+```
 ## En utilisant les noms simples
 
 ```yaml
@@ -35,8 +60,23 @@ attachmentLinks: string #change le dossier des pièces-jointes par défaut
 attachment: boolean #empêche l'envoie des pièces-jointes
 dataview: boolean #permet d'empêcher ou autorise la conversion des dataviews queries
 hardbreak: boolean #écrase le paramètres pour les hard space en markdown.
-repo: string #owner/repo/branch or owner/repo or repo
-autoclean: boolean #disable auto cleaning
+repo: string #owner/repo/branch ou owner/repo or repo
+autoclean: boolean #active le nettoyage automatique
+```
+
+Pour plusieurs dépôts :
+```yaml
+links: boolean #transforme les liens en simple string et ne conserve que leur texte alt ou le titre/file name (cela retire le [[]]/[]())
+mdlinks: boolean #converti en lien markdown
+embed: boolean #empêche l'envoie des notes transcluent
+removeEmbed: boolean #supprime les citations de note totalement en supprimant entièrement le ![[]] ou ![]()
+attachmentLinks: string #change le dossier des pièces-jointes par défaut
+attachment: boolean #empêche l'envoie des pièces-jointes
+dataview: boolean #permet d'empêcher ou autorise la conversion des dataviews queries
+hardbreak: boolean #écrase le paramètres pour les hard space en markdown.
+multipleRepo:
+    - string #owner/repo/branch/autoclean ou owner/repo/branch ou owner/repo ou repo
+    - string #owner/repo/branch/autoclean ou owner/repo/branch ou owner/repo ou repo
 ```
 
 Les valeurs par défauts sont dérivés de vos paramètres (`settings.clé` se réfère à eux)
@@ -53,7 +93,7 @@ attachment:
   folder: settings.default_folder_image || settings.default_folder || filepath
 dataview: settings.dataview
 hardbreak: settings.hardbreak
-repo:
+repo: #multipleRepo utilise les mêmes paramètres
   branch: settings.branch
   repo: settings.repo
   owner: settings.owner
