@@ -46,7 +46,7 @@ The files (and the images) will be sent on your GitHub repository, in the specif
 #### Links
 - [Obsidian Plugin](https://github.com/obsidianPublisher/obsidian-github-publisher)
 - [Template](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-template)
-- [Discord guild](https://discord.gg/8FqxxjxGYx)
+- [Github Discussion](https://github.com/ObsidianPublisher/obsidian-github-publisher/discussions)
 
 #### How to...
 - [[en/Getting Started/configuration|Configure the blog]]

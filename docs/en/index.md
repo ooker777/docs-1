@@ -15,7 +15,7 @@ Mkdocs Obsidian is an association between an Obsidian plugin and a Material mkdo
 </p>
 
 - [Obsidian plugin](https://github.com/ObsidianPublisher/obsidian-github-publisher)
-- [Discord guild](https://discord.gg/8FqxxjxGYx)
+- [Github Discussion](https://github.com/ObsidianPublisher/obsidian-github-publisher/discussions)
 
 ### Support 
 - [x] Wikilinks (`[[Links]]`)

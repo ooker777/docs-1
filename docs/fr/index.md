@@ -14,7 +14,7 @@ Mkdocs Obsidian est une association entre un module Obsidian et un modèle Mater
 	<a href="https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template"><img src="https://www.netlify.com/img/deploy/button.svg"></a><br></p>
 
 - [Module Obsidian](https://github.com/ObsidianPublisher/obsidian-github-publisher)
-- [Serveur discord](https://discord.gg/8FqxxjxGYx)
+- [Github Discussion](https://github.com/ObsidianPublisher/obsidian-github-publisher/discussions)
 
 ### Support 
 - [x] Wikilinks (`[[Liens]]`)
