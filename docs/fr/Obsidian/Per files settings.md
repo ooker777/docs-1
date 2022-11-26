@@ -21,6 +21,7 @@ repo:
   repo: string #change le dépôt
   owner: string #change le propriétaire (c'est votre nom d'utilisateur Github)
 auto: boolean #désactive le nettoyage automatique
+baselink: string #change le lien de base pour les paramètres de copie de lien
 ```
 
 Pour plusieurs dépôts :
@@ -37,6 +38,7 @@ attachment:
   folder: string #change le dossier par défaut
 dataview: boolean #permet d'empêcher ou autorise la conversion des dataviews queries
 hardbreak: boolean #écrase le paramètres pour les hard space en markdown.
+baselink: string #change le lien de base pour les paramètres de copie de lien
 multipleRepo: 
   - repo:
       branch: string #change la branche
@@ -62,6 +64,7 @@ dataview: boolean #permet d'empêcher ou autorise la conversion des dataviews qu
 hardbreak: boolean #écrase le paramètres pour les hard space en markdown.
 repo: string #owner/repo/branch ou owner/repo or repo
 autoclean: boolean #active le nettoyage automatique
+baselink: string #change le lien de base pour les paramètres de copie de lien
 ```
 
 Pour plusieurs dépôts :
@@ -74,6 +77,7 @@ attachmentLinks: string #change le dossier des pièces-jointes par défaut
 attachment: boolean #empêche l'envoie des pièces-jointes
 dataview: boolean #permet d'empêcher ou autorise la conversion des dataviews queries
 hardbreak: boolean #écrase le paramètres pour les hard space en markdown.
+baselink: string #change le lien de base pour les paramètres de copie de lien
 multipleRepo:
     - string #owner/repo/branch/autoclean ou owner/repo/branch ou owner/repo ou repo
     - string #owner/repo/branch/autoclean ou owner/repo/branch ou owner/repo ou repo
@@ -98,5 +102,6 @@ repo: #multipleRepo utilise les mêmes paramètres
   repo: settings.repo
   owner: settings.owner
 autoclean: settings.auto_clean
+baselink: string #change le lien de base pour les paramètres de copie de lien
 ```
 

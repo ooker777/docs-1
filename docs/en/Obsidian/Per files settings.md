@@ -20,6 +20,7 @@ repo:
   repo: string #change default repository
   owner: string #change default owner (it's your github Username)
 autoclean: boolean #disable auto cleaning
+baselink: string #change base link for copylink settings
 ```
 
 For multiple Repo :
@@ -35,6 +36,7 @@ attachment:
   folder: string #change default folder for attachment
 dataview: boolean #force/prevent dataview queries conversion
 hardbreak: boolean #same but for hardbreak
+baselink: string #change base link for copylink settings
 multipleRepo: 
   - repo:
       branch: string #change default branch 
@@ -59,6 +61,7 @@ dataview: boolean
 hardbreak: boolean
 repo: string #owner/repo/branch or owner/repo or repo
 autoclean: boolean #disable auto cleaning
+baselink: string #change base link for copylink settings
 ```
 
 For multiple Repo :
@@ -70,6 +73,7 @@ attachmentLinks: string #ovverride default folder for attachments
 attachment: boolean #prevent sending attachment
 dataview: boolean
 hardbreak: boolean
+baselink: string #change base link for copylink settings
 multipleRepo: list of string 
     - owner/repo/branch/autoclean or owner/repo or repo
     - owner/repo/branch/autoclean or owner/repo or repo
@@ -93,4 +97,5 @@ repo: #same for multipleRepo
   repo: settings.repo
   owner: settings.owner
 autoclean: settings.auto_clean
+baselink: string #change base link for copylink settings
 ```
