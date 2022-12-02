@@ -1,7 +1,62 @@
 ---
 title: Per files settings
 ---
-## Using yaml object
+
+## Changing repository
+:sparkles: It is now possible to set a repository directly in the frontmatter with the `repo` key.
+
+> [!warning]
+> - Your GitHub token must work for this repository
+> - Global function (sharing all new note, all shared notes...) won't send file to this "per-file" repository : only the command `share one note` will work but the **cleaning** will be done too! (see [auto clean up for more information](#auto-clean-up)). You can disable the cleaning with the `clean: false` key in the frontmatter.
+> - The key works in this order : `username/repo/branch`, `username/repo` and `repo`. You can also use a yaml object like that :
+>  ```yaml
+>  repo:
+>    owner: username
+>    repo: repo
+>    branch: branch
+>  ```
+> Globally, if you share only one file, all function will be on the per-file repository instead of the global one. 
+> Also, the settings will be the **same** as the global one, except for repo : image, folder, etc...
+
+:sparkles: You can also set multiple repositories in the frontmatter with the `multipleRepo` key. It works like the `repo` key, but you can set multiple repositories, in a list!
+> [!example] Example
+> ```yaml
+> multipleRepo:
+>  - owner: username
+>    repo: repo
+>    branch: branch
+>  - owner: username
+>    repo: repo
+>    branch: branch
+> ```
+> You can also use a list of string.
+
+> [!note] 
+> - By default, autoclean is set to `false`. You can add the `autoclean` key in the frontmatter to change this behavior : you can configure the autoclean per repos!
+> - You can also use this key with only one repo.
+
+## Frontmatter keys explanation
+
+Some settings can be overridden based on your frontmatter key (of the file send):
+1. For links conversion, using the `links` key, you can create an yaml object with:
+	- `mdlinks` : to force converting to markdown links.
+	- `convert` : to remove the links to just keeps the string (alt text or filename).
+	Note that you can use `links: false` and `mdlinks: true` outside the yaml object if you want to just use one option.
+2. Embed settings, using the `embed` key :
+	- `send:false` avoid the sending of the embedded files (not attachment!)
+	- `remove: true` to remove any mention of these file
+	As before, you can use one key settings using `embed` (for sending) and `removeEmbed` (for citation removing)
+3. `Attachment` : allow per file settings for attachment (image, pdf, sound, video... Any attachment supported by Obsidian)
+	- `send: false` to avoiding sending the files
+	- `folder` to change the default folder. Beware that changing this settings can have strange effect with autocleaning!
+	You can, again, use a one key settings using `attachmentLinks` for the folder and `attachment: false` to avoiding sending.
+4. `dataview` to overrides dataview settings.
+5. `hardbreak` for markdown hard break.
+6. `baselink` : to change the baselink for the copy links function.
+
+
+## Quick references
+### Using yaml object
 
 ```yaml
 links:
@@ -49,7 +104,8 @@ multipleRepo:
       owner: string #change default owner (it's your github Username)
       autoclean: boolean #enable auto cleaning
 ```
-## Using simple name
+
+### Using simple name
 
 ```yaml
 mdlinks: boolean #convert to markdown links
@@ -79,7 +135,8 @@ multipleRepo: list of string
     - owner/repo/branch/autoclean or owner/repo or repo
 ```
 
-Default value is derivated from your settings :  (`settings.keys` refer to your settings)
+Default value is derivative from your settings :  (`settings.keys` refer to your settings)
+
 ```yaml
 links:
   mdlinks: settings.wikilinks

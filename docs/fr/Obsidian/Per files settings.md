@@ -2,6 +2,43 @@
 title: Paramètre par fichier
 ---
 
+
+## Changer de dépôt
+
+:sparkles: Il est maintenant possible de configurer un dépôt à partir du frontmatter avec la clé `repo` !
+> [!warning] Attention
+> - Le token GitHub doit avoir les droits d'écriture sur le dépôt.
+> - Les fonctions globales (tel que `partager toutes les notes` ou encore `partager toutes les notes éditées`) ignorerons les fichiers envoyés dans un autre dépôt que celui configuré dans les paramètres du plugin.
+> - L'[auto-nettoyage](#auto-nettoyage) sur ce dépôt fonctionnera sur ce dépôt lors de l'envoie d'une note configurée avec la clé. Vous pouvez le désactiver en ajoutant la clé `autoclean: false` dans le frontmatter.
+> - La clé doit être écrite dans cet ordre : `repo: pseudo_github/nom_du_dépôt/branch`, `repo: pseudo_github/nom_du_dépôt` et enfin, `repo: nom_du_dépôt`.
+>  Il est cependant possible d'utiliser un objet YAML tel que : 
+>  ```yaml
+>  repo:
+>    owner: pseudo_github
+>    repo: nom_du_dépôt
+>    branch: branch
+>  ```
+> Globalement, si vous partagez uniquement un seul fichier, toutes les fonctions habituelles seront faites sur ce dépôt.
+> De plus, les paramètres de configuration (dossier, image) seront les mêmes que ceux du dépôt configuré dans les paramètres du plugin (sauf si vous les modifiez dans le frontmatter).
+
+Vous pouvez aussi maintenant envoyer un fichier sur plusieurs dépôts en utilisant la clé `mulitpleRepo` dans le frontmatter. Vous pouvez utiliser un tableau YAML ou une chaîne de caractère séparée par des virgules.
+> [!example] Exemple
+> ```yaml
+> multipleRepo:
+>  - repo: nom_du_dépôt
+>    owner: pseudo_github
+>    branch: main
+>  - repo: nom_du_dépôt2
+>    owner: pseudo_github2
+>    branch: main
+> ```
+> Il est aussi possible d'utiliser une chaîne de caractère séparée par des virgules.
+
+> [!note] 
+> - Par défaut, l'auto-nettoyage est désactivé sur tous les dépôts. Vous pouvez l'activer en ajoutant la clé `autoclean: true` dans le frontmatter pour chaque dépôt individuellement.
+> - La clé `multipleRepo` peut être utilisé pour un seul dépôt.
+
+
 ## En utilisant des objets YAML
 
 ```yaml
