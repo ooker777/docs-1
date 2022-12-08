@@ -40,7 +40,9 @@ title: Per files settings
 Some settings can be overridden based on your frontmatter key (of the file send):
 1. For links conversion, using the `links` key, you can create an yaml object with:
 	- `mdlinks` : to force converting to markdown links.
-	- `convert` : to remove the links to just keeps the string (alt text or filename).
+	- `convert` or `links` : to remove the links to just keeps the string (alt text or filename).
+    - `internals` : Convert internal links to their counterpart in the website (in relative path). Disabled, links will be keep as is.
+    - `nonShared` : Same as above, but for links pointing to unshared files. Disabled, links will be transformed to keep the filename.
 	Note that you can use `links: false` and `mdlinks: true` outside the yaml object if you want to just use one option.
 2. Embed settings, using the `embed` key :
 	- `send:false` avoid the sending of the embedded files (not attachment!)

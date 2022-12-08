@@ -39,12 +39,35 @@ Vous pouvez aussi maintenant envoyer un fichier sur plusieurs dépôts en utilis
 > - La clé `multipleRepo` peut être utilisé pour un seul dépôt.
 
 
+## Explications des clés
+
+Certains paramètres peuvent être écrasés par le frontmatter. Voici la liste des clés disponibles :
+1. Pour la conversion des liens, en utilisant la clé `links`, vous pouvez créer un objet YAML tel que :
+   - `mdlinks` : Pour convertir les liens wikilinks en liens markdown.
+   - `convert` ou `links` : Pour retirer les liens internes et ne garder que le text alternatif ou le nom du fichier.
+   - `internals` : Converti les liens internes pour qu'ils correspondent à leur chemin dans le dépôt, sous forme de liens relatifs. S'il est désactivé, les liens seront conservés tel quel.
+   - `nonShared` : Comme au-dessus, mais pour les liens pointant vers des fichiers non-partagés. S'il est désactivé, les liens seront résumés au nom du fichier.
+   Chaque clé est utilisable séparément, en dehors de l'objet YAML.
+2. Pour les paramètres d'embed, en utilisant la clé `embed` : 
+   - `send: false` désactive l'envoie des notes transclues.
+   - `remove: true` supprime toute mention des notes translues.
+   Comme auparavant, chaque clé est utilisable séparément, en dehors de l'objet YAML. `embed: false` empêche l'envoie, et `removeEmbed : true` supprime les mentions.
+3. `attachment` modifie les options pour les pièces jointes :
+   - `send: false` désactive l'envoie des pièces jointes.
+   - `folder` permet de changer le dossier de destination des pièces jointes. Ce paramètre peut avoir des effets indésirables avec le paramètre d'auto-nettoyage.
+   Avec une seule clé : `attachmentLinks` pour le dossier, et `attachment: false` pour la désactivation.
+4. `dataview` modifie les options pour les paramètres de dataview.
+5. `hardBreak` pour les sauts de ligne.
+6. `baseLink` pour changer le lien qui sera créé et copier par la fonction de partage de lien.
+
 ## En utilisant des objets YAML
 
 ```yaml
 links:
   mdlinks: boolean #converti en lien markdown
   convert: boolean #transforme les liens en simple string et ne conserve que leur texte alt ou le titre/file name (cela retire le [[]]/[]())
+  internals: boolean #converti les liens internes pour correspondre à leur chemin dans le dépôt, sous forme de lien relatif
+  nonShared: boolean #converti les liens des fichiers non partagés en lien relatif
 embed:
   send: boolean #empêche l'envoie des notes transcluent
   remove: boolean #supprime les citations de note totalement en supprimant entièrement le ![[]] ou ![]() 
@@ -93,6 +116,8 @@ multipleRepo:
 ```yaml
 links: boolean #transforme les liens en simple string et ne conserve que leur texte alt ou le titre/file name (cela retire le [[]]/[]())
 mdlinks: boolean #converti en lien markdown
+internals: boolean #converti les liens internes pour correspondre à leur chemin dans le dépôt, sous forme de lien relatif
+nonShared: boolean #converti les liens des fichiers non partagés en lien relatif
 embed: boolean #empêche l'envoie des notes transcluent
 removeEmbed: boolean #supprime les citations de note totalement en supprimant entièrement le ![[]] ou ![]()
 attachmentLinks: string #change le dossier des pièces-jointes par défaut
@@ -126,6 +151,8 @@ Les valeurs par défauts sont dérivés de vos paramètres (`settings.clé` se r
 links:
   mdlinks: settings.wikilinks
   convert: true
+  internals: settings.internals_links
+  nonShared: settings.non_shared_links
 embed: 
   send: settings.embed
   remove: false
