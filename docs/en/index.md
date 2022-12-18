@@ -31,7 +31,7 @@ Mkdocs Obsidian is an association between an Obsidian plugin and a Material mkdo
 ## Github actions & Obsidian's plugin
 ### TLDR
 1. Install the plugins through Obsidian Community or [BRAT](https://github.com/TfTHacker/obsidian42-brat)
-2. [Template](https://github.com/obsidianPublisher/mkdocs_obsidian_template) the blog and configure it 
+2. [Template](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template) the blog and configure it 
 3. Configure the plugin's options : 
 	- Repo name
 	- Your github username
@@ -46,7 +46,7 @@ Mkdocs Obsidian is an association between an Obsidian plugin and a Material mkdo
 ---
 
 ## Quick blog installation tutorial
-1. Click on [use this template](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-template/generate)[^1]
+1. Click on [use this template](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/generate)[^1]
 2. Use the name of your choice.
 3. Click on [code](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories) → SSH ; Copy the link
 4. Run (in terminal):
