@@ -63,6 +63,7 @@ The files (and the images) will be sent on your GitHub repository, in the specif
 - [x] Sharing state and custom folder hierarchy.
 - [x] Mobile and desktop
 - [x] File mini preview on Hover
+- [x] Graph view 🎉 (using [obsidiantools](https://github.com/mfarragher/obsidiantools)) 
 
 #### Limitations
 

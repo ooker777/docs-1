@@ -26,6 +26,7 @@ Mkdocs Obsidian is an association between an Obsidian plugin and a Material mkdo
 - [x] Sharing state and custom folder hierarchy.
 - [x] Mobile and desktop
 - [x] File mini preview on Hover
+- [x] Graph view 🎉 (using [Obsidian Tools](https://github.com/mfarragher/obsidiantools))
  
  ---
 ## Github actions & Obsidian's plugin

@@ -198,3 +198,114 @@ Le fichier final ressemblera à ça :
     })
 </script>
 ```
+
+## Vue graphique
+
+J'ai réussi à créer une vue graphique semi-interactive en python. Elle ne permet pas de cliquer sur les articles/post, mais vous pouvez avoir une vue de votre blog.
+
+> [!warning] Notes
+> [obsidiantools](https://github.com/mfarragher/obsidiantools) supporte actuellement python qu'à partir de la version 3.9, ce qui signifie que si vous utilisez Netlify pour build votre blog, vous devez utiliser une ancienne version (car Netlify ne supporte que python 3.8). Les anciennes versions ne sont pas parfaite.
+
+Pour l'utiliser, vous devez installer `obsidiantools` et `pyyaml` :
+```bash
+pip install obsidiantools
+pip install pyvis
+```
+
+N'oubliez pas de les rajouter à vos `requirements.txt` !
+
+Ensuite, vous devez ajouter ceci à [`overrides/hooks/on_env`](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/main/overrides/hooks/on_env.py) : 
+```py
+import obsidiantools.api as otools
+from pyvis.network import Network
+
+def obsidian_graph():
+    """Generates a graph of the Obsidian vault."""
+    log = logging.getLogger("mkdocs.plugins." + __name__)
+    log.info("[OBSIDIAN GRAPH] Generating graph...")
+    vault_path = Path(Path.cwd(), 'docs')
+    vault = otools.Vault(vault_path).connect().gather()
+    graph = vault.graph
+    net = Network(height="750px", width="750px", font_color="#7c7c7c", bgcolor="transparent")
+    net.from_nx(graph)
+    try:
+        net.save_graph(str(Path.cwd() / "docs" / "assets" / "graph.html"))
+    except OSError:
+        pass
+    shutil.rmtree(Path.cwd() / "lib")
+    log.info("[OBSIDIAN GRAPH] Graph generated!")
+    return ""
+
+
+obsidian_graph()
+```
+
+Le fichier `graph.html` sera généré dans le dossier `docs/assets`. Je vous conseille de l'exclure via le fichier `.gitignore`, en rajoutant le chemin du fichier dedans.
+
+Ensuite, vous devez éditer le [fichier `utils.js`](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/main/docs/assets/js/utils.js) en rajoutant ceci : 
+```js
+window.onload = function () {
+    let frameElement = document.querySelector('iframe');
+    let doc = frameElement.contentDocument || frameElement.contentWindow.document;
+    let css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.href = 'css/template/utils.css';
+    css.type = 'text/css';
+    doc.head.appendChild(css);
+    const theme = document.querySelector('[data-md-color-scheme]');
+    if (theme.getAttribute('data-md-color-scheme') === 'default') {
+        doc.body.setAttribute('class', 'light')
+    }
+    else {
+        doc.body.setAttribute('class', 'dark')
+    }
+    const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if (mutation.type === 'attributes') {
+                doc.body.setAttribute('class', mkDocsChirpyTranslator[theme.dataset.mdColorScheme])
+            }
+        })
+    }
+    )
+    observer.observe(theme, {
+        attributes: true,
+        attributeFilter: ['data-md-color-scheme'],
+    })
+}
+```
+
+Enfin, pour adapter le thème, vous devez aller [éditer le fichier `utils.css`](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/main/docs/assets/css/utils.css) et rajouter ceci :
+```css
+#mynetwork {
+    border: none !important;
+}
+.card {
+    border: none !important;
+    background-color: transparent !important;
+}
+```
+
+Pour finir, il suffit de créer un fichier `graph.md` dans le dossier `docs` et d'y rajouter ceci :
+```md
+<iframe id="test"
+        title='test'
+        src="../assets/graph.html"
+        class="graph"
+        width="750px"
+        height="750px"
+        allowtransparency="true"
+        style="border: 0px; margin: 0px; padding: 0px; overflow: hidden;"
+        scrolling="no">
+</iframe>
+```
+
+![TADA](https://user-images.githubusercontent.com/30244939/205411586-ced48127-908c-45a6-b02f-9d3cb85cc8f6.png)
+
+
+> [!info] Si vous ne voulez pas de la vue graphique, il vous suffit de supprimer la ligne `obsidian_graph()` du fichier `on_env.py`
+
+> [!warning] À propos de la création d'une vue graphique pour chaque fichier :
+> Je ne pense pas que ce soit une bonne idée car : 
+> - Le nombre de fichier généré serait énorme ; 
+> - Le temps de build serait extrêmement important. 
+

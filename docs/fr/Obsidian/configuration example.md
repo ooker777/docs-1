@@ -64,6 +64,7 @@ Les fichiers (et les images) seront envoyés sur votre dépôt GitHub, dans le d
 - [x] État de partage et hiérarchie de dossiers personnalisée.
 - [x] Mobile et PC
 - [x] Mini aperçu du fichier au survol
+- [x] Vue graphique (En utilisant [obsidiantools](https://github.com/mfarragher/obsidiantools))
 
 #### Limitations
 

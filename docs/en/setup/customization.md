@@ -197,3 +197,114 @@ The final files looks like :
     })
 </script>
 ```
+
+## Graph view
+
+I success to create a semi-interactive graph-view using python. It doesn't allow you to click on article/post, but you can see a view of your blog.
+
+> [!note] Notes
+> [obsidiantools](https://github.com/mfarragher/obsidiantools) support actually only 3.9. If you use Netlify to build your blog, you will be forced to use an older version because Netlify only support 3.8. These version won't be perfect.
+
+To use it, you need to install `obsidiantools` and `pyvis` (for the graph view).
+
+```bash
+pip install obsidiantools
+pip install pyvis
+```
+
+(Don't forget to add it to `requirements.txt`)
+
+Then, you need to add this to [`overrides/hooks/on_env`](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/main/overrides/hooks/on_env.py) : 
+```py
+import obsidiantools.api as otools
+from pyvis.network import Network
+
+def obsidian_graph():
+    """Generates a graph of the Obsidian vault."""
+    log = logging.getLogger("mkdocs.plugins." + __name__)
+    log.info("[OBSIDIAN GRAPH] Generating graph...")
+    vault_path = Path(Path.cwd(), 'docs')
+    vault = otools.Vault(vault_path).connect().gather()
+    graph = vault.graph
+    net = Network(height="750px", width="750px", font_color="#7c7c7c", bgcolor="transparent")
+    net.from_nx(graph)
+    try:
+        net.save_graph(str(Path.cwd() / "docs" / "assets" / "graph.html"))
+    except OSError:
+        pass
+    shutil.rmtree(Path.cwd() / "lib")
+    log.info("[OBSIDIAN GRAPH] Graph generated!")
+    return ""
+
+
+obsidian_graph()
+```
+
+The file `graph.html` will be generated in `docs/assets/`. I advice you to exclude this file from git with adding the path to the `.gitignore` file.
+
+Secondly, edit [`utils.js` file](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/main/docs/assets/js/utils.js) and adding this :
+```js
+window.onload = function () {
+    let frameElement = document.querySelector('iframe');
+    let doc = frameElement.contentDocument || frameElement.contentWindow.document;
+    let css = document.createElement('link');
+    css.rel = 'stylesheet';
+    css.href = 'css/template/utils.css';
+    css.type = 'text/css';
+    doc.head.appendChild(css);
+    const theme = document.querySelector('[data-md-color-scheme]');
+    if (theme.getAttribute('data-md-color-scheme') === 'default') {
+        doc.body.setAttribute('class', 'light')
+    }
+    else {
+        doc.body.setAttribute('class', 'dark')
+    }
+    const observer = new MutationObserver((mutations) => {
+        mutations.forEach((mutation) => {
+            if (mutation.type === 'attributes') {
+                doc.body.setAttribute('class', mkDocsChirpyTranslator[theme.dataset.mdColorScheme])
+            }
+        })
+    }
+    )
+    observer.observe(theme, {
+        attributes: true,
+        attributeFilter: ['data-md-color-scheme'],
+    })
+}
+```
+
+Add this to the [`utils.css` file](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/main/docs/assets/css/utils.css):
+```css
+#mynetwork {
+    border: none !important;
+}
+.card {
+    border: none !important;
+    background-color: transparent !important;
+}
+```
+
+And create a new file `graph.md` in `docs/` with this content :
+```md
+<iframe id="test"
+        title='test'
+        src="../assets/graph.html"
+        class="graph"
+        width="750px"
+        height="750px"
+        allowtransparency="true"
+        style="border: 0px; margin: 0px; padding: 0px; overflow: hidden;"
+        scrolling="no">
+</iframe>
+```
+
+![TADA](https://user-images.githubusercontent.com/30244939/205411586-ced48127-908c-45a6-b02f-9d3cb85cc8f6.png)
+
+> [!info] If you won't add a graph view, you just need to remove the line `obsidian_graph()` in the `on_env.py` file. 
+
+> [!warning] About creating a graph for each file
+> I don't think it's a good idea because : 
+> - The number of generated file will be huge.
+> - The build time will explode.
+

@@ -25,6 +25,7 @@ Mkdocs Obsidian est une association entre un module Obsidian et un modèle Mater
 - [x] État de partage et hiérarchie de dossiers personnalisée.
 - [x] Mobile et PC
 - [x] Mini aperçu du fichier au survol 
+- [x] Vue graphique 🎉 (En utilisant [Obsidiantools](https://github.com/mfarragher/obsidiantools))
 
 ---
 ## Github actions & Obsidian's plugin
