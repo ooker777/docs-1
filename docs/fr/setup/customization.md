@@ -121,10 +121,9 @@ extra:
 
 ## Commentaires
 
-Dans `ovverides/partials`, vous noterez la présence du fichier nommé `comments.html`. Ce fichier permet de configurer des **commentaires** sur votre blog ! Cela use [Giscus](https://giscus.app/fr) pour le configurer.
+Dans `overrides/partials`, vous noterez la présence du fichier nommé `comments.html`. Ce fichier permet de configurer des **commentaires** sur votre blog ! Cela use [Giscus](https://giscus.app/fr) pour le configurer.
 
 D'abord, suivez le tutoriel (en anglais) sur la documentation de [Material Mkdocs](https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/). Après cela, copié le script de Giscus, tel que : 
-```html
 ```html
 <script
   src="https://giscus.app/client.js"
@@ -145,11 +144,14 @@ D'abord, suivez le tutoriel (en anglais) sur la documentation de [Material Mkdoc
 
 > [!note] Pour le thème, vous pouvez utiliser `dark-dimmed`.
 
-Vous devez collé ce texte dans le fichier `comments.html` (que vous avez vu plus tôt), tout de suite après la partie `<h2>`
+Vous devez coller ce texte dans le fichier `comments.html` (que vous avez vu plus tôt), tout de suite après la partie `<h2>`
 
 Le fichier final ressemblera à ça : 
 
 ```html
+{% set local_comments = "comments" | value_in_frontmatter(page.meta) %}
+{% set comments = config.extra["comments"] if local_comments is none else local_comments %}
+{% if comments %}
 <!-- Giscus -->
 <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
 
@@ -197,9 +199,44 @@ Le fichier final ressemblera à ça :
         })
     })
 </script>
+<!-- Giscus -->
+{% endif %}
 ```
 
+Vous pouvez activer ou désactiver les commentaires sur une page spécifique en rajoutant `comments: false` dans le frontmatter de la page, tout en activant ou désactivant de manière globale les commentaires dans [le fichier `mkdocs.yml`, avec la clé `comments` dans la partie `extra`.](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/59d39757d85cd418a2fd57fdc06128713a8cf95e/mkdocs.yml#L138)
+
+- Si vous désactivez globallement avec `comments: false` vous pouvez activer pour une page spécifique avec la clé `comments: true` dans le frontmatter.
+- Dans le cas contraire, vous pouvez désactiver pour une page spécifique avec la clé `comments: false` dans le frontmatter.
+
+> [!warning] Sans la clé `comments` de la partie `extra` de `mkdocs.yml`, le build échouera !
+
+> [!important] Vous devez vérifier que votre fichier `overrides/hooks/on_env.py` contient le code suivant :
+> ```python
+> def value_in_frontmatter(key, metadata):
+>    """Check if a key exists in the frontmatter.
+>
+>    Args:
+>        key (any): the key to check
+>        metadata (any): the frontmatter
+>
+>    Returns:
+>        bool: true if exists
+>    """
+>    if key in metadata:
+>        return metadata[key]
+>    else:
+>        return None
+> def on_env(env, config, files, **kwargs):
+>    env.filters["value_in_frontmatter"] = value_in_frontmatter
+>    #... other code #
+>    return env
+> ```
+
+
 ## Vue graphique
+
+> [!important] Si vous ne souhaitez pas ajouter une vue graphique, vous avez besoin d'éditer le fichier [`mkdocs.yml`](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/59d39757d85cd418a2fd57fdc06128713a8cf95e/mkdocs.yml#L139) et mettre la clé `generate_graph` à `false`.
+> En effet, par défaut, le graph sera généré !
 
 J'ai réussi à créer une vue graphique semi-interactive en python. Elle ne permet pas de cliquer sur les articles/post, mais vous pouvez avoir une vue de votre blog.
 
@@ -236,8 +273,11 @@ def obsidian_graph():
     log.info("[OBSIDIAN GRAPH] Graph generated!")
     return ""
 
-
-obsidian_graph()
+def on_env(env, config, files, **kwargs):
+    if config['extra'].get('generate_graph', True):
+        obsidian_graph()
+	...
+	return on_env
 ```
 
 Le fichier `graph.html` sera généré dans le dossier `docs/assets`. Je vous conseille de l'exclure via le fichier `.gitignore`, en rajoutant le chemin du fichier dedans.
@@ -300,9 +340,6 @@ Pour finir, il suffit de créer un fichier `graph.md` dans le dossier `docs` et 
 ```
 
 ![TADA](https://user-images.githubusercontent.com/30244939/205411586-ced48127-908c-45a6-b02f-9d3cb85cc8f6.png)
-
-
-> [!info] Si vous ne voulez pas de la vue graphique, il vous suffit de supprimer la ligne `obsidian_graph()` du fichier `on_env.py`
 
 > [!warning] À propos de la création d'une vue graphique pour chaque fichier :
 > Je ne pense pas que ce soit une bonne idée car : 

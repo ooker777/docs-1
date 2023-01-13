@@ -149,6 +149,9 @@ You need to put this text into the `comments.html` file you saw earlier, right a
 
 The final files looks like : 
 ```html
+{% set local_comments = "comments" | value_in_frontmatter(page.meta) %}
+{% set comments = config.extra["comments"] if local_comments is none else local_comments %}
+{% if comments %}
 <!-- Giscus -->
 <h2 id="__comments">{{ lang.t("meta.comments") }}</h2>
 
@@ -196,9 +199,43 @@ The final files looks like :
         })
     })
 </script>
+{% endif %}
 ```
 
+You can disable or enable comments on a specific page by adding `comments: false` in the frontmatter, and disable/enable globally using the same key in `extra` of `mkdocs.yml` ([here](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/59d39757d85cd418a2fd57fdc06128713a8cf95e/mkdocs.yml#L138)).
+
+- If you disable globally with `comments: false`, you can **enable** it on a specific page by adding `comments: true` in the frontmatter.
+- Otherwise, if you enable globally with `comments: true`, you can **disable** it on a specific page by adding `comments: false` in the frontmatter.
+
+> [!warning] Without the extra key in `mkdocs.yml`, the building will fail. 
+
+> [!important] You need to check if your `overrides/hooks/on_env.py` file possess the following code :
+> ```python
+> def value_in_frontmatter(key, metadata):
+>    """Check if a key exists in the frontmatter.
+>
+>    Args:
+>        key (any): the key to check
+>        metadata (any): the frontmatter
+>
+>    Returns:
+>        bool: true if exists
+>    """
+>    if key in metadata:
+>        return metadata[key]
+>    else:
+>        return None
+> def on_env(env, config, files, **kwargs):
+>    env.filters["value_in_frontmatter"] = value_in_frontmatter
+>    #... other code #
+>    return env
+> ```
+
+
 ## Graph view
+
+> [!important] If you won't add a graph view, you need to edit your [`mkdocs.yml`](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/59d39757d85cd418a2fd57fdc06128713a8cf95e/mkdocs.yml#L139) file and **set** the key `generate_graph` to `false`. 
+> By default, the graph will be generated.
 
 I success to create a semi-interactive graph-view using python. It doesn't allow you to click on article/post, but you can see a view of your blog.
 
@@ -236,8 +273,11 @@ def obsidian_graph():
     log.info("[OBSIDIAN GRAPH] Graph generated!")
     return ""
 
-
-obsidian_graph()
+def on_env(env, config, files, **kwargs):
+    if config['extra'].get('generate_graph', True):
+        obsidian_graph()
+	...
+	return on_env
 ```
 
 The file `graph.html` will be generated in `docs/assets/`. I advice you to exclude this file from git with adding the path to the `.gitignore` file.
@@ -301,7 +341,7 @@ And create a new file `graph.md` in `docs/` with this content :
 
 ![TADA](https://user-images.githubusercontent.com/30244939/205411586-ced48127-908c-45a6-b02f-9d3cb85cc8f6.png)
 
-> [!info] If you won't add a graph view, you just need to remove the line `obsidian_graph()` in the `on_env.py` file. 
+
 
 > [!warning] About creating a graph for each file
 > I don't think it's a good idea because : 
