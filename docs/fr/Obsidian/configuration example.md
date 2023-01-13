@@ -5,9 +5,11 @@ title: Exemple de configuration
 
 ## [Mkdocs Publisher](https://obsidian-publisher.netlify.app)
 ### Tutoriel pour une installation rapide !
-1. Cliquer sur ["use this template"](https://github.com/obsidianPublisher/publisher-template-gh-pages/generate)[^1]
+1. Cliquer sur "use this template"[^1] :
+   - Pour [github page](https://github.com/obsidianPublisher/publisher-template-gh-pages/generate)
+   - Pour [netlify](https://github.com/ObsidianPublisher/publisher-template-netlify/generate) 
 2. Utiliser le nom de votre choix
-1. Définissez et éditez le fichier `configuration.yml` à la racine du dépôt.
+3. Définissez et éditez le fichier `configuration.yml` à la racine du dépôt.
 
 ### Configuration du plugin
 
