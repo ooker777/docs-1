@@ -47,7 +47,9 @@ The files (and the images) will be sent on your GitHub repository, in the specif
 ### Useful informations
 #### Links
 - [Obsidian Plugin](https://github.com/obsidianPublisher/obsidian-github-publisher)
-- [Template](https://github.com/obsidianPublisher/publisher-template-gh-pages)
+- Template :
+  - To use with [Github Pages](https://github.com/ObsidianPublisher/publisher-template-gh-pages)
+  - With [Netlify](https://github.com/ObsidianPublisher/publisher-template-netlify)
 - [Github Discussion](https://github.com/ObsidianPublisher/obsidian-github-publisher/discussions)
 
 #### How to...
