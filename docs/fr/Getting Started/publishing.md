@@ -26,7 +26,7 @@ Le blog sera publié via [GitHub Page](https://pages.github.com/) en utilisant l
 
 Netlify est un service qui permet de publier votre blog gratuitement sur un site web, et la construction du blog (*build*) sera beaucoup plus rapide que via GitHub.
 
-Pour déployer votre blog, vous pouvez cliquer ici : [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template)
+Pour déployer votre blog, vous pouvez cliquer ici : [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/publisher-template-gh-pages)
 
 Alternativement : 
 - Créer un compte sur Netlify.app

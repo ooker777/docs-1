@@ -6,7 +6,7 @@ L'utilisation d'un template (à la place de fork) empêche d'obtenir la mise à 
 
 Dans le dossier cloné, (dans votre blog) faites : 
 ```
-git remote add Template git@github.com:ObsidianPublisher/obsidian-mkdocs-publisher-template.git
+git remote add Template git@github.com:ObsidianPublisher/publisher-template-gh-pages.git
 git fetch Template
 git checkout -b template Template/main
 ```

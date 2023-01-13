@@ -5,16 +5,14 @@ title: Publishing
 ## Publishing 
 
 You can publish your site using : 
-- [Netlify](https://www.netlify.com/) 
-- [Github Pages](https://pages.github.com/)
+- [Netlify](https://www.netlify.com/), using the template here : [ObsidianPublisher/publisher-template-netlify](https://github.com/ObsidianPublisher/publisher-template-netlify)
+- [Github Pages](https://pages.github.com/), using the template here : [ObsidianPublisher/publisher-template-gh-pages](https://github.com/ObsidianPublisher/publisher-template-gh-pages)
 
 ### Through Github Pages
 
-The blog will be published through [GitHub Page](https://pages.github.com/) using the `gh-page` branch. 
+The blog will be published through [GitHub Page](https://pages.github.com/). With the new version, you don't need to use a `gh-pages` branch anymore. The configuration must look like this : 
 
-> [!bug] I have the readme in place of my files!
-> Check the `gh-pages` branch and activate it if necessary in `Settings` → `Pages`
-> ![image](https://user-images.githubusercontent.com/30244939/166161220-973cee87-75eb-4b9f-b521-1c67d273def7.png)
+![[../../assets/img/gh_page_config.png]]
 
 > [!bug] The workflow doesn't run!
 >  - Check the run and error in `Actions` 
@@ -25,7 +23,7 @@ The blog will be published through [GitHub Page](https://pages.github.com/) usin
 ### Through Netlify
 Netlify.app is a great tool to deploy your blog. It's a free service that allows you to deploy your blog on the web, and the build will be faster than GitHub Pages.
 
-To deploy your blog, you can click here : [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template)
+To deploy your blog, you can click here : [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/publisher-template-netlify)
 
 Alternatively :
 - Create an account on Netlify
@@ -56,5 +54,6 @@ To gain deploy time and bandswith, you need to desactivate the deploy preview. T
 >> - You need to have a Netlify account
 >> - Limited by Bandswith for all site (100 GB)
 >> - Limited to 300 minutes/builds per month. 
+>> - And, the worst : limited to Python 3.8 
 
 [^1]: You can found the link in Repository settings > Pages. 

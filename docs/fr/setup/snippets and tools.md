@@ -65,8 +65,8 @@ Certains plugins d'Obsidian utilisent des codeblocks pour faire certaines choses
 
 Pour convertir automatiquement ces blocs en markdown, j'utilise un mini plugin que j'ai écrit : [Mkdocs Custom Fence](https://github.com/lisandra-dev/mkdocs_custom_fences)
 Pour l'utiliser :
-- Ajouter `mkdocs_custom_fences` dans votre [requirements.txt](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/main/requirements.txt)
-- Modifiez le fichier [mkdocs.yml](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/d7b7d43ff237c09e0cbf160889dcdac4b9459dfd/mkdocs.yml#L70) comme suit : 
+- Ajouter `mkdocs_custom_fences` dans votre [requirements.txt](https://github.com/ObsidianPublisher/publisher-template-gh-pages/blob/main/requirements.txt)
+- Modifiez le fichier [mkdocs.yml](https://github.com/ObsidianPublisher/publisher-template-gh-pages/blob/d7b7d43ff237c09e0cbf160889dcdac4b9459dfd/mkdocs.yml#L70) comme suit : 
   ```yml
   markdow_extensions :
   pymdownx.superfences :

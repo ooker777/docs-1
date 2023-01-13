@@ -18,4 +18,4 @@ The plugin directly edit :
 
 >[!warning] If you use your vault directly in a repo, the send will break your files! The script is not for theses strategies.
 
-You can delete/disable safely the workflow named `ci.yml`, `manual_run.yml` and edit the `mkdocs_build.yml` to remove the `if:` line ([at the l18 lines](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-template/blob/bff6d23ddf27064c39a2696159ad25e4a9554d3d/.github/workflows/mkdocs_build.yml#L18)).
+You can delete/disable safely the workflow named `ci.yml`, `manual_run.yml` and edit the `mkdocs_build.yml` to remove the `if:` line ([at the l18 lines](https://github.com/obsidianPublisher/publisher-template-gh-pages/blob/bff6d23ddf27064c39a2696159ad25e4a9554d3d/.github/workflows/mkdocs_build.yml#L18)).

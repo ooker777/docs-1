@@ -5,7 +5,7 @@ title: Exemple de configuration
 
 ## [Mkdocs Publisher](https://obsidian-publisher.netlify.app)
 ### Tutoriel pour une installation rapide !
-1. Cliquer sur ["use this template"](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-template/generate)[^1]
+1. Cliquer sur ["use this template"](https://github.com/obsidianPublisher/publisher-template-gh-pages/generate)[^1]
 2. Utiliser le nom de votre choix
 1. Définissez et éditez le fichier `configuration.yml` à la racine du dépôt.
 
@@ -46,7 +46,7 @@ Les fichiers (et les images) seront envoyés sur votre dépôt GitHub, dans le d
 ### Informations utiles
 #### Liens
 - [Obsidian Plugin](https://github.com/obsidianPublisher/obsidian-github-publisher)
-- [Template](https://github.com/obsidianPublisher/obsidian-mkdocs-publisher-template)
+- [Template](https://github.com/obsidianPublisher/publisher-template-gh-pages)
 - [Github Discussion](https://github.com/ObsidianPublisher/obsidian-github-publisher/discussions)
 
 #### Comment...
@@ -84,7 +84,7 @@ Les fichiers (et les images) seront envoyés sur votre dépôt GitHub, dans le d
     - Transférer les notes transclues sur false
     - Dossier par défaut : `posts/Attachments`.
 
-[^1]: Vous devez être connecté pour tester la template, mais vous pouvez tester localement à travers un clone : `git clone https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template` ou en téléchargeant [le ZIP](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/archive/refs/heads/main.zip)
+[^1]: Vous devez être connecté pour tester la template, mais vous pouvez tester localement à travers un clone : `git clone https://github.com/ObsidianPublisher/publisher-template-gh-pages` ou en téléchargeant [le ZIP](https://github.com/ObsidianPublisher/publisher-template-gh-pages/archive/refs/heads/main.zip)
 [^2]: Vous devez être connecté pour le générer
 [^3]: Normalement, uniquement les fichiers supportés par Obsidian seront supprimé, mais certaines images existent uniquement dans le blog (logo...). Pour éviter les mauvaises surprises, n'oubliez pas d'exclure les dossiers ici.
 [^4]: Vous êtes libre ou non de convertir les blocs dataview **simple** en markdown. Si cette option est désactivé, les blocs seront totalement supprimés du fichier converti. 

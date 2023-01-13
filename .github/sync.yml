@@ -1,14 +1,25 @@
-ObsidianPublisher/obsidian-github-publisher:
-  - source: docs/en/Obsidian/index.md
-    dest: README.md
-  - source: docs/fr/Obsidian/index.md
-    dest: docs/README_FR.md
-ObsidianPublisher/obsidian-mkdocs-publisher-template:
-  - docs/assets/css/custom_attributes
-  - docs/assets/css/img-grid-floats.css
-  - docs/assets/css/utils.css
-  - docs/assets/js/utils.js
-  - source: docs/en/Getting Started/configuration.md
-    dest: README.md
-  - source: docs/fr/Getting Started/configuration.md
-    dest: README-FR.md
+group:
+  - files: 
+    - docs/assets/css/custom_attributes.css
+    - docs/assets/css/customization.css
+    - source: docs/en/Getting Started/configuration.md
+      dest: README.md
+    - source: docs/fr/Getting Started/configuration.md
+      dest: README-FR.md
+    repos: |
+      ObsidianPublisher/publisher-template-gh-pages
+      ObsidianPublisher/publisher-template-netlify
+  - files:
+    - source: docs/en/Obsidian/index.md
+      dest: README.md
+    - source: docs/fr/Obsidian/index.md
+      dest: docs/README_FR.md
+    repos: |
+      ObsidianPublisher/obsidian-github-publisher
+  - files:
+    - source: .github/workflows/update_requirements.yml
+      dest: .github/workflows/update_requirements.yml
+    - source: requirements.txt
+      dest: requirements.txt
+    repos: |
+      ObsidianPublisher/publisher-template-netlify

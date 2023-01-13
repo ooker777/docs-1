@@ -203,7 +203,7 @@ Le fichier final ressemblera à ça :
 {% endif %}
 ```
 
-Vous pouvez activer ou désactiver les commentaires sur une page spécifique en rajoutant `comments: false` dans le frontmatter de la page, tout en activant ou désactivant de manière globale les commentaires dans [le fichier `mkdocs.yml`, avec la clé `comments` dans la partie `extra`.](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/59d39757d85cd418a2fd57fdc06128713a8cf95e/mkdocs.yml#L138)
+Vous pouvez activer ou désactiver les commentaires sur une page spécifique en rajoutant `comments: false` dans le frontmatter de la page, tout en activant ou désactivant de manière globale les commentaires dans [le fichier `mkdocs.yml`, avec la clé `comments` dans la partie `extra`.](https://github.com/ObsidianPublisher/publisher-template-gh-pages/blob/59d39757d85cd418a2fd57fdc06128713a8cf95e/mkdocs.yml#L138)
 
 - Si vous désactivez globallement avec `comments: false` vous pouvez activer pour une page spécifique avec la clé `comments: true` dans le frontmatter.
 - Dans le cas contraire, vous pouvez désactiver pour une page spécifique avec la clé `comments: false` dans le frontmatter.
@@ -235,7 +235,7 @@ Vous pouvez activer ou désactiver les commentaires sur une page spécifique en 
 
 ## Vue graphique
 
-> [!important] Si vous ne souhaitez pas ajouter une vue graphique, vous avez besoin d'éditer le fichier [`mkdocs.yml`](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/59d39757d85cd418a2fd57fdc06128713a8cf95e/mkdocs.yml#L139) et mettre la clé `generate_graph` à `false`.
+> [!important] Si vous ne souhaitez pas ajouter une vue graphique, vous avez besoin d'éditer le fichier [`mkdocs.yml`](https://github.com/ObsidianPublisher/publisher-template-gh-pages/blob/59d39757d85cd418a2fd57fdc06128713a8cf95e/mkdocs.yml#L139) et mettre la clé `generate_graph` à `false`.
 > En effet, par défaut, le graph sera généré !
 
 J'ai réussi à créer une vue graphique semi-interactive en python. Elle ne permet pas de cliquer sur les articles/post, mais vous pouvez avoir une vue de votre blog.
@@ -251,7 +251,7 @@ pip install pyvis
 
 N'oubliez pas de les rajouter à vos `requirements.txt` !
 
-Ensuite, vous devez ajouter ceci à [`overrides/hooks/on_env`](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/main/overrides/hooks/on_env.py) : 
+Ensuite, vous devez ajouter ceci à [`overrides/hooks/on_env`](https://github.com/ObsidianPublisher/publisher-template-gh-pages/blob/main/overrides/hooks/on_env.py) : 
 ```py
 import obsidiantools.api as otools
 from pyvis.network import Network
@@ -282,7 +282,7 @@ def on_env(env, config, files, **kwargs):
 
 Le fichier `graph.html` sera généré dans le dossier `docs/assets`. Je vous conseille de l'exclure via le fichier `.gitignore`, en rajoutant le chemin du fichier dedans.
 
-Ensuite, vous devez éditer le [fichier `utils.js`](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/main/docs/assets/js/utils.js) en rajoutant ceci : 
+Ensuite, vous devez éditer le [fichier `utils.js`](https://github.com/ObsidianPublisher/publisher-template-gh-pages/blob/main/docs/assets/js/utils.js) en rajoutant ceci : 
 ```js
 window.onload = function () {
     let frameElement = document.querySelector('iframe');
@@ -314,7 +314,7 @@ window.onload = function () {
 }
 ```
 
-Enfin, pour adapter le thème, vous devez aller [éditer le fichier `utils.css`](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/main/docs/assets/css/utils.css) et rajouter ceci :
+Enfin, pour adapter le thème, vous devez aller [éditer le fichier `utils.css`](https://github.com/ObsidianPublisher/publisher-template-gh-pages/blob/main/docs/assets/css/utils.css) et rajouter ceci :
 ```css
 #mynetwork {
     border: none !important;

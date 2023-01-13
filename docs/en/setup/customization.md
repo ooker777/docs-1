@@ -202,7 +202,7 @@ The final files looks like :
 {% endif %}
 ```
 
-You can disable or enable comments on a specific page by adding `comments: false` in the frontmatter, and disable/enable globally using the same key in `extra` of `mkdocs.yml` ([here](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/59d39757d85cd418a2fd57fdc06128713a8cf95e/mkdocs.yml#L138)).
+You can disable or enable comments on a specific page by adding `comments: false` in the frontmatter, and disable/enable globally using the same key in `extra` of `mkdocs.yml` ([here](https://github.com/ObsidianPublisher/publisher-template-gh-pages/blob/59d39757d85cd418a2fd57fdc06128713a8cf95e/mkdocs.yml#L138)).
 
 - If you disable globally with `comments: false`, you can **enable** it on a specific page by adding `comments: true` in the frontmatter.
 - Otherwise, if you enable globally with `comments: true`, you can **disable** it on a specific page by adding `comments: false` in the frontmatter.
@@ -234,7 +234,7 @@ You can disable or enable comments on a specific page by adding `comments: false
 
 ## Graph view
 
-> [!important] If you won't add a graph view, you need to edit your [`mkdocs.yml`](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/59d39757d85cd418a2fd57fdc06128713a8cf95e/mkdocs.yml#L139) file and **set** the key `generate_graph` to `false`. 
+> [!important] If you won't add a graph view, you need to edit your [`mkdocs.yml`](https://github.com/ObsidianPublisher/publisher-template-gh-pages/blob/59d39757d85cd418a2fd57fdc06128713a8cf95e/mkdocs.yml#L139) file and **set** the key `generate_graph` to `false`. 
 > By default, the graph will be generated.
 
 I success to create a semi-interactive graph-view using python. It doesn't allow you to click on article/post, but you can see a view of your blog.
@@ -251,7 +251,7 @@ pip install pyvis
 
 (Don't forget to add it to `requirements.txt`)
 
-Then, you need to add this to [`overrides/hooks/on_env`](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/main/overrides/hooks/on_env.py) : 
+Then, you need to add this to [`overrides/hooks/on_env`](https://github.com/ObsidianPublisher/publisher-template-gh-pages/blob/main/overrides/hooks/on_env.py) : 
 ```py
 import obsidiantools.api as otools
 from pyvis.network import Network
@@ -282,7 +282,7 @@ def on_env(env, config, files, **kwargs):
 
 The file `graph.html` will be generated in `docs/assets/`. I advice you to exclude this file from git with adding the path to the `.gitignore` file.
 
-Secondly, edit [`utils.js` file](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/main/docs/assets/js/utils.js) and adding this :
+Secondly, edit [`utils.js` file](https://github.com/ObsidianPublisher/publisher-template-gh-pages/blob/main/docs/assets/js/utils.js) and adding this :
 ```js
 window.onload = function () {
     let frameElement = document.querySelector('iframe');
@@ -314,7 +314,7 @@ window.onload = function () {
 }
 ```
 
-Add this to the [`utils.css` file](https://github.com/ObsidianPublisher/obsidian-mkdocs-publisher-template/blob/main/docs/assets/css/utils.css):
+Add this to the [`utils.css` file](https://github.com/ObsidianPublisher/publisher-template-gh-pages/blob/main/docs/assets/css/utils.css):
 ```css
 #mynetwork {
     border: none !important;
