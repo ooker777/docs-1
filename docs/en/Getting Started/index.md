@@ -10,7 +10,8 @@ If you prefer to use [Netlify](https://www.netlify.com/), you can directly [temp
 
 ## Installation steps
 - Create a GitHub Account (or use an existing one)
-- [Template the blog (GH Pages version)](https://github.com/ObsidianPublisher/publisher-template-gh-pages/generate)
-- [Template the blog (Netlify version)](https://github.com/ObsidianPublisher/publisher-template-netlify/generate)
+- Template the blog : 
+  - [GH Pages version](https://github.com/ObsidianPublisher/publisher-template-gh-pages/generate)
+  - [Netlify version](https://github.com/ObsidianPublisher/publisher-template-netlify/generate)
 - [Clone the repository](https://www.docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories)
 - In parallels, you have to download the Obsidian plugin using BRAT or the community plugins panel. 

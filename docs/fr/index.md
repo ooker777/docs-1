@@ -31,7 +31,9 @@ Mkdocs Obsidian est une association entre un module Obsidian et un modèle Mater
 ## Github actions & Obsidian's plugin
 ### TLDR
 1. Installation via les modules communautaire ou [BRAT](https://github.com/TfTHacker/obsidian42-brat)
-2. [Templater](https://github.com/obsidianPublisher/mkdocs_obsidian_template) le blog et configurez-le.
+2. Utiliser le modèle du blog et configurez-le.
+	- Pour générer un modèle utilisant Github Pages, cliquez [ici](https://github.com/ObsidianPublisher/publisher-template-gh-pages/generate)
+	- Pour Netlify cliquez [ici](https://github.com/ObsidianPublisher/publisher-template-netlify/generate)
 3. Configurer les options du plugins : 
 	- Nom du dépôt
 	- Votre pseudonyme GitHub
@@ -58,7 +60,7 @@ Mkdocs Obsidian est une association entre un module Obsidian et un modèle Mater
 N'oubliez pas non plus de configurer GitHub pour autoriser le push ! (Voir ici pour des informations sur la configuration de Git) (https://docs.github.com/en/get-started/quickstart/set-up-git)
 
 De manière alternative, vous pouvez utiliser Netlify pour créer et déployer le blog. Pour cela, vous devez juste cliquer ici : 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/publisher-template-gh-pages)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/publisher-template-netlify)
 
 N'oubliez pas de configurer le fichier `mkdocs.yml` !
 

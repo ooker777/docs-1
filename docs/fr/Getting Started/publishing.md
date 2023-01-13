@@ -26,7 +26,7 @@ Le blog sera publié via [GitHub Page](https://pages.github.com/) en utilisant l
 
 Netlify est un service qui permet de publier votre blog gratuitement sur un site web, et la construction du blog (*build*) sera beaucoup plus rapide que via GitHub.
 
-Pour déployer votre blog, vous pouvez cliquer ici : [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/publisher-template-gh-pages)
+Pour déployer votre blog, vous pouvez cliquer ici : [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/publisher-template-netlify)
 
 Alternativement : 
 - Créer un compte sur Netlify.app
@@ -56,6 +56,7 @@ Pour cela, rendez-vous dans le menu `settings` -> `build & deploy` -> `deploy-pr
 >> - Vous avez besoin d'un compte Netlify pour déployer votre blog.
 >> - Limité par la bande passante à 100GB pour tous les sites
 >> - Limités à 300minutes/build par mois.
+>> - Et surtout, limité à Python 3.8
 
 
 [^1]: Vous pouvez trouver le lien dans `Settings > Pages`
