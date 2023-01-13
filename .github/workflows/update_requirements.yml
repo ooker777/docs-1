@@ -23,7 +23,7 @@ jobs:
       - name: install pur
         run: pip install pur
       - name: Update requirements.txt
-        run: pur -r requirements.txt
+        run: pur -r requirements.txt --skip obsidiantools
       - name: check python cache
         id: python_cache
         uses: actions/cache@v3
