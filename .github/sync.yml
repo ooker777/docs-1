@@ -13,7 +13,15 @@ group:
     - source: docs/en/Obsidian/index.md
       dest: README.md
     - source: docs/fr/Obsidian/index.md
-      dest: docs/README_FR.md
+      dest: docs/fr/README.md
+    - source: docs/en/Obsidian/Developping.md
+      dest: docs/en/DEVELOPPING.md
+    - source: docs/fr/Obsidian/Developping.md
+      dest: docs/fr/DEVELOPPING.md
+    - source: docs/en/Obsidian/commands.md
+      dest: docs/en/COMMANDS.md
+    - source: docs/fr/Obsidian/commands.md
+      dest: docs/fr/COMMANDS.md
     repos: |
       ObsidianPublisher/obsidian-github-publisher
   - files:
