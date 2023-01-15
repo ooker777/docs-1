@@ -114,9 +114,8 @@ extra:
   pagination_translation: 'postes dans' #defaut: 'posts in'
 ```
 
-
 > [!note] Vous pouvez aussi utiliser la github action `create_index` pour créer un nouvel index pour un nouveau dossier.
-> Pour plus d'information voir [Workflow](../Getting%20Started/Workflow.md)
+> Pour plus d'information voir [[fr/Getting Started/Workflow|Workflow]].
 
 ## Commentaires
 
