@@ -12,6 +12,8 @@ group:
   - files:
     - source: docs/en/Obsidian/index.md
       dest: README.md
+    - source: docs/en/Obsidian/index.md
+      dest: docs/en/README.md
     - source: docs/fr/Obsidian/index.md
       dest: docs/fr/README.md
     - source: docs/en/Obsidian/Developping.md
