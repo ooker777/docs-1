@@ -41,7 +41,6 @@ Vous pouvez obtenir plus d'informations dans la documentation de [mkdocs-custom-
 Vous pouvez créer une note de dossier si vous utilisez une clé d'entrée `category` qui a le dernier dossier avec le même nom que le fichier. Par exemple : 
 `category : folder1/folder2/filename`. Le fichier `filename` sera renommé `index` et le dossier sera nommé `filename`.
 
-> [!info] Si vous utilisez folder note dans obs2mk sans Obsidian Plugin, vous devez configurer une clé d'index. [Voir ici pour plus d'informations](Python/customization.md#Folder%20note)
 
 ## Callout & Admonition
 
