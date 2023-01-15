@@ -3,6 +3,9 @@ site/*
 desktop.ini
 */.obsidian/*
 .obsidian/*
+.trash/*
+*/.trash/*
+*/.DS_Store
 __pycache__
 /.idea/encodings.xml
 /.idea/misc.xml
