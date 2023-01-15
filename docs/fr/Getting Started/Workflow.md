@@ -21,6 +21,9 @@ Je vais tout expliquer, ne paniquez pas ! Comme vous pouvez le voir, ici, les ac
 
 > [!info] Chaque jour : `update_requirements.yml` 
 > Je l'ai créé parce que le Cache Github a besoin d'une version fixe sur les requirements, mais il arrive régulièrement que je mette à jour certains plugins ou qu'il y ait une nouvelle version de Material Mkdocs. Ainsi, ce workflow ne modifiera le fichier `requirements.txt` uniquement s'il trouve une mise à jour.
+> Ce workflow permet aussi le nettoyage des médias inutilisés, ce qui permet de gagner du temps de build et de l'espace.
+> - Dans le cas où vous ne souhaitez pas supprimer ses images, vous devez changer la [10e ligne du fichier](https://github.com/ObsidianPublisher/publisher-template-gh-pages/blob/abb7e00fc5b01d7f52962f4656363770f189edee/.github/workflows/update_requirements.yml#L10) à `false`
+> - De plus, si vous utilisez un dossier différent de `assets/img`, vous devez éditer la [15e ligne](https://github.com/ObsidianPublisher/publisher-template-gh-pages/blob/00acb11041f4522a2a775b564e59c0fb3172763f/.github/workflows/update_requirements.yml#L15) avec le bon chemin.
 
 > [!info] Activé : `create_index.yml`
 > Vous permet de créer rapidement une nouvelle "catégorie" / liste de blogs dans votre dépôt, en créant un nouveau dossier spécifié avec le nom de la catégorie.

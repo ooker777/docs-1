@@ -21,6 +21,9 @@ I will explain everything, don't panik. As you can see, here, the github actions
 
 > [!info] Each day : `update_requirements.yml` 
 > I created it because the Github Cache needs a fixed version on requirements, but it happens regulary that I update some plugins or update in Material Mkdocs. So, this workflow will **only** change the `requirements.txt` if it founds an update.
+> This workflow allows cleaning the unused media, to gain build time and also space. 
+> - In case you won't to remove these medias, you need to change [the 10th line](https://github.com/ObsidianPublisher/publisher-template-gh-pages/blob/abb7e00fc5b01d7f52962f4656363770f189edee/.github/workflows/update_requirements.yml#L10) to `false`.
+> - Also, if you use another medias folder, edit the [15th line](https://github.com/ObsidianPublisher/publisher-template-gh-pages/blob/00acb11041f4522a2a775b564e59c0fb3172763f/.github/workflows/update_requirements.yml#L15) to the right path.
 
 > [!info] Activated : `create_index.yml`
 > Allow you to quickly create a new "category" / blog listing in your repository, creating a new specified folder with the name of the category.
