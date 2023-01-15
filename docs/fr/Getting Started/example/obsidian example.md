@@ -17,7 +17,7 @@ We currently support the formats below:
 Link to a page: [[Internal link]].
 ```
 
-Link to a page: [[en/index]].
+Link to a page: [[fr/index]].
 
 ---
 

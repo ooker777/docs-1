@@ -12,6 +12,9 @@ share: true
 	- [Markdown Attribute](https://github.com/valentine195/obsidian-markdown-attributes)
 	- [Contextual Typography](https://github.com/mgmeyers/obsidian-contextual-typography) 
 
+
+> [!warning] Certaines présentations ici peuvent ne pas être à jour.
+
 ## Metacopy
 En utilisant [metacopy](https://github.com/lisandra-dev/obsidian-metacopy) vous pouvez rapidement copier un lien vers une page partagée
 Pour créer un lien, vous devez configurer :  
@@ -19,7 +22,7 @@ Pour créer un lien, vous devez configurer :
  2. Ajoutez votre `set_url` dans `base link`.  
  3. Ajoutez `category` dans le lien `key`.  
   
-En outre, vous pouvez supprimer la métacopie de votre menu fichier en utilisant une clé de métadonnée, de sorte que vous pouvez activer la métacopie seulement pour `share : true`. Metacopy supporte également le [[en/index#folder-note|folder note]].
+En outre, vous pouvez supprimer la métacopie de votre menu fichier en utilisant une clé de métadonnée, de sorte que vous pouvez activer la métacopie seulement pour `share : true`. Metacopy supporte également les paramètres de Folder Note [[fr/index#folder-note|folder note]]..
 
 La configuration finale de metacopy pour mkdocs_obsidian sera :  
 

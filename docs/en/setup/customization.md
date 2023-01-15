@@ -42,7 +42,6 @@ You can get more information in the [mkdocs-custom-tags-attributes](https://pypi
 You can create a folder note if you use a `category` front matter key that have the last folder with the same name as the file. For example : 
 `category: folder1/folder2/filename`. The file `filename` will be renamed `index` and the folder will be named `filename`.
 
-> [!info] If you use folder note in obs2mk without Obsidian Plugin, you need to configure an index key. [See here for more information](Python/customization.md#Folder%20note)
 
 ## Callout & Admonition
 

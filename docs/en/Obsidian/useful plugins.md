@@ -13,7 +13,10 @@ share: true
 	- [Markdown Attribute](https://github.com/valentine195/obsidian-markdown-attributes)
 	- [Contextual Typography](https://github.com/mgmeyers/obsidian-contextual-typography) 
 
+> [!warning] Some presentation here may not be up to date.
+
 ## Metacopy
+
 Using [metacopy](https://github.com/Lisandra-dev/obsidian-metacopy) you can quickly copy a link to a shared page, without using this option (so, yes, the script does not edit your source file !).   
 To create a link, you need to configure :  
  1. `category` in `key`  
