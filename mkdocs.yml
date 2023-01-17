@@ -82,6 +82,8 @@ markdown_extensions:
           format: !!python/name:mermaid2.fence_mermaid
 plugins:
   - search
+  - tags:
+      tags_file: en/Getting Started/example/tags.md
   - glightbox
   - ezlinks:
         wikilinks: true
