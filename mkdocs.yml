@@ -82,6 +82,7 @@ markdown_extensions:
           format: !!python/name:mermaid2.fence_mermaid
 plugins:
   - search
+  - glightbox
   - ezlinks:
         wikilinks: true
   - mermaid2
