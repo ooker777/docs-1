@@ -134,6 +134,7 @@ extra:
   comments: false
   generate_graph: false
   SEO: 'assets/meta/SEO.png'
+  attachments: 'assets/img'
   blog_list:
     pagination: true
     pagination_message: false
@@ -141,4 +142,5 @@ extra:
   hooks:
     strip_comments: true
     fix_heading: false
+  
 
