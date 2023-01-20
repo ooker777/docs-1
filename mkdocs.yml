@@ -106,12 +106,6 @@ plugins:
           name: English
         fr:
           name: Français
-  - minify:
-      minify_html: true
-      minify_js: false
-      minify_css: false
-      htmlmin_opts:
-          remove_comments: true
 extra_javascript:
   - assets/js/mathjax.js
   - assets/js/utils.js
@@ -139,6 +133,7 @@ extra:
     pagination: true
     pagination_message: false
     pagination_translation: ''
+    no_page_found: ''
   hooks:
     strip_comments: true
     fix_heading: false
