@@ -33,8 +33,10 @@ function UrlExists(url, type_url) {
     http.onload = function (e) {
         if (http.status == '404') {
             const newItem = document.createElement('div');
+            console.log(ref, url)
             newItem.innerHTML = title;
             newItem.classList.add('not_found');
+            newItem.setAttribute('url', ref);
             url.parentNode.replaceChild(newItem, url);
         }
         else {
@@ -44,21 +46,54 @@ function UrlExists(url, type_url) {
     http.send()
 }
 
+function getHeightWidth(alt) {
+    const heightXwidthReg = new RegExp('\\d+x\\d+')
+    const widthReg = new RegExp('\\d+')
+    if (alt.match(heightXwidthReg)) {
+        var width = parseInt(alt.split('x')[0])
+        var height = parseInt(alt.split('x')[1])
+        return [width, height]
+    }
+    else if (alt.match(widthReg)) {
+        var width = parseInt(alt.match(widthReg)[0])
+        return [width, 0]
+    }
+    else {
+        return [0, 0]
+    }
+}
+
 
 var p_search = /\.{2}\//gi
 const not_found = []
-var ht = document.querySelectorAll('a');
+var ht = document.querySelectorAll('a:not(img)');
 for (var i = 0; i < ht.length; i++) {
-    var link = UrlExists(ht[i], 0);
+    if (!ht[i].getElementsByTagName('img').length > 0 && !ht[i].getElementsByTagName('svg').length > 0) {
+        var link = UrlExists(ht[i], 0);
+    }
 }
 
 var p_img = /\.+\\/gi
 var img = document.querySelectorAll('img');
 for (var i = 0; i < img.length; i++) {
-    (img[i].attributes.src.nodeValue)
-    if (img[i].alt.match(/\|\d+$/)) {
-        img[i].width = img[i].alt.match(/\|\d+$/)[0].replace('|', '')
-    }
+    var regAlt = new RegExp('\\|');
+    if (img[i].alt.match(regAlt)) {
+        const alt = img[i].alt.split('|')
+        for (var part of alt) {
+            if (part.match(new RegExp('\\d+', 'g'))) {
+                var size = getHeightWidth(part)
+                img[i].width = size[0] > 0 ? size[0] : img[i].width
+                img[i].height = size[1] > 0 ? size[1] : img[i].height
+                var partReg = new RegExp(`\\${part}`)
+                img[i].alt = img[i].alt.replace(partReg, '')
+            }
+        }
+    } else if (img[i].alt.match(new RegExp('\\d+', 'g'))) {
+        var size = getHeightWidth(img[i].alt)
+        img[i].width = size[0] > 0 ? size[0] : img[i].width
+        img[i].height = size[1] > 0 ? size[1] : img[i].height
+        img[i].alt = "";
+    } 
     var link = UrlExists(img[i], 1);
 }
 
@@ -94,6 +129,9 @@ if (cite) {
 // check if page is graph.md
 window.onload = function () {
     let frameElement = document.querySelector('iframe');
+    if (!frameElement) {
+        return
+    }
     let doc = frameElement.contentDocument || frameElement.contentWindow.document;
     let css = document.createElement('link');
     css.rel = 'stylesheet';
