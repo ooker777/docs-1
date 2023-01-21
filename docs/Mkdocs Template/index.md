@@ -42,68 +42,10 @@ To keep your template up to date, you should follow these steps:
 
 Note that, you should not edit or configure the files that are provided with the template.
 
-```yaml
-name: Get lastest release from template
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *'
-env:
-  AUTO_MERGE: false #set to true to enable auto merging
-  OVERWRITE: true #set to false to keep an old version of this workflow
-jobs:
-  update:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Get release from template
-        uses: robinraju/release-downloader@main
-        with:
-          latest: true
-          fileName: "release.zip"
-          repository: "ObsidianPublisher/follow_template"
-      - name: Unzip changed files
-        run: |
-          mv .github/workflows/auto_update.yml .github/workflows/auto_update.bak.yml
-          unzip -o release.zip
-          rm release.zip
-      - name: Delete old auto_update.yml
-        if: env.OWERWRITE == 'true'
-        run: |
-          rm .github/workflows/auto_update.bak.yml
-      - name: Restaure old auto_update.yml
-        if: env.OVERWRITE == 'false'
-        run: |
-          rm .github/workflows/auto_update.yml
-          mv .github/workflows/auto_update.bak.yml .github/workflows/auto_update.yml
-      - name: Create Pull Request
-        id: cpr
-        uses: peter-evans/create-pull-request@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: Update from template
-          title: "[BUMP] Update from template"
-          body: |
-            files changed:
-            ```
-            $(git diff --name-only HEAD^ HEAD)
-            ```
-          labels: |
-            update
-          branch: update_repo
-          delete-branch: true
-      - name: AutoMerging 
-        if: steps.cpr.outputs.pull-request-operation == 'created' && env.AUTO_MERGE == 'true'
-        uses: peter-evans/enable-pull-request-automerge@main
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          pull-request-number: ${{ steps.cpr.outputs.pull-request-number }}
-          merge-method: squash
-```
-
-This action will automatically download the `release.zip` file from the latest release of the template repository, which contains all the template files.
+The action[ `auto_update.yml` ]() will automatically download the `release.zip` file from the latest release of the template repository, which contains all the template files.
 
 It will then upgrade your template by replacing the old files with the new ones. After the upgrade, the action will create a pull request in your repository, which you can review and either accept or reject.
 
 This allows you to review the changes before they are applied to your template.
+
+> [!warning] Don't edit any files in the `assets/css/template` folder! These file will be overwritten when updated.

@@ -2,6 +2,8 @@
 title: Customization
 ---
 
+> [!warning] Don't edit any files in the `assets/css/template` folder! These file will be overwrite when updated.
+
 ## Custom and tags attributes
 
 ### Tags

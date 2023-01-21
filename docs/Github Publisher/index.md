@@ -4,13 +4,13 @@ Publish your notes in your own GitHub repository for free and do whatever you wa
 
 This allows you to set up any template: Jekyll, Mkdocs, Hugo, and custom-made ones!
 
-### Docs
+## Docs
 
 [All documentation can be found here](https://obsidian-publisher.netlify.app/)
 
 Here, you will only get a quick setup!
 
-### Features
+## Features
 
 - Converting `[[wikilinks]]` to markdown links
 - Linking to other notes and updating the links according to your settings
@@ -26,7 +26,7 @@ Here, you will only get a quick setup!
 
 ---
 
-### Initial setup
+## Initial setup
 
 There are a lot of options available, some of which are pre-configured and others are optional.
 
@@ -46,17 +46,9 @@ Before you begin, you will need to configure your Github repository.
 
 That's it! However, there are many options that a simple README cannot cover, so please refer to the documentation for more information. 💕.
 
-#### Looking for something?
-
-→ [Settings explanation](https://obsidian-publisher.netlify.app/en/Obsidian/Settings/)
-← [Commands references](https://obsidian-publisher.netlify.app/en/Obsidian/Commands)
-→ [Template](https://obsidian-publisher.netlify.app/en/Getting%20Started/)
-← [Developing](https://obsidian-publisher.netlify.app/en/Obsidian/Developping)
-
-
 ---
 
-#### Usage
+## Usage
 
 The plugin adds seven commands, one of which is also available in the right-click menu.
 
@@ -70,22 +62,22 @@ The plugin adds seven commands, one of which is also available in the right-clic
 
 Each command is explained [here](https://github.com/ObsidianPublisher/obsidian-github-publisher/blob/master/docs/en/COMMANDS.md).
 
-#### Developing
+## Developing
 
 Check [here](https://github.com/ObsidianPublisher/obsidian-github-publisher/blob/master/docs/en/DEVELOPPING.md) if you want to help the plugin development.
 
 ---
 
-##### Useful links
+## Looking for something?
 
-- [The documentation](https://obsidian-publisher.netlify.app/)
-- [The repository](https://github.com/ObsidianPublisher/obsidian-github-publisher)
-- [Mkdocs Template](https://github.com/ObsidianPublisher/publisher-template-gh-pages)
-- [Github Discussion](https://github.com/ObsidianPublisher/obsidian-github-publisher/discussions)
+→ [Settings explanation](https://obsidian-publisher.netlify.app/en/Obsidian/Settings/)
+← [Commands references](https://obsidian-publisher.netlify.app/en/Obsidian/Commands)
+→ [Template](https://obsidian-publisher.netlify.app/en/Getting%20Started/)
+← [Developing](https://obsidian-publisher.netlify.app/en/Obsidian/Developping)
 
 ---
 
 If you find this plugin and workflow useful, you can give me some coffee money : <br>
-<a href='https://ko-fi.com/X8X54ZYAV' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
+<a href='https://ko-fi.com/X8X54ZYAV' target='_blank'><img height='36' style='border:0px;height:36px;display:block;margin-left:50%;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
 
 
