@@ -2,7 +2,7 @@ group:
   - files: 
     - docs/assets/css/custom_attributes.css
     - docs/assets/css/customization.css
-    - source: docs/en/Getting Started/configuration.md
+    - source: docs/Mkdocs Template/configuration.md
       dest: README.md
     repos: |
       ObsidianPublisher/publisher-template-gh-pages
