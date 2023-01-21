@@ -4,26 +4,18 @@ group:
     - docs/assets/css/customization.css
     - source: docs/en/Getting Started/configuration.md
       dest: README.md
-    - source: docs/fr/Getting Started/configuration.md
-      dest: README-FR.md
     repos: |
       ObsidianPublisher/publisher-template-gh-pages
       ObsidianPublisher/publisher-template-netlify
   - files:
-    - source: docs/en/Obsidian/index.md
+    - source: docs/Obsidian/index.md
       dest: README.md
-    - source: docs/en/Obsidian/index.md
-      dest: docs/en/README.md
-    - source: docs/fr/Obsidian/index.md
-      dest: docs/fr/README.md
-    - source: docs/en/Obsidian/Developping.md
-      dest: docs/en/DEVELOPPING.md
-    - source: docs/fr/Obsidian/Developping.md
-      dest: docs/fr/DEVELOPPING.md
-    - source: docs/en/Obsidian/Commands.md
-      dest: docs/en/COMMANDS.md
-    - source: docs/fr/Obsidian/Commands.md
-      dest: docs/fr/COMMANDS.md
+    - source: docs/Obsidian/index.md
+      dest: docs/README.md
+    - source: docs/Obsidian/Developping.md
+      dest: docs/DEVELOPPING.md
+    - source: docs/Obsidian/Commands.md
+      dest: docs/COMMANDS.md
     repos: |
       ObsidianPublisher/obsidian-github-publisher
   - files:

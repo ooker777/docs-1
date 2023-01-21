@@ -83,11 +83,14 @@ markdown_extensions:
 plugins:
   - search
   - tags:
-      tags_file: en/Getting Started/example/tags.md
+      tags_file: tags.md
   - glightbox
   - ezlinks:
         wikilinks: true
-  - mermaid2
+  - mermaid2:
+      arguments:
+        theme: |
+          ^(JSON.parse(__md_get("__palette").index == 1)) ? 'dark' : 'light'
   - awesome-pages:
       collapse_single_pages: true
   - embed_file:
@@ -98,14 +101,7 @@ plugins:
   - custom-attributes:
       file: 'assets/css/custom_attributes.css'
   - meta-descriptions
-  - i18n:
-      default_language: en
-      docs_structure: folder
-      languages:
-        en:
-          name: English
-        fr:
-          name: Français
+
 extra_javascript:
   - assets/js/mathjax.js
   - assets/js/utils.js
@@ -121,8 +117,8 @@ extra_css:
     - assets/css/template/blog.css
     - assets/css/template/grid.css
     - assets/css/custom_attributes.css
-    - assets/css/highlight.css
     - assets/css/admonition.css
+    - assets/css/customization.css
     - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
 extra:
   comments: false
@@ -137,5 +133,3 @@ extra:
   hooks:
     strip_comments: true
     fix_heading: false
-  
-
