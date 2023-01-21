@@ -1,5 +1,6 @@
-collapse: true
 nav:
+  - Home 
   - Github Publisher
-  - ...
+  - Mkdocs Template
   - Advanced setup
+  - Tags
