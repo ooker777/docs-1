@@ -25,7 +25,7 @@ To use the Mkdocs Obsidian plugin and create a personal wiki site based on your 
 8. Run the commands through the file menu or commands palette.
 9. Update the `mkdocs.yml` file with your repository information.
 10. Make sure to allow push access on GitHub.
-11. Run `pip install -r requirements.txt` to install necessary packages
+11. Run `pip install -r requirements.txt` to install necessary packages (optional, only if you are in a local environment!)
 12. You can deploy your site using GitHub Pages or Netlify.
 
 > [!INFO] [[Obsidian Github Publisher/Configuration example|See here for advanced configuration within obsidian]]
@@ -33,7 +33,6 @@ To use the Mkdocs Obsidian plugin and create a personal wiki site based on your 
 ## Upgrading
 
 To keep your template up to date, you should follow these steps:
-
 1. Add a star to the [ObsidianPublisher/follow_template](https://github.com/ObsidianPublisher/follow_template) repository to stay informed about updates.
 2. Regularly check for new releases, which will contain:
     - The upgraded files in a `zip` file named `changed_files.zip`
@@ -108,4 +107,3 @@ This action will automatically download the `release.zip` file from the latest r
 It will then upgrade your template by replacing the old files with the new ones. After the upgrade, the action will create a pull request in your repository, which you can review and either accept or reject.
 
 This allows you to review the changes before they are applied to your template.
-

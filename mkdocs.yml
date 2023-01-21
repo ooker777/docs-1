@@ -87,7 +87,10 @@ plugins:
   - glightbox
   - ezlinks:
         wikilinks: true
-  - mermaid2
+  - mermaid2:
+      arguments:
+        theme: |
+          ^(JSON.parse(__md_get("__palette").index == 1)) ? 'dark' : 'light'
   - awesome-pages:
       collapse_single_pages: true
   - embed_file:
@@ -114,8 +117,8 @@ extra_css:
     - assets/css/template/blog.css
     - assets/css/template/grid.css
     - assets/css/custom_attributes.css
-    - assets/css/highlight.css
     - assets/css/admonition.css
+    - assets/css/customization.css
     - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css
 extra:
   comments: false

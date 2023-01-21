@@ -8,7 +8,7 @@ title: Per files settings
 
 > [!warning]
 > - Your GitHub token must work for this repository
-> - The function that uploads multiple notes won't send files to this "per-file" repository. Only the command `Upload single current active note` will work, with the [[Obsidian/Settings/Upload.md#Auto Clean-Up|autoclean]] if activated. You can disable it using the frontmatter!
+> - The function that uploads multiple notes won't send files to this "per-file" repository. Only the command `Upload single current active note` will work, with the [[Upload#Auto Clean-Up|autoclean]] if activated. You can disable it using the frontmatter!
 > - The key works in this order: `username/repo/branch/autoclean`, `username/repo/brach`, `username/repo`, and `repo`. You can also use a YAML object like this:
 >  ```yaml
 >  repo:

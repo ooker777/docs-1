@@ -74,6 +74,9 @@ To run the blog locally, you need to install the requirements and run `mkdocs se
 
 A tip: You can use a [conda](https://docs.conda.io/en/latest/) environment here (or a venv, but I prefer conda). Just use this command:
 
-`conda create -n Publisher python=3.10.4 conda activate Publisher`
+```bash
+conda create -n Publisher python=3.11
+conda activate Publisher
+```
 
 Run this command just before running `pip install`.
