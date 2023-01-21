@@ -8,13 +8,11 @@ group:
       ObsidianPublisher/publisher-template-gh-pages
       ObsidianPublisher/publisher-template-netlify
   - files:
-    - source: docs/Obsidian/index.md
+    - source: docs/Github Publisher/index.md
       dest: README.md
-    - source: docs/Obsidian/index.md
-      dest: docs/README.md
-    - source: docs/Obsidian/Developping.md
+    - source: docs/Github Publisher/Developping.md
       dest: docs/DEVELOPPING.md
-    - source: docs/Obsidian/Commands.md
+    - source: docs/Github Publisher/Commands.md
       dest: docs/COMMANDS.md
     repos: |
       ObsidianPublisher/obsidian-github-publisher
