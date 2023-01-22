@@ -1,6 +1,6 @@
 nav:
-  - Home 
+  - index.md 
   - Github Publisher
   - Mkdocs Template
   - Advanced setup
-  - Tags
+  - tags.md
