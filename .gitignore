@@ -16,4 +16,7 @@ __pycache__
 sortspec.md
 _obsidian
 .obsidian
-.trash
+.trash/*
+*/.trash/*
+*/.DS_Store
+*/.obsidian/*
