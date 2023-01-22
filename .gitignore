@@ -14,3 +14,6 @@ __pycache__
 /.idea/inspectionProfiles/Project_Default.xml
 /.idea/workspace.xml
 sortspec.md
+_obsidian
+.obsidian
+.trash
