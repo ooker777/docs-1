@@ -52,6 +52,7 @@ The action[ `auto_update.yml` ](https://github.com/ObsidianPublisher/follow_temp
 >   CLEAN=true
 >   IMG_DIR='assets/img'
 >   AUTO_MERGE=false
+>   DRY_RUN=false
 >   ``` 
 > 2. You need to create a `GH_TOKEN` secret in your repository settings. This token should have the `repo` and `workflows` scope. You can create a token [here](https://github.com/settings/tokens/new?description=PUBLISHER%20TEMPLATE&scopes=repo,workflow).
 > [See here to know how to register it as a secret](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository).
