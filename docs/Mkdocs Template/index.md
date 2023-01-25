@@ -46,6 +46,7 @@ The action[ `auto_update.yml` ](https://github.com/ObsidianPublisher/follow_temp
 
 > [!warning] .env files & github secrets
 > 1. You need to create  or download the .env corresponding to your workflow. This file must be in `.github` folder. 
+>   The file is normally already in your template, or you can grab it [here](https://github.com/ObsidianPublisher/follow_template/tree/main/.github). Take the file corresponding to your workflow (`.env_netlify` or `.env_gh-pages`), and rename it `.env`.
 >   The .env file should contains the following variables:
 >   ```
 >   WORKFLOW_TYPE='netlify' or 'gh-pages' (or leave blank : '')
