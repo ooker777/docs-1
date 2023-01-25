@@ -45,7 +45,7 @@ Note that, you should not edit or configure the files that are provided with the
 The action[ `auto_update.yml` ](https://github.com/ObsidianPublisher/follow_template/blob/main/.github/workflows/auto_update.yml) will automatically download the `release.zip` file from the latest release of the template repository, which contains all the template files.
 
 > [!warning] .env files & github secrets
-> 1. You need to create or download the .env corresponding to your workflows. 
+> 1. You need to create  or download the .env corresponding to your workflow. This file must be in `.github` folder. 
 >   The .env file should contains the following variables:
 >   ```
 >   WORKFLOW_TYPE='netlify' or 'gh-pages' (or leave blank : '')
