@@ -42,7 +42,19 @@ To keep your template up to date, you should follow these steps:
 
 Note that, you should not edit or configure the files that are provided with the template.
 
-The action[ `auto_update.yml` ]() will automatically download the `release.zip` file from the latest release of the template repository, which contains all the template files.
+The action[ `auto_update.yml` ](https://github.com/ObsidianPublisher/follow_template/blob/main/.github/workflows/auto_update.yml) will automatically download the `release.zip` file from the latest release of the template repository, which contains all the template files.
+
+> [!warning] .env files & github secrets
+> 1. You need to create or download the .env corresponding to your workflows. 
+>   The .env file should contains the following variables:
+>   ```
+>   WORKFLOW_TYPE='netlify' or 'gh-pages' (or leave blank : '')
+>   CLEAN=true
+>   IMG_DIR='assets/img'
+>   AUTO_MERGE=false
+>   ```
+> 2. You need to create a `GH_TOKEN` secret in your repository settings. This token should have the `repo` and `workflows` scope. You can create a token [here](https://github.com/settings/tokens/new?description=PUBLISHER%20TEMPLATE&scopes=repo,workflow).
+> [See here to know how to register it as a secret](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository).
 
 It will then upgrade your template by replacing the old files with the new ones. After the upgrade, the action will create a pull request in your repository, which you can review and either accept or reject.
 
