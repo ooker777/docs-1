@@ -46,4 +46,3 @@ Alternatively, you can follow these steps:
 
 > [!note] It may be necessary to delete your `gh-pages` branch in GitHub to remove GitHub Pages.  
   
-  
