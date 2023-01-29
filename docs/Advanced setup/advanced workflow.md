@@ -57,7 +57,7 @@ Normally, each time you push to your repository, the building append, generate t
 As before, you need to create a Netlify repository and set-it. You must keep the repository and the auto-deploy. 
 If you **want** to prevent the auto-publishing at each push, you **need** to prepend each commit by `[skip netlify]`. 
 
-> [!warning] **You have to update your GitHub Publisher settings and add `[skip netlify]` at **GitHub configuration → GitHub Workflow → Commit message**.
+> [!warning] You have to update your GitHub Publisher settings and add `[skip netlify]` at **GitHub configuration → GitHub Workflow → Commit message**.
 
 The only thing you have to do is to create a **build hooks**, in **Site settings → build & deploy → scroll until to see build hooks**. 
 Click on **Add build hook** and set this: 
