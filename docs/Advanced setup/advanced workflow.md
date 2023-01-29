@@ -1,3 +1,7 @@
+---
+title: Netlify & Vercel : Advanced Workflows
+---
+
 ## Introduction
 
 As I stated in [[Compatibility of publishing solution|compatibility of publishing solution]]:

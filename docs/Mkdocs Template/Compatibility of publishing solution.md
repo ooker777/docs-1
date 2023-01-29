@@ -39,6 +39,6 @@
 > You can use it if you don't use the graph view, but you need to edit manually the `on_env` file, with removing `from pyvis.network import Network` and set the obsidian graph generation to `false`  
 
 
-> [!info] Check [[Netlify & Vercel advanced workflow]] for more information on how to setup a better workflow within these two website.
+> [!info] Check [[advanced workflow]] for more information on how to setup a better workflow within these two website.
 
 
