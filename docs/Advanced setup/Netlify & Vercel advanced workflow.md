@@ -10,7 +10,7 @@ Instead, I searched and found some solution to run these two, using Github Actio
 
 It's pretty difficult to set-up this, so please, beware!
 
-> [!info] You need to [download this github action, named `advanced_deploy.yml`]() and this workflows **must replace** the old building workflow.
+> [!info] You need to [download this github action, named `advanced_deploy.yml`](https://github.com/ObsidianPublisher/follow_template/blob/main/.github/workflows/advanced_deploy.yml) and this workflows **must replace** the old building workflow.
 
 > [!warning] Secrets keys
 > Each workflows needs you to configure [encrypted secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets). Please, follow [this tutorial](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) to set them.
