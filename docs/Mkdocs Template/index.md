@@ -49,7 +49,7 @@ The action[ `auto_update.yml` ](https://github.com/ObsidianPublisher/follow_temp
 >   The file is normally already in your template, or you can grab it [here](https://github.com/ObsidianPublisher/follow_template/tree/main/.github). Take the file corresponding to your workflow (`.env_netlify` or `.env_gh-pages`), and rename it `.env`.
 >   The .env file should contains the following variables:
 >   ```
->   WORKFLOW_TYPE='netlify' or 'gh-pages' (or leave blank : '')
+>   WORKFLOW_TYPE='netlify' / 'gh-pages'
 >   CLEAN=true
 >   IMG_DIR='assets/img'
 >   AUTO_MERGE=false
