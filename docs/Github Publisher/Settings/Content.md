@@ -3,7 +3,7 @@ title: Content's conversion
 ---
 > [!note] These settings won't change the content of your files in your vault. They only affect the files that are being uploaded to the remote repository, and how they are organized and deleted within that repository.
 
-## Text
+## Main text
 
 For some reasons, you may need to convert text in your file. Here you can configure to:
 
@@ -12,6 +12,7 @@ For some reasons, you may need to convert text in your file. Here you can config
 - Text replacement: you can replace text with another one in the converted file, using a simple string or regex.
     - The replacement can be empty to remove the whole string.
     - You can set custom regex flags to arrange your regex. See [here for information about JS regex flags](https://javascript.info/regexp-introduction#flags)
+    - You can also set the moment where the regex is run : the replacement can be executed BEFORE all other conversion or AFTER (ie Dataview, tags...).  
 
 ## Tags
 

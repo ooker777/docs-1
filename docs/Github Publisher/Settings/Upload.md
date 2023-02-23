@@ -34,9 +34,30 @@ This option uses the relative path in your Obsidian vault. The default folder wi
 
 The `path removing` option allows you to remove a specific part of the path created. This can be useful for syncing subfolders. If the removed path is not found, the normal behavior applies.
 
-## Frontmatter title
+## Filename 
 
-You can change the filename using a configured frontmatter key, as well as using a regex or a string to change the name.
+### Frontmatter title
+
+You can change the filename using a configured frontmatter key.
+
+### Regex on filename
+
+You can set one or multiple regex to be applied to the filename. Note that each replacement will be applied in their order of registration.
+
+> [!info] To use the regex, you need to enclose the text with `/`
+> For example : `/h.llo/` will be considered as a regex. But `h.llo` will be search strict the text `h.llo`.
+
+## Folder path
+
+You can edit the folder path (unless you use the `fixed` behavior) with strict string or a regex. As before, you need to enclose the regex with `/`, and replacement will be applied in the order of registration.
+
+> [!warning] Editing all the path
+> If you use the `/` characters, you can edit a part or the whole path of a file. 
+> For example, you can edit the folder `something` to `some/thing`. The file from `something` will go in `some/thing`.
+> Use it carefully!
+
+
+
 
 ### Folder note
 
@@ -47,13 +68,6 @@ Now, the plugin will convert these files into `index` (or another name) if you a
 
 > [!warning] This option doesn't work with fixed folder.
 
-### Workflow
-
-#### GitHub Actions
-
-If your workflow requires activating a GitHub action, set the name of it here. Leave it empty to remove it.
-
-> [!note] The action will be triggered by a `workflow_dispatch` event.
 
 #### Metadata Extractor
 

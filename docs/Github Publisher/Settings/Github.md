@@ -10,4 +10,10 @@ title: Github Configuration
 
 It is possible to use per-file configuration to change the repository name, username, and branch. You can find more information about it [[Per files settings|here]].
 
+### GitHub Workflow
+
+Also, you can configure your GitHub Workflow here : 
+- You can edit the pull-request "commit" message, allowing to prevent CI or Netlify with `[skip ci]` or `[skip netlify]`. Note that there will be always the PR number appended after the message.
+- You can run a GitHub Actions workflow that have a `workflow_dispatche`.
+
 [^1]: A GitHub account and connection is required to create a token.
