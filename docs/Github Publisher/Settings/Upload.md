@@ -32,7 +32,8 @@ When using this option, every file will be sent to the default folder. If the de
 
 This option uses the relative path in your Obsidian vault. The default folder will be prepended before the relative Obsidian path. If left blank, the files will be sent to the root of the repository.
 
-The `path removing` option allows you to remove a specific part of the path created. This can be useful for syncing subfolders. If the removed path is not found, the normal behavior applies.
+> [!warning] In the 5.0.0 version, the `path removing` option was transfered into the Folder part modification.
+
 
 ## Filename 
 
@@ -56,7 +57,9 @@ You can edit the folder path (unless you use the `fixed` behavior) with strict s
 > For example, you can edit the folder `something` to `some/thing`. The file from `something` will go in `some/thing`.
 > Use it carefully!
 
-
+> [!info] Path removing 
+> Normally, previous option will be converted. 
+> If you need to create a part removing to « sync subfolder » you need to set the folder to remove in entry, and leave the replacement empty.
 
 
 ### Folder note

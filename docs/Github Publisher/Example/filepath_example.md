@@ -31,7 +31,8 @@ In this file, I add a list of example for the file path settings, edited by your
 > - If you leave the default folder blank, the final path will be `20. Compendium/DND/Monster`
 
 > [!example] Removing a subpath
-> You can use this option to designate a subfolder as the "vault" for syncing the repository.
+> You can use the folder path modification to designate a subfolder as the "vault" for syncing the repository.
+> You need to set the `subpath` in entry and leave empty for the replacement.
 > - You could plug in `vault/sub` as the path removed.
 > - The sync will flow `vault/sub` as `repo`.
 > - A file in `vault/sub/folderA` will be synced in `repo/folderA`
