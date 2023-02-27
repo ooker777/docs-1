@@ -41,25 +41,21 @@ This option uses the relative path in your Obsidian vault. The default folder wi
 
 You can change the filename using a configured frontmatter key.
 
-### Regex on filename
+### Regex on filename / folder path
 
-You can set one or multiple regex to be applied to the filename. Note that each replacement will be applied in their order of registration.
+You can set one or multiple regex to be applied to the filename or the folder path. Note that each replacement will be applied in their order of registration.
+To use the regex, you need to enclose the text with `/`. For example : `/h.llo/` will be considered as a regex. But `h.llo` will be search strict the text `h.llo`.
 
-> [!info] To use the regex, you need to enclose the text with `/`
-> For example : `/h.llo/` will be considered as a regex. But `h.llo` will be search strict the text `h.llo`.
-
-## Folder path
-
-You can edit the folder path (unless you use the `fixed` behavior) with strict string or a regex. As before, you need to enclose the regex with `/`, and replacement will be applied in the order of registration.
-
-> [!warning] Editing all the path
-> If you use the `/` characters, you can edit a part or the whole path of a file. 
-> For example, you can edit the folder `something` to `some/thing`. The file from `something` will go in `some/thing`.
-> Use it carefully!
-
-> [!info] Path removing 
-> Normally, previous option will be converted. 
-> If you need to create a part removing to « sync subfolder » you need to set the folder to remove in entry, and leave the replacement empty.
+> [!note] About folder Path 
+> The option is not available if you use the `fixed folder` option.
+>> [!warning] Editing all path
+>> If you use the `/` characters, you can edit a part or the whole path of a file. 
+>> For example, you can edit the folder `something` to `some/thing`. The file from `something` will go in `some/thing`.
+>> Use it carefully!
+>
+>> [!info] Path removing 
+>> Normally, previous option will be converted. 
+>> If you need to create a part removing to « sync subfolder » you need to set the folder to remove in entry, and leave the replacement empty.
 
 
 ### Folder note
