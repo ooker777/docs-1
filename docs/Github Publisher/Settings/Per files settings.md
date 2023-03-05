@@ -53,6 +53,7 @@ Some settings can be overridden based on your frontmatter key (of the file send)
 4. `dataview` to override dataview settings.
 5. `hardbreak` for markdown hard break.
 6. `baselink` : to change the base link for the copy links function.
+7. `path` : override all path settings and create a path from the root. Use `/` or let it empty to set it to the root of the repository.
 
 ## Quick references
 

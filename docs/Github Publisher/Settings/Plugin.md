@@ -4,12 +4,16 @@ title: Plugin Settings
 
 You can configure:
 
-- The share key used by the plugin. By default, it is `share`.
-- Folders excluded. The share key can't work here. Useful if you forget to remove the `share` (or turn it to `false`) and move a file in your archive…
+1. The share key used by the plugin. By default, it is `share`.
+2. Folders excluded. The share key can't work here. Useful if you forget to remove the `share` (or turn it to `false`) and move a file in your archive…
 	You can use regex here, but you need to enclose the regex between `/`.
-- Add the command to share the file on the file menu (right-click on a file in the explorer or using the three dots) and editor menu (right-click on an open edited note)
-- Add the link's shared note in your clipboard after sharing. You can configure the path created here, with removing some parts.
-	As it supports multiple parts, you can separate them using a comma. For example, you can remove `docs` and the extension using: `docs/, .md`
+3. Add the command to share the file on the file menu (right-click on a file in the explorer or using the three dots) and editor menu (right-click on an open edited note)
+4. A "auto-sharing" for external modified file (useful for example if you edit frontmatter with meta-edit). Beware, this option can be dangerous with sync, as the sync will activate the auto-sharing.
+5. Add the link's shared note in your clipboard after sharing : 
+	- You can set the baselink (note : this can be edited by per-file settings `baselink`).
+	- You can also delete some part of the created link. If you need to remove multiple part, just separate the part with a comma. For example, if you want to remove the extension and the index : `index, .md`
+	- You have the option to enable a new command in the command palette to create a link to the current opened file. If you want to add in the right-click menu, you can use the [commander](https://github.com/phibr0/obsidian-commander) plugin. 
+6. You can notify all error in a notice, instead of the console. This option is useful if you don't know how to use the console, and if you debug on mobile.
 
 
 > [!note] The right-click menu command can also send the file under your cursor if it's a link!

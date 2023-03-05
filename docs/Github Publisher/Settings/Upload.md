@@ -17,6 +17,9 @@ In all cases, you will need to configure the **default folder**: The file will b
 > [!note]
 > If you use the option for frontmatter, this folder will be the default folder: the file will be sent here if the key doesn't exist.
 
+> [!info] Override settings
+> The settings bellow can be overrided by the frontmatter key `path`. See [[Per files settings|per file settings for more informations]].
+
 ### Metadata frontmatter
 
 Using the second option will activate two additional options:
