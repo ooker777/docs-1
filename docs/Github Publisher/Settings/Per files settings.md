@@ -52,7 +52,9 @@ Some settings can be overridden based on your frontmatter key (of the file send)
     - `folder` to change the default folder. Beware that changing this setting can have strange effects with autocleaning! You can, again, use a one-key setting using `attachmentLinks` for the folder and `attachment: false` to avoid sending.
 4. `dataview` to override dataview settings.
 5. `hardbreak` for markdown hard break.
-6. `baselink` : to change the base link for the copy links function.
+6. `baselink` : to change the base link for the copy links function. Note, using this key will disable the remove part settings. You need to use the object `copylink` to edit the remove part, as follow:
+  - `base`: to change the base link
+  - `remove` : To remove some part specific to this file.
 7. `path` : override all path settings and create a path from the root. Use `/` or let it empty to set it to the root of the repository.
 
 ## Quick references
