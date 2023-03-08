@@ -1,4 +1,4 @@
-name: update requirements and clean unused images
+name: Clean unused media
 
 on:
   workflow_dispatch:
