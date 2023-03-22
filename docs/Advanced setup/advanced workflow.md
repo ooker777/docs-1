@@ -1,5 +1,5 @@
 ---
-title: Netlify & Vercel : Advanced Workflows
+title: Netlify & Vercel — Add Graph view
 ---
 
 ## Introduction

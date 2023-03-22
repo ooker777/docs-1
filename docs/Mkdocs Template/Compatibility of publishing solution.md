@@ -36,8 +36,7 @@
 > [!warning]  
 > For the moment, Vercel is not supported : Python is compiled without `sqlite3`, and the graph generation use a tool that use it.  
 > This absence concludes to a build fail.  
-> You can use it if you don't use the graph view, but you need to edit manually the `on_env` file, with removing `from pyvis.network import Network` and set the obsidian graph generation to `false`  
-
+> You can use it if you don't use the graph view with setting the obsidian graph generation to `false` in the `mkdocs.yml` file.
 
 > [!info] Check [[advanced workflow]] for more information on how to setup a better workflow within these two website.
 
