@@ -12,7 +12,7 @@ It allows you to publish your notes on GitHub and customize the template to your
 <p align="center">
 	<a href="https://obsidian.md/"><img src="https://img.shields.io/badge/Auxiliary%20Tool-Obsidian-blueviolet"></img></a><br/>
 	<a href='https://ko-fi.com/X8X54ZYAV' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a><br/>
-	<a href="https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/publisher-template-gh-pages"><img src="https://www.netlify.com/img/deploy/button.svg"></a><br/>
+	<a href="https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/publisher-template-netlify"><img src="https://www.netlify.com/img/deploy/button.svg"></a><br/>
 </p>
 
 - [Obsidian plugin](https://github.com/ObsidianPublisher/obsidian-github-publisher)
