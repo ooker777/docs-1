@@ -87,10 +87,6 @@ plugins:
   - glightbox
   - ezlinks:
         wikilinks: true
-  - mermaid2:
-      arguments:
-        theme: |
-          ^(JSON.parse(__md_get("__palette").index == 1)) ? 'dark' : 'light'
   - awesome-pages:
       collapse_single_pages: true
   - embed_file:
@@ -122,6 +118,7 @@ extra:
   generate_graph: false
   SEO: 'assets/meta/SEO.png'
   attachments: 'assets/img'
+  no-auto-h1: true
   blog_list:
     pagination: true
     pagination_message: false
