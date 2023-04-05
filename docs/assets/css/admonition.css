@@ -1,6 +1,4 @@
 /* Admonition styles, add the color to the title */
-
-
 .md-typeset :is(.note)> :is(.admonition-title,
     summary) {
     color: #448aff;
