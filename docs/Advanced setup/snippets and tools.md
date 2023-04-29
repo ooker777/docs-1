@@ -1,13 +1,22 @@
 ---
 share: true
-title: CSS snippets & Mkdocs plugins
+title: Tips, snippets & tools
 ---
+
+
+### Dataview snippets
+To list all pages that are not shared, use this Dataview snippet:
+```sql
+LIST
+WHERE share!=true
+```
+
+### CSS snippets
 
 I, as working on my blog, created some cool snippets or useful tools.
 
-## CSS snippets
 
-### Grid CSS snippets
+#### Grid CSS snippets
 
 > [!info] The snippets is located in [`docs/assets/css/template/utils.css`](https://github.com/ObsidianPublisher/follow_template/blob/main/docs/assets/css/template/utils.css)
 
@@ -15,7 +24,7 @@ Automatically convert the [grid callout layout (from ITS)](https://github.com/Sl
 
 ![[../assets/img/example_grid_layout.png]]
 
-### Add a image banner to mkdocs
+#### Add a image banner to mkdocs
 
 ![image](https://user-images.githubusercontent.com/30244939/163732766-d08b102f-508b-496e-a99f-68f865b2080b.png)
 
@@ -63,3 +72,28 @@ To add a unique page that is encrypted, just add `password: your_secret_password
 > <u>Links</u>: [Custom tags attributes](https://pypi.org/project/mkdocs-custom-tags-attributes/)
 > <u>Installation:</u> `pip install mkdocs-custom-tags-attributes`
 
+## Tools
+### Modify your notes' metadata in batch
+
+Use [py-obsidianmd](https://selimrbd.github.io/py-obsidianmd/overview/ "py-obsidianmd")
+
+Install:
+```python
+pip install py-obsidianmd
+```
+
+Example:
+```python
+from pathlib import Path
+from pyomd import Notes, Note
+
+path_dir = Path("/path/to/your/directory")
+notes = Notes(path_dir)
+
+notes.filter(has_meta=[("tags", "type/book", MetadataType.INLINE)])
+
+notes.metadata.add(k="share", l="true", meta_type=MetadataType.FRONTMATTER)
+
+notes.update_content(inline_inplace=False, inline_position="top", inline_tml="callout") #type: ignore
+notes.write()
+```
