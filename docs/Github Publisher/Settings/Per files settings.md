@@ -35,6 +35,17 @@ title: Per files settings
 > ```
 > In this behavior, the `autoclean` will be set to `false` by default.
 
+If you had configured repository in `Manage other repo` you can use the `shortRepo` key with the `smartkey`. You can also set multiple configured repositories in a list format :
+```yaml
+shortRepo: smartkey
+```
+or
+```yaml
+shortRepo:
+  - smartkey
+  - smartkey
+```
+
 ## Frontmatter keys explanation
 
 Some settings can be overridden based on your frontmatter key (of the file send):
