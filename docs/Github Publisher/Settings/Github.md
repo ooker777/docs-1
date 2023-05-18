@@ -1,7 +1,6 @@
 ---
 title: Github Configuration
 ---
-
 - **Repo name**: The repository where the files will be sent.
 - **GitHub username**: Your GitHub username.
 - **GitHub Token**:[^1] Get your [GitHub Token here](https://github.com/settings/tokens/new?scopes=repo). The correct settings should already be applied. To avoid generating a new token every few months, select the “No expiration” option. Click the “Generate token” button and copy the token you are presented with on the next page.
@@ -17,3 +16,13 @@ Also, you can configure your GitHub Workflow here :
 - You can run a GitHub Actions workflow that have a `workflow_dispatche`.
 
 [^1]: A GitHub account and connection is required to create a token.
+
+## Configure more than one repository
+
+You can now manage multiple repository in the settings. It will allow you to use **all** commands on each configured repository. Note that it will use the same conversion settings for all repositories.
+Also, token are shared between all repositories.
+
+Each repository can be configured with the settings above (except the token), plus:
+- `smartKey` : Aka the `name` of the repository. It will be used to identify the repository in the [[Per files settings]], and in the commands palettes.
+- `shareKey` : Allow you to separate the files shared for each repository. Note that if a secondary key is present with the main key, the main repository will be used.
+- `shortcuts` : Allow you to create a shortcut for each repository. The commands will be directly available in the commands palettes. Otherwise, you need to use the `Run command for a repository` command, and choose the repository you want to use.
