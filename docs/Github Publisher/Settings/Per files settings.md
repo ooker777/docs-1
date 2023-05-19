@@ -46,6 +46,23 @@ shortRepo:
   - smartkey
 ```
 
+The key `default` is reserved for the default repository. You can use it to send a file in your default repo and your other repo:
+```yaml
+shortRepo:
+  - default
+  - smartkey
+```
+
+> [!info] Note
+> ```yaml
+> shortRepo: smartkey
+> share: true
+> ```
+> is equivalent to
+> ```yaml
+> otherShareKey: true
+> ```
+
 ## Frontmatter keys explanation
 
 Some settings can be overridden based on your frontmatter key (of the file send):

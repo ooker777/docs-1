@@ -26,3 +26,4 @@ Each repository can be configured with the settings above (except the token), pl
 - `smartKey` : Aka the `name` of the repository. It will be used to identify the repository in the [[Per files settings]], and in the commands palettes.
 - `shareKey` : Allow you to separate the files shared for each repository. Note that if a secondary key is present with the main key, the main repository will be used.
 - `shortcuts` : Allow you to create a shortcut for each repository. The commands will be directly available in the commands palettes. Otherwise, you need to use the `Run command for a repository` command, and choose the repository you want to use.
+- You can also set a copy-links path. 
