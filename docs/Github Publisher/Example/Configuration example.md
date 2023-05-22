@@ -8,8 +8,8 @@ title: Configuration example
 ### Quick installation tutorial
 
 1. Click on:[^1]
-    - If you want to use Github Pages : [use this template](https://github.com/ObsidianPublisher/publisher-template-gh-pages/generate)
-    - If you want to use Netlify : [use this template](https://github.com/ObsidianPublisher/publisher-template-netlify/generate)
+    - If you want to use Github Pages : [use this template](https://github.com/ObsidianPublisher/template-gh-pages/generate)
+    - If you want to use Netlify : [use this template](https://github.com/ObsidianPublisher/template-netlify-vercel/generate)
 2. Use the name of your choice
 3. Set and edit the `mkdocs.yml` in the root of the repository.
 

@@ -15,7 +15,7 @@ One such action is the `mkdocs_build.yml` file, located in `.github/workflows/mk
 - `overrides`
 - `mkdocs.yml`
 
-Another action is the [`update_req_clean_medias.yml`](https://github.com/ObsidianPublisher/follow_template/blob/main/.github/workflows/update_req_clean_medias.yml) file, also located in `.github/workflows/`.
+Another action is the [`update_req_clean_medias.yml`](https://github.com/ObsidianPublisher/sync_template/blob/main/.github/workflows/update_req_clean_medias.yml) file, also located in `.github/workflows/`.
 This action is triggered each day and it's used to update the `requirement.txt` file in case of update. The workflow allows cleaning the unused media to gain build time and also space. 
 If you want to skip this clean, set the `CLEAN` key from the `.env` file (in `.github`) to false.
 Also, if you use another image folder (different from `assets/img`), you must change the `IMG_DIR` key in the `.env` file.

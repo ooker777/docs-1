@@ -18,7 +18,7 @@ I, as working on my blog, created some cool snippets or useful tools.
 
 #### Grid CSS snippets
 
-> [!info] The snippets is located in [`docs/assets/css/template/utils.css`](https://github.com/ObsidianPublisher/follow_template/blob/main/docs/assets/css/template/utils.css)
+> [!info] The snippets is located in [`docs/assets/css/template/utils.css`](https://github.com/ObsidianPublisher/sync_template/blob/main/docs/assets/css/template/utils.css)
 
 Automatically convert the [grid callout layout (from ITS)](https://github.com/SlRvb/Obsidian--ITS-Theme/blob/main/S%20-%20Callouts.css) to mkdocs
 

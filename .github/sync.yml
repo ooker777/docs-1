@@ -5,8 +5,8 @@ group:
     - source: docs/Mkdocs Template/configuration.md
       dest: README.md
     repos: |
-      ObsidianPublisher/publisher-template-gh-pages
-      ObsidianPublisher/publisher-template-netlify
+      ObsidianPublisher/template-gh-pages
+      ObsidianPublisher/template-netlify-vercel
   - files:
     - source: docs/Github Publisher/index.md
       dest: README.md
@@ -22,4 +22,4 @@ group:
     - source: requirements.txt
       dest: requirements.txt
     repos: |
-      ObsidianPublisher/publisher-template-netlify
+      ObsidianPublisher/template-netlify-vercel

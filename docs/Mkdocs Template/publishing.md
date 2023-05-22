@@ -8,8 +8,8 @@ title: How to publish
 
 You can publish your site using:  
 
-- [Netlify](https://www.netlify.com/) by using the template available at [ObsidianPublisher/publisher-template-netlify](https://github.com/ObsidianPublisher/publisher-template-netlify)  
-- [Github Pages](https://pages.github.com/) by using the template available at [ObsidianPublisher/publisher-template-gh-pages](https://github.com/ObsidianPublisher/publisher-template-gh-pages)  
+- [Netlify](https://www.netlify.com/) by using the template available at [ObsidianPublisher/template-netlify-vercel](https://github.com/ObsidianPublisher/template-netlify-vercel)  
+- [Github Pages](https://pages.github.com/) by using the template available at [ObsidianPublisher/template-gh-pages](https://github.com/ObsidianPublisher/template-gh-pages)  
 
 ### Through Github Pages  
 
@@ -28,7 +28,7 @@ The blog can be published using GitHub Pages. With the new version, you don't ne
 
 Netlify.app is a great tool to deploy your blog. It's a free service that allows you to deploy your blog on the web, and the build will be faster than GitHub Pages.  
 
-To deploy your blog, you can click here : [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/publisher-template-netlify)  
+To deploy your blog, you can click here : [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/template-netlify-vercel)  
 
 Alternatively, you can follow these steps:  
 - Create an account on Netlify  
