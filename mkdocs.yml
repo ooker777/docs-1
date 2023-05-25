@@ -82,8 +82,6 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
 plugins:
   - search
-  - tags:
-      tags_file: tags.md
   - glightbox
   - ezlinks:
         wikilinks: true
@@ -100,6 +98,8 @@ plugins:
   - exclude:
       glob: 
         - "*obsidian*"
+  - tags:
+      tags_file: tags.md
 hooks:
   - overrides/hooks/on_page_markdown.py
   - overrides/hooks/on_env.py
@@ -121,7 +121,7 @@ extra:
   attachments: 'assets/img'
   no-auto-h1: true
   blog_list:
-    pagination: true
+    pagination: false
     pagination_message: false
     pagination_translation: ''
     no_page_found: ''
