@@ -20,3 +20,5 @@ _obsidian
 */.trash/*
 */.DS_Store
 */.obsidian/*
+Pipfile
+Pipfile.lock
