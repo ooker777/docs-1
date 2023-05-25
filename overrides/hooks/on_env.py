@@ -124,7 +124,6 @@ def time_to_iso(time):
     Returns:
         any|str: convert time or the original time if error
     """
-    
     if isinstance(time, datetime.time) or isinstance(time, datetime.date):
         time = time.isoformat()
     time = time.replace("-", "/")
