@@ -1,6 +1,7 @@
 ---
-date: 2023-05-25
+date: 2023-05-22
 tags: [Template]
+description: "Breaking change on Assets! Optimization of not_found links and preventing too much XHR call."
 ---
 
 Hello!

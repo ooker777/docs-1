@@ -1,6 +1,7 @@
 ---
 date: 2023-05-25
 tags: [Template]
+description: "Adding CSS class to the template with a new Jinja Template called css_class.html"
 ---
 
 Hello everyone!

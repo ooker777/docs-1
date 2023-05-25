@@ -1,5 +1,6 @@
 ---
 date: 2023-03-15
+description: "Auto update the javascripts & styles.css files using CDN jsdelivr!"
 ---
 
 Hello everyone!
