@@ -1,6 +1,8 @@
 ---
 date: 2023-03-15
+comments: true
 description: "Auto update the javascripts & styles.css files using CDN jsdelivr!"
+title: "[TEMPLATE]: Using CDN to deliver assets"
 ---
 
 Hello everyone!

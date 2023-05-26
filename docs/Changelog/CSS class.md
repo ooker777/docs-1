@@ -1,6 +1,8 @@
 ---
 date: 2023-05-25
+comments: true
 tags: [Template]
+title: "[SYNC TEMPLATE v2.1.0]: CSS Class"
 description: "Adding CSS class to the template with a new Jinja Template called css_class.html"
 ---
 
