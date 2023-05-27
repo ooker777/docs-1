@@ -27,7 +27,7 @@ pyvis==0.3.1
 
 ## Vercel
 
-> [!warning] You need to download [this file](https://github.com/ObsidianPublisher/actions/blob/main/template/deploy/vercel.yml) and put it in your `.github/workflows` folder.
+> [!warning] You need to download [this file](https://github.com/ObsidianPublisher/actions/blob/main/template/vercel/deploy.yml) and put it in your `.github/workflows` folder.
 
 > [!important] Update your `.github/.env` file with adding these keys:
 > ```
@@ -55,7 +55,7 @@ Normally, each time you push to your repository, the building append, generate t
 
 ## Netlify
 
-> [!warning] You need to download [this file](https://github.com/ObsidianPublisher/actions/blob/main/template/deploy/netlify.yml) and put it in your `.github/workflows` folder.
+> [!warning] You need to download [this file](https://github.com/ObsidianPublisher/actions/blob/main/template/netlify/deploy.yml) and put it in your `.github/workflows` folder.
 
 As before, you need to create a Netlify repository and set-it. You must keep the repository and the auto-deploy. 
 If you **want** to prevent the auto-publishing at each push, you **need** to prepend each commit by `[skip netlify]`. 

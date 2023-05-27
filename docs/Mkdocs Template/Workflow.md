@@ -79,7 +79,7 @@ See [[advanced|Advanced Workflow]] for more information.
 
 ### Github Pages
 
-You need the `gh-pages.yml` file in `.github/workflows` folder. Don't forget to configure the key `WORKFLOW_TYPE` in `.github/.env` to `gh-pages`.
+You need to download [`deploy.yml` from there](https://github.com/ObsidianPublisher/actions/blob/main/template/gh-pages/deploy.yml) and the [attached `.env` file.](https://github.com/ObsidianPublisher/actions/blob/main/template/gh-pages/.env)
 
 You also need to activate the Github Pages in your repository and use an action to trigger the pages. 
 
