@@ -7,4 +7,6 @@ on:
 jobs:
   maintenance:
     uses: ObsidianPublisher/actions/.github/workflows/maintenance.yml@main
+    secrets:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     
