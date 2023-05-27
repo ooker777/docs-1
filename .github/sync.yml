@@ -10,10 +10,6 @@ group:
   - files:
     - source: docs/Github Publisher/index.md
       dest: README.md
-    - source: docs/Github Publisher/Developping.md
-      dest: docs/DEVELOPPING.md
-    - source: docs/Github Publisher/Commands.md
-      dest: docs/COMMANDS.md
     repos: |
       ObsidianPublisher/obsidian-github-publisher
   - files:
