@@ -8,13 +8,12 @@ title: How to publish
 
 You can publish your site using:  
 
-- [Netlify](https://www.netlify.com/) by using the template available at [ObsidianPublisher/template-netlify-vercel](https://github.com/ObsidianPublisher/template-netlify-vercel)  
+- [Netlify](https://www.netlify.com/) by using the template available at [ObsidianPublisher/template-netlify-vercel](https://github.com/ObsidianPublisher/template-netlify-vercel)
 - [Github Pages](https://pages.github.com/) by using the template available at [ObsidianPublisher/template-gh-pages](https://github.com/ObsidianPublisher/template-gh-pages)  
 
 ### Through Github Pages  
 
-The blog can be published using GitHub Pages. With the new version, you don't need to use a `gh-pages` branch anymore. The configuration should be set up as follows:  
-![[../../assets/img/gh_page_config.png]]  
+![[Workflow#Github Pages]]
 
 > [!bug] The workflow isn't running!  
 >  
@@ -28,7 +27,8 @@ The blog can be published using GitHub Pages. With the new version, you don't ne
 
 Netlify.app is a great tool to deploy your blog. It's a free service that allows you to deploy your blog on the web, and the build will be faster than GitHub Pages.  
 
-To deploy your blog, you can click here : [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/template-netlify-vercel)  
+To deploy your blog, you can click here : 
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/template-netlify-vercel)  
 
 Alternatively, you can follow these steps:  
 - Create an account on Netlify  
@@ -38,11 +38,12 @@ Alternatively, you can follow these steps:
   - Use `mkdocs build` as the build command  
   - Use `site` as the publish directory  
 
-![config_netlify](https://i.imgur.com/ESc9vLu.png)  
+![[netlify_config.png]]
+
 - Add an environment variable with `PYTHON_VERSION` set to `3.8` or include a `runtime.txt` file in the root of your repository with the same value.  
 - To improve deployment time and reduce bandwidth usage, you can disable deployment previews in the site settings by navigating to Settings > Build & Deploy > Deploy Preview and unchecking the box.  
-![picture 1](https://i.imgur.com/DNS0DdX.png)  
-  
+
+![[deploy_preview.png]]
 
 > [!note] It may be necessary to delete your `gh-pages` branch in GitHub to remove GitHub Pages.  
   

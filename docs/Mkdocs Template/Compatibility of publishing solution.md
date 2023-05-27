@@ -38,6 +38,6 @@
 > This absence concludes to a build fail.  
 > You can use it if you don't use the graph view with setting the obsidian graph generation to `false` in the `mkdocs.yml` file.
 
-> [!info] Check [[advanced workflow]] for more information on how to setup a better workflow within these two website.
+> [!info] Check [[advanced]] for more information on how to setup a better workflow within these two website.
 
 

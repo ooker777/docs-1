@@ -3,38 +3,12 @@ share: true
 title: Github Actions
 ---
 
-There are many GitHub Actions here! If you're not familiar with GitHub Actions, it's a feature that allows you to automate software workflows, including building, testing, and deploying code, as well as managing code reviews, branches, and issues.
+The repository [ObsidianPublisher/actions](https://github.com/ObsidianPublisher/actions) own every Github actions that will be reused in the templates. 
 
-In this case, the GitHub Actions (or workflows) are used to build the Obsidian to Mkdocs (or Mkdocs Obsidian Publisher) project using a file in the repository.
+> [!warning] Don't download the actions in `.github/workflows` folder.
+> You need to download and use the file in `template` folder.
 
-One such action is the `mkdocs_build.yml` file, located in `.github/workflows/mkdocs_build.yml`. This file is used to build the Mkdocs site. It runs the installations of the requirements and the commands for building the GitHub page. This workflow will only run for the main or master branch, and if the push includes files from:
-
-- `docs`
-- `requirements.txt`
-- `README.md`
-- `overrides`
-- `mkdocs.yml`
-
-Another action is the [`update_req_clean_medias.yml`](https://github.com/ObsidianPublisher/sync_template/blob/main/.github/workflows/update_req_clean_medias.yml) file, also located in `.github/workflows/`.
-This action is triggered each day and it's used to update the `requirement.txt` file in case of update. The workflow allows cleaning the unused media to gain build time and also space. 
-If you want to skip this clean, set the `CLEAN` key from the `.env` file (in `.github`) to false.
-Also, if you use another image folder (different from `assets/img`), you must change the `IMG_DIR` key in the `.env` file.
-
-
-> [!info] Activated : `create_index.yml` Allows you to quickly create a new "category" / blog listing in your repository by creating a new specified folder with the name of the category. To create a new category, follow these steps:
->
-> 1. Go to the "Actions" tab
-> 2. Click on "Index Creation"
-> 3. Click on "Run Workflow"
-> 4. Fill out the form:
->
-> - **Folder name** : The name of the folder you want to create, it will be the "new category".
-> - **Parent folder** : The _optional_ path of the folder you want to create the new category in. For example, `main_category/draft` will create the `docs/main_category/draft/folder_name` folder.
-> - **Description** : An _optional_ category description.
-> - You can also:
->     - **Hide the table of contents** in the index file.
->     - **Hide the navigation panel** in the index file.
->     - Perform a **dry-run**: It will only show the result of the operation, but will not create the folder and the index file.
+## General 
 
 You can also create workflow conditional runs with the `if` keyword. For example, you can target merging events by prepending them with `[PUBLISHER]` and create workflows based on pull requests.
 
@@ -46,3 +20,69 @@ You can also create workflow conditional runs with the `if` keyword. For example
 > - Mkdocs Build takes around ~2 minutes (more for larger repositories)
 > - Updating requirements (each 24 hours) takes ~30 seconds 
 > Finally, you can run ~1000 blog builds per month (1500 for pro), which is around 32 builds per day. Note: The pip cache will typically speed up the process, so the Publisher action should take less than 1-1.5 minutes for small builds.
+
+## Maintenance workflow
+
+Some workflows needs a `.github/env` file to work. The `env` file will work as follow:
+```env
+WORKFLOW_TYPE='gh-pages' | 'netlify' | 'vercel'
+CLEAN=true
+IMG_DIR='assets/img'
+AUTO_MERGE=false
+DRY_RUN=false
+```
+
+### Update
+
+This action allows to update the last version of the [template](https://github.com/ObsidianPublisher/sync_template). 
+
+The action needs a `GH_TOKEN` secret in your repository settings. This token should have the `repo` and `workflows` scope. You can create a token [here](https://github.com/settings/tokens/new?description=PUBLISHER%20TEMPLATE&scopes=repo,workflow).
+
+[See here to know how to register it as a secret](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository).
+
+This action will update your template by replacing the old files with the new ones. After the upgrade, the action will create a pull request in your repository, which you can review and either accept or reject.
+
+This allows you to review the changes before they are applied to your template.
+The `AUTO_MERGE` key in `.github/.env` can be set to `true` to automatically merge the pull request.
+
+### Index
+
+It Allows you to quickly create a new "category" / blog listing in your repository by creating a new specified folder with the name of the category. To create a new category, follow these steps:
+ 1. Go to the "Actions" tab
+ 2. Click on "Index Creation"
+ 3. Click on "Run Workflow"
+ 4. Fill out the form:
+
+ - **Folder name** : The name of the folder you want to create, it will be the "new category".
+ - **Parent folder** : The _optional_ path of the folder you want to create the new category in. For example, `main_category/draft` will create the `docs/main_category/draft/folder_name` older.
+ - **Description** : An _optional_ category description.
+ - You can also:
+     - **Hide the table of contents** in the index file.
+     - **Hide the navigation panel** in the index file.
+     - Perform a **dry-run**: It will only show the result of the operation, but will not create the folder and the index file.
+
+> [!bug] The workflows won't activate the other actions, so you need to run them manually if you need.
+
+## Maintenance
+
+This workflows will, every 24 hours or on demand:
+- Update the requirements and the cache
+- Clean unused images, if `CLEAN` is set to `true` in `.github/.env`. Also, the DRY_RUN key can be set to true to only show the result of the operation, but not actually delete the images.
+
+## Deploy
+
+The deploy workflow will build your site and deploy it to the specified platform. 
+
+> [!note] If you use Vercel & Netlify, **without** the graph view, you don't need theses files.
+
+See [[advanced|Advanced Workflow]] for more information.
+
+### Github Pages
+
+You need the `gh-pages.yml` file in `.github/workflows` folder. Don't forget to configure the key `WORKFLOW_TYPE` in `.github/.env` to `gh-pages`.
+
+You also need to activate the Github Pages in your repository and use an action to trigger the pages. 
+
+The configuration needs to be like this:
+
+![[github_actions_pages.png]]

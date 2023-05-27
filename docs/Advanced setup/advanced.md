@@ -14,8 +14,6 @@ Instead, I searched and found some solution to run these two, using GitHub Actio
 
 It's pretty difficult to set up this, so please, beware!
 
-> [!info] You need to [download this GitHub action, named `advanced_deploy.yml`](https://github.com/ObsidianPublisher/sync_template/blob/main/.github/workflows/advanced_deploy.yml) and this workflow **must replace** the old building workflow.
-
 > [!warning] Secrets keys
 > Each workflow needs you to configure [encrypted secrets](https://docs.github.com/en/actions/security-guides/encrypted-secrets). Please follow [this tutorial](https://docs.github.com/en/actions/security-guides/encrypted-secrets#creating-encrypted-secrets-for-a-repository) to set them.
 
@@ -29,6 +27,8 @@ pyvis==0.3.1
 
 ## Vercel
 
+> [!warning] You need to download [this file](https://github.com/ObsidianPublisher/actions/blob/main/template/deploy/vercel.yml) and put it in your `.github/workflows` folder.
+
 > [!important] Update your `.github/.env` file with adding these keys:
 > ```
 > GENERATE_GRAPH=true
@@ -39,6 +39,7 @@ pyvis==0.3.1
 First, create a new vercel project, with adding the template in it. Thereafter, you have to disconnect (or remove) the repository.
 
 Don't forget to configure the deployment for mkdocs. For that, go to the **settings** section, and check if everything looks like that : 
+
 ![[vercel_config.png]]
 
 You have to grab : 
@@ -53,6 +54,8 @@ Normally, each time you push to your repository, the building append, generate t
 > [!info] Build time take (in my testing repo) takes $2.14~min$.
 
 ## Netlify
+
+> [!warning] You need to download [this file](https://github.com/ObsidianPublisher/actions/blob/main/template/deploy/netlify.yml) and put it in your `.github/workflows` folder.
 
 As before, you need to create a Netlify repository and set-it. You must keep the repository and the auto-deploy. 
 If you **want** to prevent the auto-publishing at each push, you **need** to prepend each commit by `[skip netlify]`. 
