@@ -12,10 +12,4 @@ group:
       dest: README.md
     repos: |
       ObsidianPublisher/obsidian-github-publisher
-  - files:
-    - source: .github/workflows/update_requirements.yml
-      dest: .github/workflows/update_requirements.yml
-    - source: requirements.txt
-      dest: requirements.txt
-    repos: |
-      ObsidianPublisher/template-netlify-vercel
+
