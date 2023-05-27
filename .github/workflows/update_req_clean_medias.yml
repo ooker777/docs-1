@@ -1,5 +1,4 @@
 name: Repository maintenance
-description: 'This workflow is triggered daily to clean unused images and update requirements'
 
 on:
   workflow_dispatch:
