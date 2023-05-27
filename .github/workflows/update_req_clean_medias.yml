@@ -9,4 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: ObsidianPublisher/actions/maintenance.yml@main
+      - uses: ObsidianPublisher/actions@main
+        with:
+          action: maintenance.yml
