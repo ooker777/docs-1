@@ -9,4 +9,4 @@ jobs:
   maintenance:
     runs-on: ubuntu-latest
     steps:
-      - uses: ObsidianPublisher/actions/maintenance.yml
+      - uses: ObsidianPublisher/actions/maintenance@main
