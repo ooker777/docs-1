@@ -8,4 +8,5 @@ jobs:
   maintenance:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - uses: ObsidianPublisher/actions/maintenance@main
