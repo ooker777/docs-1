@@ -27,7 +27,6 @@ Some workflows needs a `.github/env` file to work. The `env` file will work as f
 ```env
 WORKFLOW_TYPE='gh-pages' | 'netlify' | 'vercel'
 CLEAN=true
-IMG_DIR='assets/img'
 AUTO_MERGE=false
 DRY_RUN=false
 ```
