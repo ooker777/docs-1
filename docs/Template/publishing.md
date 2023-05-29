@@ -15,6 +15,10 @@ You can publish your site using:
 
 ![[Actions#Github Pages]]
 
+You need to activate the GitHub Pages in your repository settings, and use **action** to trigger the page build.
+The configuration needs to be like this:
+![[github_actions_pages.png]]
+
 > [!bug] The workflow isn't running!  
 >  
 > - Check the run and error logs in the `Actions` tab.  
