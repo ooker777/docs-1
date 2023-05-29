@@ -74,7 +74,7 @@ The deploy workflow will build your site and deploy it to the specified platform
 
 > [!note] If you use Vercel & Netlify, **without** the graph view, you don't need theses files.
 
-See [[advanced|Advanced Workflow]] for more information.
+See [[advanced_workflow|advanced workflow]] for more information.
 
 ### Github Pages
 

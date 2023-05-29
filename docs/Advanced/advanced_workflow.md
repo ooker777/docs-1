@@ -1,12 +1,12 @@
 ---
-title: Netlify & Vercel — Add Graph view
+title: Advanced workflow
 ---
 
 ## Introduction
 
-As I stated in [[Compatibility of publishing solution|compatibility of publishing solution]]:
-- [[Compatibility of publishing solution#Netlify|Netlify]] is limited to Python 3.8, blocking `obsidiantools` to an older version ; 
-- [[Compatibility of publishing solution#Vercel|Vercel]] crash when running the `on_env` because of `pyvis`, used to generate the obsidian graph.
+As I stated in [[Compatibility|compatibility of publishing solution]]:
+- [[Compatibility#Netlify|Netlify]] is limited to Python 3.8, blocking `obsidiantools` to an older version ; 
+- [[Compatibility#Vercel|Vercel]] crash when running the `on_env` because of `pyvis`, used to generate the obsidian graph.
 
 Obviously, these two errors can be stopped with removing the use of the graph, but I think it's not a good idea.
 

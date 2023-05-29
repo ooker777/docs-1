@@ -1,3 +1,7 @@
+---
+title: Compatibility of publishing solution
+---
+
 
 # Netlify  
 
@@ -11,7 +15,7 @@
 > - Limited to python 3.8  
 
 > [!warning] Python 3.8  
-> `obsidiantools` package, allowing to create the [[Advanced setup/customization.md#Graph view|graph]], ended support with this version.  
+> `obsidiantools` package, allowing to create the [[customization#Graph view|graph]], ended support with this version.  
 > In conclusion, the graph created won't be accurate.  
 > Moreover, some plugins can end the support with it.  
 
@@ -38,6 +42,6 @@
 > This absence concludes to a build fail.  
 > You can use it if you don't use the graph view with setting the obsidian graph generation to `false` in the `mkdocs.yml` file.
 
-> [!info] Check [[advanced]] for more information on how to setup a better workflow within these two website.
+> [!info] Check [[advanced_workflow|advanced]] for more information on how to setup a better workflow within these two website.
 
 

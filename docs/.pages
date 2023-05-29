@@ -1,7 +1,7 @@
 nav:
   - index.md 
-  - Github Publisher
-  - Mkdocs Template
-  - Advanced setup
+  - Plugin
+  - Template
+  - Advanced
   - Changelog
   - tags.md

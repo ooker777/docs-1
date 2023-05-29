@@ -2,18 +2,18 @@
 title: How to publish
 ---
 
-[[Compatibility of publishing solution|Pros & cons of some publishing solution, including Github Pages, Netlify, Vercel...]]  
+[[Compatibility|Pros & cons of some publishing solution, including Github Pages, Netlify, Vercel...]]  
 
 ## Publishing  
 
 You can publish your site using:  
 
-- [Netlify](https://www.netlify.com/) by using the template available at [ObsidianPublisher/template-netlify-vercel](https://github.com/ObsidianPublisher/template-netlify-vercel)
+- [Netlify](https://www.netlify.com/) (or [Vercel](https://vercel.com/)) by using the template available at [ObsidianPublisher/template-netlify-vercel](https://github.com/ObsidianPublisher/template-netlify-vercel)
 - [Github Pages](https://pages.github.com/) by using the template available at [ObsidianPublisher/template-gh-pages](https://github.com/ObsidianPublisher/template-gh-pages)  
 
 ### Through Github Pages  
 
-![[Workflow#Github Pages]]
+![[Actions#Github Pages]]
 
 > [!bug] The workflow isn't running!  
 >  
