@@ -3,8 +3,8 @@ title: Example's note
 ---
 
 # heading 1
-Link to [[../index|README]]
-Link to [[../../Github Publisher/index|Github Publisher]]
+Link to [[../../Plugin/index.md|Plugin]]
+Link to [[../../index.md|Home]]
 
 
 ## subtitle
@@ -13,7 +13,7 @@ cc^id
 # heading 2
 hello
 
-[[Je n'existe pas]]
+[[I don't exist!]]
 
 ```py
 print("hello")

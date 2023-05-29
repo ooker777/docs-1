@@ -50,7 +50,7 @@ You can create a folder note if you use a `category` front matter key that has t
 > The file `filename` will be renamed to `index`[^1] and the folder will be named `filename`.
 > The folder note creation is also supported if you don't use a front matter key to rename the file.
 
-Folder note is also supported by the Obsidian Path, and you can use the [alx-folder-note plugin](https://github.com/aidenlx/alx-folder-note) to help you. [[Github Publisher/index|Github Publisher]] will support both inside and outside methods, alongside the `index` methods.
+Folder note is also supported by the Obsidian Path, and you can use the [alx-folder-note plugin](https://github.com/aidenlx/alx-folder-note) to help you. [[Plugin/index]] will support both inside and outside methods, alongside the `index` methods.
 
 > [!warning] Folder note is not supported in the `fixed folder` methods.
 
@@ -76,7 +76,7 @@ For example, to add a `dictionary` admonition:
   background-color: rgb(43, 155, 70);
   -webkit-mask-image: var(--md-admonition-icon--dictionnary);
           mask-image: var(--md-admonition-icon--dictionnary);
-
+}
 ```
 It will give you :
 > [!dictionnary] Dictionary

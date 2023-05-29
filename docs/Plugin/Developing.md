@@ -1,5 +1,5 @@
 ---
-title: Developping
+title: Developing
 ---
 
 ## General

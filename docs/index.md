@@ -47,7 +47,7 @@ It allows you to publish your notes on GitHub and customize the template to your
 5. Customize (or not) the folder options
 6. Run the commands through the file menu or commands palette.
 
-> [!INFO] For advanced configuration within Obsidian, see [[Obsidian Github Publisher/Configuration example|here]]
+> [!INFO] For advanced configuration within Obsidian, see [[Configuration example|here]]
 
 ---
 
