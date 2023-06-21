@@ -1,15 +1,16 @@
 ---
 date: 2023-06-21
+comments: true
 tags: [Plugin]
 title: "[PLUGIN]: v6.1.0"
 description: "Quickly load preset from a repository & secure your GitHub Token."
 ---
 
-The beta cycle is ended!
+The beta cycle has ended!
 
-The update include two things:
-- A way to secure your GitHub token ;
-- The possibility to load preset from a repository.
+The update includes two things:
+- A method to secure your GitHub token.
+- The ability to load presets from a repository.
 
 ## GitHub Token
 
@@ -28,17 +29,17 @@ GITHUB_TOKEN=TOKEN
 
 ## Presets
 
-Because I think accessibility is important, I added a new button: « Load Preset ».
+Because I believe accessibility is important, I have added a new button: "Load Preset".
 
-This new button will download [all file from the `presets` folder from this repository](https://github.com/ObsidianPublisher/plugin-presets), and you can choose to load the settings you want, to quickly start with the plugin!
+This new button allows you to download all files from the `presets` folder in this repository (<https://github.com/ObsidianPublisher/plugin-presets).> You can then choose which settings to load, enabling you to quickly start with the plugin!
 
-### How to add your preset
+### How to add your preset:
 
-- Fork the project
-- Add your `data.json` file in [the preset folder](./presets) folder, under an understandable name.
-- Add your documentation in the README
-- Start a Pull-Request.
+1. Fork the project.
+1. Add your `data.json` file to the [preset folder](./presets) with a clear and descriptive name.
+1. Include documentation in the README.
+1. Initiate a Pull Request.
 
-### Presets list
+### Presets List:
 
-- [mkdocs.json](./presets/mkdocs.json): For [[Configuration example#[Mkdocs Publisher](https //obsidian-publisher.netlify.app)|Mkdocs Publisher]].
+- [mkdocs.json](./presets/mkdocs.json): Configuration example for [Mkdocs Publisher](https://obsidian-publisher.netlify.app).
