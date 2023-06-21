@@ -1,3 +1,11 @@
+---
+title: "[TEMPLATE]: Versioning template and update inputs"
+comments: true
+date: 2023-06-21
+tags: [Template]
+description: "Versioning template, cleaning env file and updating inputs for GitHub Actions"
+---
+
 Hello!
 
 I have made some updates to the GitHub action that accomplish two things:
