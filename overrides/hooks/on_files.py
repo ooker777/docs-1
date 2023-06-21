@@ -20,4 +20,3 @@ def on_files(files: Files, config: MkDocsConfig):
         os.makedirs(posixpath.join(config['site_dir'], 'search'))
     list_existing_pages(config, files)
     return files
-
