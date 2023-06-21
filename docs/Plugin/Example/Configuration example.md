@@ -7,13 +7,15 @@ title: Configuration example
 
 ### Quick installation tutorial
 
-1. Click on:[^1]
-    - If you want to use Github Pages : [use this template](https://github.com/ObsidianPublisher/template-gh-pages/generate)
-    - If you want to use Netlify : [use this template](https://github.com/ObsidianPublisher/template-netlify-vercel/generate)
-2. Use the name of your choice
-3. Set and edit the `mkdocs.yml` in the root of the repository.
+1. Click on:
+    - If you want to use Github Pages: [use this template](https://github.com/ObsidianPublisher/template-gh-pages/generate)
+    - If you want to use Netlify or Vercel: [use this template](https://github.com/ObsidianPublisher/template-netlify-vercel/generate)
+1. Use the name of your choice
+1. Set and edit the `mkdocs.yml` in the root of the repository.
 
 ### Plugin configuration
+
+🆕**Obsidian Publisher 6.1.0** : You can load the settings from the preset using the button "Preset" and selecting `mkdocs` in the selector!
 
 The majority of the settings are optional and help you to manage your repository.
 
@@ -23,9 +25,9 @@ The mandatory settings are :
 	- <u>Root folder: </u> `docs`
 	- <u>Folder note:</u> `index.md`
 	- <u>Excluded files</u> : (*Only if you use the auto-clean up function*) : `docs/assets/js, docs/assets/meta, docs/assets/css, tags.md, graph.md`
-2. [[Content|Content's conversion]] :
+1. [[Content|Content's conversion]] :
 	- <u>Internal Links : </u> Toggle on
-3. [[Embed files]] :
+1. [[Embed files]] :
 	- <u>Transfer attachments:</u>✅
 	- <u>Default attachment folder:</u> `docs/assets/img`
 		The images must be in the `docs/` folder, but you can change the `assets/img` part as you want.
