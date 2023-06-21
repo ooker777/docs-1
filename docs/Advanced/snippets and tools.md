@@ -3,9 +3,10 @@ share: true
 title: Tips, snippets & tools
 ---
 
-
 ### Dataview snippets
+
 To list all pages that are not shared, use this Dataview snippet:
+
 ```sql
 LIST
 WHERE share!=true
@@ -14,7 +15,6 @@ WHERE share!=true
 ### CSS snippets
 
 I, as working on my blog, created some cool snippets or useful tools.
-
 
 #### Grid CSS snippets
 
@@ -29,11 +29,13 @@ Automatically convert the [grid callout layout (from ITS)](https://github.com/Sl
 ![image](https://user-images.githubusercontent.com/30244939/163732766-d08b102f-508b-496e-a99f-68f865b2080b.png)
 
 You can add a cool image banner by editing one of your stylesheets and adding:
+
 ```css
 .md-header {
     background: var(--md-primary-fg-color) url(image_links) left center/cover no-repeat;
 }
 ```
+
 Don't forget to replace `image_link` with the actual link! Personally, I use an image from Unsplash.
 
 ## Plugins
@@ -44,7 +46,7 @@ Don't forget to replace `image_link` with the actual link! Personally, I use an 
 
 > [!info] Plugin's info
 > A simple plugin that converts Obsidian-style callouts and turns them into mkdocs-supported Admonitions.
-> - <u>Plugin link:</u> https://pypi.org/project/mkdocs-callouts/
+> - <u>Plugin link:</u> <https://pypi.org/project/mkdocs-callouts/>
 > - <u>Installation</u>: `pip install mkdocs-callouts`
 
 Use this plugin if you don't want to use the script (either in GitHub Actions or in general). It supports "callouts within callouts" and custom callouts.
@@ -55,7 +57,7 @@ Use this plugin if you don't want to use the script (either in GitHub Actions or
 
 > [!info] Plugin's info
 > This plugin allows you to have password-protected articles and pages in MKdocs.
-> - <u>Plugin link</u>: https://pypi.org/project/mkdocs-encryptcontent-plugin/
+> - <u>Plugin link</u>: <https://pypi.org/project/mkdocs-encryptcontent-plugin/>
 > - <u>Installation</u>: `pip install mkdocs-encryptcontent-plugin`
 
 To add a unique page that is encrypted, just add `password: your_secret_password` in your markdown file.
@@ -73,16 +75,19 @@ To add a unique page that is encrypted, just add `password: your_secret_password
 > <u>Installation:</u> `pip install mkdocs-custom-tags-attributes`
 
 ## Tools
+
 ### Modify your notes' metadata in batch
 
 Use [py-obsidianmd](https://selimrbd.github.io/py-obsidianmd/overview/ "py-obsidianmd")
 
 Install:
+
 ```python
 pip install py-obsidianmd
 ```
 
 Example:
+
 ```python
 from pathlib import Path
 from pyomd import Notes, Note

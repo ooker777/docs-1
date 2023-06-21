@@ -16,6 +16,7 @@ The plugin [Custom tags attributes](https://pypi.org/project/mkdocs-custom-tags-
 
 You can create [Inline Markdown Attributes](https://python-markdown.github.io/extensions/attr_list/) using hashtags. For example, to align some text to the right:
 1. 1. Add the following CSS to your `assets/css/custom_attributes.css`:
+
 ```css
 #right {
  display: inline-block;
@@ -28,10 +29,13 @@ You can create [Inline Markdown Attributes](https://python-markdown.github.io/ex
   color: blue;
 }
 ```
-2. 2. Add `#right` at the end of the line you want to align to the right, and `#blue` on a random word.
+
+1. 2. Add `#right` at the end of the line you want to align to the right, and `#blue` on a random word.
+
 ```md
 Lorem ipsum dolor sit amet, consectetur adipiscing#blue elit. In mollis, libero porttitor gravida accumsan, justo metus pulvinar nulla, vitae dictum odio ligula non nisl. Vivamus id venenatis nulla. Nullam sed euismod ligula. Pellentesque tempor elit felis, lobortis vulputate risus gravida et. Curabitur auctor sed libero nec consectetur. Nam placerat rhoncus risus, euismod sagittis eros bibendum ac. Maecenas tellus libero, porttitor ac purus sit amet, viverra suscipit dolor. Proin id nisl velit. Ut at tincidunt libero, ac pharetra mi. Integer non luctus nisi.#right
 ```
+
 It will appear as:
 
 Lorem ipsum dolor sit amet, consectetur adipiscing#blue elit. In mollis, libero porttitor gravida accumsan, justo metus pulvinar nulla, vitae dictum odio ligula non nisl. Vivamus id venenatis nulla. Nullam sed euismod ligula. Pellentesque tempor elit felis, lobortis vulputate risus gravida et. Curabitur auctor sed libero nec consectetur. Nam placerat rhoncus risus, euismod sagittis eros bibendum ac. Maecenas tellus libero, porttitor ac purus sit amet, viverra suscipit dolor. Proin id nisl velit. Ut at tincidunt libero, ac pharetra mi. Integer non luctus nisi.#right
@@ -58,6 +62,7 @@ Folder note is also supported by the Obsidian Path, and you can use the [alx-fol
 
 The script supports custom admonitions. To do this, you first need to edit or create a new CSS file, adding support for the new custom callout as described in the [Admonition's documentation](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#customization).
 For example, to add a `dictionary` admonition:
+
 ```css
 :root {
     --md-admonition-icon--dictionary: url('data:image/svg+xml;charset=utf-8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 22a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2h-6v7L9.5 7.5 7 9V2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12z"/></svg>')
@@ -78,7 +83,9 @@ For example, to add a `dictionary` admonition:
           mask-image: var(--md-admonition-icon--dictionnary);
 }
 ```
+
 It will give you :
+
 > [!dictionnary] Dictionary
 > Here's a callout block.
 >  It supports **markdown** and `[[wikilinks]]`
@@ -119,7 +126,7 @@ If you want to hide a file from this list, you can use the `hidden` key in the f
 > [!warning] To add a illustrative image, you need to add a frontmatter in the file.
 > 1. Internal Image : `image:`
 > 		This image must be the image name (+ extension) and placed in `assets/img`
-> 2. External image: `banner:`
+> 1. External image: `banner:`
 
 Finally, it's possible to configure the display of the page number (pagination) and the translation with modifying the `extra` key in the mkdocs configuration file [`mkdocs.yml`](https://github.com/ObsidianPublisher/sync_template/blob/main/mkdocs.yml#L135).
 
@@ -131,6 +138,7 @@ Finally, it's possible to configure the display of the page number (pagination) 
 In `overrides/partials`, you will spot a file named `comments.html`. This allows you to set up comments on your blog! It uses [Giscus](https://giscus.app) to set up this.
 
 First, follow the tutorial on [Material Mkdocs](https://squidfunk.github.io/mkdocs-material/setup/adding-a-comment-system/). After, copy-paste the script of Giscus, as :
+
 ```html
 <script
   src="https://giscus.app/client.js"
@@ -172,6 +180,7 @@ I succeeded to create a semi-interactive graph-view using python. It doesn't all
 
 > [!note] Notes
 > [obsidiantools](https://github.com/mfarragher/obsidiantools) support actually only 3.9. If you use Netlify to build your blog, you will be forced to use an older version because Netlify only support 3.8. These version won't be perfect.
+> I successfully found a way to use graph on Netlify (and Vercel). Check it [[advanced_workflow|here]]!
 
 To use it, you need to install `obsidiantools` and `pyvis` (for the graph view).
 
@@ -187,6 +196,7 @@ If you don't have it, you need to download the last version of these files :
 - [`overrides/hooks/on_env.py`](https://github.com/ObsidianPublisher/sync_template/blob/main/overrides/hooks/on_env.py)
 
 And create a new file `graph.md` in `docs/` with this content :
+
 ```md
 <iframe id="test"
         title='test'
