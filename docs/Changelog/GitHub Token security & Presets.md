@@ -42,4 +42,4 @@ This new button allows you to download all files from the `presets` folder in th
 
 ### Presets List:
 
-- [mkdocs.json](./presets/mkdocs.json): Configuration example for [Mkdocs Publisher](https://obsidian-publisher.netlify.app).
+- [mkdocs.json](https://github.com/ObsidianPublisher/presets/mkdocs.json): Configuration example for [Mkdocs Publisher](https://obsidian-publisher.netlify.app).
