@@ -19,3 +19,4 @@ Additionally, you can choose to send files based on a metadata field. This means
 
 This feature allows you to easily share all the necessary resources in your notes with your remote repository.
 
+> [!warning] Outside of a blog's solution that support file embedding, the content's of the embedded notes won't be added to your note. 

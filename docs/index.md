@@ -18,7 +18,7 @@ It allows you to publish your notes on GitHub and customize the template to your
 - [Obsidian plugin](https://github.com/ObsidianPublisher/obsidian-github-publisher)
 - [Github Discussion](https://github.com/ObsidianPublisher/obsidian-github-publisher/discussions)
 
-## Support
+## The template support 
 
 - [x] Wikilinks (`[[Links]]`)
 - [x] File transclusion/embed, both wikilinks and Markdown links
