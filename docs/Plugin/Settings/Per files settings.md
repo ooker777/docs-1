@@ -74,7 +74,12 @@ Some settings can be overridden based on your frontmatter key (of the file send)
     - `nonShared`: Same as above, but for links pointing to unshared files. Disabled, links will be transformed to keep the filename. Note that you can use `links: false` and `mdlinks: true` outside the YAML object if you want to just use one option.
 2. Embed settings, using the `embed` key :
     - `send: false` to avoid sending the embedded files (not attachments!)
-    - `remove: true` to remove any mention of these files. As before, you can use one-key settings using `embed` (for sending) and `removeEmbed` (for citation removing)
+    - `remove` : Modify the aspect of the embeded files link. Can take the followed value:
+      - `false` or `keep` : Leave as in Obsidian (default)
+      - `true` or `remove` : Remove the embeded link (replace to empty string the ![[]] or ![]())
+      - `links` : Convert to markdown links (remove the `!` before the link).
+    - `char` : Add a character(s) before the embedded links. Used only if you set the `remove` key to `links`. 
+
 3. `Attachment` : allow per-file settings for attachments (images, pdfs, sound, video… Any attachment supported by Obsidian)
     - `send: false` to avoid sending the files
     - `folder` to change the default folder. Beware that changing this setting can have strange effects with autocleaning! You can, again, use a one-key setting using `attachmentLinks` for the folder and `attachment: false` to avoid sending.
@@ -95,7 +100,8 @@ links:
   convert: boolean #transform to simple string with keeping alt text or file name/ title (it removes the [[]] or []())
 embed:
   send: boolean #prevent sending embed
-  remove: boolean #remove embed citation completely (replace to empty string the ![[]] or ![]())
+  remove: string # or boolean. Can take "false" or "keep", "true" or "remove", "links"
+  char: string #add a character before the link
 attachment: 
   send: boolean #prevent sending attachment
   folder: string #change default folder for attachment
@@ -116,7 +122,8 @@ links:
   convert: boolean #transform to simple string with keeping alt text or file name/ title (it removes the [[]] or []())
 embed:
   send: boolean #prevent sending embed
-  remove: boolean #remove embed citation completely (replace to empty string the ![[]] or ![]())
+  remove: string # or boolean. Can take "false" or "keep", "true" or "remove", "links"
+  char: string #add a character before the link
 attachment: 
   send: boolean #prevent sending attachment
   folder: string #change default folder for attachment
@@ -141,7 +148,7 @@ multipleRepo:
 ```yaml
 mdlinks: boolean #convert to markdown links
 links: boolean #remove [[]] or []() and keep just alt text or filename/title
-removeEmbed: boolean #remove totally the citation of an embed notes (replace to empty string the ![[]] or ![]())
+removeEmbed: string # or boolean. Can take "false" or "keep", "true" or "remove", "links"
 attachmentLinks: string #ovverride default folder for attachments
 attachment: boolean #prevent sending attachment
 dataview: boolean
@@ -155,7 +162,7 @@ For multiple Repo :
 ```yaml
 mdlinks: boolean #convert to markdown links
 links: boolean #remove [[]] or []() and keep just alt text or filename/title
-removeEmbed: boolean #remove totally the citation of an embed notes (replace to empty string the ![[]] or ![]())
+removeEmbed: string # or boolean. Can take "false" or "keep", "true" or "remove", "links"
 attachmentLinks: string #ovverride default folder for attachments
 attachment: boolean #prevent sending attachment
 dataview: boolean
@@ -174,7 +181,8 @@ links:
   convert: true
 embed: 
   send: settings.embed
-  remove: false
+  remove: settings.convert_embed
+  char: settings.char
 attachment:
   send: settings.attachment
   folder: settings.default_folder_image || settings.default_folder || filepath
