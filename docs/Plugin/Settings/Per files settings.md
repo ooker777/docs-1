@@ -78,6 +78,7 @@ Some settings can be overridden based on your frontmatter key (of the file send)
       - `false` or `keep` : Leave as in Obsidian (default)
       - `true` or `remove` : Remove the embeded link (replace to empty string the ![[]] or ![]())
       - `links` : Convert to markdown links (remove the `!` before the link).
+      - `bake` : Include the contents of the embed. Support block, heading, and entire file. Based on the plugin [easy-bake](https://github.com/mgmeyers/obsidian-easy-bake). File are included as is, without markdown or html specificities.
     - `char` : Add a character(s) before the embedded links. Used only if you set the `remove` key to `links`. 
 
 3. `Attachment` : allow per-file settings for attachments (images, pdfs, sound, video… Any attachment supported by Obsidian)
