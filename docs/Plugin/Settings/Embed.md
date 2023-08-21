@@ -23,8 +23,11 @@ You can also change the look of the embedded links, if you set the transfer of t
 - "No change" : Will keep the original link, as in Obsidian ; 
 - "Remove link completely" will delete the citation completely and keep only the text ;
 - "Transform to link" will remove the `!` before the link. 
+  Using this setting add a new option, where you can add something before the link. By default, it's `->`. So, you will have, as result: `![[link]]` to `-> [[link]]`
+- "Include embeds contents" : Based on the [plugin easy-bake](https://github.com/mgmeyers/obsidian-easy-bake), the contents of the embed will be included as in, without markdown or html specificities. It supports block, heading, and entire file. Note that the embedded file will be send to the repository, as the option is mandatory. Note that your embedded file must be shared to be included.
 
-Using this last option add a new option, where you can add something before the link. By default, it's `->`. So, you will have, as result: `![[link]]` to `-> [[link]]`
+
 
 
 > [!warning] Outside of a blog's solution that support file embedding, the content's of the embedded notes won't be added to your note. 
+> In these case, you can use `include embeds contents` option. 
