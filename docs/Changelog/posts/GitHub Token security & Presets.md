@@ -4,6 +4,10 @@ comments: true
 tags: [Plugin]
 title: "[PLUGIN]: v6.1.0"
 description: "Quickly load preset from a repository & secure your GitHub Token."
+authors:
+    - lisandra-dev
+categories:
+    - Plugin
 ---
 
 The beta cycle has ended!

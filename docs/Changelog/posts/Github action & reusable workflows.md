@@ -3,6 +3,11 @@ comments: true
 date: 2023-05-27
 tags: [Template]
 title: "[TEMPLATE]: Reusable workflows"
+authors:
+    - lisandra-dev
+categories:
+    - Template
+    
 ---
 
 Hello everyone!

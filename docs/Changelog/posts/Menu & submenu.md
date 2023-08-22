@@ -4,6 +4,10 @@ date: 2023-06-25
 tags: [Plugin]
 description: "Sharing folder from menu & submenu if you have multiple folder"
 title: "[PLUGIN]: v.6.2.0 - Menu & submenu"
+authors:
+    - lisandra-dev
+categories:
+    - Plugin
 ---
 
 Today's update is simple! It adds some commands to the file menu and editor menu.

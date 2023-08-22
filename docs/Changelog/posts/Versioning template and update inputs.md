@@ -4,6 +4,10 @@ comments: true
 date: 2023-06-21
 tags: [Template]
 description: "Versioning template, cleaning env file and updating inputs for GitHub Actions"
+authors:
+    - lisandra-dev
+categories:
+    - Template
 ---
 
 Hello!

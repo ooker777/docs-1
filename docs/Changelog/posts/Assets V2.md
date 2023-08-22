@@ -1,9 +1,12 @@
 ---
 comments: true
 date: 2023-05-22
-tags: [Template]
+authors:
+    - lisandra-dev
 description: "Breaking change on Assets! Optimization of not_found links and preventing too much XHR call."
 title: "⚠️ [BREAKING CHANGE] SYNC TEMPLATE v2.0"
+categories:
+    - Template
 ---
 
 Hello!

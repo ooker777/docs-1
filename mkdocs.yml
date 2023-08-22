@@ -85,8 +85,7 @@ plugins:
   - glightbox
   - ezlinks:
         wikilinks: true
-  - awesome-pages:
-      collapse_single_pages: true
+  - awesome-pages
   - embed_file:
       callouts: true
       custom-attributes: 'assets/css/custom_attributes.css'
@@ -100,6 +99,10 @@ plugins:
         - "*obsidian*"
   - tags:
       tags_file: tags.md
+  - blog:
+      blog_dir: Changelog
+      blog_toc: true
+      categories_toc: true
 hooks:
   - overrides/hooks/on_page_markdown.py
   - overrides/hooks/on_env.py

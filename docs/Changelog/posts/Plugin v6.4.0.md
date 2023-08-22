@@ -4,6 +4,10 @@ date: 2023-08-12
 tags: [Plugin]
 description: "Some fix and new features about embedding file."
 title: "[PLUGIN] V.6.4.0 : Refactoring, fixing & embedding"
+authors:
+    - lisandra-dev
+categories:
+    - Plugin
 ---
 
 
