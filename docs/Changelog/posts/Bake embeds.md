@@ -8,7 +8,7 @@ title: "[PLUGIN]: v6.5.0 - Bake embeds"
 comments: true
 description: Includes the embeds contents in the file, as if the embeds was written directly to the file!
 ---
-Following the [Plugin v6.4.0](Plugin%20v6.4.0.md), and, mainly the new [easy-bake plugin](https://github.com/mgmeyers/obsidian-easy-bake/).  Thanks to @mgmeyers for this plugin, as I take mostly the code for my version.
+Following the [Plugin v6.4.0](Plugin%20v6.4.0.md), and, mainly the new [easy-bake plugin](https://github.com/mgmeyers/obsidian-easy-bake/).  Thanks to [@mgmeyers](https://github.com/mgmeyers/) for this plugin, as I take mostly the code for my version.
 
 So, I added in new settings in `embed` : "include embed contents". This option can be used with `bake` or `include` when using in [per files settings](Per%20files%20settings.md).
 
