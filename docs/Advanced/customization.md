@@ -46,7 +46,7 @@ You can find more information in the [mkdocs-custom-tags-attributes](https://pyp
 
 ## Folder note
 
-You can create a folder note if you use a `category` front matter key that has the last folder with the same name as the file.
+You can create a folder note if you use a `category` front matter key that has the last folder with the same name as the file. See [[Upload#Folder note|Folder note]] for more information.
 
 > [!example] For example,
 > `category: folder1/folder2/filename`
@@ -115,7 +115,7 @@ A cool description
 ```
 
 You need :
-- The [`overrides/blog.html`](https://github.com/ObsidianPublisher/sync_template/blob/main/overrides/blog.html) template
+- The [`overrides/article.html`](https://github.com/ObsidianPublisher/sync_template/blob/main/overrides/article.html) template
 - The [`overrides/partials/post-list.html`](https://github.com/ObsidianPublisher/sync_template/blob/main/overrides/partials/post-list.html) file.
 
 If you want to hide a file from this list, you can use the `hidden` key in the frontmatter.
@@ -131,7 +131,7 @@ If you want to hide a file from this list, you can use the `hidden` key in the f
 Finally, it's possible to configure the display of the page number (pagination) and the translation with modifying the `extra` key in the mkdocs configuration file [`mkdocs.yml`](https://github.com/ObsidianPublisher/sync_template/blob/main/mkdocs.yml#L135).
 
 > [!note] You can also use the github action `create_index` to create a new index for a new folder.
-> For more information see [[Workflow|workflow]].
+> For more information see [[Actions]].
 
 ## Comments
 
@@ -161,19 +161,19 @@ First, follow the tutorial on [Material Mkdocs](https://squidfunk.github.io/mkdo
 
 You need to put this text into the [`overrides/partials/comments.html`](https://github.com/ObsidianPublisher/sync_template/blob/main/overrides/partials/comments.html) file, right after the `<h2>` part.
 
-You can disable or enable comments on a specific page by adding `comments: false` in the frontmatter, and disable/enable globally using the same key in `extra` of `mkdocs.yml` ([here](https://github.com/ObsidianPublisher/sync_template/blob/ae9448ab4fef002e45b81f39bc7867719a5a63aa/mkdocs.yml#L132)).
+You can disable or enable comments on a specific page by adding `comments: false` in the frontmatter, and disable/enable globally using the same key in `extra` of `mkdocs.yml` ([here](https://github.com/ObsidianPublisher/sync_template/blob/main/mkdocs.yml#L132)).
 
 - If you disable globally with `comments: false`, you can **enable** it on a specific page by adding `comments: true` in the frontmatter.
 - Otherwise, if you enable globally with `comments: true`, you can **disable** it on a specific page by adding `comments: false` in the frontmatter.
 
 > [!warning] You need the last version of the [`overrides/hooks/on_env.py`](https://github.com/ObsidianPublisher/sync_template/blob/main/overrides/hooks/on_env.py) file.
 
-> [!info] It's also possible to use [chirpy](https://chirpy.dev/). The [`assets/js/chirpy.js`](https://github.com/ObsidianPublisher/sync_template/blob/main/docs/assets/js/chirpy.js) contains already all JS to personalize the comments.
+> [!info] It's also possible to use [chirpy](https://chirpy.dev/). The extra_javascript contains already all JS to personalize the comments.
 > [You will found a tutorial here](https://github.com/ObsidianPublisher/obsidian-github-publisher/discussions/44).
 
 ## Graph view
 
-> [!important] If you won't add a graph view, you need to edit your [`mkdocs.yml`](https://github.com/ObsidianPublisher/template-gh-pages/blob/59d39757d85cd418a2fd57fdc06128713a8cf95e/mkdocs.yml#L139) file and **set** the key `generate_graph` to `false`.
+> [!important] If you won't add a graph view, you need to edit your [`mkdocs.yml`](https://github.com/ObsidianPublisher/template-gh-pages/blob/main/mkdocs.yml#L139) file and **set** the key `generate_graph` to `false`.
 > By default, the graph will be generated.
 
 I succeeded to create a semi-interactive graph-view using python. It doesn't allow you to click on article/post, but you can see a view of your blog.
@@ -192,7 +192,6 @@ pip install pyvis
 (Don't forget to add it to `requirements.txt`)
 
 If you don't have it, you need to download the last version of these files :
-- [`docs/assets/js/utils.js`](https://github.com/ObsidianPublisher/sync_template/blob/main/docs/assets/js/utils.js)
 - [`overrides/hooks/on_env.py`](https://github.com/ObsidianPublisher/sync_template/blob/main/overrides/hooks/on_env.py)
 
 And create a new file `graph.md` in `docs/` with this content :
