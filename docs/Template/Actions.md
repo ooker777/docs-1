@@ -12,7 +12,7 @@ WORKFLOW_TYPE='netlify'
 
 You can see all available options in the [template](https://github.com/ObsidianPublisher/actions/tree/main/template) folder.
 
-> [!IMPORTANT]
+> **Warning**  
 > Don't download the `.github/workflows` folder. You need to use the file in the `template` folder.
 
 # Deploy
@@ -34,7 +34,7 @@ See [documentation](https://obsidian-publisher.netlify.app/Advanced/advanced_wor
 
 You need to define `NETLIFY_HOOK` in your repository secrets.
 
-→ See [documentation](https://obsidian-publisher.netlify.app/Advanced/advanced_workflow/#netlify)
+See [documentation](https://obsidian-publisher.netlify.app/Advanced/advanced_workflow/#netlify) on how to add it.
 
 ## Vercel
 
@@ -44,14 +44,14 @@ You need to define:
 - `VERCEL_PROJECT_ID`
 - `VERCEL_TOKEN`
 
-→ See [documentation](https://obsidian-publisher.netlify.app/Advanced/advanced_workflow/#vercel)
+See [documentation](https://obsidian-publisher.netlify.app/Advanced/advanced_workflow/#vercel) on how to add it.
 
 ## Github Pages
 
 You don't need to define anything.
 
-> [!NOTE]  
-> Generate graph will be always false for github pages, as they are built directly in the Mkdocs building.
+> **Note**  
+> Generate graph will be always false for github pages.
 
 # Maintenance
 
@@ -88,7 +88,7 @@ It Allows you to quickly create a new "category" / blog listing in your reposito
   - **Hide the navigation panel** in the index file.
   - Perform a **dry-run**: It will only show the result of the operation, but will not create the folder and the index file.
 
-> [!WARNING]
+> **Warning**  
 > The workflows won't activate the other actions, so you need to run them manually if you need.
 
 | Key             | Context | Type    | Required | Description                                          | Default                                        |
@@ -113,7 +113,7 @@ The action needs a `GH_TOKEN` secret in your repository settings. This token sho
 
 This action will update your template by replacing the old files with the new ones. After the upgrade, the action will create a pull request in your repository, which you can review and either accept or reject.
 
-> [!NOTE] 
+> **Note**  
 > A file named `version.txt` can be added to your template repository. This file contains the version number of the template, and will be used to check if the template needs to be updated.
 
 This allows you to review the changes before they are applied to your template.
