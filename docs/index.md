@@ -37,7 +37,7 @@ It allows you to publish your notes on GitHub and customize the template to your
 ### TLDR
 
 1. Install the plugins through Obsidian Community or [BRAT](https://github.com/TfTHacker/obsidian42-brat)
-2. Template your blog using the [template](https://obsidian-publisher.netlify.app/en/Getting%20Started/publishing) and configure it.
+2. Template your blog using the [template](https://obsidian-publisher.netlify.app/template/) and configure it.
 3. Configure the plugin options:
     - Repo name
     - Your GitHub username
