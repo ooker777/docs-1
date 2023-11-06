@@ -41,7 +41,7 @@ jobs:
 
 # Deploy
 
-See [documentation](https://obsidian-publisher.netlify.app/Advanced/advanced_workflow/) for more information.
+For advanced workflow for graph generation, see [documentation](https://obsidian-publisher.netlify.app/template/advanced_workflow/).
 
 | Key                 | Context | Type    | Required | Description                                        | Default                                        |
 | ------------------- | ------- | ------- | -------- | -------------------------------------------------- | ---------------------------------------------- |
