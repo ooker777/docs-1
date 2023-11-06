@@ -1,6 +1,8 @@
 site_name: Obsidian Publisher
 site_description: The documentation for Obsidian Mkdocs Publisher
 site_url: https://obsidian-publisher.netlify.app
+repo_url: https://github.com/obsidianPublisher/docs
+edit_uri: tree/main/docs
 
 theme:
     name: 'material'
@@ -95,7 +97,7 @@ plugins:
       file: 'assets/css/custom_attributes.css'
   - meta-descriptions
   - exclude:
-      glob: 
+      glob:
         - "*obsidian*"
   - tags:
       tags_file: tags.md
