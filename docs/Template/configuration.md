@@ -15,7 +15,11 @@ Some actions needs a  `GH_PAT` secret in your repository settings. This token sh
 
 [See here to know how to register it as a secret](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository).
 
-You can get more information about workflows and tokens [here](https://obsidian-publisher.netlify.app/template/actions/)
+You can get more information about workflows and tokens [here](https://obsidian-publisher.netlify.app/template/actions/).
+
+> [!NOTE]
+> If you want to use the Advanced Vercel/Netlify Workflow, you needs to configure more secrets keys.
+> You can get [more information here](https://obsidian-publisher.netlify.app/template/advanced_workflow/).
 
 ## Mkdocs configuration
 
