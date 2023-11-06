@@ -22,3 +22,4 @@ _obsidian
 */.obsidian/*
 Pipfile
 Pipfile.lock
+.venv
