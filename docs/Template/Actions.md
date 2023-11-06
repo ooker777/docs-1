@@ -12,8 +12,15 @@ WORKFLOW_TYPE='netlify'
 
 You can see all available options in the [template](https://github.com/ObsidianPublisher/actions/tree/main/template) folder.
 
-> **Warning**
+> [!WARNING]
 > Don't download the `.github/workflows` folder. You need to use the file in the `template` folder.
+
+# Secrets
+
+Some actions needs a  `GH_PAT` secret in your repository settings. This token should have the `repo` and `workflows` scope. You can create a token [here](https://github.com/settings/tokens/new?description=PUBLISHER%20TEMPLATE&scopes=repo,workflow).
+
+[See here to know how to register it as a secret](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository).
+
 
 # Deploy
 
@@ -106,10 +113,6 @@ It Allows you to quickly create a new "category" / blog listing in your reposito
 ## Update (`update.yml`)
 
 This action allows to update the last version of the [template](https://github.com/ObsidianPublisher/sync_template).
-
-The action needs a `GH_TOKEN` secret in your repository settings. This token should have the `repo` and `workflows` scope. You can create a token [here](https://github.com/settings/tokens/new?description=PUBLISHER%20TEMPLATE&scopes=repo,workflow).
-
-[See here to know how to register it as a secret](https://docs.github.com/en/actions/reference/encrypted-secrets#creating-encrypted-secrets-for-a-repository).
 
 This action will update your template by replacing the old files with the new ones. After the upgrade, the action will create a pull request in your repository, which you can review and either accept or reject.
 
