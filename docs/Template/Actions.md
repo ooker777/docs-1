@@ -12,7 +12,7 @@ WORKFLOW_TYPE='netlify'
 
 You can see all available options in the [template](https://github.com/ObsidianPublisher/actions/tree/main/template) folder.
 
-> **Warning**
+> [!WARNING]
 > Don't download the `.github/workflows` folder. You need to use the file in the `template` folder.
 > Don't forget to update the file if needed (adding secrets...)
 
