@@ -1,5 +1,5 @@
 group:
-  - files: 
+  - files:
     - docs/assets/css/custom_attributes.css
     - docs/assets/css/customization.css
     - source: docs/Mkdocs Template/configuration.md
@@ -12,4 +12,9 @@ group:
       dest: README.md
     repos: |
       ObsidianPublisher/obsidian-github-publisher
+  - files:
+    - source: docs/Template/Actions.md
+      dest: README.md
+      repos: |
+        ObsidianPublisher/actions
 
