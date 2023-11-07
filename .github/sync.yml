@@ -15,6 +15,6 @@ group:
   - files:
     - source: docs/Template/Actions.md
       dest: README.md
-      repos: |
-        ObsidianPublisher/actions
+    repos: |
+      ObsidianPublisher/actions
 
