@@ -30,7 +30,55 @@ To use the Mkdocs Obsidian plugin and create a personal wiki site based on your 
 
 There is two way to edit the template for creating the website :
 - Manually, with editing `mkdocs.yml` and creating appropriate workflows files,
-- Automatically, through a Github Action. The steps [are described here](https://obsidian-publisher.netlify.app/#generating-the-template).
+- Automatically, through a Github Action.
+
+### Automatic configuration
+
+1. First go into SETTINGS
+  - In `Pages` : If you want to use the template with Github Pages, you need to activate the GitHub Pages in your repository settings, and use **action** to trigger the page build.
+  ![](https://i.imgur.com/VHPLooc.png)
+  - In `Actions` -> `General` : Allow Github Actions to read and write, and allow GitHub Actions to create and approve pull requests, as follows:
+  ![](https://i.imgur.com/w79NrA8.png)
+  Don't forget to save the changes!
+  - Create a [personal access token](https://github.com/settings/tokens/new?description=PUBLISHER%20TEMPLATE&scopes=repo,workflow), copy it and register it as a secrets :
+  ![](https://i.imgur.com/CW7YTms.png)
+  ![](https://i.imgur.com/9SCSooJ.png)
+  This key will also be used by the update workflows.
+  - If you choose to rely on netlify or vercel, [you need to configure the keys](https://obsidian-publisher.netlify.app/template/advanced_workflow/).
+2. Go into the Actions tabs
+3. Click on the Generate website workflow and `Run workflow`. A popup will appear, and fill the informations.
+  ![](https://i.imgur.com/QZj8bk0.png)
+  ![](https://i.imgur.com/n8wyvSp.png)
+  Each informations corresponding to the [mkdocs.yml configuration file](https://www.mkdocs.org/user-guide/configuration/).
+  By default, the workflows will send you a pull requests, so you can review the generation before the merging. You can automatically merge with the last options.
+  ![](https://i.imgur.com/SvPPyHc.png)
+4. Go into the pull-request tab. Verify all files, and if it's okay for you, you can merge the PR.
+  ![](https://i.imgur.com/zKtGagJ.png)
+
+### Manual configuration
+
+[The configuration of mkdocs.yml is explained here](https://www.mkdocs.org/user-guide/configuration/).
+
+1. First, edit the `mkdocs.yml` files with editing:
+- `site_name` : The name of your website
+- `site_description` : The description of your website
+- `site_author` : The author of your website
+- `site_url` : The url of your website
+- `language` : [The language of your website](https://squidfunk.github.io/mkdocs-material/setup/changing-the-language/)
+- In extra:
+    - `comments` : If you want to enable comments, you need to set it to `true` and [configure the comments](https://obsidian-publisher.netlify.app/advanced/customization/?h=comments#comments)
+    - `generate_graph` : Set it to `true` if **you use GitHub Pages** and you want to generate the graph view. Set it to `false` if you use Netlify or Vercel. [See here on how to configure the graph with Netlify/vercel](https://obsidian-publisher.netlify.app/template/advanced_workflow/)
+    - `auto_h1` : Disable the automatic generation of h1 if no h1 is found
+2. Create [keys if you use Vercel /Netlify](https://obsidian-publisher.netlify.app/template/advanced_workflow/).
+3. [Grab the `.env` and `deploy.yml` corresponding to your methods of deployment](https://github.com/ObsidianPublisher/actions/tree/main/template):
+    - `.env` must be placed at `.github/`
+    - `deploy.yml` must be placed at `.github/workflows/`
+4. For **Vercel** or **Netlify** ONLY, create a `requirements_actions.txt` file at the root of your repository, and add the following lines:
+    ```
+    obsidiantools==0.10.0
+    pyvis==0.3.1
+    ```
+5. **For Netlify ONLY** : Create a `runtime.txt` file with `3.8` in it.
 
 
 
