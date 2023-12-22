@@ -7,9 +7,9 @@ title: Configuration example
 
 ### Quick installation tutorial
 
-1. Click on [use this template](https://github.com/ObsidianPublisher/mkdocs-template/generate)
+1. Click on [use this template](https://github.com/ObsidianPublisher/mkdocs-publisher-template/generate)
 1. Use the name of your choice
-1. Set and edit the `mkdocs.yml` in the root of the repository. You can set up this by following the [tutorial here](https://obsidian-publisher.netlify.app/template/)
+1. Set and edit the `mkdocs.yml` in the root of the repository. You can set up this by following the [tutorial here](https://obsidian-publisher.netlify.app/template/configuration/#mkdocs-configuration)
 
 ### Plugin configuration
 
@@ -25,7 +25,7 @@ The mandatory settings are :
 	- <u>Excluded files</u> : (*Only if you use the auto-clean up function*) : `docs/assets/js, docs/assets/meta, docs/assets/css, tags.md, graph.md`
 1. [[Content|Content's conversion]] :
 	- <u>Internal Links : </u> Toggle on
-1. [[Embed files]] :
+1. Embed files :
 	- <u>Transfer attachments:</u>✅
 	- <u>Default attachment folder:</u> `docs/assets/img`
 		The images must be in the `docs/` folder, but you can change the `assets/img` part as you want.

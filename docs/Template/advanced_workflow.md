@@ -29,7 +29,7 @@ pyvis==0.3.1
 
 > [!danger] You must remove the `graph.html` if you add it to your git-ignore. It must be pushed!
 
-[You need to set the key `generate_graph` to `false` in your `.github/.env` file](https://github.com/ObsidianPublisher/mkdocs-template/blob/main/mkdocs.yml#L127)
+[You need to set the key `generate_graph` to `false` in your `.github/.env` file](https://github.com/ObsidianPublisher/mkdocs-publisher-template/blob/main/mkdocs.yml#L127)
 ```yaml
 extra:
     generate_graph: false

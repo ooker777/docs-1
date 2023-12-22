@@ -52,9 +52,9 @@ It allows you to publish your notes on GitHub and customize the template to your
 
 ## Generating the template
 
-1. Click on:[^1][use this template](https://github.com/ObsidianPublisher/mkdocs-template/generate)
+1. Click on:[^1][use this template](https://github.com/ObsidianPublisher/mkdocs-publisher-template/generate)
 2. Use the name of your choice
-3. Follow the instruction [here]()
+3. Follow the instruction [here](https://obsidian-publisher.netlify.app/template/configuration/#mkdocs-configuration)
 7. The page will automatically build and published right after!
 
 [^1]: You must be logged in to copy the template. You can also test locally by cloning via HTTPS using the command `git clone https://github.com/ObsidianPublisher/template-gh-pages`, or by downloading the ZIP file from [here](https://github.com/ObsidianPublisher/template-gh-pages/archive/refs/heads/main.zip)
