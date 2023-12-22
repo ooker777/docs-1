@@ -57,13 +57,14 @@ It allows you to publish your notes on GitHub and customize the template to your
 3. First go into SETTINGS
   - In `Pages` : If you want to use the template with Github Pages, you need to activate the GitHub Pages in your repository settings, and use **action** to trigger the page build.
   ![](https://i.imgur.com/VHPLooc.png)
-  - In `Actions` -> `Genral` : Allow Github Actions to read and write, and allow GitHub Actions to create and approve pull requests, as follows:
+  - In `Actions` -> `General` : Allow Github Actions to read and write, and allow GitHub Actions to create and approve pull requests, as follows:
   ![](https://i.imgur.com/w79NrA8.png)
   Don't forget to save the changes!
   - Create a [personal access token](https://github.com/settings/tokens/new?description=PUBLISHER%20TEMPLATE&scopes=repo,workflow), copy it and register it as a secrets :
   ![](https://i.imgur.com/CW7YTms.png)
   ![](https://i.imgur.com/9SCSooJ.png)
   This key will also be used by the update workflows.
+  - If you choose to rely on netlify or vercel, [you need to configure the keys](https://obsidian-publisher.netlify.app/template/advanced_workflow/).
 4. Go into the Actions tabs
 5. Click on the Generate website workflow and `Run workflow`. A popup will appear, and fill the informations.
   ![](https://i.imgur.com/QZj8bk0.png)
