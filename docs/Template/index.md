@@ -19,8 +19,7 @@ To use the Mkdocs Obsidian plugin and create a personal wiki site based on your 
 7. Customize the folder options (if desired)
 8. Run the commands through the file menu or commands palette.
 9. Make sure to allow push access on GitHub.
-10. Run `pip install -r requirements.txt` to install necessary packages (optional, only if you are in a local environment!)
-11. You can deploy your site using GitHub Pages or Netlify.
+11. You can deploy your site using GitHub Pages, Netlify, Vercel...
 
 > [!INFO] [[Plugin/Configuration example|See here for advanced configuration within obsidian]]
 
