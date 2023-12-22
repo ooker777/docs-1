@@ -7,11 +7,9 @@ title: Configuration example
 
 ### Quick installation tutorial
 
-1. Click on:
-    - If you want to use Github Pages: [use this template](https://github.com/ObsidianPublisher/template-gh-pages/generate)
-    - If you want to use Netlify or Vercel: [use this template](https://github.com/ObsidianPublisher/template-netlify-vercel/generate)
+1. Click on [use this template](https://github.com/ObsidianPublisher/mkdocs-template/generate)
 1. Use the name of your choice
-1. Set and edit the `mkdocs.yml` in the root of the repository.
+1. Set and edit the `mkdocs.yml` in the root of the repository. You can set up this by following the [tutorial here](https://obsidian-publisher.netlify.app/template/)
 
 ### Plugin configuration
 

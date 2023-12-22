@@ -2,6 +2,9 @@
 title: Graph generation for Netlify & Vercel
 ---
 
+> [!IMPORTANT]
+> The following tutorial assume you haven't used the last template's version, or you change your method of deployment.
+
 ## Introduction
 
 As I stated in [[Compatibility|compatibility of publishing solution]]:
@@ -26,7 +29,7 @@ pyvis==0.3.1
 
 > [!danger] You must remove the `graph.html` if you add it to your git-ignore. It must be pushed!
 
-[You need to set the key `generate_graph` to `false` in your `.github/.env` file](https://github.com/ObsidianPublisher/template-netlify-vercel/blob/main/mkdocs.yml#L127)
+[You need to set the key `generate_graph` to `false` in your `.github/.env` file](https://github.com/ObsidianPublisher/mkdocs-template/blob/main/mkdocs.yml#L127)
 ```yaml
 extra:
     generate_graph: false

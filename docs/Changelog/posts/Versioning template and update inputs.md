@@ -47,7 +47,7 @@ jobs:
 If you don't intend to use graph generation, do not set this key.
 
 > [!note]
-> You need to have the file [`requirements-actions.txt`](https://github.com/ObsidianPublisher/template-netlify-vercel/blob/main/requirements-actions.txt) with the following contents:
+> You need to have the file `requirements-actions.txt` with the following contents:
 >
 > ```
 > obsidiantools==0.10.0

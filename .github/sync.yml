@@ -5,8 +5,7 @@ group:
     - source: docs/Template/configuration.md
       dest: README.md
     repos: |
-      ObsidianPublisher/template-gh-pages
-      ObsidianPublisher/template-netlify-vercel
+      ObsidianPublisher/mkdocs-template
   - files:
     - source: docs/Plugin/index.md
       dest: README.md

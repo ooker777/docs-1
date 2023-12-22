@@ -2,16 +2,19 @@
 title: How to publish
 ---
 
-[[Compatibility|Pros & cons of some publishing solution, including Github Pages, Netlify, Vercel...]]  
+> [!WARNING]
+> Before starting you need to have generated the template or updated the `mkdocs.yml` and used the appropriate workflows file.
 
-## Publishing  
+[[Compatibility|Pros & cons of some publishing solution, including Github Pages, Netlify, Vercel...]]
 
-You can publish your site using:  
+## Publishing
 
-- [Netlify](https://www.netlify.com/) (or [Vercel](https://vercel.com/)) by using the template available at [ObsidianPublisher/template-netlify-vercel](https://github.com/ObsidianPublisher/template-netlify-vercel)
-- [Github Pages](https://pages.github.com/) by using the template available at [ObsidianPublisher/template-gh-pages](https://github.com/ObsidianPublisher/template-gh-pages)  
+You can publish your site using:
 
-### Through Github Pages  
+- [Netlify](https://www.netlify.com/) (or [Vercel](https://vercel.com/))
+- [Github Pages](https://pages.github.com/)
+
+### Through Github Pages
 
 ![[Actions#Github Pages]]
 
@@ -19,35 +22,31 @@ You need to activate the GitHub Pages in your repository settings, and use **act
 The configuration needs to be like this:
 ![[github_actions_pages.png]]
 
-> [!bug] The workflow isn't running!  
->  
-> - Check the run and error logs in the `Actions` tab.  
-> - Verify that the actions have the correct read and write permissions in `Settings → Actions → General → Workflow permissions`.  
->  ![image](https://user-images.githubusercontent.com/30244939/166161294-0f4f70c2-fda5-4465-89b0-d6b1b5e6995d.png)  
->> [!warning] In case of workflow problems  
->> In issue #4, we discovered that sometimes, GitHub Actions may refuse to run without reason. If this happens to you, please contact GitHub Support for assistance.  
+> [!bug] The workflow isn't running!
+>
+> - Check the run and error logs in the `Actions` tab.
+> - Verify that the actions have the correct read and write permissions in `Settings → Actions → General → Workflow permissions`.
+>  ![image](https://user-images.githubusercontent.com/30244939/166161294-0f4f70c2-fda5-4465-89b0-d6b1b5e6995d.png)
+>> [!warning] In case of workflow problems
+>> In issue #4, we discovered that sometimes, GitHub Actions may refuse to run without reason. If this happens to you, please contact GitHub Support for assistance.
 
-### Through Netlify  
+### Through Netlify
 
-Netlify.app is a great tool to deploy your blog. It's a free service that allows you to deploy your blog on the web, and the build will be faster than GitHub Pages.  
+Netlify.app is a great tool to deploy your blog. It's a free service that allows you to deploy your blog on the web, and the build will be faster than GitHub Pages.
 
-To deploy your blog, you can click here : 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/ObsidianPublisher/template-netlify-vercel)  
-
-Alternatively, you can follow these steps:  
-- Create an account on Netlify  
-- Add a new site using the existing repository  
-- For configuration, use:  
-  - Leave the repository field blank  
-  - Use `mkdocs build` as the build command  
-  - Use `site` as the publish directory  
+Alternatively, you can follow these steps:
+- Create an account on Netlify
+- Add a new site using the existing repository
+- For configuration, use:
+  - Leave the repository field blank
+  - Use `mkdocs build` as the build command
+  - Use `site` as the publish directory
 
 ![[netlify_config.png]]
 
-- Add an environment variable with `PYTHON_VERSION` set to `3.8` or include a `runtime.txt` file in the root of your repository with the same value.  
-- To improve deployment time and reduce bandwidth usage, you can disable deployment previews in the site settings by navigating to Settings > Build & Deploy > Deploy Preview and unchecking the box.  
+- Add an environment variable with `PYTHON_VERSION` set to `3.8` or include a `runtime.txt` file in the root of your repository with the same value.
+- To improve deployment time and reduce bandwidth usage, you can disable deployment previews in the site settings by navigating to Settings > Build & Deploy > Deploy Preview and unchecking the box.
 
 ![[deploy_preview.png]]
 
-> [!note] It may be necessary to delete your `gh-pages` branch in GitHub to remove GitHub Pages.  
-  
+> [!note] It may be necessary to delete your `gh-pages` branch in GitHub to remove GitHub Pages.

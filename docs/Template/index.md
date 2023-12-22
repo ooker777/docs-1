@@ -4,18 +4,15 @@ title: Installation
 
 Mkdocs Obsidian is a combination of an Obsidian plugin and a Material mkdocs template that allows you to create a personal wiki site based on your Obsidian Vault.
 
-If you are familiar with GitHub Pages, you can easily use the [Mkdocs Material Template](https://www.squidfunk.github.io/mkdocs-material/) by directly templating it using the [GitHub template](https://github.com/ObsidianPublisher/template-gh-pages/generate).
+If you are familiar with GitHub Pages, you can easily use the [Mkdocs Material Template](https://www.squidfunk.github.io/mkdocs-material/) by directly templating it using the [template](https://github.com/ObsidianPublisher/mkdocs-template/generate).
 
-Alternatively, if you prefer to use Netlify, you can also template this [Netlify repository](https://github.com/ObsidianPublisher/template-netlify-vercel/generate) and use it to deploy your personal wiki site.
 
 ## Installation steps
 
 To use the Mkdocs Obsidian plugin and create a personal wiki site based on your Obsidian vault, you can follow these steps:
 
 1. Create a GitHub account (if you don't have one already)
-2. Template the blog by using one of the following options:
-	- [GH Pages version](https://github.com/ObsidianPublisher/template-gh-pages/generate)
-	- [Netlify version](https://github.com/ObsidianPublisher/template-netlify-vercel/generate)
+2. [Template the blog](https://github.com/ObsidianPublisher/mkdocs-template/generate)
 
 3. Clone the repository by following the instructions [here](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories)
 4. In parallel, download the Obsidian plugin by using the [BRAT](https://github.com/TfTHacker/obsidian42-brat) or the community plugins panel.
@@ -42,4 +39,4 @@ To keep your template up to date, you should follow these steps:
 
 Note that, you should not edit or configure the files that are provided with the template.
 
-See [[Workflow#Update|here]] for more information about the update workflow.
+See [[Actions#Update ()|here]] for more information about the update workflow.
