@@ -1,6 +1,11 @@
 ---
-title: Upload configuration
+title: File paths
+order: 2
 ---
+> [!grid]
+> ![[file_path_1.png]]
+> ![[Upload_fixed.png]]
+> ![[Upload_obsidian_path.png]]
 
 [You can find some examples of path created by the plugin here](filepath_example.md).
 
@@ -8,9 +13,9 @@ title: Upload configuration
 
 There are three options available for managing folder reception:
 
-- Use a “fixed” folder: All files will be sent to this folder.
-- Use a folder created based on a `category` key.
-- Use the relative path from Obsidian. You can prepend a folder using the default folder.
+- <u>Fixed</u>: Use a “fixed” folder: All files will be sent to this folder.
+- <u>Property key</u>:  Use a folder created based on a `category` key.
+- <u>Obsidian Path</u>: Use the relative path from Obsidian. You can prepend a folder using the default folder.
 
 In all cases, you will need to configure the **default folder**: The file will be sent here if it doesn't match the other conditions.
 
