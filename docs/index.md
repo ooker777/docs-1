@@ -1,46 +1,60 @@
 ---
-title: Welcome to Quartz 4
+share: true
+title: Home
+hide:
+  - navigation
+  - toc
 ---
 
-Quartz is a fast, batteries-included static-site generator that transforms Markdown content into fully functional websites. Thousands of students, developers, and teachers are [[showcase|already using Quartz]] to publish personal notes, websites, and [digital gardens](https://jzhao.xyz/posts/networked-thought) to the web.
+Mkdocs Obsidian is a combination of an Obsidian plugin and a Material mkdocs template that allows you to create a personal wiki site based on your Obsidian Vault.
+It allows you to publish your notes on GitHub and customize the template to your liking.
 
-## 🪴 Get Started
+<p align="center">
+	<a href="https://obsidian.md/"><img src="https://img.shields.io/badge/Auxiliary%20Tool-Obsidian-blueviolet"></img></a><br/>
+	<a href='https://ko-fi.com/X8X54ZYAV' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a><br/>
+</p>
 
-Quartz requires **at least [Node](https://nodejs.org/) v18.14** and `npm` v9.3.1 to function correctly. Ensure you have this installed on your machine before continuing.
+- [Obsidian plugin](https://github.com/ObsidianPublisher/obsidian-github-publisher)
+- [Github Discussion](https://github.com/ObsidianPublisher/obsidian-github-publisher/discussions)
 
-Then, in your terminal of choice, enter the following commands line by line:
+## The template support
 
-```shell
-git clone https://github.com/jackyzha0/quartz.git
-cd quartz
-npm i
-npx quartz create
-```
+- [x] Wikilinks (`[[Links]]`)
+- [x] File transclusion/embed, both wikilinks and Markdown links
+- [x] Obsidian callout and custom callout
+- [x] Folder notes and their citation
+- [x] Custom attributes
+- [x] Sharing state and custom folder hierarchy
+- [x] Mobile and desktop compatibility
+- [x] File mini preview on hover
+- [x] Graph view 🎉 (using [Obsidian Tools](https://github.com/mfarragher/obsidiantools))
 
-This will guide you through initializing your Quartz with content. Once you've done so, see how to:
+---
 
-1. [[authoring content|Writing content]] in Quartz
-2. [[configuration|Configure]] Quartz's behaviour
-3. Change Quartz's [[layout]]
-4. [[build|Build and preview]] Quartz
-5. Sync your changes with [[setting up your GitHub repository|GitHub]]
-6. [[hosting|Host]] Quartz online
+## Github actions & Obsidian's plugin
 
-If you prefer instructions in a video format you can try following Nicole van der Hoeven's
-[video guide on how to set up Quartz!](https://www.youtube.com/watch?v=6s6DT1yN4dw&t=227s)
+### TLDR
 
-## 🔧 Features
+1. Install the plugins through Obsidian Community or [BRAT](https://github.com/TfTHacker/obsidian42-brat)
+2. Template your blog using the [template](https://obsidian-publisher.netlify.app/template/) and configure it.
+3. Configure the plugin options:
+    - Repo name
+    - Your GitHub username
+    - The GitHub token (available [here](https://github.com/settings/tokens/new?scopes=repo))
+    - The share key
+4. Add the sharing key as `true` in Obsidian's note frontmatter
+5. Customize (or not) the folder options
+6. Run the commands through the file menu or commands palette.
 
-- [[Obsidian compatibility]], [[full-text search]], [[graph view]], note transclusion, [[wikilinks]], [[backlinks]], [[Latex]], [[syntax highlighting]], [[popover previews]], [[Docker Support]], [[i18n|internationalization]] and [many more](./features) right out of the box
-- Hot-reload for both configuration and content
-- Simple JSX layouts and [[creating components|page components]]
-- [[SPA Routing|Ridiculously fast page loads]] and tiny bundle sizes
-- Fully-customizable parsing, filtering, and page generation through [[making plugins|plugins]]
+> [!INFO] For advanced configuration within Obsidian, see [[Configuration example|here]]
 
-For a comprehensive list of features, visit the [features page](/features). You can read more about the _why_ behind these features on the [[philosophy]] page and a technical overview on the [[architecture]] page.
+---
 
-### 🚧 Troubleshooting + Updating
+## Generating the template
 
-Having trouble with Quartz? Try searching for your issue using the search feature. If you haven't already, [[upgrading|upgrade]] to the newest version of Quartz to see if this fixes your issue.
+1. Click on:[^1][use this template](https://github.com/ObsidianPublisher/mkdocs-publisher-template/generate)
+2. Use the name of your choice
+3. Follow the instruction [here](https://obsidian-publisher.netlify.app/template/configuration/#mkdocs-configuration)
+7. The page will automatically build and published right after!
 
-If you're still having trouble, feel free to [submit an issue](https://github.com/jackyzha0/quartz/issues) if you feel you found a bug or ask for help in our [Discord Community](https://discord.gg/cRFFHYye7t).
+[^1]: You must be logged in to copy the template. You can also test locally by cloning via HTTPS using the command `git clone https://github.com/ObsidianPublisher/template-gh-pages`, or by downloading the ZIP file from [here](https://github.com/ObsidianPublisher/template-gh-pages/archive/refs/heads/main.zip)
