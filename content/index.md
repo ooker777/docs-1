@@ -1,9 +1,5 @@
 ---
-share: true
 title: Home
-hide:
-  - navigation
-  - toc
 ---
 
 Obsidian Publisher is a remarkable project that enables you to effortlessly transmit files (via GitHub) and apply numerous advanced transformations to create your very own personalized wiki site... at absolutely no cost!
@@ -16,12 +12,9 @@ Obsidian Publisher is a remarkable project that enables you to effortlessly tran
 - [Obsidian plugin](https://github.com/ObsidianPublisher/obsidian-github-publisher)
 - [Github Discussion](https://github.com/ObsidianPublisher/obsidian-github-publisher/discussions)
 
-
 ---
 
-## Github actions & Obsidian's plugin
-
-### TLDR
+## Obsidian's plugin
 
 1. Install the plugins through Obsidian Community or [BRAT](https://github.com/TfTHacker/obsidian42-brat)
 2. Configure the plugin options:
@@ -35,6 +28,8 @@ Obsidian Publisher is a remarkable project that enables you to effortlessly tran
 
 > [!INFO] For advanced configuration within Obsidian, see [[Configuration example|here]]
 
+> [!warning] If you use your vault directly in a repository, the upload will corrupt your files! This module is not intended for this type of workflow.
+
 ---
 
 ## Wikis
@@ -42,3 +37,4 @@ Obsidian Publisher is a remarkable project that enables you to effortlessly tran
 There are a lot of wikis templates available for you to use. For example:
 - [Quartz](https://github.com/jackyzha0/quartz), and the [Publisher version](https://github.com/ObsidianPublisher/Publisher-Quartz/tree/v4)
 - [Mkdocs](https://github.com/ObsidianPublisher/mkdocs-publisher-template) -- **Deprecated**!
+
