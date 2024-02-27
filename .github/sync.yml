@@ -8,4 +8,4 @@ group:
     - source: content/wikis/quartz.md
       dest: README.md
     repos: |
-      ObsidianPublisher/https://github.com/ObsidianPublisher/Publisher-Quartz
+      ObsidianPublisher/Publisher-Quartz
