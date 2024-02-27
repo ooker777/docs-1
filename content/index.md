@@ -18,15 +18,17 @@ Obsidian Publisher is a remarkable project that enables you to effortlessly tran
 
 1. Install the plugins through Obsidian Community or [BRAT](https://github.com/TfTHacker/obsidian42-brat)
 2. Configure the plugin options:
-  - Repo name
-  - Your GitHub username
-  - The GitHub token (available [here](https://github.com/settings/tokens/new?scopes=repo))
-  - The share key
+
+- Repo name
+- Your GitHub username
+- The GitHub token (available [here](https://github.com/settings/tokens/new?scopes=repo))
+- The share key
+
 3. Add the sharing key as `true` in Obsidian's note frontmatter
 4. Customize (or not) the folder options
 5. Run the commands through the file menu or commands palette.
 
-> [!INFO] For advanced configuration within Obsidian, see [[Configuration example|here]]
+> [!INFO] For advanced configuration within Obsidian, see [[./Example/Configuration example|here]]
 
 > [!warning] If you use your vault directly in a repository, the upload will corrupt your files! This module is not intended for this type of workflow.
 
@@ -35,6 +37,6 @@ Obsidian Publisher is a remarkable project that enables you to effortlessly tran
 ## Wikis
 
 There are a lot of wikis templates available for you to use. For example:
+
 - [Quartz](https://github.com/jackyzha0/quartz), and the [Publisher version](https://github.com/ObsidianPublisher/Publisher-Quartz/tree/v4)
 - [Mkdocs](https://github.com/ObsidianPublisher/mkdocs-publisher-template) -- **Deprecated**!
-
