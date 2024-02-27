@@ -2,7 +2,7 @@
 @use "./custom/callouts.scss";
 @use "./custom/image_grid_float.scss";
 @use "./custom/grid_callouts.scss";
-@use "./custom/fileIcons.scss";
+@use "./custom/file_icon.scss";
 @use "./variables.scss" as *;
 
 // Put your custom CSS here!
@@ -69,8 +69,8 @@ hr {
   width: 10em;
 }
 
-.wiki-right .callout.wiki h1,
-.wiki-right .callout.wiki h3 {
+.wiki-right .callout[data-callout$="wiki"] h1,
+.wiki-right .callout[data-callout$="wiki"] h3 {
   background-color: var(--lightgray);
 }
 

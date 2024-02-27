@@ -209,23 +209,25 @@ export function ExplorerNode({ node, opts, fullPath, fileData }: ExplorerNodePro
           {node.name !== "" && (
             // Node with entire folder
             // Render svg button + folder name, then children
-            <div class="folder-container">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="12"
-                height="12"
-                viewBox="5 8 14 8"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="folder-icon"
-                data-hasicon={hasIcon}
-              >
-                <polyline points="6 9 12 15 18 9" />
-              </svg>
-              <NodesIcons iconAsSVG={iconAsSVG} hasIcon={hasIcon} nodeType="folder" />
+
+            <div class="folder-container" data-haschildren={node.children.length > 0}>
+              {node.children.length > 0 ? (
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  viewBox="5 8 14 8"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="folder-icon"
+                  data-hasicon={hasIcon}
+                >
+                  <polyline points="6 9 12 15 18 9" />
+                </svg>
+              ) : null}
               {/* render <a> tag if folderBehavior is "link", otherwise render <button> with collapse click event */}
               <div key={node.name} data-folderpath={folderPath}>
                 {folderBehavior === "link" ? (
@@ -236,6 +238,7 @@ export function ExplorerNode({ node, opts, fullPath, fileData }: ExplorerNodePro
                     data-icon={iconPath}
                     class="folder-title"
                   >
+                    <NodesIcons iconAsSVG={iconAsSVG} hasIcon={hasIcon} nodeType="folder" />
                     {node.displayName}
                   </a>
                 ) : (
