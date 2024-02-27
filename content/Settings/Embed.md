@@ -2,7 +2,8 @@
 title: Attachment & embeds
 order: 4
 ---
-![](Embed.png)
+
+![](../img/Embed.png)
 
 You can choose to send embedded files in two ways:
 
@@ -15,11 +16,9 @@ By default, attachments are not overridden if they are already exists in the rep
 
 - <u>Structure</u> : Allow to use the Obsidian folder for attachments instead of a fixed folder.
 - <u>Override attachments path</u> : Allow to change the path of a specific file (supporting regex) and force push an attachment. This can allow to send specific file into a specific folder **from roots**, **overriding all parameters**.
-	![](Embed_override_path.png)
+  ![](../img/Embed_override_path.png)
 
- > [!example]
- > `/^_assets\/_PLUGINS\/icons\/(.*)\/(.*)\.svg$/` → `overrides/icons/$1/$2.svg` : Will send all `svg` file into the folder `overrides/icons`
-
+> [!example] > `/^_assets\/_PLUGINS\/icons\/(.*)\/(.*)\.svg$/` → `overrides/icons/$1/$2.svg` : Will send all `svg` file into the folder `overrides/icons`
 
 Additionally, you can choose to send files based on a metadata field. This means that if a specific field in the file's frontmatter (or using a Inline Dataview) is set to a certain value, the file will be sent to the repository.
 
@@ -41,6 +40,7 @@ This feature allows you to easily share all the necessary resources in your note
 You can choose to send embedded note (in markdown)
 
 You can also change the look of the embedded links, if you set the transfer of these note to true:
+
 - "No change" : Will keep the original link, as in Obsidian ;
 - "Remove link completely" will delete the citation completely and keep only the text ;
 - "Transform to link" will remove the `!` before the link.
@@ -52,4 +52,4 @@ You can also change the look of the embedded links, if you set the transfer of t
 
 ## Excalidraw files
 
-Excalidraw files are not normally handled by Obsidian as default attachment, but the plugin will. The file will be converted automatically into svg files. Now, you don't need to embed the svg or png and use the default `.excalidraw` file. 
+Excalidraw files are not normally handled by Obsidian as default attachment, but the plugin will. The file will be converted automatically into svg files. Now, you don't need to embed the svg or png and use the default `.excalidraw` file.

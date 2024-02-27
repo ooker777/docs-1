@@ -3,15 +3,15 @@ title: Plugin Settings
 order: 4
 ---
 
-![](Plugin.png)![](Plugin-1.png)
-![](Plugin-2.png)
+![](../img/Plugin.png)![](../img/Plugin-1.png)
+![](../img/Plugin-2.png)
 
 ## Sharing config
 
 <u>Share all files</u> allows to send every files automatically (unless they are excluded) without using the `share` key.
 When enabled, you can excluded all files where the name start by something.
 
-![](Plugin_excluded.png)
+![](../img/Plugin_excluded.png)
 
 ### Share key
 
@@ -43,6 +43,7 @@ Add the command to share the file on the file menu (right-click on a file in the
 ## Link building & copy
 
 Add the link's shared note in your clipboard after sharing :
+
 - You can set the baselink (note : this can be edited by per-file settings `baselink`).
 - You can also delete some part of the created link. If you need to remove multiple part, just separate the part with a comma. For example, if you want to remove the extension and the index : `index, .md`
 - You have the option to enable a new command in the command palette to create a link to the current opened file. If you want to add in the right-click menu, you can use the [commander](https://github.com/phibr0/obsidian-commander) plugin.
@@ -64,5 +65,3 @@ Allow to quickly return to the last used tabs of the settings after closing the 
 2. <u>Display developper logs</u> : Will send some informations in the console logs. If the previous was enabled, the logs will be send as a Notice instead.
 
 ---
-
-

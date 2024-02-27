@@ -28,8 +28,6 @@ Obsidian Publisher is a remarkable project that enables you to effortlessly tran
 4. Customize (or not) the folder options
 5. Run the commands through the file menu or commands palette.
 
-> [!INFO] For advanced configuration within Obsidian, see [[./Example/Configuration example|here]]
-
 > [!warning] If you use your vault directly in a repository, the upload will corrupt your files! This module is not intended for this type of workflow.
 
 ---
