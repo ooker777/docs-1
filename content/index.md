@@ -30,11 +30,3 @@ Obsidian Publisher is a remarkable project that enables you to effortlessly tran
 
 > [!warning] If you use your vault directly in a repository, the upload will corrupt your files! This module is not intended for this type of workflow.
 
----
-
-## Wikis
-
-There are a lot of wikis templates available for you to use. For example:
-
-- [Quartz](https://github.com/jackyzha0/quartz), and the [Publisher version](https://github.com/ObsidianPublisher/Publisher-Quartz/tree/v4)
-- [Mkdocs](https://github.com/ObsidianPublisher/mkdocs-publisher-template) -- **Deprecated**!
