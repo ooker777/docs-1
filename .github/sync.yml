@@ -5,7 +5,7 @@ group:
     repos: |
       ObsidianPublisher/obsidian-github-publisher
   - files:
-    - source: content/Example/quartz.md
+    - source: content/wikis/quartz.md
       dest: README.md
     repos: |
       ObsidianPublisher/https://github.com/ObsidianPublisher/Publisher-Quartz
