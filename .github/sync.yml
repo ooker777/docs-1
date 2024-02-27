@@ -1,0 +1,11 @@
+group:
+  - files:
+    - source: content/Plugin.md
+      dest: README.md
+    repos: |
+      ObsidianPublisher/obsidian-github-publisher
+  - files:
+    - source: content/Example/quartz.md
+      dest: README.md
+    repos: |
+      ObsidianPublisher/https://github.com/ObsidianPublisher/Publisher-Quartz
