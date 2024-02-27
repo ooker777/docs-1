@@ -19,7 +19,7 @@ Upload sends the `share: true` file and its embedded contents (or note, based on
 
 It includes:
 
-- `Upload single current active note` _(also in the right-click menu)_ : Send only the single current active note. The repo can be changed using the [[Per files settings|frontmatter]].
+- `Upload single current active note` _(also in the right-click menu)_ : Send only the single current active note. The repo can be changed using the [[./Settings/Per files settings|frontmatter]].
 - `Upload all notes` : Send all shared notes to the configured repository.
 - `Upload unpublished notes` : Send only the shared note that are not present on the repository.
 
@@ -61,8 +61,8 @@ This commands is also run along the verification of the repository value, and ch
 
 ## Copy path
 
-You can choose to add a command to copy the path (from the blog) of the current note. This command is only available if you have enabled the copy link feature in [[Plugin]]. 
+You can choose to add a command to copy the path (from the blog) of the current note. This command is only available if you have enabled the copy link feature in [[./Settings/Plugin]].
 
 ## Run command for a repository
 
-This command is only available if you have more than one repository configured. It will allow you to run a command for a specific repository configured in the settings. 
+This command is only available if you have more than one repository configured. It will allow you to run a command for a specific repository configured in the settings.

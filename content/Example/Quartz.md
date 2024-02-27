@@ -23,7 +23,8 @@ The template includes:
 ### File & Folder icons configuration
 
 - Use [Iconize Assistant](https://github.com/Lisandra-dev/iconize-assistant) to save icon path into the frontmatter of the file.
-- Configure the plugin to send icons file (using override attachment) into `\_assets/icons : Replace path of attachment for svg files: `/(._)\/(._)\/(.\*)\.(svg)$/`->`quartz/static/icons/$2/{{name}}`
+  > [!note] Iconize icons needs to be accessible by the plugin! I store them into `_assets/PLUGINS/icons`.
+- Configure the plugin to send icons file (using override attachment) into `quartz/static/icons : Replace path of attachment for svg files: `/(_assets\/_PLUGINS\/icons)\/(.*)\/(.*)\.(svg)$/`->`quartz/static/icons/$2/{{name}}`
 - In the file [quartz.layout.ts], add this:
   ```ts
   const iconsOptions: IconFolderOptions = {
