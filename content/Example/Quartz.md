@@ -18,6 +18,8 @@ The template includes:
 - File and folder icons
 - Mobile navigation
 
+> [!tip] You can click on "Sync fork" to get the latest updates from the original repository.
+
 ### File & Folder icons configuration
 
 - Use [Iconize Assistant](https://github.com/Lisandra-dev/iconize-assistant) to save icon path into the frontmatter of the file.
