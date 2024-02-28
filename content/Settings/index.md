@@ -1,3 +1,7 @@
+---
+order: 3
+---
+
 1. [[Github|Github Configuration]]
 2. [[Upload|Upload configuration]]
 3. [[Content|Content's conversion]]

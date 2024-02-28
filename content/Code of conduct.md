@@ -1,5 +1,6 @@
 ---
 title: Code of conduct
+order: 15
 ---
 
 # Contributor Code of Conduct

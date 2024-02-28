@@ -1,5 +1,6 @@
 ---
 title: Supported and unsupported plugins
+order: 5
 ---
 
 # Supported plugins

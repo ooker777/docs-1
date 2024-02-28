@@ -1,6 +1,7 @@
 ---
 title: Obsidian's useful plugins
 share: true
+order: 6
 ---
 
 **Some useful plugin to support the script** :

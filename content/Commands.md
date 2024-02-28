@@ -1,5 +1,6 @@
 ---
 title: Commands
+order: 2
 ---
 
 The plugin adds seven commands, with one also applied on the right-click menu.
