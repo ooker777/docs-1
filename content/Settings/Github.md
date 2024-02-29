@@ -26,6 +26,7 @@ Also, you can configure your GitHub Workflow here :
 > [!grid]
 > ![[../img/Github_manage_other_1.png]]
 > ![[../img/Github_manage_other_2.png]]
+> 
 > ![[../img/Github_manage_other_3.png]]
 
 You can now manage multiple repository in the settings. It will allows you to use **all** commands on each configured repository. Note that it will use the same conversion settings for all repositories.
