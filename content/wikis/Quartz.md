@@ -24,7 +24,8 @@ The template includes:
 
 - Use [Iconize Assistant](https://github.com/Lisandra-dev/iconize-assistant) to save icon path into the frontmatter of the file.
   > [!note] Iconize icons needs to be accessible by the plugin! I store them into `_assets/PLUGINS/icons`.
-- Configure the plugin to send icons file (using override attachment) into `quartz/static/icons : Replace path of attachment for svg files: `/(_assets\/_PLUGINS\/icons)\/(.*)\/(.*)\.(svg)$/`->`quartz/static/icons/$2/{{name}}`
+- Configure the plugin to send icons file (using override attachment) into `quartz/static/icons` : Replace path of attachment for svg files: `/(_assets\/_PLUGINS\/icons)\/(.*)\/(.*)\.(svg)$/`->`quartz/static/icons/$2/{{name}}`
+- Configure the plugin to send file by frontmatter key: `icon_file`
 - In the file [quartz.layout.ts], add this:
   ```ts
   const iconsOptions: IconFolderOptions = {
@@ -47,3 +48,7 @@ The template includes:
 ### Mobile navigation
 
 The mobile navigation is instable and rely on a specific layout. Don't change the layout, order, or place of the components.
+
+### Sort order
+
+You can use the frontmatter key `order` to sort the files and folder by number. If not found, the sort order will use the display name.

@@ -1,7 +1,7 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg";
 import * as Component from "./quartz/components";
-import { FileNode } from "./quartz/components/ExplorerNode";
 import { IconFolderOptions } from "./quartz/plugins/components/FileIcons";
+import { filterFn, sortFn } from "./quartz/util/function";
 
 // components shared across all pages
 
@@ -12,14 +12,7 @@ const iconsOptions: IconFolderOptions = {
 	},
 };
 
-const sortFn = (a: FileNode, b: FileNode) => {
-	if (a.order && b.order) {
-		return a.order - b.order;
-	} else if (a.order) {
-		return -1;
-	}
-	return 1;
-};
+export const secretPage = new Set(["hidden"]);
 
 export const sharedPageComponents: SharedLayout = {
 	head: Component.Head(),
@@ -29,7 +22,8 @@ export const sharedPageComponents: SharedLayout = {
 				folderDefaultState: "open",
 				folderClickBehavior: "link",
 				iconSettings: iconsOptions,
-				sortFn
+				sortFn,
+				filterFn
 			}),
 		),
 		Component.MobileOnly(Component.PageTitle()),
@@ -62,7 +56,8 @@ export const defaultContentPageLayout: PageLayout = {
 				useSavedState: true,
 				title: "",
 				iconSettings: iconsOptions,
-				sortFn
+				sortFn,
+				filterFn
 			}),
 		),
 	],
