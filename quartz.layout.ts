@@ -44,7 +44,7 @@ export const defaultContentPageLayout: PageLayout = {
 	beforeBody: [
 		Component.Breadcrumbs(),
 		Component.ArticleTitle(iconsOptions),
-		Component.ContentMeta({ showReadingTime: false }),
+		Component.ContentMeta({ showReadingTime: false, gitHubRepository: "https://github.com/ObsidianPublisher/docs", branch: "main"}),
 		Component.TagList(),
 	],
 	left: [
