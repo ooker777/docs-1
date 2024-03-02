@@ -3,10 +3,10 @@ title: Plugin Settings
 order: 4
 ---
 
-![](../img/Plugin.png)![](../img/Plugin-1.png)
-![](../img/Plugin-2.png)
 
 ## Sharing config
+
+![](../img/Plugin.png)
 
 <u>Share all files</u> allows to send every files automatically (unless they are excluded) without using the `share` key.
 When enabled, you can excluded all files where the name start by something.
@@ -41,14 +41,20 @@ Add the command to share the file on the file menu (right-click on a file in the
 > [!note] The right-click menu command can also send the file under your cursor if it's a link!
 
 ## Link building & copy
+![](../img/Plugin-2.png)
+
 
 Add the link's shared note in your clipboard after sharing :
 
 - You can set the baselink (note : this can be edited by per-file settings `baselink`).
 - You can also delete some part of the created link. If you need to remove multiple part, just separate the part with a comma. For example, if you want to remove the extension and the index : `index, .md`
 - You have the option to enable a new command in the command palette to create a link to the current opened file. If you want to add in the right-click menu, you can use the [commander](https://github.com/phibr0/obsidian-commander) plugin.
+- You can choose to disable or enable the encoding URI and also the slugify (strict, disabled or lowercase).
+- It is also possible to add a text transformation to the URL. As always, regex needs to be enclosed between `/`. For example, if you want to replace all spaces, you can use `/ /g`.
 
 ## Others
+
+![](../img/Plugin-4-other.png)
 
 ### Show what files are edited, added, or deleted after uploaded
 
@@ -60,6 +66,7 @@ This is how the modal look like:
 Allow to quickly return to the last used tabs of the settings after closing the settings and reopen it.
 
 ## Logs
+![](../img/Plugin-5-logs.png)
 
 1. <u>Notice every error :</u>You can notify all error in a notice, instead of the console. This option is useful if you don't know how to use the console, and if you debug on mobile.
 2. <u>Display developper logs</u> : Will send some informations in the console logs. If the previous was enabled, the logs will be send as a Notice instead.
