@@ -1,6 +1,8 @@
 import { i18n } from "../i18n";
-import { FullSlug, joinSegments, pathToRoot, sluggify } from "../util/path";
+import { FullSlug, joinSegments, pathToRoot } from "../util/path";
 import { JSResourceToScriptElement } from "../util/resources";
+import { googleFontHref } from "../util/theme";
+import { getMetaImage } from "./scripts/util";
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types";
 
 export default (() => {
@@ -15,21 +17,16 @@ export default (() => {
 		const baseDir = fileData.slug === "404" ? path : pathToRoot(fileData.slug!);
 
 		const iconPath = joinSegments(baseDir, "static/icon.png");
-		let ogImagePath = `https://${cfg.baseUrl}/static/og-image.png`;
-		if (cfg.ogImageDir) {
-			const contentDir = `https://${cfg.baseUrl}/${cfg.ogImageDir}/`;
-			ogImagePath = fileData?.frontmatter?.image
-				? sluggify(`${contentDir}${(fileData.frontmatter.image as string).trim()}`)
-				: `https://${cfg.baseUrl}/static/og-image.png`;
-		}
+		const ogImagePath = getMetaImage(cfg, fileData);
 		return (
 			<head>
 				<title>{title}</title>
 				<meta charSet="utf-8" />
-				{cfg.theme.cdnCaching && (
+				{cfg.theme.cdnCaching && cfg.theme.fontOrigin === "googleFonts" && (
 					<>
 						<link rel="preconnect" href="https://fonts.googleapis.com" />
 						<link rel="preconnect" href="https://fonts.gstatic.com" />
+						<link rel="stylesheet" href={googleFontHref(cfg.theme)} />
 					</>
 				)}
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
