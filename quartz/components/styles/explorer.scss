@@ -67,6 +67,7 @@ button#explorer {
       color: var(--dark);
       opacity: 0.75;
       pointer-events: all;
+      font-size: 1.2rem;
     }
   }
 }
@@ -88,7 +89,6 @@ svg {
   & div > a {
     color: var(--secondary);
     font-family: var(--headerFont);
-    font-size: 0.95rem;
     font-weight: $semiBoldWeight;
     line-height: 1.5rem;
     display: inline-block;
@@ -165,7 +165,7 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
 
 #explorer-content ul li > a[data-hasicon="true"]:has(.file-title-icon) {
   position: relative;
-  //left: -0.25em;
+  left: -0.25em;
 }
 
 .folder-title-icon > svg {
@@ -191,7 +191,7 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
 // }
 
 .folder-container[data-haschildren="true"] .folder-title[data-hasicon="true"] {
-  margin-left: -1.5rem;
+  margin-left: -1.3rem;
 }
 
 .folder-container[data-haschildren="false"] {
