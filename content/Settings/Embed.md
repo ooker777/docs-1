@@ -5,10 +5,17 @@ order: 4
 
 ![](../img/Embed.png)
 
+> [!NOTE]
+> The first option allow you to share *also* the notes linked by a **simple** links, like `[[note]]` or `[note](note.md)`. Disable it and you needs to use a dataview query (or frontmatter property) to send specific files.
+> Obviously, the notes needs to be shared to be send.
+
+
 You can choose to send embedded files in two ways:
 
 - <u>Attachments</u>: The file will be copied to the repository in an optional settled folder. Attachments are [all files supported by Obsidian (that aren't markdown)](https://help.obsidian.md/Files+and+folders/Accepted+file+formats).
 - <u>Notes</u>: Only shared files will be copied in the repository, in their respected folder (following your settings).
+
+
 
 ## Attachments
 

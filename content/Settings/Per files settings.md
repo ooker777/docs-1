@@ -7,7 +7,6 @@ title: Per files settings
 :sparkles: It is now possible to set a repository directly in the frontmatter with the `repo` key.
 
 > [!warning]
->
 > - Your GitHub token must work for this repository
 > - The function that uploads multiple notes won't send files to this "per-file" repository. Only the command `Upload single current active note` will work, with the [[Upload#Auto Clean-Up|autoclean]] if activated. You can disable it using the frontmatter!
 > - The key works in this order: `username/repo/branch/autoclean`, `username/repo/brach`, `username/repo`, and `repo`. You can also use a YAML object like this:
@@ -93,11 +92,12 @@ Some settings can be overridden based on your frontmatter key (of the file send)
      - `links` : Convert to markdown links (remove the `!` before the link).
      - `bake` : Include the contents of the embed. Support block, heading, and entire file. Based on the plugin [easy-bake](https://github.com/mgmeyers/obsidian-easy-bake). File are included as is, without markdown or html specificities.
    - `char` : Add a character(s) before the embedded links. Used only if you set the `remove` key to `links`.
-1. `Attachment` : allow per-file settings for attachments (images, pdfs, sound, video… Any attachment supported by Obsidian)
+1. `attachment` : allow per-file settings for attachments (images, pdfs, sound, video… Any attachment supported by Obsidian)
    - `send: false` to avoid sending the files
    - `folder` to change the default folder. Beware that changing this setting can have strange effects with autocleaning! You can, again, use a one-key setting using `attachmentLinks` for the folder and `attachment: false` to avoid sending.
 1. `dataview` to override dataview settings.
 1. `hardbreak` for markdown hard break.
+1. `includeLinks` Allow sending file linked by simple links, like `[[markdown]]` or `[alias](markdown)`.
 1. `baselink` : to change the base link for the copy links function. Note, using this key will disable the remove part settings. You need to use the object `copylink` to edit the remove part, as follow:
    - `base`: to change the base link
    - `remove` : To remove some part specific to this file.
@@ -134,6 +134,7 @@ attachment:
   folder: string #change default folder for attachment
 dataview: boolean #force/prevent dataview queries conversion
 hardbreak: boolean #same but for hardbreak
+includeLinks: boolean #send files linked by simple links, like [[markdown]] or [alias](markdown) 
 repo:
   branch: string #change default branch
   repo: string #change default repository
@@ -157,6 +158,7 @@ attachment:
   folder: string #change default folder for attachment
 dataview: boolean #force/prevent dataview queries conversion
 hardbreak: boolean #same but for hardbreak
+includeLinks: boolean #send files linked by simple links, like [[markdown]] or [alias](markdown)
 baselink: string #change base link for copylink settings
 multipleRepo:
   - repo:
@@ -181,6 +183,7 @@ attachmentLinks: string #ovverride default folder for attachments
 attachment: boolean #prevent sending attachment
 dataview: boolean
 hardbreak: boolean
+includeLinks: boolean 
 repo: string #owner/repo/branch/clean or owner/repo/branch or owner/repo or repo
 autoclean: boolean #disable auto cleaning (use it only if you don't set in the repo!)
 baselink: string #change base link for copylink settings
@@ -196,6 +199,7 @@ attachmentLinks: string #ovverride default folder for attachments
 attachment: boolean #prevent sending attachment
 dataview: boolean
 hardbreak: boolean
+includeLinks: boolean
 baselink: string #change base link for copylink settings
 multipleRepo: list of string
   - owner/repo/branch/autoclean or owner/repo or repo
@@ -217,6 +221,7 @@ attachment:
   folder: settings.default_folder_image || settings.default_folder || filepath
 dataview: settings.dataview
 hardbreak: settings.hardbreak
+includeLinks: settings.includeLinks
 repo: #same for multipleRepo
   branch: settings.branch
   repo: settings.repo
