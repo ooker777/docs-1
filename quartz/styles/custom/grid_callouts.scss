@@ -288,10 +288,6 @@ body {
       &:hover {
         transform: scaleX(2) scaleY(2);
       }
-
-      &[alt="wfull"] {
-        max-height: unset;
-      }
     }
 
     &[data-callout-metadata~="masonry"] {

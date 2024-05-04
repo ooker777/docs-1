@@ -1,5 +1,5 @@
 import { secretPage } from "../../quartz.layout";
-import { FileNode, Options } from "../components/ExplorerNode";
+import { FileNode, Options } from "../components/ExplorerNode"
 
 export const sortFn: Options["sortFn"] = (a: FileNode, b: FileNode) => {
 	if (a.order && b.order) {
@@ -11,6 +11,6 @@ export const sortFn: Options["sortFn"] = (a: FileNode, b: FileNode) => {
 };
 
 
-export const filterFn: Options["filterFn"] = (node: FileNode) => {
-	return !secretPage.has(node.name);
-};
+export const filterFn = (node: FileNode) => {
+	return !secretPage.has(node.name)
+}

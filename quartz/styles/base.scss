@@ -79,6 +79,11 @@ a {
       border-radius: 0;
       padding: 0;
     }
+    &.tag-link {
+      &::before {
+        content: "#";
+      }
+    }
   }
 
   &.external .external-icon {
@@ -160,7 +165,7 @@ a {
       width: $sidePanelWidth;
       margin-top: $topSpacing;
       box-sizing: border-box;
-      padding: 0 4rem;
+      padding: 0 1rem;
       position: fixed;
       @media all and (max-width: $fullPageWidth) {
         position: initial;
@@ -513,4 +518,9 @@ ol.overflow {
   ul {
     padding-left: 1rem;
   }
+}
+
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
 }

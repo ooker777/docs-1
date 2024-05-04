@@ -1,8 +1,8 @@
-import { ValidDateType } from "./components/Date"
-import { QuartzComponent } from "./components/types"
-import { ValidLocale } from "./i18n"
-import { PluginTypes } from "./plugins/types"
-import { Theme } from "./util/theme"
+import { ValidDateType } from "./components/Date";
+import { QuartzComponent } from "./components/types";
+import { ValidLocale } from "./i18n";
+import { PluginTypes } from "./plugins/types";
+import { Theme } from "./util/theme";
 
 export type Analytics =
   | null
@@ -17,6 +17,17 @@ export type Analytics =
   | {
       provider: "umami"
       websiteId: string
+      host?: string
+    }
+  | {
+      provider: "goatcounter"
+      websiteId: string
+      host?: string
+      scriptSrc?: string
+    }
+  | {
+      provider: "posthog"
+      apiKey: string
       host?: string
     }
 

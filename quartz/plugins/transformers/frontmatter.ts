@@ -91,9 +91,10 @@ declare module "vfile" {
         description: string
         publish: boolean
         draft: boolean
+        lang: string
         enableToc: string
         cssclasses: string[]
-        order: number
+		order: number
       }>
   }
 }

@@ -19,6 +19,8 @@ ol.overflow {
 .page .page-header {
   padding: 1px;
   width: auto;
+  margin-left: -2dvw;
+  margin-right: -2dvw;
 }
 
 @media all and (max-width: $fullPageWidth) {
@@ -33,7 +35,7 @@ ol.overflow {
 
 @media all and (max-width: $mobileBreakpoint) {
   .page .page-header {
-    width: 96dvw;
+    width: auto;
   }
 }
 
@@ -120,8 +122,4 @@ footer {
 ul.overflow:after,
 ol.overflow:after {
   background: none;
-}
-
-a.external .external-icon {
-  display: none;
 }
