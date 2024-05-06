@@ -68,6 +68,10 @@ You can choose to add a command to copy the path (from the blog) of the current 
 
 This command is only available if you have more than one repository configured. It will allow you to run a command for a specific repository configured in the settings.
 
-## Refresh registered set
+## (Others repositories) Reload registered set
 
-Allow to update the registered set file from all repository (see [[Github#Configure more than one repository]]), without reloading the plugin or registering the file again.
+For this, there are two commands:
+- Reload the opened set (if the file opened is a set)
+- Reload all registered set (only if some sets are registered)
+
+It allow to update the frontmatter of the "sets" if you have edited them, without reload the plugin/obsidian or re-register the file.
