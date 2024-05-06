@@ -40,4 +40,12 @@ Each repository can be configured with the settings above (except the token), pl
 - `shortcuts` : Allow you to create a shortcut for each repository. The commands will be directly available in the commands palettes. Otherwise, you need to use the `Run command for a repository` command, and choose the repository you want to use. This add more per-files settings.
 - You can also set a copy-links path.
 
+It's also possible to connect the frontmatter of a file to this repository, overriding using like [[./Per files settings|per file settings]].
+
+> [!important]
+> To keep performance, the frontmatter is read and saved when:
+> - The file is registered as "set" 
+> - The plugin is loaded
+> If you edit the frontmatter, you need to either reload the plugin or re-register the file. You can use the command "Refresh registered set" to update the frontmatter.
+
 [^1]: A GitHub account and connection is required to create a token.

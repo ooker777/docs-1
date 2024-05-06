@@ -67,3 +67,7 @@ You can choose to add a command to copy the path (from the blog) of the current 
 ## Run command for a repository
 
 This command is only available if you have more than one repository configured. It will allow you to run a command for a specific repository configured in the settings.
+
+## Refresh registered set
+
+Allow to update the registered set file from all repository (see [[Github#Configure more than one repository]]), without reloading the plugin or registering the file again.
