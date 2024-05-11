@@ -117,15 +117,9 @@ Some settings can be overridden based on your frontmatter key (of the file send)
 
 > [!important] All of theses keys can be prepend by a **smartkey** (ie `smartkey.<key>`) to allow per-file-per-repository configuration.
 
-### Special configuration per repository
 
-Using a combinaison between the smartkey and variable, you can edit the [[./Upload]] file path. It allows to set specific path per repository, allowing different path for the same file in different repository.
+### Overriding PATH settings and behavior
 
-The keys can be write as follow : 
-  - `<smartkey>.<key>`. 
-  - Or directly `<key>` (if used in a set/to override the global settings for a file).
-
-Valid keys are:
 - `path` : Same as before : override all path settings and create a path from the root. Will skip all other options.
 - `category` : Take the `category` key from your settings (you can set the category key and also change it). Only work if the `behavior` (or the default behavior) is set to ==YAML==.
   - `category.key` : Change the category name (for example: `category.key: test` will use the property `test`).
