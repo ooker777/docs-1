@@ -77,6 +77,18 @@ shortRepo:
 
 ## Frontmatter keys explanation
 
+> [!INFO]
+> Yaml Object can be converted to literal string key using the `<key1>.<subkey>` format.
+> For example:
+> ```yaml
+> attachment:
+>   send: false 
+> ```
+> can be written as:
+> ```yaml
+> attachment.send: false
+> ```
+
 Some settings can be overridden based on your frontmatter key (of the file send):
 
 1. For links conversion, using the `links` key, you can create a YAML object with:
@@ -109,13 +121,18 @@ Some settings can be overridden based on your frontmatter key (of the file send)
 
 Using a combinaison between the smartkey and variable, you can edit the [[./Upload]] file path. It allows to set specific path per repository, allowing different path for the same file in different repository.
 
-The keys must be write as follow : `<smartkey>.<key>`. Valid keys are:
+The keys can be write as follow : 
+  - `<smartkey>.<key>`. 
+  - Or directly `<key>` (if used in a set/to override the global settings for a file).
 
+Valid keys are:
 - `path` : Same as before : override all path settings and create a path from the root. Will skip all other options.
-- `category` : Take the `category` key from your settings (you can set the category key and also change it). Only work if the `type` or the behavior is set to property key.
+- `category` : Take the `category` key from your settings (you can set the category key and also change it). Only work if the `behavior` (or the default behavior) is set to ==YAML==.
+  - `category.key` : Change the category name (for example: `category.key: test` will use the property `test`).
+  - `category.value` : Alias of `defaultName` key. 
 - `rootFolder` : Same as the root folder settings in File paths settings ;
-- `defaultName` : Default folder name for file reception, same as global setting.
-- `type` : Change the behavior between `yaml`, `fixed`, and `obsidian`.
+- `defaultName` : Default folder name for file reception, same as global setting. Only works for `yaml` behavior.
+- `behavior` : Change the behavior between `yaml`, `fixed`, and `obsidian`.
 
 ## Quick references
 
@@ -131,7 +148,7 @@ embed:
   char: string #add a character before the link
 attachment:
   send: boolean #prevent sending attachment
-  folder: string #change default folder for attachment
+  folder: string #change default folder for attachment - same as attachmentLinks
 dataview: boolean #force/prevent dataview queries conversion
 hardbreak: boolean #same but for hardbreak
 includeLinks: boolean #send files linked by simple links, like [[markdown]] or [alias](markdown) 
