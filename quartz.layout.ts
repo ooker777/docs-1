@@ -35,6 +35,7 @@ export const sharedPageComponents: SharedLayout = {
 		links: {
 			Github: "https://github.com/ObsidianPublisher/obsidian-github-publisher",
 			Discussion: "https://github.com/ObsidianPublisher/obsidian-github-publisher/discussions",
+			Discord: "https://discord.gg/6DyY779Nbn"
 		},
 	}),
 };
