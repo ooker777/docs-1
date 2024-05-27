@@ -38,3 +38,5 @@ To add a new language:
 
 > [!note] Advice
 > If you use VSCode or jetbrain editor, you can look at [i18n Ally](https://i18nally.org) to get some useful tool for your translation!
+
+It is also possible to use [Weblate](https://hosted.weblate.org/projects/enveloppe/locales) to translate the plugin!
