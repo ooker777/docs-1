@@ -2,19 +2,19 @@
 title: Mkdocs
 ---
 
-## [Mkdocs Publisher](https://obsidian-publisher.netlify.app)
+## [Enveloppe](https://enveloppe.github.io/)
 
 > [!warning] Mkdocs is now deprecated, no support and help will be provided.
 
 ### Quick installation tutorial
 
-1. Click on [use this template](https://github.com/ObsidianPublisher/mkdocs-publisher-template/generate)
+1. Click on [use this template](https://github.com/enveloppe/mkdocs-publisher-template/generate)
 1. Use the name of your choice
-1. Set and edit the `mkdocs.yml` in the root of the repository. You can set up this by following the [tutorial here](https://obsidian-publisher.netlify.app/template/configuration/#mkdocs-configuration)
+1. Set and edit the `mkdocs.yml` in the root of the repository. You can set up this by following the [tutorial here](https://enveloppe.github.io/template/configuration/#mkdocs-configuration)
 
 ### Plugin configuration
 
-🆕**Obsidian Publisher 6.1.0** : You can load the settings from the preset using the button "Preset" and selecting `mkdocs` in the selector!
+🆕** Enveloppe 6.1.0** : You can load the settings from the preset using the button "Preset" and selecting `mkdocs` in the selector!
 
 The majority of the settings are optional and help you to manage your repository.
 

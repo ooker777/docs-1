@@ -23,7 +23,7 @@ export const sharedPageComponents: SharedLayout = {
 				folderClickBehavior: "link",
 				iconSettings: iconsOptions,
 				sortFn,
-				filterFn
+				filterFn,
 			}),
 		),
 		Component.MobileOnly(Component.PageTitle()),
@@ -33,9 +33,9 @@ export const sharedPageComponents: SharedLayout = {
 	],
 	footer: Component.Footer({
 		links: {
-			Github: "https://github.com/ObsidianPublisher/obsidian-github-publisher",
-			Discussion: "https://github.com/ObsidianPublisher/obsidian-github-publisher/discussions",
-			Discord: "https://discord.gg/6DyY779Nbn"
+			Github: "https://github.com/Enveloppe/obsidian-enveloppe",
+			Discussion: "https://github.com/orgs/Enveloppe/discussions",
+			Discord: "https://discord.gg/6DyY779Nbn",
 		},
 	}),
 };
@@ -45,7 +45,7 @@ export const defaultContentPageLayout: PageLayout = {
 	beforeBody: [
 		Component.Breadcrumbs(),
 		Component.ArticleTitle(iconsOptions),
-		Component.ContentMeta({ showReadingTime: false}),
+		Component.ContentMeta({ showReadingTime: false }),
 		Component.TagList(),
 	],
 	left: [
@@ -58,7 +58,7 @@ export const defaultContentPageLayout: PageLayout = {
 				title: "",
 				iconSettings: iconsOptions,
 				sortFn,
-				filterFn
+				filterFn,
 			}),
 		),
 	],

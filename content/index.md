@@ -2,15 +2,15 @@
 title: Home
 ---
 
-Obsidian Publisher is a remarkable project that enables you to effortlessly transmit files (via GitHub) and apply numerous advanced transformations to create your very own personalized wiki site... at absolutely no cost!
+Enveloppe is a remarkable project that enables you to effortlessly transmit files (via GitHub) and apply numerous advanced transformations to create your very own personalized wiki site... at absolutely no cost!
 
 <p align="center">
 	<a href="https://obsidian.md/"><img src="https://img.shields.io/badge/Auxiliary%20Tool-Obsidian-blueviolet"></img></a><br/>
 	<a href='https://ko-fi.com/X8X54ZYAV' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://cdn.ko-fi.com/cdn/kofi1.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a><br/>
 </p>
 
-- [Obsidian plugin](https://github.com/ObsidianPublisher/obsidian-github-publisher)
-- [Github Discussion](https://github.com/ObsidianPublisher/obsidian-github-publisher/discussions)
+- [Obsidian plugin](https://github.com/Enveloppe/obsidian-enveloppe)
+- [Github Discussion](https://github.com/orgs/Enveloppe/discussions)
 
 ---
 

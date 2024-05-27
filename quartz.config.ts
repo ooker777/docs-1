@@ -8,14 +8,14 @@ import * as Plugin from "./quartz/plugins";
  */
 const config: QuartzConfig = {
 	configuration: {
-		pageTitle: "🔗 GitHub Publisher",
+		pageTitle: "✉️ Enveloppe",
 		enableSPA: true,
 		enablePopovers: true,
 		analytics: {
 			provider: "plausible",
 		},
 		locale: "en-US",
-		baseUrl: "https://obsidian-publisher.netlify.app/",
+		baseUrl: "https://enveloppe.github.io/",
 		ignorePatterns: ["private", "templates", ".obsidian"],
 		defaultDateType: "created",
 		theme: {
@@ -69,7 +69,7 @@ const config: QuartzConfig = {
 			Plugin.TableOfContents(),
 			Plugin.CrawlLinks({ markdownLinkResolution: "relative" }),
 			Plugin.Description(),
-			Plugin.HardLineBreaks()
+			Plugin.HardLineBreaks(),
 		],
 		filters: [Plugin.RemoveDrafts()],
 		emitters: [

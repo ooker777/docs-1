@@ -3,9 +3,9 @@ group:
     - source: content/Plugin.md
       dest: README.md
     repos: |
-      ObsidianPublisher/obsidian-github-publisher
+      Enveloppe/obsidian-enveloppe
   - files:
     - source: content/wikis/Quartz.md
       dest: README.md
     repos: |
-      ObsidianPublisher/Publisher-Quartz
+      Enveloppe/Enveloppe-Quartz

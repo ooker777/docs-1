@@ -7,13 +7,12 @@ order: 7
 
 You can help me to develop the plugin using `pnpm` !
 
-1. First, clone the project on your computer with `git clone git@github.com:obsidianPublisher/obsidian-github-publisher.git`
-2. `cd obsidian-github-publisher`
+1. First, clone the project on your computer with `git clone git@github.com:enveloppe/obsidian-enveloppe.git`
+2. `cd obsidian-enveloppe`
 3. `pnpm install`
 4. Create an `.env` file with the following content:
 ```env
 VAULT=PATH/TO/YOUR/MAIN/VAULT
-VAULT_DEV=PATH/TO/YOUR/DEV/VAULT
 ```
 4. `pnpm run dev`
 4. Enjoy!
@@ -29,7 +28,7 @@ Using [i18n](https://www.i18next.com/), you can translate the plugin.
 
 To add a new language:
 
-- [Clone the dedicated repository](https://github.com/ObsidianPublisher/locales)
+- [Clone the dedicated repository](https://github.com/enveloppe/locales)
 - Take the file of the langage you want to translate (for example `es.json` for Spanish) and use the english file (`en.json`) as a base.
 - Translate the file, while keeping the `{{variable}}` (you can't translate them)
 - Create a pull request on the repository with the new file

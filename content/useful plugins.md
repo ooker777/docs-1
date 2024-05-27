@@ -6,7 +6,7 @@ order: 6
 
 **Some useful plugin to support the script** :
 
-- [Metacopy](https://github.com/lisandra-dev/obsidian-metacopy)
+- [Metacopy](https://github.com/mara-li/obsidian-metacopy)
 - [Commander](https://github.com/phibr0/obsidian-commander)
 - [Folder Note](https://github.com/LostPaul/obsidian-folder-notes)
 
@@ -14,7 +14,7 @@ order: 6
 
 ## Metacopy
 
-Using [metacopy](https://github.com/lisandra-dev/obsidian-metacopy), you can quickly copy a link to a shared page. To create a link, you need to configure:
+Using [metacopy](https://github.com/mara-li/obsidian-metacopy), you can quickly copy a link to a shared page. To create a link, you need to configure:
 
 1.  `category` in `key`
 2.  Add your `set_url` in `base link`
